@@ -1,0 +1,1108 @@
+{
+  "word": "bread",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " bread"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 11843,
+        "token": "bread",
+        "token_repr": "' bread'",
+        "cosine_similarity": 1.0,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 40451,
+        "token": "Bread",
+        "token_repr": "' Bread'",
+        "cosine_similarity": 0.8203,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 210601,
+        "token": "BREAD",
+        "token_repr": "' BREAD'",
+        "cosine_similarity": 0.7031,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 154077,
+        "token": "breads",
+        "token_repr": "' breads'",
+        "cosine_similarity": 0.6484,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 196412,
+        "token": "麵包",
+        "token_repr": "'麵包'",
+        "cosine_similarity": 0.4766,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 151911,
+        "token": "面包",
+        "token_repr": "'面包'",
+        "cosine_similarity": 0.4707,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 175570,
+        "token": "хлеб",
+        "token_repr": "' хлеб'",
+        "cosine_similarity": 0.4707,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 183737,
+        "token": "breadcrumbs",
+        "token_repr": "' breadcrumbs'",
+        "cosine_similarity": 0.4492,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 60058,
+        "token": "loaf",
+        "token_repr": "' loaf'",
+        "cosine_similarity": 0.4336,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 126976,
+        "token": "pão",
+        "token_repr": "' pão'",
+        "cosine_similarity": 0.4277,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 170445,
+        "token": "loaves",
+        "token_repr": "' loaves'",
+        "cosine_similarity": 0.4277,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 244948,
+        "token": "🍞",
+        "token_repr": "'🍞'",
+        "cosine_similarity": 0.4277,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 54982,
+        "token": "bakery",
+        "token_repr": "' bakery'",
+        "cosine_similarity": 0.4043,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 123942,
+        "token": "Brot",
+        "token_repr": "' Brot'",
+        "cosine_similarity": 0.3965,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 100214,
+        "token": "хле",
+        "token_repr": "' хле'",
+        "cosine_similarity": 0.3672,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 247174,
+        "token": "🥖",
+        "token_repr": "'🥖'",
+        "cosine_similarity": 0.3516,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 95579,
+        "token": "麵",
+        "token_repr": "' 麵'",
+        "cosine_similarity": 0.3477,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 183267,
+        "token": "sourdough",
+        "token_repr": "' sourdough'",
+        "cosine_similarity": 0.3477,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 84383,
+        "token": "Bakery",
+        "token_repr": "' Bakery'",
+        "cosine_similarity": 0.3418,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 244640,
+        "token": "빵",
+        "token_repr": "'빵'",
+        "cosine_similarity": 0.3418,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 27071,
+        "token": "パン",
+        "token_repr": "' パン'",
+        "cosine_similarity": 0.3379,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 69823,
+        "token": "baker",
+        "token_repr": "' baker'",
+        "cosine_similarity": 0.3379,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 178635,
+        "token": "Loaf",
+        "token_repr": "' Loaf'",
+        "cosine_similarity": 0.334,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 46353,
+        "token": "breadcrumb",
+        "token_repr": "'breadcrumb'",
+        "cosine_similarity": 0.3281,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 182998,
+        "token": "bakers",
+        "token_repr": "' bakers'",
+        "cosine_similarity": 0.3242,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 145806,
+        "token": "Breadcrumb",
+        "token_repr": "'Breadcrumb'",
+        "cosine_similarity": 0.3223,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 54697,
+        "token": "breadth",
+        "token_repr": "' breadth'",
+        "cosine_similarity": 0.3203,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 28780,
+        "token": "dough",
+        "token_repr": "' dough'",
+        "cosine_similarity": 0.3184,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 94328,
+        "token": "roti",
+        "token_repr": "' roti'",
+        "cosine_similarity": 0.3164,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 99393,
+        "token": "buns",
+        "token_repr": "' buns'",
+        "cosine_similarity": 0.3086,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 196057,
+        "token": "نان",
+        "token_repr": "' نان'",
+        "cosine_similarity": 0.3086,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 11514,
+        "token": "cake",
+        "token_repr": "' cake'",
+        "cosine_similarity": 0.3066,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 16251,
+        "token": "flour",
+        "token_repr": "' flour'",
+        "cosine_similarity": 0.3066,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 137254,
+        "token": "baguette",
+        "token_repr": "' baguette'",
+        "cosine_similarity": 0.3047,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 14967,
+        "token": "pizza",
+        "token_repr": "' pizza'",
+        "cosine_similarity": 0.2969,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 68588,
+        "token": "pastry",
+        "token_repr": "' pastry'",
+        "cosine_similarity": 0.2969,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 92749,
+        "token": "Baking",
+        "token_repr": "' Baking'",
+        "cosine_similarity": 0.2969,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 79500,
+        "token": "biscuit",
+        "token_repr": "' biscuit'",
+        "cosine_similarity": 0.2949,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 228358,
+        "token": "brioche",
+        "token_repr": "' brioche'",
+        "cosine_similarity": 0.2949,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 44528,
+        "token": "bake",
+        "token_repr": "' bake'",
+        "cosine_similarity": 0.293,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 79213,
+        "token": "Dough",
+        "token_repr": "' Dough'",
+        "cosine_similarity": 0.293,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 118761,
+        "token": "pastries",
+        "token_repr": "' pastries'",
+        "cosine_similarity": 0.291,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 36403,
+        "token": "cakes",
+        "token_repr": "' cakes'",
+        "cosine_similarity": 0.2891,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 129319,
+        "token": "Bakers",
+        "token_repr": "' Bakers'",
+        "cosine_similarity": 0.2891,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 25439,
+        "token": "baking",
+        "token_repr": "' baking'",
+        "cosine_similarity": 0.2871,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 102139,
+        "token": "crumbs",
+        "token_repr": "' crumbs'",
+        "cosine_similarity": 0.2852,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 33524,
+        "token": "Cake",
+        "token_repr": "' Cake'",
+        "cosine_similarity": 0.2832,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 74165,
+        "token": "pizzas",
+        "token_repr": "' pizzas'",
+        "cosine_similarity": 0.2832,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 219800,
+        "token": "MEAT",
+        "token_repr": "' MEAT'",
+        "cosine_similarity": 0.2832,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 33611,
+        "token": "toast",
+        "token_repr": "' toast'",
+        "cosine_similarity": 0.2793,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 2,
+        "CO": 0,
+        "TX": 0,
+        "TL": 14,
+        "MO": 4,
+        "SY": 0,
+        "NEEDS_REVIEW": 30
+      },
+      "langue_TL_SY_TX": 14,
+      "parole_CO": 0,
+      "needs_review": 30,
+      "langue_pct_of_all": 28.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 11843,
+        "token": "bread",
+        "token_repr": "' bread'",
+        "cosine_similarity": 1.0,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 40451,
+        "token": "Bread",
+        "token_repr": "' Bread'",
+        "cosine_similarity": 0.8203,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 210601,
+        "token": "BREAD",
+        "token_repr": "' BREAD'",
+        "cosine_similarity": 0.7031,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 154077,
+        "token": "breads",
+        "token_repr": "' breads'",
+        "cosine_similarity": 0.6484,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bread'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 183737,
+        "token": "breadcrumbs",
+        "token_repr": "' breadcrumbs'",
+        "cosine_similarity": 0.4492,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 6,
+        "token_id": 60058,
+        "token": "loaf",
+        "token_repr": "' loaf'",
+        "cosine_similarity": 0.4336,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 7,
+        "token_id": 170445,
+        "token": "loaves",
+        "token_repr": "' loaves'",
+        "cosine_similarity": 0.4277,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 54982,
+        "token": "bakery",
+        "token_repr": "' bakery'",
+        "cosine_similarity": 0.4043,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 183267,
+        "token": "sourdough",
+        "token_repr": "' sourdough'",
+        "cosine_similarity": 0.3477,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 84383,
+        "token": "Bakery",
+        "token_repr": "' Bakery'",
+        "cosine_similarity": 0.3418,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 69823,
+        "token": "baker",
+        "token_repr": "' baker'",
+        "cosine_similarity": 0.3379,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 178635,
+        "token": "Loaf",
+        "token_repr": "' Loaf'",
+        "cosine_similarity": 0.334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 182998,
+        "token": "bakers",
+        "token_repr": "' bakers'",
+        "cosine_similarity": 0.3242,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 54697,
+        "token": "breadth",
+        "token_repr": "' breadth'",
+        "cosine_similarity": 0.3203,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 28780,
+        "token": "dough",
+        "token_repr": "' dough'",
+        "cosine_similarity": 0.3184,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 99393,
+        "token": "buns",
+        "token_repr": "' buns'",
+        "cosine_similarity": 0.3086,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 11514,
+        "token": "cake",
+        "token_repr": "' cake'",
+        "cosine_similarity": 0.3066,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 16251,
+        "token": "flour",
+        "token_repr": "' flour'",
+        "cosine_similarity": 0.3066,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 14967,
+        "token": "pizza",
+        "token_repr": "' pizza'",
+        "cosine_similarity": 0.2969,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 68588,
+        "token": "pastry",
+        "token_repr": "' pastry'",
+        "cosine_similarity": 0.2969,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 92749,
+        "token": "Baking",
+        "token_repr": "' Baking'",
+        "cosine_similarity": 0.2969,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 79500,
+        "token": "biscuit",
+        "token_repr": "' biscuit'",
+        "cosine_similarity": 0.2949,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 228358,
+        "token": "brioche",
+        "token_repr": "' brioche'",
+        "cosine_similarity": 0.2949,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 44528,
+        "token": "bake",
+        "token_repr": "' bake'",
+        "cosine_similarity": 0.293,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 79213,
+        "token": "Dough",
+        "token_repr": "' Dough'",
+        "cosine_similarity": 0.293,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 118761,
+        "token": "pastries",
+        "token_repr": "' pastries'",
+        "cosine_similarity": 0.291,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 36403,
+        "token": "cakes",
+        "token_repr": "' cakes'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 129319,
+        "token": "Bakers",
+        "token_repr": "' Bakers'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 25439,
+        "token": "baking",
+        "token_repr": "' baking'",
+        "cosine_similarity": 0.2871,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 102139,
+        "token": "crumbs",
+        "token_repr": "' crumbs'",
+        "cosine_similarity": 0.2852,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 33524,
+        "token": "Cake",
+        "token_repr": "' Cake'",
+        "cosine_similarity": 0.2832,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 74165,
+        "token": "pizzas",
+        "token_repr": "' pizzas'",
+        "cosine_similarity": 0.2832,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 219800,
+        "token": "MEAT",
+        "token_repr": "' MEAT'",
+        "cosine_similarity": 0.2832,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 33611,
+        "token": "toast",
+        "token_repr": "' toast'",
+        "cosine_similarity": 0.2793,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 13624,
+        "token": "cheese",
+        "token_repr": "' cheese'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 21251,
+        "token": "wheat",
+        "token_repr": "' wheat'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 11827,
+        "token": "meat",
+        "token_repr": "' meat'",
+        "cosine_similarity": 0.2754,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 110901,
+        "token": "Cakes",
+        "token_repr": "' Cakes'",
+        "cosine_similarity": 0.2754,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 59105,
+        "token": "sandwiches",
+        "token_repr": "' sandwiches'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 68414,
+        "token": "biscuits",
+        "token_repr": "' biscuits'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 132248,
+        "token": "tortillas",
+        "token_repr": "' tortillas'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 136102,
+        "token": "Bred",
+        "token_repr": "' Bred'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 207295,
+        "token": "Pastry",
+        "token_repr": "' Pastry'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 37944,
+        "token": "baked",
+        "token_repr": "' baked'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 112704,
+        "token": "tortilla",
+        "token_repr": "' tortilla'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 172168,
+        "token": "bagel",
+        "token_repr": "' bagel'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 194955,
+        "token": "bagels",
+        "token_repr": "' bagels'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 33217,
+        "token": "Toast",
+        "token_repr": "' Toast'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 44899,
+        "token": "bred",
+        "token_repr": "' bred'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 165968,
+        "token": "Cereal",
+        "token_repr": "' Cereal'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 0,
+        "CO": 0,
+        "TX": 0,
+        "TL": 0,
+        "MO": 4,
+        "SY": 0,
+        "NEEDS_REVIEW": 46
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 46,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
