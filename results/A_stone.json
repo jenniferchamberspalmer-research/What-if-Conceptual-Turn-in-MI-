@@ -1,0 +1,1108 @@
+{
+  "word": "stone",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " stone"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9566,
+        "token": "stone",
+        "token_repr": "' stone'",
+        "cosine_similarity": 0.9961,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 16513,
+        "token": "Stone",
+        "token_repr": "' Stone'",
+        "cosine_similarity": 0.7852,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 112216,
+        "token": "STONE",
+        "token_repr": "' STONE'",
+        "cosine_similarity": 0.7734,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 21069,
+        "token": "stones",
+        "token_repr": "' stones'",
+        "cosine_similarity": 0.7031,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 57864,
+        "token": "Stones",
+        "token_repr": "' Stones'",
+        "cosine_similarity": 0.5664,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 53156,
+        "token": "piedra",
+        "token_repr": "' piedra'",
+        "cosine_similarity": 0.5547,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 236231,
+        "token": "石",
+        "token_repr": "'石'",
+        "cosine_similarity": 0.5234,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 183592,
+        "token": "камень",
+        "token_repr": "' камень'",
+        "cosine_similarity": 0.5039,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 87452,
+        "token": "pedra",
+        "token_repr": "' pedra'",
+        "cosine_similarity": 0.4922,
+        "language": "ca",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ca); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 205114,
+        "token": "ストーン",
+        "token_repr": "'ストーン'",
+        "cosine_similarity": 0.4785,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 210857,
+        "token": "камня",
+        "token_repr": "' камня'",
+        "cosine_similarity": 0.4766,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 123936,
+        "token": "石头",
+        "token_repr": "'石头'",
+        "cosine_similarity": 0.4648,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 162787,
+        "token": "камен",
+        "token_repr": "' камен'",
+        "cosine_similarity": 0.4414,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 47374,
+        "token": "pierre",
+        "token_repr": "' pierre'",
+        "cosine_similarity": 0.4277,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 185122,
+        "token": "ston",
+        "token_repr": "' ston'",
+        "cosine_similarity": 0.4121,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 115305,
+        "token": "pietra",
+        "token_repr": "' pietra'",
+        "cosine_similarity": 0.4102,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 138765,
+        "token": "stony",
+        "token_repr": "' stony'",
+        "cosine_similarity": 0.4102,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 168447,
+        "token": "stoned",
+        "token_repr": "' stoned'",
+        "cosine_similarity": 0.4102,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 93922,
+        "token": "piedras",
+        "token_repr": "' piedras'",
+        "cosine_similarity": 0.4023,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 7095,
+        "token": "rock",
+        "token_repr": "' rock'",
+        "cosine_similarity": 0.3984,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 108454,
+        "token": "pierres",
+        "token_repr": "' pierres'",
+        "cosine_similarity": 0.3848,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 68246,
+        "token": "batu",
+        "token_repr": "' batu'",
+        "cosine_similarity": 0.375,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 23,
+        "token_id": 15586,
+        "token": "rocks",
+        "token_repr": "' rocks'",
+        "cosine_similarity": 0.373,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 41852,
+        "token": "granite",
+        "token_repr": "' granite'",
+        "cosine_similarity": 0.3691,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 17475,
+        "token": "estone",
+        "token_repr": "'estone'",
+        "cosine_similarity": 0.3672,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 29115,
+        "token": "marble",
+        "token_repr": "' marble'",
+        "cosine_similarity": 0.3535,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 221246,
+        "token": "steen",
+        "token_repr": "' steen'",
+        "cosine_similarity": 0.3535,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 21810,
+        "token": "brick",
+        "token_repr": "' brick'",
+        "cosine_similarity": 0.3516,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 152960,
+        "token": "pedras",
+        "token_repr": "' pedras'",
+        "cosine_similarity": 0.3496,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 40525,
+        "token": "limestone",
+        "token_repr": "' limestone'",
+        "cosine_similarity": 0.3438,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 128190,
+        "token": "gemstone",
+        "token_repr": "' gemstone'",
+        "cosine_similarity": 0.3359,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 54127,
+        "token": "sandstone",
+        "token_repr": "' sandstone'",
+        "cosine_similarity": 0.3301,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 116140,
+        "token": "boulder",
+        "token_repr": "' boulder'",
+        "cosine_similarity": 0.3301,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 163437,
+        "token": "Ston",
+        "token_repr": "' Ston'",
+        "cosine_similarity": 0.3301,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 76288,
+        "token": "кам",
+        "token_repr": "' кам'",
+        "cosine_similarity": 0.3281,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 112006,
+        "token": "pebble",
+        "token_repr": "' pebble'",
+        "cosine_similarity": 0.3262,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 60502,
+        "token": "ROCK",
+        "token_repr": "' ROCK'",
+        "cosine_similarity": 0.3242,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 188331,
+        "token": "pietre",
+        "token_repr": "' pietre'",
+        "cosine_similarity": 0.3203,
+        "language": "ro",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ro); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 119200,
+        "token": "stein",
+        "token_repr": "' stein'",
+        "cosine_similarity": 0.3145,
+        "language": "nb",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nb); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 8909,
+        "token": "Rock",
+        "token_repr": "' Rock'",
+        "cosine_similarity": 0.3086,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 187859,
+        "token": "Steine",
+        "token_repr": "' Steine'",
+        "cosine_similarity": 0.3047,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 42,
+        "token_id": 54861,
+        "token": "Rocks",
+        "token_repr": "' Rocks'",
+        "cosine_similarity": 0.3027,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 80829,
+        "token": "سنگ",
+        "token_repr": "' سنگ'",
+        "cosine_similarity": 0.3008,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 23836,
+        "token": "Stein",
+        "token_repr": "' Stein'",
+        "cosine_similarity": 0.2969,
+        "language": "nb",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nb); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 249098,
+        "token": "🪨",
+        "token_repr": "'🪨'",
+        "cosine_similarity": 0.2969,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 87743,
+        "token": "masonry",
+        "token_repr": "' masonry'",
+        "cosine_similarity": 0.2949,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 180649,
+        "token": "ESTONE",
+        "token_repr": "'ESTONE'",
+        "cosine_similarity": 0.2891,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 48,
+        "token_id": 210878,
+        "token": "stoneware",
+        "token_repr": "' stoneware'",
+        "cosine_similarity": 0.2891,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 44961,
+        "token": "rocky",
+        "token_repr": "' rocky'",
+        "cosine_similarity": 0.2871,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 113189,
+        "token": "boulders",
+        "token_repr": "' boulders'",
+        "cosine_similarity": 0.2871,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "SY": 0,
+        "MO": 7,
+        "UR": 1,
+        "TL": 25,
+        "CO": 0,
+        "TX": 0,
+        "NEEDS_REVIEW": 17
+      },
+      "langue_TL_SY_TX": 25,
+      "parole_CO": 0,
+      "needs_review": 17,
+      "langue_pct_of_all": 50.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9566,
+        "token": "stone",
+        "token_repr": "' stone'",
+        "cosine_similarity": 0.9961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 16513,
+        "token": "Stone",
+        "token_repr": "' Stone'",
+        "cosine_similarity": 0.7852,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 112216,
+        "token": "STONE",
+        "token_repr": "' STONE'",
+        "cosine_similarity": 0.7734,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 21069,
+        "token": "stones",
+        "token_repr": "' stones'",
+        "cosine_similarity": 0.7031,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 57864,
+        "token": "Stones",
+        "token_repr": "' Stones'",
+        "cosine_similarity": 0.5664,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 138765,
+        "token": "stony",
+        "token_repr": "' stony'",
+        "cosine_similarity": 0.4102,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 168447,
+        "token": "stoned",
+        "token_repr": "' stoned'",
+        "cosine_similarity": 0.4102,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 7095,
+        "token": "rock",
+        "token_repr": "' rock'",
+        "cosine_similarity": 0.3984,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 15586,
+        "token": "rocks",
+        "token_repr": "' rocks'",
+        "cosine_similarity": 0.373,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 41852,
+        "token": "granite",
+        "token_repr": "' granite'",
+        "cosine_similarity": 0.3691,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 29115,
+        "token": "marble",
+        "token_repr": "' marble'",
+        "cosine_similarity": 0.3535,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 21810,
+        "token": "brick",
+        "token_repr": "' brick'",
+        "cosine_similarity": 0.3516,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 40525,
+        "token": "limestone",
+        "token_repr": "' limestone'",
+        "cosine_similarity": 0.3438,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 128190,
+        "token": "gemstone",
+        "token_repr": "' gemstone'",
+        "cosine_similarity": 0.3359,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 54127,
+        "token": "sandstone",
+        "token_repr": "' sandstone'",
+        "cosine_similarity": 0.3301,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 116140,
+        "token": "boulder",
+        "token_repr": "' boulder'",
+        "cosine_similarity": 0.3301,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 112006,
+        "token": "pebble",
+        "token_repr": "' pebble'",
+        "cosine_similarity": 0.3262,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 60502,
+        "token": "ROCK",
+        "token_repr": "' ROCK'",
+        "cosine_similarity": 0.3242,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 8909,
+        "token": "Rock",
+        "token_repr": "' Rock'",
+        "cosine_similarity": 0.3086,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 54861,
+        "token": "Rocks",
+        "token_repr": "' Rocks'",
+        "cosine_similarity": 0.3027,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 87743,
+        "token": "masonry",
+        "token_repr": "' masonry'",
+        "cosine_similarity": 0.2949,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 210878,
+        "token": "stoneware",
+        "token_repr": "' stoneware'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 44961,
+        "token": "rocky",
+        "token_repr": "' rocky'",
+        "cosine_similarity": 0.2871,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 113189,
+        "token": "boulders",
+        "token_repr": "' boulders'",
+        "cosine_similarity": 0.2871,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 94035,
+        "token": "pebbles",
+        "token_repr": "' pebbles'",
+        "cosine_similarity": 0.2832,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 195747,
+        "token": "ROCKS",
+        "token_repr": "' ROCKS'",
+        "cosine_similarity": 0.2812,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 33719,
+        "token": "gravel",
+        "token_repr": "' gravel'",
+        "cosine_similarity": 0.2734,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 76093,
+        "token": "Marble",
+        "token_repr": "' Marble'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 51847,
+        "token": "Brick",
+        "token_repr": "' Brick'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 93368,
+        "token": "Granite",
+        "token_repr": "' Granite'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 186247,
+        "token": "gemstones",
+        "token_repr": "' gemstones'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 91355,
+        "token": "Limestone",
+        "token_repr": "' Limestone'",
+        "cosine_similarity": 0.2559,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 141858,
+        "token": "Stony",
+        "token_repr": "' Stony'",
+        "cosine_similarity": 0.2559,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'stone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 50666,
+        "token": "bricks",
+        "token_repr": "' bricks'",
+        "cosine_similarity": 0.252,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 13660,
+        "token": "concrete",
+        "token_repr": "' concrete'",
+        "cosine_similarity": 0.2471,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 110600,
+        "token": "flint",
+        "token_repr": "' flint'",
+        "cosine_similarity": 0.2471,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 30407,
+        "token": "quartz",
+        "token_repr": "' quartz'",
+        "cosine_similarity": 0.2422,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 44271,
+        "token": "Concrete",
+        "token_repr": "' Concrete'",
+        "cosine_similarity": 0.2422,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 11769,
+        "token": "wooden",
+        "token_repr": "' wooden'",
+        "cosine_similarity": 0.2402,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 14354,
+        "token": "bone",
+        "token_repr": "' bone'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 131929,
+        "token": "basalt",
+        "token_repr": "' basalt'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 20384,
+        "token": "tile",
+        "token_repr": "' tile'",
+        "cosine_similarity": 0.2363,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 29611,
+        "token": "cement",
+        "token_repr": "' cement'",
+        "cosine_similarity": 0.2354,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 119074,
+        "token": "Sandstone",
+        "token_repr": "' Sandstone'",
+        "cosine_similarity": 0.2354,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 28616,
+        "token": "ceramic",
+        "token_repr": "' ceramic'",
+        "cosine_similarity": 0.2324,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 132856,
+        "token": "Quarry",
+        "token_repr": "' Quarry'",
+        "cosine_similarity": 0.2314,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 62492,
+        "token": "geological",
+        "token_repr": "' geological'",
+        "cosine_similarity": 0.2305,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 204199,
+        "token": "Bricks",
+        "token_repr": "' Bricks'",
+        "cosine_similarity": 0.2305,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 221760,
+        "token": "rockers",
+        "token_repr": "' rockers'",
+        "cosine_similarity": 0.2285,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 4656,
+        "token": "wood",
+        "token_repr": "' wood'",
+        "cosine_similarity": 0.2275,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "SY": 0,
+        "MO": 8,
+        "UR": 0,
+        "TL": 0,
+        "CO": 0,
+        "TX": 0,
+        "NEEDS_REVIEW": 42
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 42,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
