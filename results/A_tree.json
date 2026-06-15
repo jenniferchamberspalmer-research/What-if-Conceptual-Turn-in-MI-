@@ -1,0 +1,1108 @@
+{
+  "word": "tree",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " tree"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 5421,
+        "token": "tree",
+        "token_repr": "' tree'",
+        "cosine_similarity": 0.9961,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 12807,
+        "token": "Tree",
+        "token_repr": "' Tree'",
+        "cosine_similarity": 0.8516,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 106252,
+        "token": "TREE",
+        "token_repr": "' TREE'",
+        "cosine_similarity": 0.75,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 8195,
+        "token": "trees",
+        "token_repr": "' trees'",
+        "cosine_similarity": 0.7188,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 41936,
+        "token": "Trees",
+        "token_repr": "' Trees'",
+        "cosine_similarity": 0.6211,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 237218,
+        "token": "树",
+        "token_repr": "'树'",
+        "cosine_similarity": 0.6055,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 52368,
+        "token": "árbol",
+        "token_repr": "' árbol'",
+        "cosine_similarity": 0.5625,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 187520,
+        "token": "TREES",
+        "token_repr": "' TREES'",
+        "cosine_similarity": 0.5156,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 206372,
+        "token": "ツリー",
+        "token_repr": "'ツリー'",
+        "cosine_similarity": 0.498,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 237849,
+        "token": "樹",
+        "token_repr": "'樹'",
+        "cosine_similarity": 0.4961,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 76688,
+        "token": "árboles",
+        "token_repr": "' árboles'",
+        "cosine_similarity": 0.4824,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 89696,
+        "token": "arbre",
+        "token_repr": "' arbre'",
+        "cosine_similarity": 0.4824,
+        "language": "ca",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ca); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 112184,
+        "token": "árvore",
+        "token_repr": "' árvore'",
+        "cosine_similarity": 0.4609,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 127742,
+        "token": "дерево",
+        "token_repr": "' дерево'",
+        "cosine_similarity": 0.4609,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 169772,
+        "token": "درخت",
+        "token_repr": "' درخت'",
+        "cosine_similarity": 0.4492,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 106921,
+        "token": "дерева",
+        "token_repr": "' дерева'",
+        "cosine_similarity": 0.4395,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 190029,
+        "token": "деревья",
+        "token_repr": "' деревья'",
+        "cosine_similarity": 0.4238,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 170095,
+        "token": "drze",
+        "token_repr": "' drze'",
+        "cosine_similarity": 0.416,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 227877,
+        "token": "деревьев",
+        "token_repr": "' деревьев'",
+        "cosine_similarity": 0.3848,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 179773,
+        "token": "arbol",
+        "token_repr": "' arbol'",
+        "cosine_similarity": 0.377,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 97920,
+        "token": "arbres",
+        "token_repr": "' arbres'",
+        "cosine_similarity": 0.3691,
+        "language": "ca",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ca); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 169009,
+        "token": "Bäume",
+        "token_repr": "' Bäume'",
+        "cosine_similarity": 0.3672,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 30744,
+        "token": "TreeNode",
+        "token_repr": "'TreeNode'",
+        "cosine_similarity": 0.3652,
+        "language": "latin/unknown",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 177964,
+        "token": "árvores",
+        "token_repr": "' árvores'",
+        "cosine_similarity": 0.3516,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 231699,
+        "token": "ağaç",
+        "token_repr": "' ağaç'",
+        "cosine_similarity": 0.3516,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 162723,
+        "token": "TreeView",
+        "token_repr": "'TreeView'",
+        "cosine_similarity": 0.3438,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 84969,
+        "token": "pohon",
+        "token_repr": "' pohon'",
+        "cosine_similarity": 0.3418,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 151234,
+        "token": "albero",
+        "token_repr": "' albero'",
+        "cosine_similarity": 0.332,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 29,
+        "token_id": 153045,
+        "token": "木の",
+        "token_repr": "'木の'",
+        "cosine_similarity": 0.3223,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 243996,
+        "token": "🌳",
+        "token_repr": "'🌳'",
+        "cosine_similarity": 0.3027,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 31,
+        "token_id": 241327,
+        "token": "棵",
+        "token_repr": "'棵'",
+        "cosine_similarity": 0.2988,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 188647,
+        "token": "나무",
+        "token_repr": "' 나무'",
+        "cosine_similarity": 0.2949,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 195162,
+        "token": "tress",
+        "token_repr": "' tress'",
+        "cosine_similarity": 0.2949,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 9309,
+        "token": "forest",
+        "token_repr": "' forest'",
+        "cosine_similarity": 0.2852,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 182926,
+        "token": "alberi",
+        "token_repr": "' alberi'",
+        "cosine_similarity": 0.2852,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 151125,
+        "token": "subtree",
+        "token_repr": "' subtree'",
+        "cosine_similarity": 0.2832,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 29603,
+        "token": "дере",
+        "token_repr": "' дере'",
+        "cosine_similarity": 0.2793,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 38,
+        "token_id": 46492,
+        "token": "Baum",
+        "token_repr": "' Baum'",
+        "cosine_similarity": 0.2754,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 138722,
+        "token": "の木",
+        "token_repr": "'の木'",
+        "cosine_similarity": 0.2754,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 43234,
+        "token": "cây",
+        "token_repr": "' cây'",
+        "cosine_similarity": 0.2695,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 166256,
+        "token": "treeNode",
+        "token_repr": "'treeNode'",
+        "cosine_similarity": 0.2676,
+        "language": "latin/unknown",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 42044,
+        "token": "shrub",
+        "token_repr": "' shrub'",
+        "cosine_similarity": 0.2637,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 222535,
+        "token": "arbore",
+        "token_repr": "' arbore'",
+        "cosine_similarity": 0.2617,
+        "language": "ro",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ro); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 243518,
+        "token": "🌲",
+        "token_repr": "'🌲'",
+        "cosine_similarity": 0.2559,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 33211,
+        "token": "baum",
+        "token_repr": "'baum'",
+        "cosine_similarity": 0.2441,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 109664,
+        "token": "arbor",
+        "token_repr": "' arbor'",
+        "cosine_similarity": 0.2441,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 17170,
+        "token": "branches",
+        "token_repr": "' branches'",
+        "cosine_similarity": 0.2383,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 27168,
+        "token": "forests",
+        "token_repr": "' forests'",
+        "cosine_similarity": 0.2334,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 944,
+        "token": "ree",
+        "token_repr": "'ree'",
+        "cosine_similarity": 0.2324,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 50,
+        "token_id": 66488,
+        "token": "forestry",
+        "token_repr": "' forestry'",
+        "cosine_similarity": 0.2324,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TX": 0,
+        "CO": 0,
+        "TL": 24,
+        "SY": 0,
+        "UR": 2,
+        "MO": 6,
+        "NEEDS_REVIEW": 18
+      },
+      "langue_TL_SY_TX": 24,
+      "parole_CO": 0,
+      "needs_review": 18,
+      "langue_pct_of_all": 48.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 5421,
+        "token": "tree",
+        "token_repr": "' tree'",
+        "cosine_similarity": 0.9961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 12807,
+        "token": "Tree",
+        "token_repr": "' Tree'",
+        "cosine_similarity": 0.8516,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 106252,
+        "token": "TREE",
+        "token_repr": "' TREE'",
+        "cosine_similarity": 0.75,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 8195,
+        "token": "trees",
+        "token_repr": "' trees'",
+        "cosine_similarity": 0.7188,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 41936,
+        "token": "Trees",
+        "token_repr": "' Trees'",
+        "cosine_similarity": 0.6211,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 187520,
+        "token": "TREES",
+        "token_repr": "' TREES'",
+        "cosine_similarity": 0.5156,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'tree'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 195162,
+        "token": "tress",
+        "token_repr": "' tress'",
+        "cosine_similarity": 0.2949,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 9309,
+        "token": "forest",
+        "token_repr": "' forest'",
+        "cosine_similarity": 0.2852,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 42044,
+        "token": "shrub",
+        "token_repr": "' shrub'",
+        "cosine_similarity": 0.2637,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 109664,
+        "token": "arbor",
+        "token_repr": "' arbor'",
+        "cosine_similarity": 0.2441,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 17170,
+        "token": "branches",
+        "token_repr": "' branches'",
+        "cosine_similarity": 0.2383,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 27168,
+        "token": "forests",
+        "token_repr": "' forests'",
+        "cosine_similarity": 0.2334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 944,
+        "token": "ree",
+        "token_repr": "'ree'",
+        "cosine_similarity": 0.2324,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 66488,
+        "token": "forestry",
+        "token_repr": "' forestry'",
+        "cosine_similarity": 0.2324,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 31373,
+        "token": "bush",
+        "token_repr": "' bush'",
+        "cosine_similarity": 0.2295,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 49001,
+        "token": "Arbor",
+        "token_repr": "' Arbor'",
+        "cosine_similarity": 0.2285,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 12832,
+        "token": "branch",
+        "token_repr": "' branch'",
+        "cosine_similarity": 0.2246,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 83125,
+        "token": "FOREST",
+        "token_repr": "' FOREST'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 12533,
+        "token": "Forest",
+        "token_repr": "' Forest'",
+        "cosine_similarity": 0.2148,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 4656,
+        "token": "wood",
+        "token_repr": "' wood'",
+        "cosine_similarity": 0.2139,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 24230,
+        "token": "oak",
+        "token_repr": "' oak'",
+        "cosine_similarity": 0.2129,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 24469,
+        "token": "timber",
+        "token_repr": "' timber'",
+        "cosine_similarity": 0.2129,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 99515,
+        "token": "wooded",
+        "token_repr": "' wooded'",
+        "cosine_similarity": 0.2119,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 56001,
+        "token": "Forestry",
+        "token_repr": "' Forestry'",
+        "cosine_similarity": 0.2109,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 13170,
+        "token": "bird",
+        "token_repr": "' bird'",
+        "cosine_similarity": 0.209,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 4829,
+        "token": "plant",
+        "token_repr": "' plant'",
+        "cosine_similarity": 0.208,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 23780,
+        "token": "pine",
+        "token_repr": "' pine'",
+        "cosine_similarity": 0.208,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 12325,
+        "token": "leaf",
+        "token_repr": "' leaf'",
+        "cosine_similarity": 0.2041,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 5705,
+        "token": "node",
+        "token_repr": "' node'",
+        "cosine_similarity": 0.2002,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 118558,
+        "token": "twig",
+        "token_repr": "' twig'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 67984,
+        "token": "shrubs",
+        "token_repr": "' shrubs'",
+        "cosine_similarity": 0.1963,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 62498,
+        "token": "rees",
+        "token_repr": "'rees'",
+        "cosine_similarity": 0.1953,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 8540,
+        "token": "river",
+        "token_repr": "' river'",
+        "cosine_similarity": 0.1943,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 146280,
+        "token": "forested",
+        "token_repr": "' forested'",
+        "cosine_similarity": 0.1943,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 63263,
+        "token": "bushes",
+        "token_repr": "' bushes'",
+        "cosine_similarity": 0.1924,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 72198,
+        "token": "grove",
+        "token_repr": "' grove'",
+        "cosine_similarity": 0.1914,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 9382,
+        "token": "teacher",
+        "token_repr": "' teacher'",
+        "cosine_similarity": 0.1904,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 24350,
+        "token": "woods",
+        "token_repr": "' woods'",
+        "cosine_similarity": 0.1904,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 29897,
+        "token": "vegetation",
+        "token_repr": "' vegetation'",
+        "cosine_similarity": 0.1885,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 23547,
+        "token": "Branch",
+        "token_repr": "' Branch'",
+        "cosine_similarity": 0.1865,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 86686,
+        "token": "Forests",
+        "token_repr": "' Forests'",
+        "cosine_similarity": 0.1865,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 5989,
+        "token": "graph",
+        "token_repr": "' graph'",
+        "cosine_similarity": 0.1855,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 70480,
+        "token": "orchard",
+        "token_repr": "' orchard'",
+        "cosine_similarity": 0.1846,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 17080,
+        "token": "tower",
+        "token_repr": "' tower'",
+        "cosine_similarity": 0.1836,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 64744,
+        "token": "woodland",
+        "token_repr": "' woodland'",
+        "cosine_similarity": 0.1836,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 9471,
+        "token": "fruit",
+        "token_repr": "' fruit'",
+        "cosine_similarity": 0.1826,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 106070,
+        "token": "twigs",
+        "token_repr": "' twigs'",
+        "cosine_similarity": 0.1826,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 9566,
+        "token": "stone",
+        "token_repr": "' stone'",
+        "cosine_similarity": 0.1816,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 10377,
+        "token": "flower",
+        "token_repr": "' flower'",
+        "cosine_similarity": 0.1816,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 31540,
+        "token": "trunk",
+        "token_repr": "' trunk'",
+        "cosine_similarity": 0.1816,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TX": 0,
+        "CO": 0,
+        "TL": 0,
+        "SY": 0,
+        "UR": 0,
+        "MO": 6,
+        "NEEDS_REVIEW": 44
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 44,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
