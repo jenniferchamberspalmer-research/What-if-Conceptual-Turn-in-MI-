@@ -1,0 +1,1108 @@
+{
+  "word": "bone",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " bone"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 14354,
+        "token": "bone",
+        "token_repr": "' bone'",
+        "cosine_similarity": 0.9961,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 41256,
+        "token": "Bone",
+        "token_repr": "' Bone'",
+        "cosine_similarity": 0.8477,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 22241,
+        "token": "bones",
+        "token_repr": "' bones'",
+        "cosine_similarity": 0.6836,
+        "language": "ca",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 208844,
+        "token": "BONE",
+        "token_repr": "'BONE'",
+        "cosine_similarity": 0.6289,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 72566,
+        "token": "Bones",
+        "token_repr": "' Bones'",
+        "cosine_similarity": 0.5508,
+        "language": "ca",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 237101,
+        "token": "骨",
+        "token_repr": "'骨'",
+        "cosine_similarity": 0.5078,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 145987,
+        "token": "Knochen",
+        "token_repr": "' Knochen'",
+        "cosine_similarity": 0.5039,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 157594,
+        "token": "hueso",
+        "token_repr": "' hueso'",
+        "cosine_similarity": 0.4902,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 142009,
+        "token": "huesos",
+        "token_repr": "' huesos'",
+        "cosine_similarity": 0.4395,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 118929,
+        "token": "bony",
+        "token_repr": "' bony'",
+        "cosine_similarity": 0.4219,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 246583,
+        "token": "뼈",
+        "token_repr": "'뼈'",
+        "cosine_similarity": 0.373,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 212573,
+        "token": "osse",
+        "token_repr": "' osse'",
+        "cosine_similarity": 0.3691,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 74586,
+        "token": "skeletal",
+        "token_repr": "' skeletal'",
+        "cosine_similarity": 0.3633,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 43805,
+        "token": "oste",
+        "token_repr": "' oste'",
+        "cosine_similarity": 0.3574,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 119144,
+        "token": "tulang",
+        "token_repr": "' tulang'",
+        "cosine_similarity": 0.3457,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 43974,
+        "token": "skeleton",
+        "token_repr": "' skeleton'",
+        "cosine_similarity": 0.3418,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 67472,
+        "token": "marrow",
+        "token_repr": "' marrow'",
+        "cosine_similarity": 0.3379,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 247474,
+        "token": "🦴",
+        "token_repr": "'🦴'",
+        "cosine_similarity": 0.332,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 122786,
+        "token": "Oste",
+        "token_repr": "'Oste'",
+        "cosine_similarity": 0.3242,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 146659,
+        "token": "xương",
+        "token_repr": "' xương'",
+        "cosine_similarity": 0.3184,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 224312,
+        "token": "Skeletal",
+        "token_repr": "' Skeletal'",
+        "cosine_similarity": 0.3125,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 207185,
+        "token": "boné",
+        "token_repr": "'boné'",
+        "cosine_similarity": 0.3105,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 5234,
+        "token": "bon",
+        "token_repr": "' bon'",
+        "cosine_similarity": 0.3066,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 26073,
+        "token": "skull",
+        "token_repr": "' skull'",
+        "cosine_similarity": 0.3008,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 39203,
+        "token": "BON",
+        "token_repr": "'BON'",
+        "cosine_similarity": 0.3008,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 212869,
+        "token": "boneless",
+        "token_repr": "' boneless'",
+        "cosine_similarity": 0.2988,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 197858,
+        "token": "골",
+        "token_repr": "' 골'",
+        "cosine_similarity": 0.2969,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 113357,
+        "token": "Skeleton",
+        "token_repr": "' Skeleton'",
+        "cosine_similarity": 0.291,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 135445,
+        "token": "osteoporosis",
+        "token_repr": "' osteoporosis'",
+        "cosine_similarity": 0.2891,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 115457,
+        "token": "skeletons",
+        "token_repr": "' skeletons'",
+        "cosine_similarity": 0.2793,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 9191,
+        "token": "Bon",
+        "token_repr": "' Bon'",
+        "cosine_similarity": 0.2773,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 37262,
+        "token": "spine",
+        "token_repr": "' spine'",
+        "cosine_similarity": 0.2715,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 82426,
+        "token": "cartilage",
+        "token_repr": "' cartilage'",
+        "cosine_similarity": 0.2695,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 225171,
+        "token": "Marrow",
+        "token_repr": "' Marrow'",
+        "cosine_similarity": 0.2695,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 168600,
+        "token": "kości",
+        "token_repr": "' kości'",
+        "cosine_similarity": 0.2676,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 143086,
+        "token": "femur",
+        "token_repr": "' femur'",
+        "cosine_similarity": 0.2637,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 15990,
+        "token": "muscle",
+        "token_repr": "' muscle'",
+        "cosine_similarity": 0.2578,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 139465,
+        "token": "osteo",
+        "token_repr": "' osteo'",
+        "cosine_similarity": 0.25,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 218000,
+        "token": "musculoskeletal",
+        "token_repr": "' musculoskeletal'",
+        "cosine_similarity": 0.25,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 159894,
+        "token": "orthopedic",
+        "token_repr": "' orthopedic'",
+        "cosine_similarity": 0.2461,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 155450,
+        "token": "vertebrae",
+        "token_repr": "' vertebrae'",
+        "cosine_similarity": 0.2441,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 20791,
+        "token": "rib",
+        "token_repr": "' rib'",
+        "cosine_similarity": 0.2432,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 195266,
+        "token": "boni",
+        "token_repr": "'boni'",
+        "cosine_similarity": 0.2402,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 9566,
+        "token": "stone",
+        "token_repr": "' stone'",
+        "cosine_similarity": 0.2393,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 40977,
+        "token": "fracture",
+        "token_repr": "' fracture'",
+        "cosine_similarity": 0.2393,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 231240,
+        "token": "BMD",
+        "token_repr": "' BMD'",
+        "cosine_similarity": 0.2363,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 25606,
+        "token": "nerve",
+        "token_repr": "' nerve'",
+        "cosine_similarity": 0.2354,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 80018,
+        "token": "Skull",
+        "token_repr": "' Skull'",
+        "cosine_similarity": 0.2354,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 123532,
+        "token": "Spine",
+        "token_repr": "' Spine'",
+        "cosine_similarity": 0.2344,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 112216,
+        "token": "STONE",
+        "token_repr": "' STONE'",
+        "cosine_similarity": 0.2334,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TX": 0,
+        "TL": 19,
+        "SY": 0,
+        "MO": 7,
+        "UR": 1,
+        "CO": 0,
+        "NEEDS_REVIEW": 23
+      },
+      "langue_TL_SY_TX": 19,
+      "parole_CO": 0,
+      "needs_review": 23,
+      "langue_pct_of_all": 38.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 14354,
+        "token": "bone",
+        "token_repr": "' bone'",
+        "cosine_similarity": 0.9961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 41256,
+        "token": "Bone",
+        "token_repr": "' Bone'",
+        "cosine_similarity": 0.8477,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 22241,
+        "token": "bones",
+        "token_repr": "' bones'",
+        "cosine_similarity": 0.6836,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 208844,
+        "token": "BONE",
+        "token_repr": "'BONE'",
+        "cosine_similarity": 0.6289,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 72566,
+        "token": "Bones",
+        "token_repr": "' Bones'",
+        "cosine_similarity": 0.5508,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 118929,
+        "token": "bony",
+        "token_repr": "' bony'",
+        "cosine_similarity": 0.4219,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 74586,
+        "token": "skeletal",
+        "token_repr": "' skeletal'",
+        "cosine_similarity": 0.3633,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 43974,
+        "token": "skeleton",
+        "token_repr": "' skeleton'",
+        "cosine_similarity": 0.3418,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 67472,
+        "token": "marrow",
+        "token_repr": "' marrow'",
+        "cosine_similarity": 0.3379,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 224312,
+        "token": "Skeletal",
+        "token_repr": "' Skeletal'",
+        "cosine_similarity": 0.3125,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 26073,
+        "token": "skull",
+        "token_repr": "' skull'",
+        "cosine_similarity": 0.3008,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 212869,
+        "token": "boneless",
+        "token_repr": "' boneless'",
+        "cosine_similarity": 0.2988,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'bone'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 113357,
+        "token": "Skeleton",
+        "token_repr": "' Skeleton'",
+        "cosine_similarity": 0.291,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 135445,
+        "token": "osteoporosis",
+        "token_repr": "' osteoporosis'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 115457,
+        "token": "skeletons",
+        "token_repr": "' skeletons'",
+        "cosine_similarity": 0.2793,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 37262,
+        "token": "spine",
+        "token_repr": "' spine'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 82426,
+        "token": "cartilage",
+        "token_repr": "' cartilage'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 225171,
+        "token": "Marrow",
+        "token_repr": "' Marrow'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 143086,
+        "token": "femur",
+        "token_repr": "' femur'",
+        "cosine_similarity": 0.2637,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 15990,
+        "token": "muscle",
+        "token_repr": "' muscle'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 218000,
+        "token": "musculoskeletal",
+        "token_repr": "' musculoskeletal'",
+        "cosine_similarity": 0.25,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 159894,
+        "token": "orthopedic",
+        "token_repr": "' orthopedic'",
+        "cosine_similarity": 0.2461,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 155450,
+        "token": "vertebrae",
+        "token_repr": "' vertebrae'",
+        "cosine_similarity": 0.2441,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 20791,
+        "token": "rib",
+        "token_repr": "' rib'",
+        "cosine_similarity": 0.2432,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 9566,
+        "token": "stone",
+        "token_repr": "' stone'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 40977,
+        "token": "fracture",
+        "token_repr": "' fracture'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 231240,
+        "token": "BMD",
+        "token_repr": "' BMD'",
+        "cosine_similarity": 0.2363,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 25606,
+        "token": "nerve",
+        "token_repr": "' nerve'",
+        "cosine_similarity": 0.2354,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 80018,
+        "token": "Skull",
+        "token_repr": "' Skull'",
+        "cosine_similarity": 0.2354,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 123532,
+        "token": "Spine",
+        "token_repr": "' Spine'",
+        "cosine_similarity": 0.2344,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 112216,
+        "token": "STONE",
+        "token_repr": "' STONE'",
+        "cosine_similarity": 0.2334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 9494,
+        "token": "brain",
+        "token_repr": "' brain'",
+        "cosine_similarity": 0.2305,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 5239,
+        "token": "skin",
+        "token_repr": "' skin'",
+        "cosine_similarity": 0.2266,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 210696,
+        "token": "BLOOD",
+        "token_repr": "'BLOOD'",
+        "cosine_similarity": 0.2227,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 60935,
+        "token": "Muscle",
+        "token_repr": "' Muscle'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 90372,
+        "token": "tendon",
+        "token_repr": "' tendon'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 104677,
+        "token": "vertebra",
+        "token_repr": "' vertebra'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 170275,
+        "token": "knuckle",
+        "token_repr": "' knuckle'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 129307,
+        "token": "Fracture",
+        "token_repr": "' Fracture'",
+        "cosine_similarity": 0.2197,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 107896,
+        "token": "skulls",
+        "token_repr": "' skulls'",
+        "cosine_similarity": 0.2178,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 103338,
+        "token": "tibia",
+        "token_repr": "' tibia'",
+        "cosine_similarity": 0.2148,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 25657,
+        "token": "jaw",
+        "token_repr": "' jaw'",
+        "cosine_similarity": 0.2139,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 46684,
+        "token": "spinal",
+        "token_repr": "' spinal'",
+        "cosine_similarity": 0.2139,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 67106,
+        "token": "fractures",
+        "token_repr": "' fractures'",
+        "cosine_similarity": 0.2119,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 76153,
+        "token": "backbone",
+        "token_repr": "' backbone'",
+        "cosine_similarity": 0.2119,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 20120,
+        "token": "Skin",
+        "token_repr": "' Skin'",
+        "cosine_similarity": 0.2109,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 20659,
+        "token": "tooth",
+        "token_repr": "' tooth'",
+        "cosine_similarity": 0.209,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 48259,
+        "token": "ribs",
+        "token_repr": "' ribs'",
+        "cosine_similarity": 0.207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 129260,
+        "token": "vertebral",
+        "token_repr": "' vertebral'",
+        "cosine_similarity": 0.2061,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 130258,
+        "token": "Nerve",
+        "token_repr": "' Nerve'",
+        "cosine_similarity": 0.2061,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TX": 0,
+        "TL": 0,
+        "SY": 0,
+        "MO": 7,
+        "UR": 0,
+        "CO": 0,
+        "NEEDS_REVIEW": 43
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 43,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
