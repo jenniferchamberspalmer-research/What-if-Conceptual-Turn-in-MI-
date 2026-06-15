@@ -1,0 +1,1108 @@
+{
+  "word": "hand",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " hand"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 1634,
+        "token": "hand",
+        "token_repr": "' hand'",
+        "cosine_similarity": 1.0078,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 6442,
+        "token": "Hand",
+        "token_repr": "' Hand'",
+        "cosine_similarity": 0.8008,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 39287,
+        "token": "HAND",
+        "token_repr": "' HAND'",
+        "cosine_similarity": 0.6992,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 235616,
+        "token": "手",
+        "token_repr": "'手'",
+        "cosine_similarity": 0.5156,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 4961,
+        "token": "hands",
+        "token_repr": "' hands'",
+        "cosine_similarity": 0.5078,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 73321,
+        "token": "ハンド",
+        "token_repr": "'ハンド'",
+        "cosine_similarity": 0.4844,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 25678,
+        "token": "handed",
+        "token_repr": "' handed'",
+        "cosine_similarity": 0.4258,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 113333,
+        "token": "手的",
+        "token_repr": "'手的'",
+        "cosine_similarity": 0.4082,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 46312,
+        "token": "的手",
+        "token_repr": "'的手'",
+        "cosine_similarity": 0.3906,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 78925,
+        "token": "handing",
+        "token_repr": "' handing'",
+        "cosine_similarity": 0.3828,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 88486,
+        "token": "hånd",
+        "token_repr": "' hånd'",
+        "cosine_similarity": 0.3711,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 13445,
+        "token": "mano",
+        "token_repr": "' mano'",
+        "cosine_similarity": 0.3691,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 21976,
+        "token": "دست",
+        "token_repr": "' دست'",
+        "cosine_similarity": 0.3691,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 36279,
+        "token": "Hands",
+        "token_repr": "' Hands'",
+        "cosine_similarity": 0.3691,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 4790,
+        "token": "han",
+        "token_repr": "' han'",
+        "cosine_similarity": 0.3438,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 156205,
+        "token": "手で",
+        "token_repr": "'手で'",
+        "cosine_similarity": 0.3438,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 56071,
+        "token": "rę",
+        "token_repr": "' rę'",
+        "cosine_similarity": 0.3301,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 64710,
+        "token": "руки",
+        "token_repr": "' руки'",
+        "cosine_similarity": 0.3262,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 76969,
+        "token": "の手",
+        "token_repr": "'の手'",
+        "cosine_similarity": 0.3262,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 196988,
+        "token": "हाथ",
+        "token_repr": "' हाथ'",
+        "cosine_similarity": 0.3262,
+        "language": "hi/deva",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 75963,
+        "token": "thand",
+        "token_repr": "'thand'",
+        "cosine_similarity": 0.3223,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 86381,
+        "token": "手の",
+        "token_repr": "'手の'",
+        "cosine_similarity": 0.3223,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 23,
+        "token_id": 88828,
+        "token": "手を",
+        "token_repr": "'手を'",
+        "cosine_similarity": 0.3223,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 120995,
+        "token": "руку",
+        "token_repr": "' руку'",
+        "cosine_similarity": 0.3223,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 97641,
+        "token": "handheld",
+        "token_repr": "' handheld'",
+        "cosine_similarity": 0.3184,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 191255,
+        "token": "HANDS",
+        "token_repr": "' HANDS'",
+        "cosine_similarity": 0.3184,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 38834,
+        "token": "tangan",
+        "token_repr": "' tangan'",
+        "cosine_similarity": 0.3145,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 194312,
+        "token": "руке",
+        "token_repr": "' руке'",
+        "cosine_similarity": 0.3125,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 29,
+        "token_id": 34576,
+        "token": "handmade",
+        "token_repr": "' handmade'",
+        "cosine_similarity": 0.3105,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 47717,
+        "token": "mão",
+        "token_repr": "' mão'",
+        "cosine_similarity": 0.2988,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 138522,
+        "token": "手上",
+        "token_repr": "'手上'",
+        "cosine_similarity": 0.2988,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 29529,
+        "token": "manos",
+        "token_repr": "' manos'",
+        "cosine_similarity": 0.2969,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 64268,
+        "token": "手に",
+        "token_repr": "'手に'",
+        "cosine_similarity": 0.2852,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 102492,
+        "token": "มือ",
+        "token_repr": "'มือ'",
+        "cosine_similarity": 0.2852,
+        "language": "th",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 119724,
+        "token": "手が",
+        "token_repr": "'手が'",
+        "cosine_similarity": 0.2832,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 112481,
+        "token": "рук",
+        "token_repr": "' рук'",
+        "cosine_similarity": 0.2695,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 37,
+        "token_id": 244079,
+        "token": "핸",
+        "token_repr": "'핸'",
+        "cosine_similarity": 0.2695,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 38,
+        "token_id": 125011,
+        "token": "руках",
+        "token_repr": "' руках'",
+        "cosine_similarity": 0.2676,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 208864,
+        "token": "اليد",
+        "token_repr": "' اليد'",
+        "cosine_similarity": 0.2656,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 94355,
+        "token": "手中",
+        "token_repr": "'手中'",
+        "cosine_similarity": 0.2637,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 7762,
+        "token": "arm",
+        "token_repr": "' arm'",
+        "cosine_similarity": 0.2598,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 42,
+        "token_id": 126334,
+        "token": "handcrafted",
+        "token_repr": "' handcrafted'",
+        "cosine_similarity": 0.2539,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 13864,
+        "token": "finger",
+        "token_repr": "' finger'",
+        "cosine_similarity": 0.25,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 113126,
+        "token": "ръ",
+        "token_repr": "' ръ'",
+        "cosine_similarity": 0.2461,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 185047,
+        "token": "を手",
+        "token_repr": "'を手'",
+        "cosine_similarity": 0.2441,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 8497,
+        "token": "Han",
+        "token_repr": "' Han'",
+        "cosine_similarity": 0.2422,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 47,
+        "token_id": 180316,
+        "token": "hander",
+        "token_repr": "'hander'",
+        "cosine_similarity": 0.2422,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 48,
+        "token_id": 6589,
+        "token": "handle",
+        "token_repr": "' handle'",
+        "cosine_similarity": 0.2402,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 212971,
+        "token": "手掌",
+        "token_repr": "'手掌'",
+        "cosine_similarity": 0.2402,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 50,
+        "token_id": 167858,
+        "token": "用手",
+        "token_repr": "'用手'",
+        "cosine_similarity": 0.2393,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'hand'.",
+        "code_confident": true
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TL": 32,
+        "TX": 0,
+        "UR": 2,
+        "CO": 0,
+        "SY": 0,
+        "MO": 9,
+        "NEEDS_REVIEW": 7
+      },
+      "langue_TL_SY_TX": 32,
+      "parole_CO": 0,
+      "needs_review": 7,
+      "langue_pct_of_all": 64.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 1634,
+        "token": "hand",
+        "token_repr": "' hand'",
+        "cosine_similarity": 1.0078,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 6442,
+        "token": "Hand",
+        "token_repr": "' Hand'",
+        "cosine_similarity": 0.8008,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 39287,
+        "token": "HAND",
+        "token_repr": "' HAND'",
+        "cosine_similarity": 0.6992,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 4961,
+        "token": "hands",
+        "token_repr": "' hands'",
+        "cosine_similarity": 0.5078,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 25678,
+        "token": "handed",
+        "token_repr": "' handed'",
+        "cosine_similarity": 0.4258,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 78925,
+        "token": "handing",
+        "token_repr": "' handing'",
+        "cosine_similarity": 0.3828,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 36279,
+        "token": "Hands",
+        "token_repr": "' Hands'",
+        "cosine_similarity": 0.3691,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 97641,
+        "token": "handheld",
+        "token_repr": "' handheld'",
+        "cosine_similarity": 0.3184,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 191255,
+        "token": "HANDS",
+        "token_repr": "' HANDS'",
+        "cosine_similarity": 0.3184,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 34576,
+        "token": "handmade",
+        "token_repr": "' handmade'",
+        "cosine_similarity": 0.3105,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 7762,
+        "token": "arm",
+        "token_repr": "' arm'",
+        "cosine_similarity": 0.2598,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 126334,
+        "token": "handcrafted",
+        "token_repr": "' handcrafted'",
+        "cosine_similarity": 0.2539,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 13864,
+        "token": "finger",
+        "token_repr": "' finger'",
+        "cosine_similarity": 0.25,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 180316,
+        "token": "hander",
+        "token_repr": "'hander'",
+        "cosine_similarity": 0.2422,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'hand'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 6589,
+        "token": "handle",
+        "token_repr": "' handle'",
+        "cosine_similarity": 0.2402,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 9804,
+        "token": "manual",
+        "token_repr": "' manual'",
+        "cosine_similarity": 0.2363,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 209092,
+        "token": "handover",
+        "token_repr": "' handover'",
+        "cosine_similarity": 0.2344,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 176358,
+        "token": "handa",
+        "token_repr": "'handa'",
+        "cosine_similarity": 0.2314,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 158459,
+        "token": "handset",
+        "token_repr": "' handset'",
+        "cosine_similarity": 0.2305,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 4701,
+        "token": "foot",
+        "token_repr": "' foot'",
+        "cosine_similarity": 0.2139,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 582,
+        "token": "re",
+        "token_repr": "' re'",
+        "cosine_similarity": 0.2041,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 531,
+        "token": "h",
+        "token_repr": "' h'",
+        "cosine_similarity": 0.2031,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 24789,
+        "token": "palm",
+        "token_repr": "' palm'",
+        "cosine_similarity": 0.2002,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 183328,
+        "token": "handi",
+        "token_repr": "' handi'",
+        "cosine_similarity": 0.1973,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 583,
+        "token": "g",
+        "token_repr": "' g'",
+        "cosine_similarity": 0.1953,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 871,
+        "token": "go",
+        "token_repr": "' go'",
+        "cosine_similarity": 0.1934,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 474,
+        "token": "t",
+        "token_repr": "' t'",
+        "cosine_similarity": 0.1924,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 1142,
+        "token": "set",
+        "token_repr": "' set'",
+        "cosine_similarity": 0.1924,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 503,
+        "token": "p",
+        "token_repr": "' p'",
+        "cosine_similarity": 0.1914,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 953,
+        "token": "pre",
+        "token_repr": "' pre'",
+        "cosine_similarity": 0.1904,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 517,
+        "token": "f",
+        "token_repr": "' f'",
+        "cosine_similarity": 0.1895,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 3142,
+        "token": "face",
+        "token_repr": "' face'",
+        "cosine_similarity": 0.1885,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 82907,
+        "token": "handbook",
+        "token_repr": "' handbook'",
+        "cosine_similarity": 0.1875,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 749,
+        "token": "do",
+        "token_repr": "' do'",
+        "cosine_similarity": 0.1865,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 2206,
+        "token": "head",
+        "token_repr": "' head'",
+        "cosine_similarity": 0.1865,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 575,
+        "token": "in",
+        "token_repr": "' in'",
+        "cosine_similarity": 0.1846,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 518,
+        "token": "b",
+        "token_repr": "' b'",
+        "cosine_similarity": 0.1836,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 614,
+        "token": "be",
+        "token_repr": "' be'",
+        "cosine_similarity": 0.1836,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 6312,
+        "token": "eye",
+        "token_repr": "' eye'",
+        "cosine_similarity": 0.1836,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 1580,
+        "token": "end",
+        "token_repr": "' end'",
+        "cosine_similarity": 0.1816,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 30082,
+        "token": "manually",
+        "token_repr": "' manually'",
+        "cosine_similarity": 0.1807,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 476,
+        "token": "a",
+        "token_repr": "' a'",
+        "cosine_similarity": 0.1787,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 519,
+        "token": "m",
+        "token_repr": "' m'",
+        "cosine_similarity": 0.1787,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 947,
+        "token": "get",
+        "token_repr": "' get'",
+        "cosine_similarity": 0.1787,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 832,
+        "token": "all",
+        "token_repr": "' all'",
+        "cosine_similarity": 0.1777,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 1536,
+        "token": "high",
+        "token_repr": "' high'",
+        "cosine_similarity": 0.1777,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 3118,
+        "token": "red",
+        "token_repr": "' red'",
+        "cosine_similarity": 0.1777,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 974,
+        "token": "one",
+        "token_repr": "' one'",
+        "cosine_similarity": 0.1768,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 2590,
+        "token": "leg",
+        "token_repr": "' leg'",
+        "cosine_similarity": 0.1768,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 2078,
+        "token": "home",
+        "token_repr": "' home'",
+        "cosine_similarity": 0.1758,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "TL": 0,
+        "TX": 0,
+        "UR": 0,
+        "CO": 0,
+        "SY": 0,
+        "MO": 9,
+        "NEEDS_REVIEW": 41
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 41,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
