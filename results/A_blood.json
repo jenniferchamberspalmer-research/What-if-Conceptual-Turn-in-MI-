@@ -1,0 +1,1108 @@
+{
+  "word": "blood",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " blood"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 5330,
+        "token": "blood",
+        "token_repr": "' blood'",
+        "cosine_similarity": 1.0,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 16329,
+        "token": "Blood",
+        "token_repr": "' Blood'",
+        "cosine_similarity": 0.8398,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 123873,
+        "token": "BLOOD",
+        "token_repr": "' BLOOD'",
+        "cosine_similarity": 0.7305,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 236587,
+        "token": "血",
+        "token_repr": "'血'",
+        "cosine_similarity": 0.6406,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 46807,
+        "token": "sangre",
+        "token_repr": "' sangre'",
+        "cosine_similarity": 0.5664,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 55273,
+        "token": "Blut",
+        "token_repr": "' Blut'",
+        "cosine_similarity": 0.5547,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 148772,
+        "token": "blod",
+        "token_repr": "' blod'",
+        "cosine_similarity": 0.5547,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 184378,
+        "token": "的血",
+        "token_repr": "'的血'",
+        "cosine_similarity": 0.543,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 87615,
+        "token": "血液",
+        "token_repr": "'血液'",
+        "cosine_similarity": 0.5312,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 129926,
+        "token": "bloed",
+        "token_repr": "' bloed'",
+        "cosine_similarity": 0.5195,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 63844,
+        "token": "sangue",
+        "token_repr": "' sangue'",
+        "cosine_similarity": 0.5,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 106137,
+        "token": "крови",
+        "token_repr": "' крови'",
+        "cosine_similarity": 0.4941,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 243838,
+        "token": "혈",
+        "token_repr": "'혈'",
+        "cosine_similarity": 0.4668,
+        "language": "ko",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ko); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 69610,
+        "token": "darah",
+        "token_repr": "' darah'",
+        "cosine_similarity": 0.4531,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 191062,
+        "token": "кровь",
+        "token_repr": "' кровь'",
+        "cosine_similarity": 0.4473,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 83698,
+        "token": "خون",
+        "token_repr": "' خون'",
+        "cosine_similarity": 0.4355,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 108537,
+        "token": "máu",
+        "token_repr": "' máu'",
+        "cosine_similarity": 0.4336,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 84730,
+        "token": "кров",
+        "token_repr": "' кров'",
+        "cosine_similarity": 0.4141,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 38191,
+        "token": "bloody",
+        "token_repr": "' bloody'",
+        "cosine_similarity": 0.3828,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 176875,
+        "token": "鲜血",
+        "token_repr": "'鲜血'",
+        "cosine_similarity": 0.3672,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 165788,
+        "token": "bloodstream",
+        "token_repr": "' bloodstream'",
+        "cosine_similarity": 0.3633,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 163256,
+        "token": "bloodshed",
+        "token_repr": "' bloodshed'",
+        "cosine_similarity": 0.3594,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 125458,
+        "token": "الدم",
+        "token_repr": "' الدم'",
+        "cosine_similarity": 0.3574,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 133490,
+        "token": "крово",
+        "token_repr": "' крово'",
+        "cosine_similarity": 0.3457,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 54635,
+        "token": "sangu",
+        "token_repr": "' sangu'",
+        "cosine_similarity": 0.3379,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 167793,
+        "token": "blooded",
+        "token_repr": "'blooded'",
+        "cosine_similarity": 0.332,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 138714,
+        "token": "sanguí",
+        "token_repr": "' sanguí'",
+        "cosine_similarity": 0.3301,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 195787,
+        "token": "krwi",
+        "token_repr": "' krwi'",
+        "cosine_similarity": 0.3145,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 29,
+        "token_id": 3552,
+        "token": "blo",
+        "token_repr": "' blo'",
+        "cosine_similarity": 0.291,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 152114,
+        "token": "кръ",
+        "token_repr": "' кръ'",
+        "cosine_similarity": 0.2754,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 31,
+        "token_id": 35717,
+        "token": "bleeding",
+        "token_repr": "' bleeding'",
+        "cosine_similarity": 0.2695,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 111967,
+        "token": "Bloody",
+        "token_repr": "' Bloody'",
+        "cosine_similarity": 0.2656,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 245282,
+        "token": "🩸",
+        "token_repr": "'🩸'",
+        "cosine_similarity": 0.2656,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 155998,
+        "token": "blut",
+        "token_repr": "'blut'",
+        "cosine_similarity": 0.2617,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 157701,
+        "token": "huyết",
+        "token_repr": "' huyết'",
+        "cosine_similarity": 0.2617,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 22874,
+        "token": "plasma",
+        "token_repr": "' plasma'",
+        "cosine_similarity": 0.252,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 68035,
+        "token": "hemat",
+        "token_repr": "' hemat'",
+        "cosine_similarity": 0.2412,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 38,
+        "token_id": 123512,
+        "token": "vér",
+        "token_repr": "' vér'",
+        "cosine_similarity": 0.2354,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 217040,
+        "token": "lood",
+        "token_repr": "'lood'",
+        "cosine_similarity": 0.2354,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 24030,
+        "token": "serum",
+        "token_repr": "' serum'",
+        "cosine_similarity": 0.2334,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 113142,
+        "token": "血管",
+        "token_repr": "'血管'",
+        "cosine_similarity": 0.2197,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 42,
+        "token_id": 167077,
+        "token": "ब्ल",
+        "token_repr": "' ब्ल'",
+        "cosine_similarity": 0.2178,
+        "language": "hi/deva",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 43,
+        "token_id": 67083,
+        "token": "bleed",
+        "token_repr": "' bleed'",
+        "cosine_similarity": 0.2129,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 78966,
+        "token": "haem",
+        "token_repr": "' haem'",
+        "cosine_similarity": 0.2119,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 153008,
+        "token": "出血",
+        "token_repr": "'出血'",
+        "cosine_similarity": 0.21,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 198050,
+        "token": "血压",
+        "token_repr": "'血压'",
+        "cosine_similarity": 0.21,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 47,
+        "token_id": 143964,
+        "token": "крова",
+        "token_repr": "' крова'",
+        "cosine_similarity": 0.207,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 48,
+        "token_id": 122880,
+        "token": "bled",
+        "token_repr": "' bled'",
+        "cosine_similarity": 0.2051,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 221621,
+        "token": "热血",
+        "token_repr": "'热血'",
+        "cosine_similarity": 0.2041,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 50,
+        "token_id": 14354,
+        "token": "bone",
+        "token_repr": "' bone'",
+        "cosine_similarity": 0.2021,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 2,
+        "MO": 6,
+        "TX": 0,
+        "SY": 0,
+        "TL": 31,
+        "CO": 0,
+        "NEEDS_REVIEW": 11
+      },
+      "langue_TL_SY_TX": 31,
+      "parole_CO": 0,
+      "needs_review": 11,
+      "langue_pct_of_all": 62.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 5330,
+        "token": "blood",
+        "token_repr": "' blood'",
+        "cosine_similarity": 1.0,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 16329,
+        "token": "Blood",
+        "token_repr": "' Blood'",
+        "cosine_similarity": 0.8398,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 123873,
+        "token": "BLOOD",
+        "token_repr": "' BLOOD'",
+        "cosine_similarity": 0.7305,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 38191,
+        "token": "bloody",
+        "token_repr": "' bloody'",
+        "cosine_similarity": 0.3828,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 165788,
+        "token": "bloodstream",
+        "token_repr": "' bloodstream'",
+        "cosine_similarity": 0.3633,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 6,
+        "token_id": 163256,
+        "token": "bloodshed",
+        "token_repr": "' bloodshed'",
+        "cosine_similarity": 0.3594,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 7,
+        "token_id": 167793,
+        "token": "blooded",
+        "token_repr": "'blooded'",
+        "cosine_similarity": 0.332,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 35717,
+        "token": "bleeding",
+        "token_repr": "' bleeding'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 111967,
+        "token": "Bloody",
+        "token_repr": "' Bloody'",
+        "cosine_similarity": 0.2656,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'blood'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 22874,
+        "token": "plasma",
+        "token_repr": "' plasma'",
+        "cosine_similarity": 0.252,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 24030,
+        "token": "serum",
+        "token_repr": "' serum'",
+        "cosine_similarity": 0.2334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 67083,
+        "token": "bleed",
+        "token_repr": "' bleed'",
+        "cosine_similarity": 0.2129,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 122880,
+        "token": "bled",
+        "token_repr": "' bled'",
+        "cosine_similarity": 0.2051,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 14354,
+        "token": "bone",
+        "token_repr": "' bone'",
+        "cosine_similarity": 0.2021,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 47042,
+        "token": "vascular",
+        "token_repr": "' vascular'",
+        "cosine_similarity": 0.2021,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 19641,
+        "token": "diabetes",
+        "token_repr": "' diabetes'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 135578,
+        "token": "transfusion",
+        "token_repr": "' transfusion'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 34869,
+        "token": "urine",
+        "token_repr": "' urine'",
+        "cosine_similarity": 0.1973,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 35970,
+        "token": "gore",
+        "token_repr": "' gore'",
+        "cosine_similarity": 0.1963,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 62652,
+        "token": "arterial",
+        "token_repr": "' arterial'",
+        "cosine_similarity": 0.1953,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 9512,
+        "token": "milk",
+        "token_repr": "' milk'",
+        "cosine_similarity": 0.1904,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 169445,
+        "token": "circulatory",
+        "token_repr": "' circulatory'",
+        "cosine_similarity": 0.1904,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 146333,
+        "token": "sanguine",
+        "token_repr": "' sanguine'",
+        "cosine_similarity": 0.1885,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 8360,
+        "token": "soil",
+        "token_repr": "' soil'",
+        "cosine_similarity": 0.1875,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 102702,
+        "token": "venous",
+        "token_repr": "' venous'",
+        "cosine_similarity": 0.1875,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 24501,
+        "token": "sweat",
+        "token_repr": "' sweat'",
+        "cosine_similarity": 0.1855,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 11999,
+        "token": "DNA",
+        "token_repr": "' DNA'",
+        "cosine_similarity": 0.1816,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 30859,
+        "token": "glucose",
+        "token_repr": "' glucose'",
+        "cosine_similarity": 0.1797,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 2003,
+        "token": "water",
+        "token_repr": "' water'",
+        "cosine_similarity": 0.1777,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 105358,
+        "token": "hemoglobin",
+        "token_repr": "' hemoglobin'",
+        "cosine_similarity": 0.1738,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 21871,
+        "token": "biological",
+        "token_repr": "' biological'",
+        "cosine_similarity": 0.1729,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 5239,
+        "token": "skin",
+        "token_repr": "' skin'",
+        "cosine_similarity": 0.1709,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 59110,
+        "token": "Plasma",
+        "token_repr": "' Plasma'",
+        "cosine_similarity": 0.1689,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 9494,
+        "token": "brain",
+        "token_repr": "' brain'",
+        "cosine_similarity": 0.167,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 47782,
+        "token": "artery",
+        "token_repr": "' artery'",
+        "cosine_similarity": 0.166,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 5054,
+        "token": "hair",
+        "token_repr": "' hair'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 9347,
+        "token": "sugar",
+        "token_repr": "' sugar'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 25023,
+        "token": "flesh",
+        "token_repr": "' flesh'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 64993,
+        "token": "Serum",
+        "token_repr": "' Serum'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 217821,
+        "token": "gory",
+        "token_repr": "' gory'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 225742,
+        "token": "Bleeding",
+        "token_repr": "'Bleeding'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 2681,
+        "token": "air",
+        "token_repr": "' air'",
+        "cosine_similarity": 0.1641,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 115308,
+        "token": "hemorrhage",
+        "token_repr": "' hemorrhage'",
+        "cosine_similarity": 0.1602,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 14976,
+        "token": "tissue",
+        "token_repr": "' tissue'",
+        "cosine_similarity": 0.1592,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 45365,
+        "token": "cholesterol",
+        "token_repr": "' cholesterol'",
+        "cosine_similarity": 0.1592,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 218477,
+        "token": "bleeds",
+        "token_repr": "' bleeds'",
+        "cosine_similarity": 0.1592,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 3118,
+        "token": "red",
+        "token_repr": "' red'",
+        "cosine_similarity": 0.1582,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 22241,
+        "token": "bones",
+        "token_repr": "' bones'",
+        "cosine_similarity": 0.1572,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 3760,
+        "token": "heart",
+        "token_repr": "' heart'",
+        "cosine_similarity": 0.1562,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 4684,
+        "token": "oil",
+        "token_repr": "' oil'",
+        "cosine_similarity": 0.1533,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 0,
+        "MO": 6,
+        "TX": 0,
+        "SY": 0,
+        "TL": 0,
+        "CO": 0,
+        "NEEDS_REVIEW": 44
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 44,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
