@@ -1,0 +1,1108 @@
+{
+  "word": "fire",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " fire"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 3967,
+        "token": "fire",
+        "token_repr": "' fire'",
+        "cosine_similarity": 0.9961,
+        "language": "nb",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 7750,
+        "token": "Fire",
+        "token_repr": "' Fire'",
+        "cosine_similarity": 0.8398,
+        "language": "nb",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 56719,
+        "token": "FIRE",
+        "token_repr": "' FIRE'",
+        "cosine_similarity": 0.7383,
+        "language": "nb",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 29374,
+        "token": "fires",
+        "token_repr": "' fires'",
+        "cosine_similarity": 0.6328,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 44179,
+        "token": "fuego",
+        "token_repr": "' fuego'",
+        "cosine_similarity": 0.5352,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 236295,
+        "token": "火",
+        "token_repr": "'火'",
+        "cosine_similarity": 0.5195,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 22407,
+        "token": "fired",
+        "token_repr": "' fired'",
+        "cosine_similarity": 0.4863,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 110121,
+        "token": "Fires",
+        "token_repr": "' Fires'",
+        "cosine_similarity": 0.4727,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 145818,
+        "token": "آتش",
+        "token_repr": "' آتش'",
+        "cosine_similarity": 0.4297,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 34563,
+        "token": "firing",
+        "token_repr": "' firing'",
+        "cosine_similarity": 0.418,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 47502,
+        "token": "Feuer",
+        "token_repr": "' Feuer'",
+        "cosine_similarity": 0.416,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 69482,
+        "token": "firefighters",
+        "token_repr": "' firefighters'",
+        "cosine_similarity": 0.416,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 219413,
+        "token": "火的",
+        "token_repr": "'火的'",
+        "cosine_similarity": 0.416,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 97281,
+        "token": "fogo",
+        "token_repr": "' fogo'",
+        "cosine_similarity": 0.4141,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 43485,
+        "token": "fireplace",
+        "token_repr": "' fireplace'",
+        "cosine_similarity": 0.3906,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 159284,
+        "token": "огонь",
+        "token_repr": "' огонь'",
+        "cosine_similarity": 0.3906,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 170619,
+        "token": "пожар",
+        "token_repr": "' пожар'",
+        "cosine_similarity": 0.3867,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 215834,
+        "token": "firefighting",
+        "token_repr": "' firefighting'",
+        "cosine_similarity": 0.3848,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 226151,
+        "token": "огня",
+        "token_repr": "' огня'",
+        "cosine_similarity": 0.3848,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 135718,
+        "token": "firefighter",
+        "token_repr": "' firefighter'",
+        "cosine_similarity": 0.3828,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 138020,
+        "token": "wildfire",
+        "token_repr": "' wildfire'",
+        "cosine_similarity": 0.3828,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 24502,
+        "token": "flame",
+        "token_repr": "' flame'",
+        "cosine_similarity": 0.3809,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 111622,
+        "token": "feuer",
+        "token_repr": "'feuer'",
+        "cosine_similarity": 0.3613,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 124779,
+        "token": "火焰",
+        "token_repr": "'火焰'",
+        "cosine_similarity": 0.3574,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 170843,
+        "token": "огне",
+        "token_repr": "' огне'",
+        "cosine_similarity": 0.3555,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 39474,
+        "token": "flames",
+        "token_repr": "' flames'",
+        "cosine_similarity": 0.3535,
+        "language": "ca",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ca); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 99096,
+        "token": "消防",
+        "token_repr": "'消防'",
+        "cosine_similarity": 0.3535,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 71684,
+        "token": "fiery",
+        "token_repr": "' fiery'",
+        "cosine_similarity": 0.3418,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 89156,
+        "token": "fuoco",
+        "token_repr": "' fuoco'",
+        "cosine_similarity": 0.332,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 171764,
+        "token": "vuur",
+        "token_repr": "' vuur'",
+        "cosine_similarity": 0.332,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 31,
+        "token_id": 122838,
+        "token": "incendio",
+        "token_repr": "' incendio'",
+        "cosine_similarity": 0.3301,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 28153,
+        "token": "feu",
+        "token_repr": "' feu'",
+        "cosine_similarity": 0.3242,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 192914,
+        "token": "Fired",
+        "token_repr": "' Fired'",
+        "cosine_similarity": 0.3223,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 215228,
+        "token": "Fireplace",
+        "token_repr": "' Fireplace'",
+        "cosine_similarity": 0.3203,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 199642,
+        "token": "防火",
+        "token_repr": "'防火'",
+        "cosine_similarity": 0.3105,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 187678,
+        "token": "fireman",
+        "token_repr": "' fireman'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 205833,
+        "token": "firemen",
+        "token_repr": "' firemen'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 200569,
+        "token": "kebakaran",
+        "token_repr": "' kebakaran'",
+        "cosine_similarity": 0.2949,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 222123,
+        "token": "Firing",
+        "token_repr": "'Firing'",
+        "cosine_similarity": 0.2949,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 72466,
+        "token": "firewall",
+        "token_repr": "' firewall'",
+        "cosine_similarity": 0.2891,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 41909,
+        "token": "ог",
+        "token_repr": "' ог'",
+        "cosine_similarity": 0.2852,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 42,
+        "token_id": 189822,
+        "token": "النار",
+        "token_repr": "' النار'",
+        "cosine_similarity": 0.2852,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 43,
+        "token_id": 195125,
+        "token": "fireball",
+        "token_repr": "' fireball'",
+        "cosine_similarity": 0.2852,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 176445,
+        "token": "wildfires",
+        "token_repr": "' wildfires'",
+        "cosine_similarity": 0.2832,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 69616,
+        "token": "blaze",
+        "token_repr": "' blaze'",
+        "cosine_similarity": 0.2812,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 61739,
+        "token": "Flame",
+        "token_repr": "' Flame'",
+        "cosine_similarity": 0.2793,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 131876,
+        "token": "lửa",
+        "token_repr": "' lửa'",
+        "cosine_similarity": 0.2793,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 9310,
+        "token": "fir",
+        "token_repr": "' fir'",
+        "cosine_similarity": 0.2773,
+        "language": "ro",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ro); cross-linguistic equivalent of 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 91590,
+        "token": "hearth",
+        "token_repr": "' hearth'",
+        "cosine_similarity": 0.2773,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 72373,
+        "token": "🔥",
+        "token_repr": "' 🔥'",
+        "cosine_similarity": 0.2715,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 1,
+        "MO": 9,
+        "TL": 24,
+        "TX": 0,
+        "SY": 0,
+        "CO": 0,
+        "NEEDS_REVIEW": 16
+      },
+      "langue_TL_SY_TX": 24,
+      "parole_CO": 0,
+      "needs_review": 16,
+      "langue_pct_of_all": 48.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 3967,
+        "token": "fire",
+        "token_repr": "' fire'",
+        "cosine_similarity": 0.9961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 7750,
+        "token": "Fire",
+        "token_repr": "' Fire'",
+        "cosine_similarity": 0.8398,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 56719,
+        "token": "FIRE",
+        "token_repr": "' FIRE'",
+        "cosine_similarity": 0.7383,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 29374,
+        "token": "fires",
+        "token_repr": "' fires'",
+        "cosine_similarity": 0.6328,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 22407,
+        "token": "fired",
+        "token_repr": "' fired'",
+        "cosine_similarity": 0.4863,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 110121,
+        "token": "Fires",
+        "token_repr": "' Fires'",
+        "cosine_similarity": 0.4727,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 34563,
+        "token": "firing",
+        "token_repr": "' firing'",
+        "cosine_similarity": 0.418,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 69482,
+        "token": "firefighters",
+        "token_repr": "' firefighters'",
+        "cosine_similarity": 0.416,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 43485,
+        "token": "fireplace",
+        "token_repr": "' fireplace'",
+        "cosine_similarity": 0.3906,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 215834,
+        "token": "firefighting",
+        "token_repr": "' firefighting'",
+        "cosine_similarity": 0.3848,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 135718,
+        "token": "firefighter",
+        "token_repr": "' firefighter'",
+        "cosine_similarity": 0.3828,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 138020,
+        "token": "wildfire",
+        "token_repr": "' wildfire'",
+        "cosine_similarity": 0.3828,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 24502,
+        "token": "flame",
+        "token_repr": "' flame'",
+        "cosine_similarity": 0.3809,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 39474,
+        "token": "flames",
+        "token_repr": "' flames'",
+        "cosine_similarity": 0.3535,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 71684,
+        "token": "fiery",
+        "token_repr": "' fiery'",
+        "cosine_similarity": 0.3418,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 192914,
+        "token": "Fired",
+        "token_repr": "' Fired'",
+        "cosine_similarity": 0.3223,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 215228,
+        "token": "Fireplace",
+        "token_repr": "' Fireplace'",
+        "cosine_similarity": 0.3203,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 187678,
+        "token": "fireman",
+        "token_repr": "' fireman'",
+        "cosine_similarity": 0.3047,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 205833,
+        "token": "firemen",
+        "token_repr": "' firemen'",
+        "cosine_similarity": 0.3047,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 222123,
+        "token": "Firing",
+        "token_repr": "'Firing'",
+        "cosine_similarity": 0.2949,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'fire'.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 72466,
+        "token": "firewall",
+        "token_repr": "' firewall'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 195125,
+        "token": "fireball",
+        "token_repr": "' fireball'",
+        "cosine_similarity": 0.2852,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 176445,
+        "token": "wildfires",
+        "token_repr": "' wildfires'",
+        "cosine_similarity": 0.2832,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 69616,
+        "token": "blaze",
+        "token_repr": "' blaze'",
+        "cosine_similarity": 0.2812,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 61739,
+        "token": "Flame",
+        "token_repr": "' Flame'",
+        "cosine_similarity": 0.2793,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 9310,
+        "token": "fir",
+        "token_repr": "' fir'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 91590,
+        "token": "hearth",
+        "token_repr": "' hearth'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 8466,
+        "token": "burn",
+        "token_repr": "' burn'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 18620,
+        "token": "burning",
+        "token_repr": "' burning'",
+        "cosine_similarity": 0.2598,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 138933,
+        "token": "arson",
+        "token_repr": "' arson'",
+        "cosine_similarity": 0.2539,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 177483,
+        "token": "fireplaces",
+        "token_repr": "' fireplaces'",
+        "cosine_similarity": 0.25,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 199090,
+        "token": "Firefly",
+        "token_repr": "' Firefly'",
+        "cosine_similarity": 0.2422,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 140267,
+        "token": "campfire",
+        "token_repr": "' campfire'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 163770,
+        "token": "bonfire",
+        "token_repr": "' bonfire'",
+        "cosine_similarity": 0.2314,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 15627,
+        "token": "smoke",
+        "token_repr": "' smoke'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 204765,
+        "token": "firepower",
+        "token_repr": "' firepower'",
+        "cosine_similarity": 0.2197,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 28848,
+        "token": "burned",
+        "token_repr": "' burned'",
+        "cosine_similarity": 0.2188,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 38710,
+        "token": "Firebase",
+        "token_repr": "'Firebase'",
+        "cosine_similarity": 0.2188,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 51281,
+        "token": "firebase",
+        "token_repr": "' firebase'",
+        "cosine_similarity": 0.2148,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 110717,
+        "token": "Flames",
+        "token_repr": "' Flames'",
+        "cosine_similarity": 0.2148,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 24673,
+        "token": "Burn",
+        "token_repr": "' Burn'",
+        "cosine_similarity": 0.2109,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 60461,
+        "token": "fireworks",
+        "token_repr": "' fireworks'",
+        "cosine_similarity": 0.21,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 206618,
+        "token": "huo",
+        "token_repr": "'huo'",
+        "cosine_similarity": 0.21,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 168258,
+        "token": "Fireworks",
+        "token_repr": "' Fireworks'",
+        "cosine_similarity": 0.208,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 131838,
+        "token": "Firewall",
+        "token_repr": "' Firewall'",
+        "cosine_similarity": 0.2041,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 71792,
+        "token": "Burning",
+        "token_repr": "' Burning'",
+        "cosine_similarity": 0.2012,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 6719,
+        "token": "heat",
+        "token_repr": "' heat'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 43518,
+        "token": "burns",
+        "token_repr": "' burns'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 16161,
+        "token": "spark",
+        "token_repr": "' spark'",
+        "cosine_similarity": 0.1973,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 229508,
+        "token": "firework",
+        "token_repr": "' firework'",
+        "cosine_similarity": 0.1973,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 0,
+        "MO": 9,
+        "TL": 0,
+        "TX": 0,
+        "SY": 0,
+        "CO": 0,
+        "NEEDS_REVIEW": 41
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 41,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
