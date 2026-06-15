@@ -1,0 +1,1108 @@
+{
+  "word": "milk",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " milk"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9512,
+        "token": "milk",
+        "token_repr": "' milk'",
+        "cosine_similarity": 1.0,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 33116,
+        "token": "Milk",
+        "token_repr": "' Milk'",
+        "cosine_similarity": 0.8555,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 157809,
+        "token": "MILK",
+        "token_repr": "' MILK'",
+        "cosine_similarity": 0.7734,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 171027,
+        "token": "melk",
+        "token_repr": "' melk'",
+        "cosine_similarity": 0.5156,
+        "language": "nb",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nb); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 31062,
+        "token": "dairy",
+        "token_repr": "' dairy'",
+        "cosine_similarity": 0.5117,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 6,
+        "token_id": 153495,
+        "token": "молоко",
+        "token_repr": "' молоко'",
+        "cosine_similarity": 0.5078,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 119091,
+        "token": "牛奶",
+        "token_repr": "'牛奶'",
+        "cosine_similarity": 0.5039,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 47534,
+        "token": "leche",
+        "token_repr": "' leche'",
+        "cosine_similarity": 0.4961,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 85221,
+        "token": "Milch",
+        "token_repr": "' Milch'",
+        "cosine_similarity": 0.4961,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 138474,
+        "token": "milking",
+        "token_repr": "' milking'",
+        "cosine_similarity": 0.4961,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 134259,
+        "token": "ミルク",
+        "token_repr": "'ミルク'",
+        "cosine_similarity": 0.4902,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 163504,
+        "token": "молока",
+        "token_repr": "' молока'",
+        "cosine_similarity": 0.4824,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 119574,
+        "token": "milky",
+        "token_repr": "' milky'",
+        "cosine_similarity": 0.4609,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 136883,
+        "token": "牛乳",
+        "token_repr": "'牛乳'",
+        "cosine_similarity": 0.4551,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 52036,
+        "token": "Dairy",
+        "token_repr": "' Dairy'",
+        "cosine_similarity": 0.4492,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 172021,
+        "token": "milch",
+        "token_repr": "'milch'",
+        "cosine_similarity": 0.418,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 246272,
+        "token": "🥛",
+        "token_repr": "'🥛'",
+        "cosine_similarity": 0.4023,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 237253,
+        "token": "奶",
+        "token_repr": "'奶'",
+        "cosine_similarity": 0.4004,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 69353,
+        "token": "leite",
+        "token_repr": "' leite'",
+        "cosine_similarity": 0.3965,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 71319,
+        "token": "sữa",
+        "token_repr": "' sữa'",
+        "cosine_similarity": 0.3848,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 79839,
+        "token": "susu",
+        "token_repr": "' susu'",
+        "cosine_similarity": 0.3711,
+        "language": "ms",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ms); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 122787,
+        "token": "mle",
+        "token_repr": "' mle'",
+        "cosine_similarity": 0.3691,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 23,
+        "token_id": 76290,
+        "token": "乳",
+        "token_repr": "' 乳'",
+        "cosine_similarity": 0.3633,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 54605,
+        "token": "lait",
+        "token_repr": "' lait'",
+        "cosine_similarity": 0.3594,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 50229,
+        "token": "MIL",
+        "token_repr": "'MIL'",
+        "cosine_similarity": 0.3516,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 50162,
+        "token": "yogurt",
+        "token_repr": "' yogurt'",
+        "cosine_similarity": 0.3457,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 199131,
+        "token": "milkshake",
+        "token_repr": "' milkshake'",
+        "cosine_similarity": 0.3438,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 119782,
+        "token": "Milky",
+        "token_repr": "' Milky'",
+        "cosine_similarity": 0.334,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 29,
+        "token_id": 144518,
+        "token": "lactation",
+        "token_repr": "' lactation'",
+        "cosine_similarity": 0.334,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 109955,
+        "token": "lactose",
+        "token_repr": "' lactose'",
+        "cosine_similarity": 0.3301,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 31,
+        "token_id": 100961,
+        "token": "whey",
+        "token_repr": "' whey'",
+        "cosine_similarity": 0.3281,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 155957,
+        "token": "Lact",
+        "token_repr": "' Lact'",
+        "cosine_similarity": 0.3242,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 213131,
+        "token": "lác",
+        "token_repr": "' lác'",
+        "cosine_similarity": 0.3223,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 2658,
+        "token": "mil",
+        "token_repr": "' mil'",
+        "cosine_similarity": 0.3184,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 35768,
+        "token": "cows",
+        "token_repr": "' cows'",
+        "cosine_similarity": 0.3164,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 191098,
+        "token": "casein",
+        "token_repr": "' casein'",
+        "cosine_similarity": 0.3125,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 13624,
+        "token": "cheese",
+        "token_repr": "' cheese'",
+        "cosine_similarity": 0.3105,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 56771,
+        "token": "lact",
+        "token_repr": "' lact'",
+        "cosine_similarity": 0.3105,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 39,
+        "token_id": 126985,
+        "token": "yoghurt",
+        "token_repr": "' yoghurt'",
+        "cosine_similarity": 0.3105,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 22145,
+        "token": "Mil",
+        "token_repr": "'Mil'",
+        "cosine_similarity": 0.3066,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 166565,
+        "token": "mammary",
+        "token_repr": "' mammary'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 166603,
+        "token": "buttermilk",
+        "token_repr": "' buttermilk'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 222527,
+        "token": "Leche",
+        "token_repr": "' Leche'",
+        "cosine_similarity": 0.3047,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 80727,
+        "token": "شیر",
+        "token_repr": "' شیر'",
+        "cosine_similarity": 0.3027,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 159156,
+        "token": "Cows",
+        "token_repr": "' Cows'",
+        "cosine_similarity": 0.3008,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 27016,
+        "token": "моло",
+        "token_repr": "' моло'",
+        "cosine_similarity": 0.2988,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 47,
+        "token_id": 145228,
+        "token": "Yogurt",
+        "token_repr": "' Yogurt'",
+        "cosine_similarity": 0.2988,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 48,
+        "token_id": 152681,
+        "token": "Моло",
+        "token_repr": "'Моло'",
+        "cosine_similarity": 0.2969,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 205306,
+        "token": "Lait",
+        "token_repr": "' Lait'",
+        "cosine_similarity": 0.2969,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 50,
+        "token_id": 42285,
+        "token": "Cheese",
+        "token_repr": "' Cheese'",
+        "cosine_similarity": 0.2949,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 1,
+        "TX": 0,
+        "MO": 6,
+        "CO": 0,
+        "SY": 0,
+        "TL": 30,
+        "NEEDS_REVIEW": 13
+      },
+      "langue_TL_SY_TX": 30,
+      "parole_CO": 0,
+      "needs_review": 13,
+      "langue_pct_of_all": 60.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9512,
+        "token": "milk",
+        "token_repr": "' milk'",
+        "cosine_similarity": 1.0,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 33116,
+        "token": "Milk",
+        "token_repr": "' Milk'",
+        "cosine_similarity": 0.8555,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 157809,
+        "token": "MILK",
+        "token_repr": "' MILK'",
+        "cosine_similarity": 0.7734,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 31062,
+        "token": "dairy",
+        "token_repr": "' dairy'",
+        "cosine_similarity": 0.5117,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 5,
+        "token_id": 138474,
+        "token": "milking",
+        "token_repr": "' milking'",
+        "cosine_similarity": 0.4961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 119574,
+        "token": "milky",
+        "token_repr": "' milky'",
+        "cosine_similarity": 0.4609,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 52036,
+        "token": "Dairy",
+        "token_repr": "' Dairy'",
+        "cosine_similarity": 0.4492,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 122787,
+        "token": "mle",
+        "token_repr": "' mle'",
+        "cosine_similarity": 0.3691,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 50162,
+        "token": "yogurt",
+        "token_repr": "' yogurt'",
+        "cosine_similarity": 0.3457,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 199131,
+        "token": "milkshake",
+        "token_repr": "' milkshake'",
+        "cosine_similarity": 0.3438,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 119782,
+        "token": "Milky",
+        "token_repr": "' Milky'",
+        "cosine_similarity": 0.334,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'milk'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 144518,
+        "token": "lactation",
+        "token_repr": "' lactation'",
+        "cosine_similarity": 0.334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 13,
+        "token_id": 109955,
+        "token": "lactose",
+        "token_repr": "' lactose'",
+        "cosine_similarity": 0.3301,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 100961,
+        "token": "whey",
+        "token_repr": "' whey'",
+        "cosine_similarity": 0.3281,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 35768,
+        "token": "cows",
+        "token_repr": "' cows'",
+        "cosine_similarity": 0.3164,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 191098,
+        "token": "casein",
+        "token_repr": "' casein'",
+        "cosine_similarity": 0.3125,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 13624,
+        "token": "cheese",
+        "token_repr": "' cheese'",
+        "cosine_similarity": 0.3105,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 126985,
+        "token": "yoghurt",
+        "token_repr": "' yoghurt'",
+        "cosine_similarity": 0.3105,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 166565,
+        "token": "mammary",
+        "token_repr": "' mammary'",
+        "cosine_similarity": 0.3047,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 166603,
+        "token": "buttermilk",
+        "token_repr": "' buttermilk'",
+        "cosine_similarity": 0.3047,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 159156,
+        "token": "Cows",
+        "token_repr": "' Cows'",
+        "cosine_similarity": 0.3008,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 145228,
+        "token": "Yogurt",
+        "token_repr": "' Yogurt'",
+        "cosine_similarity": 0.2988,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 42285,
+        "token": "Cheese",
+        "token_repr": "' Cheese'",
+        "cosine_similarity": 0.2949,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 84810,
+        "token": "breastfeeding",
+        "token_repr": "' breastfeeding'",
+        "cosine_similarity": 0.293,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 93095,
+        "token": "Milo",
+        "token_repr": "' Milo'",
+        "cosine_similarity": 0.291,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 15052,
+        "token": "beer",
+        "token_repr": "' beer'",
+        "cosine_similarity": 0.2852,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 12776,
+        "token": "eggs",
+        "token_repr": "' eggs'",
+        "cosine_similarity": 0.2812,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 10605,
+        "token": "butter",
+        "token_repr": "' butter'",
+        "cosine_similarity": 0.2793,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 42199,
+        "token": "Milwaukee",
+        "token_repr": "' Milwaukee'",
+        "cosine_similarity": 0.2793,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 13514,
+        "token": "egg",
+        "token_repr": "' egg'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 23834,
+        "token": "wool",
+        "token_repr": "' wool'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 229928,
+        "token": "milf",
+        "token_repr": "' milf'",
+        "cosine_similarity": 0.2773,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 14665,
+        "token": "breast",
+        "token_repr": "' breast'",
+        "cosine_similarity": 0.2734,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 17796,
+        "token": "juice",
+        "token_repr": "' juice'",
+        "cosine_similarity": 0.2715,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 9450,
+        "token": "cream",
+        "token_repr": "' cream'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 53517,
+        "token": "Eggs",
+        "token_repr": "' Eggs'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 130692,
+        "token": "Syrup",
+        "token_repr": "' Syrup'",
+        "cosine_similarity": 0.2695,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 95829,
+        "token": "nectar",
+        "token_repr": "' nectar'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 146999,
+        "token": "ghee",
+        "token_repr": "' ghee'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 221077,
+        "token": "BEER",
+        "token_repr": "' BEER'",
+        "cosine_similarity": 0.2676,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 13910,
+        "token": "cow",
+        "token_repr": "' cow'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 154476,
+        "token": "CREAM",
+        "token_repr": "' CREAM'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 200495,
+        "token": "milo",
+        "token_repr": "' milo'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 60283,
+        "token": "Breast",
+        "token_repr": "' Breast'",
+        "cosine_similarity": 0.2637,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 136914,
+        "token": "custard",
+        "token_repr": "' custard'",
+        "cosine_similarity": 0.2617,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 65461,
+        "token": "whiskey",
+        "token_repr": "' whiskey'",
+        "cosine_similarity": 0.2598,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 113539,
+        "token": "cheeses",
+        "token_repr": "' cheeses'",
+        "cosine_similarity": 0.2598,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 134626,
+        "token": "curd",
+        "token_repr": "' curd'",
+        "cosine_similarity": 0.2598,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 22764,
+        "token": "cattle",
+        "token_repr": "' cattle'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 113113,
+        "token": "toothpaste",
+        "token_repr": "' toothpaste'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 0,
+        "TX": 0,
+        "MO": 6,
+        "CO": 0,
+        "SY": 0,
+        "TL": 0,
+        "NEEDS_REVIEW": 44
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 44,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
