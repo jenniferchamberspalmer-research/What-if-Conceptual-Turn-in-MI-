@@ -1,0 +1,1108 @@
+{
+  "word": "water",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " water"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 2003,
+        "token": "water",
+        "token_repr": "' water'",
+        "cosine_similarity": 1.0,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 5794,
+        "token": "Water",
+        "token_repr": "' Water'",
+        "cosine_similarity": 0.832,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 32482,
+        "token": "WATER",
+        "token_repr": "' WATER'",
+        "cosine_similarity": 0.7539,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 13508,
+        "token": "agua",
+        "token_repr": "' agua'",
+        "cosine_similarity": 0.6133,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 235773,
+        "token": "水",
+        "token_repr": "'水'",
+        "cosine_similarity": 0.6016,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 21979,
+        "token": "Wasser",
+        "token_repr": "' Wasser'",
+        "cosine_similarity": 0.5547,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 48045,
+        "token": "воды",
+        "token_repr": "' воды'",
+        "cosine_similarity": 0.5156,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 14372,
+        "token": "waters",
+        "token_repr": "' waters'",
+        "cosine_similarity": 0.5078,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 93685,
+        "token": "воду",
+        "token_repr": "' воду'",
+        "cosine_similarity": 0.4961,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 33255,
+        "token": "água",
+        "token_repr": "' água'",
+        "cosine_similarity": 0.4883,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 53234,
+        "token": "вода",
+        "token_repr": "' вода'",
+        "cosine_similarity": 0.4785,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 90035,
+        "token": "的水",
+        "token_repr": "'的水'",
+        "cosine_similarity": 0.4766,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 117603,
+        "token": "水的",
+        "token_repr": "'水的'",
+        "cosine_similarity": 0.4531,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 126455,
+        "token": "の水",
+        "token_repr": "'の水'",
+        "cosine_similarity": 0.4512,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 15,
+        "token_id": 167100,
+        "token": "水の",
+        "token_repr": "'水の'",
+        "cosine_similarity": 0.4414,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 148614,
+        "token": "पानी",
+        "token_repr": "' पानी'",
+        "cosine_similarity": 0.4395,
+        "language": "hi/deva",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 17,
+        "token_id": 126982,
+        "token": "الماء",
+        "token_repr": "' الماء'",
+        "cosine_similarity": 0.4316,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 33297,
+        "token": "آب",
+        "token_repr": "' آب'",
+        "cosine_similarity": 0.4258,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 19,
+        "token_id": 141302,
+        "token": "水を",
+        "token_repr": "'水を'",
+        "cosine_similarity": 0.4219,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 219310,
+        "token": "ウォーター",
+        "token_repr": "'ウォーター'",
+        "cosine_similarity": 0.4121,
+        "language": "ja(kana)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ja(kana)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 35980,
+        "token": "Waters",
+        "token_repr": "' Waters'",
+        "cosine_similarity": 0.3926,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 215551,
+        "token": "水が",
+        "token_repr": "'水が'",
+        "cosine_similarity": 0.3926,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 23,
+        "token_id": 23028,
+        "token": "nước",
+        "token_repr": "' nước'",
+        "cosine_similarity": 0.3887,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 47196,
+        "token": "wasser",
+        "token_repr": "'wasser'",
+        "cosine_similarity": 0.3887,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 25,
+        "token_id": 84101,
+        "token": "vatten",
+        "token_repr": "' vatten'",
+        "cosine_similarity": 0.3789,
+        "language": "sv",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈sv); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 26,
+        "token_id": 90000,
+        "token": "wody",
+        "token_repr": "' wody'",
+        "cosine_similarity": 0.377,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 27,
+        "token_id": 105828,
+        "token": "водой",
+        "token_repr": "' водой'",
+        "cosine_similarity": 0.377,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 103405,
+        "token": "vody",
+        "token_repr": "' vody'",
+        "cosine_similarity": 0.3594,
+        "language": "cs",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈cs); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 29,
+        "token_id": 115052,
+        "token": "воде",
+        "token_repr": "' воде'",
+        "cosine_similarity": 0.3594,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 27628,
+        "token": "acqua",
+        "token_repr": "' acqua'",
+        "cosine_similarity": 0.3574,
+        "language": "it",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈it); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 31,
+        "token_id": 58456,
+        "token": "водо",
+        "token_repr": "' водо'",
+        "cosine_similarity": 0.3516,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 32,
+        "token_id": 55941,
+        "token": "น้ำ",
+        "token_repr": "'น้ำ'",
+        "cosine_similarity": 0.3398,
+        "language": "th",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 186128,
+        "token": "المياه",
+        "token_repr": "' المياه'",
+        "cosine_similarity": 0.3359,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 109677,
+        "token": "vann",
+        "token_repr": "' vann'",
+        "cosine_similarity": 0.3281,
+        "language": "nb",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nb); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 35,
+        "token_id": 136368,
+        "token": "víz",
+        "token_repr": "' víz'",
+        "cosine_similarity": 0.3086,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 137720,
+        "token": "voda",
+        "token_repr": "' voda'",
+        "cosine_similarity": 0.3066,
+        "language": "cs",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈cs); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 37,
+        "token_id": 186406,
+        "token": "WATERS",
+        "token_repr": "' WATERS'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 38,
+        "token_id": 53248,
+        "token": "wod",
+        "token_repr": "' wod'",
+        "cosine_similarity": 0.3008,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 105324,
+        "token": "вод",
+        "token_repr": "' вод'",
+        "cosine_similarity": 0.2988,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 40,
+        "token_id": 165478,
+        "token": "woda",
+        "token_repr": "' woda'",
+        "cosine_similarity": 0.2988,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 142442,
+        "token": "水中",
+        "token_repr": "'水中'",
+        "cosine_similarity": 0.2949,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 42,
+        "token_id": 226987,
+        "token": "Вода",
+        "token_repr": "' Вода'",
+        "cosine_similarity": 0.2949,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 43,
+        "token_id": 194472,
+        "token": "מים",
+        "token_repr": "' מים'",
+        "cosine_similarity": 0.2891,
+        "language": "he",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈he); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 44,
+        "token_id": 7455,
+        "token": "eau",
+        "token_repr": "'eau'",
+        "cosine_similarity": 0.2852,
+        "language": "fr",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fr); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 226988,
+        "token": "водя",
+        "token_repr": "' водя'",
+        "cosine_similarity": 0.2852,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 46,
+        "token_id": 68242,
+        "token": "aguas",
+        "token_repr": "' aguas'",
+        "cosine_similarity": 0.2734,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 47,
+        "token_id": 190702,
+        "token": "vatt",
+        "token_repr": "' vatt'",
+        "cosine_similarity": 0.2734,
+        "language": "fi",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈fi); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 48,
+        "token_id": 197775,
+        "token": "用水",
+        "token_repr": "'用水'",
+        "cosine_similarity": 0.2734,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 168012,
+        "token": "जल",
+        "token_repr": "' जल'",
+        "cosine_similarity": 0.2695,
+        "language": "hi/deva",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈hi/deva); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 50,
+        "token_id": 203144,
+        "token": "vodu",
+        "token_repr": "' vodu'",
+        "cosine_similarity": 0.2676,
+        "language": "cs",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈cs); cross-linguistic equivalent of 'water'.",
+        "code_confident": true
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 2,
+        "CO": 0,
+        "TX": 0,
+        "TL": 38,
+        "MO": 6,
+        "SY": 0,
+        "NEEDS_REVIEW": 4
+      },
+      "langue_TL_SY_TX": 38,
+      "parole_CO": 0,
+      "needs_review": 4,
+      "langue_pct_of_all": 76.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 2003,
+        "token": "water",
+        "token_repr": "' water'",
+        "cosine_similarity": 1.0,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 5794,
+        "token": "Water",
+        "token_repr": "' Water'",
+        "cosine_similarity": 0.832,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 32482,
+        "token": "WATER",
+        "token_repr": "' WATER'",
+        "cosine_similarity": 0.7539,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 14372,
+        "token": "waters",
+        "token_repr": "' waters'",
+        "cosine_similarity": 0.5078,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 35980,
+        "token": "Waters",
+        "token_repr": "' Waters'",
+        "cosine_similarity": 0.3926,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 186406,
+        "token": "WATERS",
+        "token_repr": "' WATERS'",
+        "cosine_similarity": 0.3047,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 53248,
+        "token": "wod",
+        "token_repr": "' wod'",
+        "cosine_similarity": 0.3008,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 8,
+        "token_id": 2681,
+        "token": "air",
+        "token_repr": "' air'",
+        "cosine_similarity": 0.2578,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 108777,
+        "token": "watery",
+        "token_repr": "' watery'",
+        "cosine_similarity": 0.2539,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 201234,
+        "token": "Waterman",
+        "token_repr": "' Waterman'",
+        "cosine_similarity": 0.2393,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 59588,
+        "token": "watering",
+        "token_repr": "' watering'",
+        "cosine_similarity": 0.2363,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 107973,
+        "token": "watered",
+        "token_repr": "' watered'",
+        "cosine_similarity": 0.2256,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'water'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 8540,
+        "token": "river",
+        "token_repr": "' river'",
+        "cosine_similarity": 0.2236,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 33073,
+        "token": "waterproof",
+        "token_repr": "' waterproof'",
+        "cosine_similarity": 0.2217,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 109693,
+        "token": "watermark",
+        "token_repr": "' watermark'",
+        "cosine_similarity": 0.2178,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 20998,
+        "token": "moisture",
+        "token_repr": "' moisture'",
+        "cosine_similarity": 0.21,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 2960,
+        "token": "food",
+        "token_repr": "' food'",
+        "cosine_similarity": 0.207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 44303,
+        "token": "aquatic",
+        "token_repr": "' aquatic'",
+        "cosine_similarity": 0.207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 10177,
+        "token": "liquid",
+        "token_repr": "' liquid'",
+        "cosine_similarity": 0.2031,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 104290,
+        "token": "waterways",
+        "token_repr": "' waterways'",
+        "cosine_similarity": 0.2031,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 4684,
+        "token": "oil",
+        "token_repr": "' oil'",
+        "cosine_similarity": 0.2021,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 11884,
+        "token": "hydro",
+        "token_repr": "' hydro'",
+        "cosine_similarity": 0.2021,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 230367,
+        "token": "Watermark",
+        "token_repr": "'Watermark'",
+        "cosine_similarity": 0.1982,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 4176,
+        "token": "sea",
+        "token_repr": "' sea'",
+        "cosine_similarity": 0.1963,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 51016,
+        "token": "aqueous",
+        "token_repr": "' aqueous'",
+        "cosine_similarity": 0.1914,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 2840,
+        "token": "land",
+        "token_repr": "' land'",
+        "cosine_similarity": 0.1885,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 68051,
+        "token": "Aqua",
+        "token_repr": "' Aqua'",
+        "cosine_similarity": 0.1865,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 3967,
+        "token": "fire",
+        "token_repr": "' fire'",
+        "cosine_similarity": 0.1846,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 48776,
+        "token": "groundwater",
+        "token_repr": "' groundwater'",
+        "cosine_similarity": 0.1826,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 14721,
+        "token": "fluid",
+        "token_repr": "' fluid'",
+        "cosine_similarity": 0.1797,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 16036,
+        "token": "drinking",
+        "token_repr": "' drinking'",
+        "cosine_similarity": 0.1797,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 213640,
+        "token": "Waterhouse",
+        "token_repr": "' Waterhouse'",
+        "cosine_similarity": 0.1787,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 5330,
+        "token": "blood",
+        "token_repr": "' blood'",
+        "cosine_similarity": 0.1777,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 5137,
+        "token": "gas",
+        "token_repr": "' gas'",
+        "cosine_similarity": 0.1768,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 6785,
+        "token": "wind",
+        "token_repr": "' wind'",
+        "cosine_similarity": 0.1768,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 2611,
+        "token": "light",
+        "token_repr": "' light'",
+        "cosine_similarity": 0.1758,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 10256,
+        "token": "wet",
+        "token_repr": "' wet'",
+        "cosine_similarity": 0.1758,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 2674,
+        "token": "white",
+        "token_repr": "' white'",
+        "cosine_similarity": 0.1738,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 8357,
+        "token": "ice",
+        "token_repr": "' ice'",
+        "cosine_similarity": 0.1738,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 8980,
+        "token": "rain",
+        "token_repr": "' rain'",
+        "cosine_similarity": 0.1738,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 149131,
+        "token": "waterway",
+        "token_repr": "' waterway'",
+        "cosine_similarity": 0.1729,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 2384,
+        "token": "power",
+        "token_repr": "' power'",
+        "cosine_similarity": 0.1719,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 5001,
+        "token": "fish",
+        "token_repr": "' fish'",
+        "cosine_similarity": 0.1719,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 13940,
+        "token": "ocean",
+        "token_repr": "' ocean'",
+        "cosine_similarity": 0.1709,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 93490,
+        "token": "waterfront",
+        "token_repr": "' waterfront'",
+        "cosine_similarity": 0.1709,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 1423,
+        "token": "data",
+        "token_repr": "' data'",
+        "cosine_similarity": 0.167,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 3569,
+        "token": "video",
+        "token_repr": "' video'",
+        "cosine_similarity": 0.166,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 24845,
+        "token": "Hydro",
+        "token_repr": "' Hydro'",
+        "cosine_similarity": 0.166,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 4134,
+        "token": "energy",
+        "token_repr": "' energy'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 4296,
+        "token": "music",
+        "token_repr": "' music'",
+        "cosine_similarity": 0.165,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "UR": 0,
+        "CO": 0,
+        "TX": 0,
+        "TL": 0,
+        "MO": 9,
+        "SY": 0,
+        "NEEDS_REVIEW": 41
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 41,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
