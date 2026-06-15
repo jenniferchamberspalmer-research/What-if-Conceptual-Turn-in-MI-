@@ -1,0 +1,1108 @@
+{
+  "word": "salt",
+  "stratum": "A",
+  "k": 50,
+  "filter_thresholds": {
+    "min_en_zipf": 2.2,
+    "dominance_margin": 0.9
+  },
+  "tokenization": {
+    "n_subtokens": 1,
+    "subtokens": [
+      " salt"
+    ],
+    "fragments": false
+  },
+  "multilingual": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9193,
+        "token": "salt",
+        "token_repr": "' salt'",
+        "cosine_similarity": 0.9961,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 21757,
+        "token": "Salt",
+        "token_repr": "' Salt'",
+        "cosine_similarity": 0.8281,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 47197,
+        "token": "salts",
+        "token_repr": "' salts'",
+        "cosine_similarity": 0.6328,
+        "language": "ca",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 135034,
+        "token": "SALT",
+        "token_repr": "' SALT'",
+        "cosine_similarity": 0.6094,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 239541,
+        "token": "盐",
+        "token_repr": "'盐'",
+        "cosine_similarity": 0.6055,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 240508,
+        "token": "鹽",
+        "token_repr": "'鹽'",
+        "cosine_similarity": 0.5469,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 7,
+        "token_id": 69174,
+        "token": "salty",
+        "token_repr": "' salty'",
+        "cosine_similarity": 0.5273,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 169546,
+        "token": "saltwater",
+        "token_repr": "' saltwater'",
+        "cosine_similarity": 0.5,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 9,
+        "token_id": 182068,
+        "token": "Salts",
+        "token_repr": "' Salts'",
+        "cosine_similarity": 0.5,
+        "language": "ca",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 10,
+        "token_id": 92370,
+        "token": "salted",
+        "token_repr": "' salted'",
+        "cosine_similarity": 0.4531,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 11,
+        "token_id": 238218,
+        "token": "塩",
+        "token_repr": "'塩'",
+        "cosine_similarity": 0.4512,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 12,
+        "token_id": 168512,
+        "token": "zout",
+        "token_repr": "' zout'",
+        "cosine_similarity": 0.4453,
+        "language": "nl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈nl); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 117521,
+        "token": "соль",
+        "token_repr": "' соль'",
+        "cosine_similarity": 0.4395,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 14,
+        "token_id": 67201,
+        "token": "saline",
+        "token_repr": "' saline'",
+        "cosine_similarity": 0.4121,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 222288,
+        "token": "نمک",
+        "token_repr": "' نمک'",
+        "cosine_similarity": 0.4121,
+        "language": "ar/fa",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ar/fa); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 16,
+        "token_id": 94288,
+        "token": "NaCl",
+        "token_repr": "' NaCl'",
+        "cosine_similarity": 0.4023,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 40422,
+        "token": "Salz",
+        "token_repr": "' Salz'",
+        "cosine_similarity": 0.3945,
+        "language": "de",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈de); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 18,
+        "token_id": 86860,
+        "token": "salinity",
+        "token_repr": "' salinity'",
+        "cosine_similarity": 0.3945,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 230461,
+        "token": "Salty",
+        "token_repr": "' Salty'",
+        "cosine_similarity": 0.3809,
+        "language": "en",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 20,
+        "token_id": 248020,
+        "token": "🧂",
+        "token_repr": "'🧂'",
+        "cosine_similarity": 0.3574,
+        "language": "other/symbol",
+        "code": "UR",
+        "code_justification": "Non-word token (fragment/punctuation/digits); noise diagnostic.",
+        "code_confident": true
+      },
+      {
+        "rank": 21,
+        "token_id": 190149,
+        "token": "salta",
+        "token_repr": "' salta'",
+        "cosine_similarity": 0.3555,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 22,
+        "token_id": 24566,
+        "token": "sodium",
+        "token_repr": "' sodium'",
+        "cosine_similarity": 0.3496,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 23,
+        "token_id": 24359,
+        "token": "SAL",
+        "token_repr": "' SAL'",
+        "cosine_similarity": 0.3301,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 24,
+        "token_id": 233362,
+        "token": "Salinity",
+        "token_repr": "' Salinity'",
+        "cosine_similarity": 0.3281,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 149424,
+        "token": "muối",
+        "token_repr": "' muối'",
+        "cosine_similarity": 0.3262,
+        "language": "other/symbol",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 170622,
+        "token": "Saline",
+        "token_repr": "' Saline'",
+        "cosine_similarity": 0.3203,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 7871,
+        "token": "sal",
+        "token_repr": "'sal'",
+        "cosine_similarity": 0.3125,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 28,
+        "token_id": 102966,
+        "token": "brine",
+        "token_repr": "' brine'",
+        "cosine_similarity": 0.3047,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 241942,
+        "token": "鹹",
+        "token_repr": "'鹹'",
+        "cosine_similarity": 0.3047,
+        "language": "zh/ja(han)",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈zh/ja(han)); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 30,
+        "token_id": 63613,
+        "token": "Sodium",
+        "token_repr": "' Sodium'",
+        "cosine_similarity": 0.3008,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 32651,
+        "token": "chloride",
+        "token_repr": "' chloride'",
+        "cosine_similarity": 0.2891,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 125518,
+        "token": "garam",
+        "token_repr": "' garam'",
+        "cosine_similarity": 0.2871,
+        "language": "id",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈id); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 33,
+        "token_id": 119598,
+        "token": "соли",
+        "token_repr": "' соли'",
+        "cosine_similarity": 0.2773,
+        "language": "ru/cyrillic",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈ru/cyrillic); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 34,
+        "token_id": 102533,
+        "token": "Chloride",
+        "token_repr": "' Chloride'",
+        "cosine_similarity": 0.2656,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 171819,
+        "token": "sali",
+        "token_repr": "' sali'",
+        "cosine_similarity": 0.2656,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 36,
+        "token_id": 4378,
+        "token": "Sal",
+        "token_repr": "' Sal'",
+        "cosine_similarity": 0.2637,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 37,
+        "token_id": 205999,
+        "token": "salada",
+        "token_repr": "' salada'",
+        "cosine_similarity": 0.2637,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 38,
+        "token_id": 9347,
+        "token": "sugar",
+        "token_repr": "' sugar'",
+        "cosine_similarity": 0.2539,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 71492,
+        "token": "ionic",
+        "token_repr": "' ionic'",
+        "cosine_similarity": 0.2471,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 202993,
+        "token": "Salter",
+        "token_repr": "' Salter'",
+        "cosine_similarity": 0.2432,
+        "language": "nb",
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 41,
+        "token_id": 27062,
+        "token": "Utah",
+        "token_repr": "' Utah'",
+        "cosine_similarity": 0.2402,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 52040,
+        "token": "salary",
+        "token_repr": "'salary'",
+        "cosine_similarity": 0.2402,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 166465,
+        "token": "desal",
+        "token_repr": "' desal'",
+        "cosine_similarity": 0.2393,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 6154,
+        "token": "sand",
+        "token_repr": "' sand'",
+        "cosine_similarity": 0.2363,
+        "language": "da",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈da); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 45,
+        "token_id": 44905,
+        "token": "Salary",
+        "token_repr": "' Salary'",
+        "cosine_similarity": 0.2354,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 211839,
+        "token": "Salta",
+        "token_repr": "' Salta'",
+        "cosine_similarity": 0.2354,
+        "language": "es",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈es); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 47,
+        "token_id": 223147,
+        "token": "KCl",
+        "token_repr": "' KCl'",
+        "cosine_similarity": 0.2334,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 180763,
+        "token": "Sald",
+        "token_repr": "' Sald'",
+        "cosine_similarity": 0.2314,
+        "language": "pl",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pl); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 49,
+        "token_id": 191093,
+        "token": "SUGAR",
+        "token_repr": "' SUGAR'",
+        "cosine_similarity": 0.2314,
+        "language": "en",
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 74655,
+        "token": "sala",
+        "token_repr": "'sala'",
+        "cosine_similarity": 0.2305,
+        "language": "pt",
+        "code": "TL",
+        "code_justification": "Non-English token (lang≈pt); cross-linguistic equivalent of 'salt'.",
+        "code_confident": true
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "SY": 0,
+        "UR": 1,
+        "TL": 20,
+        "CO": 0,
+        "TX": 0,
+        "MO": 9,
+        "NEEDS_REVIEW": 20
+      },
+      "langue_TL_SY_TX": 20,
+      "parole_CO": 0,
+      "needs_review": 20,
+      "langue_pct_of_all": 40.0,
+      "parole_pct_of_all": 0.0
+    }
+  },
+  "english": {
+    "neighbors": [
+      {
+        "rank": 1,
+        "token_id": 9193,
+        "token": "salt",
+        "token_repr": "' salt'",
+        "cosine_similarity": 0.9961,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 2,
+        "token_id": 21757,
+        "token": "Salt",
+        "token_repr": "' Salt'",
+        "cosine_similarity": 0.8281,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 3,
+        "token_id": 47197,
+        "token": "salts",
+        "token_repr": "' salts'",
+        "cosine_similarity": 0.6328,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 4,
+        "token_id": 135034,
+        "token": "SALT",
+        "token_repr": "' SALT'",
+        "cosine_similarity": 0.6094,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 5,
+        "token_id": 69174,
+        "token": "salty",
+        "token_repr": "' salty'",
+        "cosine_similarity": 0.5273,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 6,
+        "token_id": 169546,
+        "token": "saltwater",
+        "token_repr": "' saltwater'",
+        "cosine_similarity": 0.5,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 7,
+        "token_id": 182068,
+        "token": "Salts",
+        "token_repr": "' Salts'",
+        "cosine_similarity": 0.5,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 8,
+        "token_id": 92370,
+        "token": "salted",
+        "token_repr": "' salted'",
+        "cosine_similarity": 0.4531,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 9,
+        "token_id": 67201,
+        "token": "saline",
+        "token_repr": "' saline'",
+        "cosine_similarity": 0.4121,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 10,
+        "token_id": 94288,
+        "token": "NaCl",
+        "token_repr": "' NaCl'",
+        "cosine_similarity": 0.4023,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 11,
+        "token_id": 86860,
+        "token": "salinity",
+        "token_repr": "' salinity'",
+        "cosine_similarity": 0.3945,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 12,
+        "token_id": 230461,
+        "token": "Salty",
+        "token_repr": "' Salty'",
+        "cosine_similarity": 0.3809,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 13,
+        "token_id": 24566,
+        "token": "sodium",
+        "token_repr": "' sodium'",
+        "cosine_similarity": 0.3496,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 14,
+        "token_id": 233362,
+        "token": "Salinity",
+        "token_repr": "' Salinity'",
+        "cosine_similarity": 0.3281,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 15,
+        "token_id": 170622,
+        "token": "Saline",
+        "token_repr": "' Saline'",
+        "cosine_similarity": 0.3203,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 16,
+        "token_id": 102966,
+        "token": "brine",
+        "token_repr": "' brine'",
+        "cosine_similarity": 0.3047,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 17,
+        "token_id": 63613,
+        "token": "Sodium",
+        "token_repr": "' Sodium'",
+        "cosine_similarity": 0.3008,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 18,
+        "token_id": 32651,
+        "token": "chloride",
+        "token_repr": "' chloride'",
+        "cosine_similarity": 0.2891,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 19,
+        "token_id": 102533,
+        "token": "Chloride",
+        "token_repr": "' Chloride'",
+        "cosine_similarity": 0.2656,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 20,
+        "token_id": 9347,
+        "token": "sugar",
+        "token_repr": "' sugar'",
+        "cosine_similarity": 0.2539,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 21,
+        "token_id": 71492,
+        "token": "ionic",
+        "token_repr": "' ionic'",
+        "cosine_similarity": 0.2471,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 22,
+        "token_id": 202993,
+        "token": "Salter",
+        "token_repr": "' Salter'",
+        "cosine_similarity": 0.2432,
+        "code": "MO",
+        "code_justification": "Case/affix variant of the probe 'salt'.",
+        "code_confident": true
+      },
+      {
+        "rank": 23,
+        "token_id": 27062,
+        "token": "Utah",
+        "token_repr": "' Utah'",
+        "cosine_similarity": 0.2402,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 24,
+        "token_id": 52040,
+        "token": "salary",
+        "token_repr": "'salary'",
+        "cosine_similarity": 0.2402,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 25,
+        "token_id": 6154,
+        "token": "sand",
+        "token_repr": "' sand'",
+        "cosine_similarity": 0.2363,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 26,
+        "token_id": 44905,
+        "token": "Salary",
+        "token_repr": "' Salary'",
+        "cosine_similarity": 0.2354,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 27,
+        "token_id": 223147,
+        "token": "KCl",
+        "token_repr": "' KCl'",
+        "cosine_similarity": 0.2334,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 28,
+        "token_id": 191093,
+        "token": "SUGAR",
+        "token_repr": "' SUGAR'",
+        "cosine_similarity": 0.2314,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 29,
+        "token_id": 23216,
+        "token": "salad",
+        "token_repr": "' salad'",
+        "cosine_similarity": 0.2256,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 30,
+        "token_id": 51200,
+        "token": "Salad",
+        "token_repr": "' Salad'",
+        "cosine_similarity": 0.2227,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 31,
+        "token_id": 85336,
+        "token": "seasoning",
+        "token_repr": "' seasoning'",
+        "cosine_similarity": 0.2227,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 32,
+        "token_id": 125813,
+        "token": "seawater",
+        "token_repr": "' seawater'",
+        "cosine_similarity": 0.2217,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 33,
+        "token_id": 12463,
+        "token": "rice",
+        "token_repr": "' rice'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 34,
+        "token_id": 220225,
+        "token": "brackish",
+        "token_repr": "' brackish'",
+        "cosine_similarity": 0.2207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 35,
+        "token_id": 40520,
+        "token": "potassium",
+        "token_repr": "' potassium'",
+        "cosine_similarity": 0.2197,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 36,
+        "token_id": 45785,
+        "token": "spice",
+        "token_repr": "' spice'",
+        "cosine_similarity": 0.2197,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 37,
+        "token_id": 91793,
+        "token": "electrolyte",
+        "token_repr": "' electrolyte'",
+        "cosine_similarity": 0.2158,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 38,
+        "token_id": 159183,
+        "token": "SLC",
+        "token_repr": "' SLC'",
+        "cosine_similarity": 0.2129,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 39,
+        "token_id": 174269,
+        "token": "unsalted",
+        "token_repr": "' unsalted'",
+        "cosine_similarity": 0.2129,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 40,
+        "token_id": 49692,
+        "token": "magnesium",
+        "token_repr": "' magnesium'",
+        "cosine_similarity": 0.21,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 41,
+        "token_id": 87635,
+        "token": "alkali",
+        "token_repr": "' alkali'",
+        "cosine_similarity": 0.209,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 42,
+        "token_id": 31823,
+        "token": "zinc",
+        "token_repr": "' zinc'",
+        "cosine_similarity": 0.208,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 43,
+        "token_id": 86835,
+        "token": "Ionic",
+        "token_repr": "' Ionic'",
+        "cosine_similarity": 0.208,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 44,
+        "token_id": 199860,
+        "token": "seasonings",
+        "token_repr": "' seasonings'",
+        "cosine_similarity": 0.207,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 45,
+        "token_id": 17682,
+        "token": "pepper",
+        "token_repr": "' pepper'",
+        "cosine_similarity": 0.2051,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 46,
+        "token_id": 77952,
+        "token": "Spice",
+        "token_repr": "' Spice'",
+        "cosine_similarity": 0.2051,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 47,
+        "token_id": 25001,
+        "token": "Sugar",
+        "token_repr": "' Sugar'",
+        "cosine_similarity": 0.2041,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 48,
+        "token_id": 26477,
+        "token": "sail",
+        "token_repr": "' sail'",
+        "cosine_similarity": 0.2041,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 49,
+        "token_id": 39376,
+        "token": "pickle",
+        "token_repr": "' pickle'",
+        "cosine_similarity": 0.2031,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      },
+      {
+        "rank": 50,
+        "token_id": 96574,
+        "token": "Mormon",
+        "token_repr": "' Mormon'",
+        "cosine_similarity": 0.2031,
+        "code": "NEEDS_REVIEW",
+        "code_justification": "English content word; SY/TX/CO requires semantic review.",
+        "code_confident": false
+      }
+    ],
+    "profile": {
+      "n": 50,
+      "counts": {
+        "SY": 0,
+        "UR": 0,
+        "TL": 0,
+        "CO": 0,
+        "TX": 0,
+        "MO": 9,
+        "NEEDS_REVIEW": 41
+      },
+      "langue_TL_SY_TX": 0,
+      "parole_CO": 0,
+      "needs_review": 41,
+      "langue_pct_of_all": 0.0,
+      "parole_pct_of_all": 0.0
+    }
+  }
+}
