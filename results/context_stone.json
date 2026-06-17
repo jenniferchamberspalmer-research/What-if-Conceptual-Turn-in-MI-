@@ -1,0 +1,1053 @@
+{
+  "word": "stone",
+  "stratum": "A",
+  "sentence": "The pilgrim knelt and kissed the stone at the shrine.",
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "The stone is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' a'",
+          "probability": 0.18805,
+          "log_prob": -1.671
+        },
+        {
+          "rank": 2,
+          "token": "' the'",
+          "probability": 0.06918,
+          "log_prob": -2.671
+        },
+        {
+          "rank": 3,
+          "token": "' '",
+          "probability": 0.03703,
+          "log_prob": -3.296
+        },
+        {
+          "rank": 4,
+          "token": "' said'",
+          "probability": 0.03703,
+          "log_prob": -3.296
+        },
+        {
+          "rank": 5,
+          "token": "' an'",
+          "probability": 0.03268,
+          "log_prob": -3.421
+        },
+        {
+          "rank": 6,
+          "token": "' not'",
+          "probability": 0.02545,
+          "log_prob": -3.671
+        },
+        {
+          "rank": 7,
+          "token": "' made'",
+          "probability": 0.02545,
+          "log_prob": -3.671
+        },
+        {
+          "rank": 8,
+          "token": "' one'",
+          "probability": 0.02545,
+          "log_prob": -3.671
+        },
+        {
+          "rank": 9,
+          "token": "' in'",
+          "probability": 0.02545,
+          "log_prob": -3.671
+        },
+        {
+          "rank": 10,
+          "token": "' believed'",
+          "probability": 0.02246,
+          "log_prob": -3.796
+        },
+        {
+          "rank": 11,
+          "token": "' very'",
+          "probability": 0.02246,
+          "log_prob": -3.796
+        },
+        {
+          "rank": 12,
+          "token": "' called'",
+          "probability": 0.02246,
+          "log_prob": -3.796
+        },
+        {
+          "rank": 13,
+          "token": "' located'",
+          "probability": 0.02246,
+          "log_prob": -3.796
+        },
+        {
+          "rank": 14,
+          "token": "' now'",
+          "probability": 0.01749,
+          "log_prob": -4.046
+        },
+        {
+          "rank": 15,
+          "token": "' from'",
+          "probability": 0.01749,
+          "log_prob": -4.046
+        },
+        {
+          "rank": 16,
+          "token": "' about'",
+          "probability": 0.01749,
+          "log_prob": -4.046
+        },
+        {
+          "rank": 17,
+          "token": "' found'",
+          "probability": 0.01362,
+          "log_prob": -4.296
+        },
+        {
+          "rank": 18,
+          "token": "' carved'",
+          "probability": 0.01362,
+          "log_prob": -4.296
+        },
+        {
+          "rank": 19,
+          "token": "' still'",
+          "probability": 0.01202,
+          "log_prob": -4.421
+        },
+        {
+          "rank": 20,
+          "token": "' set'",
+          "probability": 0.01202,
+          "log_prob": -4.421
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "The holy stone is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' a'",
+          "probability": 0.38481,
+          "log_prob": -0.955
+        },
+        {
+          "rank": 2,
+          "token": "' the'",
+          "probability": 0.16041,
+          "log_prob": -1.83
+        },
+        {
+          "rank": 3,
+          "token": "' an'",
+          "probability": 0.07577,
+          "log_prob": -2.58
+        },
+        {
+          "rank": 4,
+          "token": "' one'",
+          "probability": 0.05208,
+          "log_prob": -2.955
+        },
+        {
+          "rank": 5,
+          "token": "' made'",
+          "probability": 0.0246,
+          "log_prob": -3.705
+        },
+        {
+          "rank": 6,
+          "token": "' not'",
+          "probability": 0.01916,
+          "log_prob": -3.955
+        },
+        {
+          "rank": 7,
+          "token": "' said'",
+          "probability": 0.01916,
+          "log_prob": -3.955
+        },
+        {
+          "rank": 8,
+          "token": "' used'",
+          "probability": 0.01691,
+          "log_prob": -4.08
+        },
+        {
+          "rank": 9,
+          "token": "' in'",
+          "probability": 0.01691,
+          "log_prob": -4.08
+        },
+        {
+          "rank": 10,
+          "token": "' also'",
+          "probability": 0.01492,
+          "log_prob": -4.205
+        },
+        {
+          "rank": 11,
+          "token": "' located'",
+          "probability": 0.01162,
+          "log_prob": -4.455
+        },
+        {
+          "rank": 12,
+          "token": "' considered'",
+          "probability": 0.00705,
+          "log_prob": -4.955
+        },
+        {
+          "rank": 13,
+          "token": "' very'",
+          "probability": 0.00705,
+          "log_prob": -4.955
+        },
+        {
+          "rank": 14,
+          "token": "' believed'",
+          "probability": 0.00622,
+          "log_prob": -5.08
+        },
+        {
+          "rank": 15,
+          "token": "' known'",
+          "probability": 0.00622,
+          "log_prob": -5.08
+        },
+        {
+          "rank": 16,
+          "token": "' '",
+          "probability": 0.00622,
+          "log_prob": -5.08
+        },
+        {
+          "rank": 17,
+          "token": "' called'",
+          "probability": 0.00549,
+          "log_prob": -5.205
+        },
+        {
+          "rank": 18,
+          "token": "' found'",
+          "probability": 0.00549,
+          "log_prob": -5.205
+        },
+        {
+          "rank": 19,
+          "token": "' placed'",
+          "probability": 0.00484,
+          "log_prob": -5.33
+        },
+        {
+          "rank": 20,
+          "token": "' now'",
+          "probability": 0.00484,
+          "log_prob": -5.33
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "The cracked stone is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' a'",
+          "probability": 0.21885,
+          "log_prob": -1.519
+        },
+        {
+          "rank": 2,
+          "token": "' the'",
+          "probability": 0.11714,
+          "log_prob": -2.144
+        },
+        {
+          "rank": 3,
+          "token": "' not'",
+          "probability": 0.03803,
+          "log_prob": -3.269
+        },
+        {
+          "rank": 4,
+          "token": "' an'",
+          "probability": 0.03803,
+          "log_prob": -3.269
+        },
+        {
+          "rank": 5,
+          "token": "' one'",
+          "probability": 0.03356,
+          "log_prob": -3.394
+        },
+        {
+          "rank": 6,
+          "token": "' still'",
+          "probability": 0.02614,
+          "log_prob": -3.644
+        },
+        {
+          "rank": 7,
+          "token": "' in'",
+          "probability": 0.02614,
+          "log_prob": -3.644
+        },
+        {
+          "rank": 8,
+          "token": "' now'",
+          "probability": 0.02036,
+          "log_prob": -3.894
+        },
+        {
+          "rank": 9,
+          "token": "' very'",
+          "probability": 0.01796,
+          "log_prob": -4.019
+        },
+        {
+          "rank": 10,
+          "token": "' made'",
+          "probability": 0.01585,
+          "log_prob": -4.144
+        },
+        {
+          "rank": 11,
+          "token": "' '",
+          "probability": 0.01399,
+          "log_prob": -4.269
+        },
+        {
+          "rank": 12,
+          "token": "' located'",
+          "probability": 0.01399,
+          "log_prob": -4.269
+        },
+        {
+          "rank": 13,
+          "token": "' just'",
+          "probability": 0.01235,
+          "log_prob": -4.394
+        },
+        {
+          "rank": 14,
+          "token": "' so'",
+          "probability": 0.01235,
+          "log_prob": -4.394
+        },
+        {
+          "rank": 15,
+          "token": "' broken'",
+          "probability": 0.01235,
+          "log_prob": -4.394
+        },
+        {
+          "rank": 16,
+          "token": "' from'",
+          "probability": 0.0109,
+          "log_prob": -4.519
+        },
+        {
+          "rank": 17,
+          "token": "' part'",
+          "probability": 0.0109,
+          "log_prob": -4.519
+        },
+        {
+          "rank": 18,
+          "token": "' used'",
+          "probability": 0.0109,
+          "log_prob": -4.519
+        },
+        {
+          "rank": 19,
+          "token": "' on'",
+          "probability": 0.0109,
+          "log_prob": -4.519
+        },
+        {
+          "rank": 20,
+          "token": "' covered'",
+          "probability": 0.00849,
+          "log_prob": -4.769
+        }
+      ]
+    }
+  ],
+  "view3": {
+    "6": {
+      "probe_word": {
+        "target": "stone",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 11736,
+            "activation": 40.9047,
+            "description": "references to various types of stone and their uses",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/11736"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 13460,
+            "activation": 15.7085,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 5417,
+            "activation": 11.1147,
+            "description": " words and terms related to scientific classifications and taxonomies, particularly focusing on 'Staphylococcus' and other related categories",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/5417"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 9743,
+            "activation": 10.682,
+            "description": "references to scientific or medical concepts and entities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/9743"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 13795,
+            "activation": 10.4011,
+            "description": " keywords related to scientific studies and research documentation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13795"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 10978,
+            "activation": 9.1523,
+            "description": "chemical compounds and related scientific terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/10978"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 14397,
+            "activation": 7.6891,
+            "description": " specialized technical terms and symbols related to scientific and mathematical concepts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14397"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 2585,
+            "activation": 7.489,
+            "description": " keywords related to authority figures and professionals in various contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2585"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 16224,
+            "activation": 7.1897,
+            "description": "terms related to rules, regulations, and governance in scientific and technical contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/16224"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 4110,
+            "activation": 7.0238,
+            "description": " names of people, places, or items related to specific historical or cultural references",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4110"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13997,
+            "activation": 6.9929,
+            "description": "terms and phrases related to programming and software development",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13997"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 4025,
+            "activation": 6.3803,
+            "description": "locations and objects related to domestic environments",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4025"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 3418,
+            "activation": 6.358,
+            "description": "terms and phrases related to biochemical compounds and their effects in a research or scientific context",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/3418"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 5884,
+            "activation": 6.3516,
+            "description": "references to physical contact and touching",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/5884"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 15497,
+            "activation": 6.2301,
+            "description": "terms related to idiomatic language and specific scientific terminology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/15497"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 7002,
+            "activation": 31.3365,
+            "description": " punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7002"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 9743,
+            "activation": 18.8463,
+            "description": "references to scientific or medical concepts and entities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/9743"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 2278,
+            "activation": 10.6028,
+            "description": "direct speech and dialogue tags in narrative",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2278"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 13460,
+            "activation": 10.3788,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 12939,
+            "activation": 9.6387,
+            "description": " punctuation marks that conclude sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12939"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 4550,
+            "activation": 6.9428,
+            "description": " instances of numerical data or statistics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4550"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 16131,
+            "activation": 6.5483,
+            "description": " punctuation and sentence structure elements indicating dialogue and emotional reactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/16131"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 13073,
+            "activation": 5.6388,
+            "description": " commands and code structures in programming or scripting contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13073"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 1864,
+            "activation": 4.9921,
+            "description": " occurrences of specific numeric and contextual references or identifiers",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1864"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 13853,
+            "activation": 4.8158,
+            "description": "potentially controversial actions or events related to public sentiment and debate",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13853"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 14326,
+            "activation": 4.3081,
+            "description": "sentences that discuss improvements or enhancements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14326"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 5648,
+            "activation": 4.1396,
+            "description": " phrases related to making statements or clarifications",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/5648"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 143,
+            "activation": 3.4053,
+            "description": "references to inquiry and questioning",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/143"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 12597,
+            "activation": 3.0775,
+            "description": "phrases or words related to commercial transactions and exchanges",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12597"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 7734,
+            "activation": 2.9724,
+            "description": "conjunctions and phrases indicating interactions between characters",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7734"
+          }
+        ]
+      }
+    },
+    "12": {
+      "probe_word": {
+        "target": "stone",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 2620,
+            "activation": 31.7641,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 7507,
+            "activation": 30.9733,
+            "description": "numerical data and references related to statistics and measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7507"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 3522,
+            "activation": 28.8577,
+            "description": "references to stone and rock materials, along with their properties and uses",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/3522"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 15132,
+            "activation": 23.2407,
+            "description": "references to types of materials, specifically stone and wood",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15132"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 14906,
+            "activation": 19.4919,
+            "description": "objects and tools related to eating or handling food",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14906"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 2291,
+            "activation": 17.9878,
+            "description": "technical or mathematical symbols and terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2291"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 1322,
+            "activation": 16.5003,
+            "description": "terms related to scientific research and medical context",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1322"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 1041,
+            "activation": 15.0843,
+            "description": "technical terms and concepts related to programming or data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 6250,
+            "activation": 13.9312,
+            "description": "elements related to legal cases and proceedings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6250"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 8535,
+            "activation": 12.9179,
+            "description": "references to significant historical buildings and their characteristics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8535"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13719,
+            "activation": 12.1443,
+            "description": "references to stones or stone-related items",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13719"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 12518,
+            "activation": 11.2958,
+            "description": "words related to different types of \"Staphylococcus\" and \"Streptococcus\" bacteria",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12518"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 7541,
+            "activation": 11.1001,
+            "description": "phrases related to technical descriptions and comparisons in software development contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7541"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 2610,
+            "activation": 9.8418,
+            "description": "specific terms and acronyms related to academic and scientific disciplines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2610"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 7301,
+            "activation": 9.7404,
+            "description": "names and references related to specific individuals, particularly those with the prefix \"Ton.\"",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7301"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 1371,
+            "activation": 32.4777,
+            "description": "distinct pieces of punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1371"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 2620,
+            "activation": 25.8894,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 304,
+            "activation": 24.4708,
+            "description": "punctuation marks and their usage in sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/304"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 15143,
+            "activation": 21.6011,
+            "description": "phrases related to teamwork and sports dynamics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15143"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 1041,
+            "activation": 20.2717,
+            "description": "technical terms and concepts related to programming or data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 2291,
+            "activation": 17.0829,
+            "description": "technical or mathematical symbols and terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2291"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 11646,
+            "activation": 14.8112,
+            "description": " sentences that express opinions or summaries",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11646"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 14266,
+            "activation": 14.0377,
+            "description": "emotional expressions and interactions between characters",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14266"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 7248,
+            "activation": 10.8361,
+            "description": " statements indicating strong emotions or feelings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7248"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 4246,
+            "activation": 10.69,
+            "description": "references to healthcare and medical terminology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4246"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 11306,
+            "activation": 10.3692,
+            "description": "Japanese characters and terms related to web development or technology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11306"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 13390,
+            "activation": 10.0053,
+            "description": " recurring actions or events that signify essential changes or requirements in various contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13390"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 1978,
+            "activation": 9.9106,
+            "description": " punctuation marks and pauses in text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1978"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 4790,
+            "activation": 9.8791,
+            "description": "states of heightened emotion or tension in interpersonal relationships",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4790"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 12851,
+            "activation": 8.7212,
+            "description": "expressions of fatigue and emotional distress",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12851"
+          }
+        ]
+      }
+    },
+    "19": {
+      "probe_word": {
+        "target": "stone",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 16121,
+            "activation": 98.4605,
+            "description": "terms related to stone or rocky materials",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/16121"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 3103,
+            "activation": 49.486,
+            "description": "mentions of stone and its various applications and treatments",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3103"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 4384,
+            "activation": 47.2541,
+            "description": "elements related to memorials and historical monuments",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4384"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 4742,
+            "activation": 36.3307,
+            "description": "technical terms and concepts related to scientific analysis and calculations",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4742"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 3019,
+            "activation": 35.68,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 105,
+            "activation": 34.6268,
+            "description": " references to materials, particularly those used in manufacturing and construction",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/105"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 759,
+            "activation": 33.6863,
+            "description": "specific physical objects and structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/759"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 5111,
+            "activation": 27.3972,
+            "description": "references to legal and statistical terms related to statutes and measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5111"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 12339,
+            "activation": 24.5927,
+            "description": "issues related to communication technology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12339"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 1910,
+            "activation": 22.1777,
+            "description": "technical terms and concepts related to invention and manufacturing processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1910"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 12025,
+            "activation": 20.9575,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 3552,
+            "activation": 20.8573,
+            "description": " topics related to health and therapy, particularly involving unconventional treatments and their societal implications",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3552"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 5825,
+            "activation": 19.1288,
+            "description": "phrases related to procedural or instructional content",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5825"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 11104,
+            "activation": 17.3899,
+            "description": "terms related to actions and documentation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11104"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 11525,
+            "activation": 15.6584,
+            "description": "technical terms and concepts related to sensor technology and structural improvements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11525"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 5406,
+            "activation": 63.9924,
+            "description": "statements or sentiments expressed in complex or reflective contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5406"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 12025,
+            "activation": 63.1487,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 15521,
+            "activation": 53.5975,
+            "description": " punctuation marks and their frequencies in text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15521"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 1186,
+            "activation": 43.715,
+            "description": "descriptive narratives about loss and mourning",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1186"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 3019,
+            "activation": 42.1344,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 12845,
+            "activation": 33.0077,
+            "description": "transitions or processes involving actions and occurrences, often in a sequence or series of steps",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12845"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 14553,
+            "activation": 20.0224,
+            "description": " punctuation marks and their functions within sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/14553"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 2784,
+            "activation": 18.9227,
+            "description": "punctuation and certain structural elements in sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2784"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 10662,
+            "activation": 18.4533,
+            "description": " punctuation marks and formatting elements in the text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10662"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 10456,
+            "activation": 18.3463,
+            "description": "terms related to religious rituals and offerings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10456"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 1910,
+            "activation": 18.0195,
+            "description": "technical terms and concepts related to invention and manufacturing processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1910"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 4064,
+            "activation": 17.7377,
+            "description": "references to military actions or conflicts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4064"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 9815,
+            "activation": 17.2675,
+            "description": " expressions of emotional or physical states",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9815"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 2086,
+            "activation": 17.2591,
+            "description": "punctuation that indicates questions and statements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2086"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 3798,
+            "activation": 16.0643,
+            "description": "specific narrative elements related to dialogues and character interactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3798"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "_note": "User-authored contextual frames for the sacred/profane sub-probe. View 2 (Tab 2) = next-token fragments ending mid-clause; the model predicts the token after 'is'. View 3 (Tab 3) = full sentence embedding the probe in a ritual use-context; SAE features read at the probe-word token, layers 6/12/19.",
-  "_design": "Per word: a neutral frame, a SACRED frame (holy ...), and a PROFANE/DEGRADED frame (polluted/tainted/molded ...). Tests whether contextual priming pulls the next-token disposition (View 2) and the SAE feature profile (View 3) toward experiential/parole content.",
+  "_note": "Contextual frames for the sacred/profane sub-probe. View 2 (Tab 2) = next-token fragments ending mid-clause; the model predicts the token after 'is'. View 3 (Tab 3) = full sentence embedding the probe in a ritual use-context; SAE features read at the probe-word token AND the last token, layers 6/12/19.",
+  "_design": "Per word: a neutral frame, a SACRED frame (holy ...), and a PROFANE/DEGRADED frame (spoilage/contamination: polluted/tainted/molded/cracked/dying/diseased/withered/rotting/spoiled/brittle). Tests whether contextual priming pulls the next-token disposition (View 2) and the SAE feature profile (View 3) toward experiential/parole content. water/salt/bread authored by the researcher; stone/fire/blood/hand/tree/milk/bone extended to match the same template.",
   "water": {
     "view2": [
       {"id": "neutral", "prompt": "The water is"},
@@ -24,5 +24,61 @@
       {"id": "profane", "prompt": "The molded bread is"}
     ],
     "view3": "The priest broke the bread for communion."
+  },
+  "stone": {
+    "view2": [
+      {"id": "neutral", "prompt": "The stone is"},
+      {"id": "sacred",  "prompt": "The holy stone is"},
+      {"id": "profane", "prompt": "The cracked stone is"}
+    ],
+    "view3": "The pilgrim knelt and kissed the stone at the shrine."
+  },
+  "fire": {
+    "view2": [
+      {"id": "neutral", "prompt": "The fire is"},
+      {"id": "sacred",  "prompt": "The holy fire is"},
+      {"id": "profane", "prompt": "The dying fire is"}
+    ],
+    "view3": "The priest lit the fire upon the altar."
+  },
+  "blood": {
+    "view2": [
+      {"id": "neutral", "prompt": "The blood is"},
+      {"id": "sacred",  "prompt": "The holy blood is"},
+      {"id": "profane", "prompt": "The diseased blood is"}
+    ],
+    "view3": "The priest sprinkled the blood upon the altar."
+  },
+  "hand": {
+    "view2": [
+      {"id": "neutral", "prompt": "The hand is"},
+      {"id": "sacred",  "prompt": "The holy hand is"},
+      {"id": "profane", "prompt": "The withered hand is"}
+    ],
+    "view3": "The priest laid his hand upon the child's head."
+  },
+  "tree": {
+    "view2": [
+      {"id": "neutral", "prompt": "The tree is"},
+      {"id": "sacred",  "prompt": "The holy tree is"},
+      {"id": "profane", "prompt": "The rotting tree is"}
+    ],
+    "view3": "The villagers prayed beneath the sacred tree."
+  },
+  "milk": {
+    "view2": [
+      {"id": "neutral", "prompt": "The milk is"},
+      {"id": "sacred",  "prompt": "The holy milk is"},
+      {"id": "profane", "prompt": "The spoiled milk is"}
+    ],
+    "view3": "The priestess poured the milk as an offering."
+  },
+  "bone": {
+    "view2": [
+      {"id": "neutral", "prompt": "The bone is"},
+      {"id": "sacred",  "prompt": "The holy bone is"},
+      {"id": "profane", "prompt": "The brittle bone is"}
+    ],
+    "view3": "The pilgrims venerated the saint's bone as a relic."
   }
 }
