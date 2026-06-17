@@ -1,0 +1,28 @@
+{
+  "_note": "User-authored contextual frames for the sacred/profane sub-probe. View 2 (Tab 2) = next-token fragments ending mid-clause; the model predicts the token after 'is'. View 3 (Tab 3) = full sentence embedding the probe in a ritual use-context; SAE features read at the probe-word token, layers 6/12/19.",
+  "_design": "Per word: a neutral frame, a SACRED frame (holy ...), and a PROFANE/DEGRADED frame (polluted/tainted/molded ...). Tests whether contextual priming pulls the next-token disposition (View 2) and the SAE feature profile (View 3) toward experiential/parole content.",
+  "water": {
+    "view2": [
+      {"id": "neutral", "prompt": "The water is"},
+      {"id": "sacred",  "prompt": "The holy water is"},
+      {"id": "profane", "prompt": "The polluted water is"}
+    ],
+    "view3": "The priest blessed the water before the baptism."
+  },
+  "salt": {
+    "view2": [
+      {"id": "neutral", "prompt": "The salt is"},
+      {"id": "sacred",  "prompt": "The holy salt is"},
+      {"id": "profane", "prompt": "The tainted salt is"}
+    ],
+    "view3": "The patron tossed the salt over his shoulder."
+  },
+  "bread": {
+    "view2": [
+      {"id": "neutral", "prompt": "The bread is"},
+      {"id": "sacred",  "prompt": "The holy bread is"},
+      {"id": "profane", "prompt": "The molded bread is"}
+    ],
+    "view3": "The priest broke the bread for communion."
+  }
+}

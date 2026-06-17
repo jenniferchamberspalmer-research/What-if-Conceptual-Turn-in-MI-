@@ -1,0 +1,1053 @@
+{
+  "word": "bread",
+  "stratum": "A",
+  "sentence": "The priest broke the bread for communion.",
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "The bread is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' good'",
+          "probability": 0.06194,
+          "log_prob": -2.782
+        },
+        {
+          "rank": 2,
+          "token": "' very'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 3,
+          "token": "' the'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 4,
+          "token": "' made'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 5,
+          "token": "' delicious'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 6,
+          "token": "' a'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 7,
+          "token": "' so'",
+          "probability": 0.05467,
+          "log_prob": -2.907
+        },
+        {
+          "rank": 8,
+          "token": "' baked'",
+          "probability": 0.04824,
+          "log_prob": -3.032
+        },
+        {
+          "rank": 9,
+          "token": "' fresh'",
+          "probability": 0.03757,
+          "log_prob": -3.282
+        },
+        {
+          "rank": 10,
+          "token": "' amazing'",
+          "probability": 0.02926,
+          "log_prob": -3.532
+        },
+        {
+          "rank": 11,
+          "token": "' great'",
+          "probability": 0.02926,
+          "log_prob": -3.532
+        },
+        {
+          "rank": 12,
+          "token": "' not'",
+          "probability": 0.02582,
+          "log_prob": -3.657
+        },
+        {
+          "rank": 13,
+          "token": "' always'",
+          "probability": 0.02582,
+          "log_prob": -3.657
+        },
+        {
+          "rank": 14,
+          "token": "' soft'",
+          "probability": 0.02279,
+          "log_prob": -3.782
+        },
+        {
+          "rank": 15,
+          "token": "' excellent'",
+          "probability": 0.02279,
+          "log_prob": -3.782
+        },
+        {
+          "rank": 16,
+          "token": "' really'",
+          "probability": 0.02011,
+          "log_prob": -3.907
+        },
+        {
+          "rank": 17,
+          "token": "' still'",
+          "probability": 0.02011,
+          "log_prob": -3.907
+        },
+        {
+          "rank": 18,
+          "token": "' one'",
+          "probability": 0.01076,
+          "log_prob": -4.532
+        },
+        {
+          "rank": 19,
+          "token": "' wonderful'",
+          "probability": 0.01076,
+          "log_prob": -4.532
+        },
+        {
+          "rank": 20,
+          "token": "' fantastic'",
+          "probability": 0.01076,
+          "log_prob": -4.532
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "The holy bread is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' a'",
+          "probability": 0.22535,
+          "log_prob": -1.49
+        },
+        {
+          "rank": 2,
+          "token": "' the'",
+          "probability": 0.12062,
+          "log_prob": -2.115
+        },
+        {
+          "rank": 3,
+          "token": "' made'",
+          "probability": 0.0829,
+          "log_prob": -2.49
+        },
+        {
+          "rank": 4,
+          "token": "' one'",
+          "probability": 0.04437,
+          "log_prob": -3.115
+        },
+        {
+          "rank": 5,
+          "token": "' an'",
+          "probability": 0.04437,
+          "log_prob": -3.115
+        },
+        {
+          "rank": 6,
+          "token": "' baked'",
+          "probability": 0.0305,
+          "log_prob": -3.49
+        },
+        {
+          "rank": 7,
+          "token": "' not'",
+          "probability": 0.0305,
+          "log_prob": -3.49
+        },
+        {
+          "rank": 8,
+          "token": "' prepared'",
+          "probability": 0.02375,
+          "log_prob": -3.74
+        },
+        {
+          "rank": 9,
+          "token": "' called'",
+          "probability": 0.02375,
+          "log_prob": -3.74
+        },
+        {
+          "rank": 10,
+          "token": "' also'",
+          "probability": 0.02096,
+          "log_prob": -3.865
+        },
+        {
+          "rank": 11,
+          "token": "' used'",
+          "probability": 0.01632,
+          "log_prob": -4.115
+        },
+        {
+          "rank": 12,
+          "token": "' eaten'",
+          "probability": 0.01122,
+          "log_prob": -4.49
+        },
+        {
+          "rank": 13,
+          "token": "' blessed'",
+          "probability": 0.01122,
+          "log_prob": -4.49
+        },
+        {
+          "rank": 14,
+          "token": "' known'",
+          "probability": 0.0099,
+          "log_prob": -4.615
+        },
+        {
+          "rank": 15,
+          "token": "' usually'",
+          "probability": 0.0099,
+          "log_prob": -4.615
+        },
+        {
+          "rank": 16,
+          "token": "' very'",
+          "probability": 0.00874,
+          "log_prob": -4.74
+        },
+        {
+          "rank": 17,
+          "token": "' considered'",
+          "probability": 0.00874,
+          "log_prob": -4.74
+        },
+        {
+          "rank": 18,
+          "token": "' still'",
+          "probability": 0.00771,
+          "log_prob": -4.865
+        },
+        {
+          "rank": 19,
+          "token": "' offered'",
+          "probability": 0.00771,
+          "log_prob": -4.865
+        },
+        {
+          "rank": 20,
+          "token": "' in'",
+          "probability": 0.0068,
+          "log_prob": -4.99
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "The molded bread is",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' a'",
+          "probability": 0.21856,
+          "log_prob": -1.521
+        },
+        {
+          "rank": 2,
+          "token": "' made'",
+          "probability": 0.07096,
+          "log_prob": -2.646
+        },
+        {
+          "rank": 3,
+          "token": "' the'",
+          "probability": 0.06262,
+          "log_prob": -2.771
+        },
+        {
+          "rank": 4,
+          "token": "' very'",
+          "probability": 0.04304,
+          "log_prob": -3.146
+        },
+        {
+          "rank": 5,
+          "token": "' not'",
+          "probability": 0.03352,
+          "log_prob": -3.396
+        },
+        {
+          "rank": 6,
+          "token": "' an'",
+          "probability": 0.03352,
+          "log_prob": -3.396
+        },
+        {
+          "rank": 7,
+          "token": "' one'",
+          "probability": 0.03352,
+          "log_prob": -3.396
+        },
+        {
+          "rank": 8,
+          "token": "' delicious'",
+          "probability": 0.02033,
+          "log_prob": -3.896
+        },
+        {
+          "rank": 9,
+          "token": "' soft'",
+          "probability": 0.02033,
+          "log_prob": -3.896
+        },
+        {
+          "rank": 10,
+          "token": "' baked'",
+          "probability": 0.02033,
+          "log_prob": -3.896
+        },
+        {
+          "rank": 11,
+          "token": "' so'",
+          "probability": 0.01794,
+          "log_prob": -4.021
+        },
+        {
+          "rank": 12,
+          "token": "' also'",
+          "probability": 0.01583,
+          "log_prob": -4.146
+        },
+        {
+          "rank": 13,
+          "token": "' called'",
+          "probability": 0.01397,
+          "log_prob": -4.271
+        },
+        {
+          "rank": 14,
+          "token": "' easy'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        },
+        {
+          "rank": 15,
+          "token": "' still'",
+          "probability": 0.0096,
+          "log_prob": -4.646
+        },
+        {
+          "rank": 16,
+          "token": "' good'",
+          "probability": 0.0096,
+          "log_prob": -4.646
+        },
+        {
+          "rank": 17,
+          "token": "' ready'",
+          "probability": 0.0096,
+          "log_prob": -4.646
+        },
+        {
+          "rank": 18,
+          "token": "' usually'",
+          "probability": 0.00847,
+          "log_prob": -4.771
+        },
+        {
+          "rank": 19,
+          "token": "' used'",
+          "probability": 0.00748,
+          "log_prob": -4.896
+        },
+        {
+          "rank": 20,
+          "token": "' now'",
+          "probability": 0.00748,
+          "log_prob": -4.896
+        }
+      ]
+    }
+  ],
+  "view3": {
+    "6": {
+      "probe_word": {
+        "target": "bread",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 10500,
+            "activation": 28.8384,
+            "description": "references to different types of bread and related baked goods",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/10500"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 9743,
+            "activation": 26.8862,
+            "description": "references to scientific or medical concepts and entities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/9743"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 12001,
+            "activation": 23.036,
+            "description": "various types of food, specifically highlighting rice and bread dishes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12001"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 13460,
+            "activation": 15.0341,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 4004,
+            "activation": 12.0071,
+            "description": " references to religious figures and concepts, particularly relating to Christianity and biblical themes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4004"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 2923,
+            "activation": 10.625,
+            "description": " references to divine authority and celestial beings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2923"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 13795,
+            "activation": 9.422,
+            "description": " keywords related to scientific studies and research documentation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13795"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 14238,
+            "activation": 9.3459,
+            "description": "instances of the action of handing over objects or information",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14238"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 8519,
+            "activation": 8.8384,
+            "description": "references to spiritual growth and seeking understanding in a religious context",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/8519"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 2855,
+            "activation": 8.8185,
+            "description": "references to biblical figures, events, and ceremonial elements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2855"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 10273,
+            "activation": 8.5052,
+            "description": " terms related to dietary habits and food consumption",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/10273"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 11053,
+            "activation": 8.4556,
+            "description": "references to specific individuals or entities in a dataset",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/11053"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 1942,
+            "activation": 8.2155,
+            "description": "specific place names and geographical references",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1942"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 13678,
+            "activation": 8.2092,
+            "description": "food and drink items, particularly those related to meals and snacks",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13678"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 12788,
+            "activation": 7.8876,
+            "description": "terms related to legal processes and implications",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12788"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 7002,
+            "activation": 30.6975,
+            "description": " punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7002"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 9743,
+            "activation": 18.9169,
+            "description": "references to scientific or medical concepts and entities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/9743"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 12939,
+            "activation": 11.6958,
+            "description": " punctuation marks that conclude sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12939"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 13460,
+            "activation": 10.2287,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 2278,
+            "activation": 9.5147,
+            "description": "direct speech and dialogue tags in narrative",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2278"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 7015,
+            "activation": 6.0765,
+            "description": "sentences or phrases with punctuation indicating a pause or completion",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7015"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 4550,
+            "activation": 5.7634,
+            "description": " instances of numerical data or statistics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4550"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 13853,
+            "activation": 5.7381,
+            "description": "potentially controversial actions or events related to public sentiment and debate",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13853"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 1864,
+            "activation": 5.5946,
+            "description": " occurrences of specific numeric and contextual references or identifiers",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1864"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 13073,
+            "activation": 5.335,
+            "description": " commands and code structures in programming or scripting contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13073"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 7734,
+            "activation": 4.6133,
+            "description": "conjunctions and phrases indicating interactions between characters",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7734"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 4684,
+            "activation": 3.7945,
+            "description": "phrases that describe causal relationships or conditional statements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4684"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 14326,
+            "activation": 3.658,
+            "description": "sentences that discuss improvements or enhancements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14326"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 1077,
+            "activation": 3.4639,
+            "description": " statements concerning the treatment and characteristics of items or entities, particularly in scientific or technical contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1077"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 12597,
+            "activation": 3.1532,
+            "description": "phrases or words related to commercial transactions and exchanges",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12597"
+          }
+        ]
+      }
+    },
+    "12": {
+      "probe_word": {
+        "target": "bread",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 7507,
+            "activation": 33.4989,
+            "description": "numerical data and references related to statistics and measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7507"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 2620,
+            "activation": 31.5862,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 16008,
+            "activation": 28.3312,
+            "description": "various forms and types of bread and related food items",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/16008"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 1041,
+            "activation": 28.3078,
+            "description": "technical terms and concepts related to programming or data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 7541,
+            "activation": 24.158,
+            "description": "phrases related to technical descriptions and comparisons in software development contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7541"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 6444,
+            "activation": 18.6655,
+            "description": "information related to audience engagement and live performances",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6444"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 14906,
+            "activation": 16.4771,
+            "description": "objects and tools related to eating or handling food",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14906"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 11415,
+            "activation": 14.5632,
+            "description": "references to nuclear weapons and their consequences, specifically regarding Hiroshima and Nagasaki",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11415"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 8100,
+            "activation": 14.4604,
+            "description": "terms related to legal obligations and processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8100"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 6339,
+            "activation": 14.392,
+            "description": "references to Jesus Christ's death and its significance in relation to salvation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6339"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 2291,
+            "activation": 14.3912,
+            "description": "technical or mathematical symbols and terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2291"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 3268,
+            "activation": 11.8594,
+            "description": " events and activities related to eating and dining experiences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/3268"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 1322,
+            "activation": 11.0613,
+            "description": "terms related to scientific research and medical context",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1322"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 12585,
+            "activation": 10.659,
+            "description": "references to specific people, particularly those with the name \"Brian\" or variations thereof",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12585"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 5483,
+            "activation": 10.6209,
+            "description": "spiritual themes related to faith and divine authority",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/5483"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 1371,
+            "activation": 31.9793,
+            "description": "distinct pieces of punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1371"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 1041,
+            "activation": 27.9574,
+            "description": "technical terms and concepts related to programming or data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 2620,
+            "activation": 27.948,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 304,
+            "activation": 20.6617,
+            "description": "punctuation marks and their usage in sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/304"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 11646,
+            "activation": 17.2628,
+            "description": " sentences that express opinions or summaries",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11646"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 2291,
+            "activation": 16.3502,
+            "description": "technical or mathematical symbols and terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2291"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 6444,
+            "activation": 14.1313,
+            "description": "information related to audience engagement and live performances",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6444"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 1978,
+            "activation": 12.1356,
+            "description": " punctuation marks and pauses in text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1978"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 11306,
+            "activation": 11.9934,
+            "description": "Japanese characters and terms related to web development or technology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11306"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 14906,
+            "activation": 11.7567,
+            "description": "objects and tools related to eating or handling food",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14906"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 15143,
+            "activation": 11.7549,
+            "description": "phrases related to teamwork and sports dynamics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15143"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 4246,
+            "activation": 11.4707,
+            "description": "references to healthcare and medical terminology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4246"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 13390,
+            "activation": 11.1496,
+            "description": " recurring actions or events that signify essential changes or requirements in various contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13390"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 4790,
+            "activation": 11.0044,
+            "description": "states of heightened emotion or tension in interpersonal relationships",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4790"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 13899,
+            "activation": 10.3141,
+            "description": "connections and relationships within complex discussions or narratives",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13899"
+          }
+        ]
+      }
+    },
+    "19": {
+      "probe_word": {
+        "target": "bread",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 11610,
+            "activation": 63.6535,
+            "description": "words related to food, particularly specific types of sandwiches and their ingredients",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11610"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 12025,
+            "activation": 50.8409,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 11539,
+            "activation": 47.6094,
+            "description": "instances of the word \"break\" or its variations, indicating actions of separation or disruption",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11539"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 2203,
+            "activation": 42.4482,
+            "description": "terms related to religious practices and sacraments",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2203"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 3019,
+            "activation": 38.9121,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 9462,
+            "activation": 32.6569,
+            "description": "references to objects being held or manipulated, particularly in a context involving hands",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9462"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 7941,
+            "activation": 27.0208,
+            "description": " phrases related to division and classification of entities or concepts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/7941"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 1403,
+            "activation": 26.1347,
+            "description": "references to documentary filmmaking and commentary",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1403"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 1910,
+            "activation": 25.7431,
+            "description": "technical terms and concepts related to invention and manufacturing processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1910"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 10456,
+            "activation": 25.3408,
+            "description": "terms related to religious rituals and offerings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10456"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 11525,
+            "activation": 24.9189,
+            "description": "technical terms and concepts related to sensor technology and structural improvements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11525"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 12129,
+            "activation": 23.49,
+            "description": " references to political parties and government processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12129"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 14506,
+            "activation": 23.0557,
+            "description": " themes related to Christian beliefs and interpretations of Jesus' life",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/14506"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 10582,
+            "activation": 22.2825,
+            "description": " references to dining etiquette and utensil usage",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10582"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 7746,
+            "activation": 21.3078,
+            "description": "steps and ingredients related to cooking or baking recipes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/7746"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 12025,
+            "activation": 63.2731,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 15521,
+            "activation": 56.0107,
+            "description": " punctuation marks and their frequencies in text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15521"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 5406,
+            "activation": 50.0684,
+            "description": "statements or sentiments expressed in complex or reflective contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5406"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 3019,
+            "activation": 43.8631,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 1186,
+            "activation": 43.6172,
+            "description": "descriptive narratives about loss and mourning",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1186"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 2203,
+            "activation": 29.0071,
+            "description": "terms related to religious practices and sacraments",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2203"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 4905,
+            "activation": 17.9572,
+            "description": "references to church-related activities and events",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4905"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 9848,
+            "activation": 17.5448,
+            "description": "references to the Catholic Church and its controversies",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9848"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 10662,
+            "activation": 17.4132,
+            "description": " punctuation marks and formatting elements in the text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10662"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 9928,
+            "activation": 16.8699,
+            "description": " phrases related to student engagement and participation in classroom activities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9928"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13777,
+            "activation": 16.3893,
+            "description": " phrases indicating sequences of events or conditions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/13777"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 13116,
+            "activation": 16.3378,
+            "description": "content related to safety regulations and procedures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/13116"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 1910,
+            "activation": 16.152,
+            "description": "technical terms and concepts related to invention and manufacturing processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1910"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 14904,
+            "activation": 16.1377,
+            "description": "indicators of deception or misinformation in political discourse",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/14904"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 9760,
+            "activation": 16.0997,
+            "description": "the beginning of sentences or paragraphs in a document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9760"
+          }
+        ]
+      }
+    }
+  }
+}
