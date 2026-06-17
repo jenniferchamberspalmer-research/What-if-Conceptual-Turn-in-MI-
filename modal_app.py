@@ -55,7 +55,7 @@ image = (
         "transformers>=4.42,<5",
         "accelerate>=0.30",
         "sae-lens>=3.20",
-        "gradio>=4.36,<5",
+        "gradio>=5,<6",
         "pandas>=2.0",
         "requests>=2.31",
         "fastapi>=0.110",
@@ -83,6 +83,22 @@ def serve():
     import os
     os.environ["HF_HOME"] = "/cache/hf"
     os.environ["NEURONPEDIA_CACHE"] = "/cache/neuronpedia"
+
+    # Defensive guard against the gradio_client schema bug where building the
+    # API info crashes with "argument of type 'bool' is not iterable" on a bool
+    # JSON-schema node (e.g. additionalProperties: true). Fixed in gradio 5, but
+    # we guard get_type directly too (no-op if the attribute is absent).
+    try:
+        import gradio_client.utils as _gcu
+        _orig_get_type = getattr(_gcu, "get_type", None)
+        if _orig_get_type is not None:
+            def _safe_get_type(schema):
+                if isinstance(schema, bool):
+                    return "bool"
+                return _orig_get_type(schema)
+            _gcu.get_type = _safe_get_type
+    except Exception:
+        pass
 
     import gradio as gr
     from fastapi import FastAPI
