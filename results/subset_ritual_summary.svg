@@ -1,0 +1,38 @@
+<svg viewBox="0 0 780 460" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="780" height="460" fill="#ffffff"/>
+<text x="390.0" y="28.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#222" text-anchor="middle" font-weight="bold">Does context move salt and bread toward water&#8217;s situated sense?</text>
+<text x="390.0" y="46.0" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#666" text-anchor="middle" font-weight="normal">Three-word subset (water = reference word). Higher = more ritual/situated content.</text>
+<text x="215.0" y="76.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#222" text-anchor="middle" font-weight="bold">(1) Tier 2 ritual-verb mass</text>
+<text x="215.0" y="89.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#666" text-anchor="middle" font-weight="normal">&#931; prob in 'People use the holy X to ___'</text>
+<line x1="70" y1="390" x2="360" y2="390" stroke="#999" stroke-width="1"/>
+<rect x="100.5" y="150.0" width="56.0" height="240.0" fill="#2f855a" />
+<rect x="100.5" y="150.0" width="56.0" height="0.0" fill="#9ae6b4" />
+<text x="128.5" y="144.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">0.368</text>
+<text x="128.5" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#2b6cb0" text-anchor="middle" font-weight="bold">water</text>
+<rect x="187.0" y="233.2" width="56.0" height="156.8" fill="#2f855a" />
+<rect x="187.0" y="233.2" width="56.0" height="0.0" fill="#9ae6b4" />
+<text x="215.0" y="227.2" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">0.240</text>
+<text x="215.0" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#718096" text-anchor="middle" font-weight="bold">salt</text>
+<rect x="273.5" y="311.4" width="56.0" height="78.6" fill="#2f855a" />
+<rect x="273.5" y="182.6" width="56.0" height="128.8" fill="#9ae6b4" />
+<text x="301.5" y="176.6" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">0.318</text>
+<text x="301.5" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#b7791f" text-anchor="middle" font-weight="bold">bread</text>
+<rect x="88.0" y="426.0" width="12.0" height="12.0" fill="#2f855a" />
+<text x="106.0" y="437.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#444" text-anchor="start" font-weight="normal">liturgical (bless, cleanse, purify, ward, pray, bap-, sancti-)</text>
+<rect x="88.0" y="444.0" width="12.0" height="12.0" fill="#9ae6b4" />
+<text x="106.0" y="455.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#444" text-anchor="start" font-weight="normal">ceremonial-but-secular (celebrate, commemorate, honor, worship)</text>
+<text x="595.0" y="76.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#222" text-anchor="middle" font-weight="bold">(2) View 3 ritual-feature activation</text>
+<text x="595.0" y="89.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#666" text-anchor="middle" font-weight="normal">max religious SAE feature, layer 19 probe-token</text>
+<line x1="470" y1="390" x2="720" y2="390" stroke="#999" stroke-width="1"/>
+<rect x="495.0" y="240.7" width="50.0" height="149.3" fill="#6b46c1" />
+<text x="520.0" y="234.7" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">26.4</text>
+<text x="520.0" y="220.7" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#666" text-anchor="middle" font-weight="normal">#11082</text>
+<text x="520.0" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#2b6cb0" text-anchor="middle" font-weight="bold">water</text>
+<rect x="570.0" y="390.0" width="50.0" height="0.0" fill="#ddd" />
+<text x="595.0" y="384.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">0 (none)</text>
+<text x="595.0" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#718096" text-anchor="middle" font-weight="bold">salt</text>
+<rect x="645.0" y="150.0" width="50.0" height="240.0" fill="#6b46c1" />
+<text x="670.0" y="144.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#222" text-anchor="middle" font-weight="bold">42.4</text>
+<text x="670.0" y="130.0" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#666" text-anchor="middle" font-weight="normal">#2203</text>
+<text x="670.0" y="406.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#b7791f" text-anchor="middle" font-weight="bold">bread</text>
+</svg>

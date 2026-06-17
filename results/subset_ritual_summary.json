@@ -1,0 +1,155 @@
+{
+  "water": {
+    "tier2": {
+      "prompt": "People use the holy water to",
+      "mass": 0.36757,
+      "liturgical": 0.36757,
+      "ceremonial_secular": 0,
+      "verbs": [
+        {
+          "token": "cleanse",
+          "probability": 0.10932,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "bless",
+          "probability": 0.06631,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "purify",
+          "probability": 0.05164,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "ward",
+          "probability": 0.04022,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "sprinkle",
+          "probability": 0.03549,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "pray",
+          "probability": 0.02153,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "bap",
+          "probability": 0.02153,
+          "class": "LITURGICAL_FRAGMENT"
+        },
+        {
+          "token": "sancti",
+          "probability": 0.02153,
+          "class": "LITURGICAL_FRAGMENT"
+        }
+      ]
+    },
+    "view3": {
+      "sentence": "The priest blessed the water before the baptism.",
+      "activation": 26.407,
+      "feature_idx": 11082,
+      "description": "terms related to religious rituals and ordinances"
+    }
+  },
+  "salt": {
+    "tier2": {
+      "prompt": "People use the holy salt to",
+      "mass": 0.24022,
+      "liturgical": 0.24022,
+      "ceremonial_secular": 0,
+      "verbs": [
+        {
+          "token": "purify",
+          "probability": 0.08581,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "cleanse",
+          "probability": 0.05897,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "ward",
+          "probability": 0.05204,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "sprinkle",
+          "probability": 0.0217,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "bless",
+          "probability": 0.0217,
+          "class": "LITURGICAL"
+        }
+      ]
+    },
+    "view3": {
+      "sentence": "The priest blessed the salt for the rite.",
+      "activation": 0.0,
+      "feature_idx": null,
+      "description": null
+    }
+  },
+  "bread": {
+    "tier2": {
+      "prompt": "People use the holy bread to",
+      "mass": 0.31763,
+      "liturgical": 0.1204,
+      "ceremonial_secular": 0.19723,
+      "verbs": [
+        {
+          "token": "celebrate",
+          "probability": 0.10341,
+          "class": "CEREMONIAL_SECULAR"
+        },
+        {
+          "token": "bless",
+          "probability": 0.05535,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "commemorate",
+          "probability": 0.03804,
+          "class": "CEREMONIAL_SECULAR"
+        },
+        {
+          "token": "honor",
+          "probability": 0.02963,
+          "class": "CEREMONIAL_SECULAR"
+        },
+        {
+          "token": "worship",
+          "probability": 0.02963,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "mark",
+          "probability": 0.02615,
+          "class": "CEREMONIAL_SECULAR"
+        },
+        {
+          "token": "pray",
+          "probability": 0.02307,
+          "class": "LITURGICAL"
+        },
+        {
+          "token": "consec",
+          "probability": 0.01235,
+          "class": "LITURGICAL_FRAGMENT"
+        }
+      ]
+    },
+    "view3": {
+      "sentence": "The priest broke the bread for communion.",
+      "activation": 42.448,
+      "feature_idx": 2203,
+      "description": "terms related to religious practices and sacraments"
+    }
+  }
+}
