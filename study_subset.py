@@ -63,7 +63,7 @@ TIER2_LABEL = "Tier 2 (higher contextual pressure): 'People use the {cond} {targ
     volumes={"/cache": volume},
 )
 def run_word(word: str, tier1_json: str, tier2_json: str, sentence: str,
-             k_view2: int = 20, k_view3: int = 15):
+             out_name: str = "", k_view2: int = 20, k_view3: int = 15):
     os.environ["HF_HOME"] = "/cache/hf"
     os.environ["NEURONPEDIA_CACHE"] = "/cache/neuronpedia"
     os.makedirs(RESULTS_DIR, exist_ok=True)
@@ -142,14 +142,15 @@ def run_word(word: str, tier1_json: str, tier2_json: str, sentence: str,
         "view2_tier2": {"label": TIER2_LABEL.format(target=word, cond="holy"), "frames": tier2},
         "view3": v3,
     }
-    with open(os.path.join(RESULTS_DIR, f"subset_{word}.json"), "w") as f:
+    out_name = out_name or f"subset_{word}"
+    with open(os.path.join(RESULTS_DIR, f"{out_name}.json"), "w") as f:
         json.dump(rec, f, ensure_ascii=False, indent=2)
     volume.commit()
     return rec
 
 
 @app.local_entrypoint()
-def main(word: str):
+def main(word: str, sentence: str = "", out_name: str = "", view3_only: bool = False):
     here = os.path.dirname(os.path.abspath(__file__))
     frames_orig = json.load(open(os.path.join(here, "results", "frames_stratum_A.json"), encoding="utf-8"))
     frames_forced = json.load(open(os.path.join(here, "results", "frames_view2_forced.json"), encoding="utf-8"))
@@ -157,18 +158,22 @@ def main(word: str):
     if word not in frames_orig:
         raise SystemExit(f"No frames for {word!r}.")
 
-    tier1 = frames_orig[word]["view2"]
-    tier2 = frames_forced[word]["view2"]
-    sentence = frames_orig[word]["view3"]
+    # view3_only skips both View 2 tiers (empty frame lists). `sentence`
+    # overrides the default View 3 sentence (e.g. a religiosity-matched probe).
+    tier1 = [] if view3_only else frames_orig[word]["view2"]
+    tier2 = [] if view3_only else frames_forced[word]["view2"]
+    sent = sentence or frames_orig[word]["view3"]
+    out_name = out_name or f"subset_{word}"
 
     rec = run_word.remote(
         word=word,
         tier1_json=json.dumps(tier1),
         tier2_json=json.dumps(tier2),
-        sentence=sentence,
+        sentence=sent,
+        out_name=out_name,
     )
 
-    out_path = os.path.join(here, "results", f"subset_{word}.json")
+    out_path = os.path.join(here, "results", f"{out_name}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(rec, f, ensure_ascii=False, indent=2)
 
@@ -202,7 +207,7 @@ def main(word: str):
                 desc = (ft["description"] or "")[:68]
                 print(f"      [{ft['activation']:>7.3f}] #{ft['feature_idx']}  {desc}")
 
-    print(f"\nsaved -> results/subset_{word}.json")
+    print(f"\nsaved -> results/{out_name}.json")
 
 
 if __name__ == "__main__":
