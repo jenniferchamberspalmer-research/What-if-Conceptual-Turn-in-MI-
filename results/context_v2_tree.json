@@ -1,0 +1,386 @@
+{
+  "word": "tree",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the tree to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.09707,
+          "log_prob": -2.332
+        },
+        {
+          "rank": 2,
+          "token": "' represent'",
+          "probability": 0.06672,
+          "log_prob": -2.707
+        },
+        {
+          "rank": 3,
+          "token": "' decorate'",
+          "probability": 0.04047,
+          "log_prob": -3.207
+        },
+        {
+          "rank": 4,
+          "token": "' symbolize'",
+          "probability": 0.04047,
+          "log_prob": -3.207
+        },
+        {
+          "rank": 5,
+          "token": "' get'",
+          "probability": 0.04047,
+          "log_prob": -3.207
+        },
+        {
+          "rank": 6,
+          "token": "' mark'",
+          "probability": 0.04047,
+          "log_prob": -3.207
+        },
+        {
+          "rank": 7,
+          "token": "' celebrate'",
+          "probability": 0.02454,
+          "log_prob": -3.707
+        },
+        {
+          "rank": 8,
+          "token": "' create'",
+          "probability": 0.02166,
+          "log_prob": -3.832
+        },
+        {
+          "rank": 9,
+          "token": "' express'",
+          "probability": 0.02166,
+          "log_prob": -3.832
+        },
+        {
+          "rank": 10,
+          "token": "' show'",
+          "probability": 0.01912,
+          "log_prob": -3.957
+        },
+        {
+          "rank": 11,
+          "token": "' hang'",
+          "probability": 0.01687,
+          "log_prob": -4.082
+        },
+        {
+          "rank": 12,
+          "token": "' keep'",
+          "probability": 0.01489,
+          "log_prob": -4.207
+        },
+        {
+          "rank": 13,
+          "token": "' build'",
+          "probability": 0.01489,
+          "log_prob": -4.207
+        },
+        {
+          "rank": 14,
+          "token": "' help'",
+          "probability": 0.01489,
+          "log_prob": -4.207
+        },
+        {
+          "rank": 15,
+          "token": "' store'",
+          "probability": 0.01489,
+          "log_prob": -4.207
+        },
+        {
+          "rank": 16,
+          "token": "' protect'",
+          "probability": 0.01314,
+          "log_prob": -4.332
+        },
+        {
+          "rank": 17,
+          "token": "' hide'",
+          "probability": 0.01159,
+          "log_prob": -4.457
+        },
+        {
+          "rank": 18,
+          "token": "' remember'",
+          "probability": 0.01159,
+          "log_prob": -4.457
+        },
+        {
+          "rank": 19,
+          "token": "' tell'",
+          "probability": 0.01023,
+          "log_prob": -4.582
+        },
+        {
+          "rank": 20,
+          "token": "' find'",
+          "probability": 0.01023,
+          "log_prob": -4.582
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy tree to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.11826,
+          "log_prob": -2.135
+        },
+        {
+          "rank": 2,
+          "token": "' get'",
+          "probability": 0.0633,
+          "log_prob": -2.76
+        },
+        {
+          "rank": 3,
+          "token": "' worship'",
+          "probability": 0.04351,
+          "log_prob": -3.135
+        },
+        {
+          "rank": 4,
+          "token": "' pray'",
+          "probability": 0.04351,
+          "log_prob": -3.135
+        },
+        {
+          "rank": 5,
+          "token": "' create'",
+          "probability": 0.02055,
+          "log_prob": -3.885
+        },
+        {
+          "rank": 6,
+          "token": "' protect'",
+          "probability": 0.01814,
+          "log_prob": -4.01
+        },
+        {
+          "rank": 7,
+          "token": "' build'",
+          "probability": 0.01814,
+          "log_prob": -4.01
+        },
+        {
+          "rank": 8,
+          "token": "' heal'",
+          "probability": 0.01814,
+          "log_prob": -4.01
+        },
+        {
+          "rank": 9,
+          "token": "' do'",
+          "probability": 0.016,
+          "log_prob": -4.135
+        },
+        {
+          "rank": 10,
+          "token": "' find'",
+          "probability": 0.01412,
+          "log_prob": -4.26
+        },
+        {
+          "rank": 11,
+          "token": "' perform'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 12,
+          "token": "' celebrate'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 13,
+          "token": "' cure'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 14,
+          "token": "' cut'",
+          "probability": 0.011,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 15,
+          "token": "' decorate'",
+          "probability": 0.011,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 16,
+          "token": "' connect'",
+          "probability": 0.00971,
+          "log_prob": -4.635
+        },
+        {
+          "rank": 17,
+          "token": "' show'",
+          "probability": 0.00971,
+          "log_prob": -4.635
+        },
+        {
+          "rank": 18,
+          "token": "' represent'",
+          "probability": 0.00971,
+          "log_prob": -4.635
+        },
+        {
+          "rank": 19,
+          "token": "' keep'",
+          "probability": 0.00971,
+          "log_prob": -4.635
+        },
+        {
+          "rank": 20,
+          "token": "' treat'",
+          "probability": 0.00971,
+          "log_prob": -4.635
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the rotting tree to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.14615,
+          "log_prob": -1.923
+        },
+        {
+          "rank": 2,
+          "token": "' get'",
+          "probability": 0.06093,
+          "log_prob": -2.798
+        },
+        {
+          "rank": 3,
+          "token": "' build'",
+          "probability": 0.04187,
+          "log_prob": -3.173
+        },
+        {
+          "rank": 4,
+          "token": "' hide'",
+          "probability": 0.02878,
+          "log_prob": -3.548
+        },
+        {
+          "rank": 5,
+          "token": "' store'",
+          "probability": 0.02878,
+          "log_prob": -3.548
+        },
+        {
+          "rank": 6,
+          "token": "' create'",
+          "probability": 0.0254,
+          "log_prob": -3.673
+        },
+        {
+          "rank": 7,
+          "token": "' keep'",
+          "probability": 0.01978,
+          "log_prob": -3.923
+        },
+        {
+          "rank": 8,
+          "token": "' climb'",
+          "probability": 0.01746,
+          "log_prob": -4.048
+        },
+        {
+          "rank": 9,
+          "token": "' mark'",
+          "probability": 0.01746,
+          "log_prob": -4.048
+        },
+        {
+          "rank": 10,
+          "token": "' block'",
+          "probability": 0.01746,
+          "log_prob": -4.048
+        },
+        {
+          "rank": 11,
+          "token": "' hang'",
+          "probability": 0.01746,
+          "log_prob": -4.048
+        },
+        {
+          "rank": 12,
+          "token": "' play'",
+          "probability": 0.01746,
+          "log_prob": -4.048
+        },
+        {
+          "rank": 13,
+          "token": "' cross'",
+          "probability": 0.0154,
+          "log_prob": -4.173
+        },
+        {
+          "rank": 14,
+          "token": "' hold'",
+          "probability": 0.01359,
+          "log_prob": -4.298
+        },
+        {
+          "rank": 15,
+          "token": "' support'",
+          "probability": 0.01359,
+          "log_prob": -4.298
+        },
+        {
+          "rank": 16,
+          "token": "' cut'",
+          "probability": 0.01359,
+          "log_prob": -4.298
+        },
+        {
+          "rank": 17,
+          "token": "' cover'",
+          "probability": 0.01359,
+          "log_prob": -4.298
+        },
+        {
+          "rank": 18,
+          "token": "' take'",
+          "probability": 0.012,
+          "log_prob": -4.423
+        },
+        {
+          "rank": 19,
+          "token": "' jump'",
+          "probability": 0.012,
+          "log_prob": -4.423
+        },
+        {
+          "rank": 20,
+          "token": "' help'",
+          "probability": 0.01059,
+          "log_prob": -4.548
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

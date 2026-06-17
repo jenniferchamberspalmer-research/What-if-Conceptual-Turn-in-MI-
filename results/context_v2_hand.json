@@ -1,0 +1,386 @@
+{
+  "word": "hand",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the hand to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' communicate'",
+          "probability": 0.12495,
+          "log_prob": -2.08
+        },
+        {
+          "rank": 2,
+          "token": "' express'",
+          "probability": 0.07579,
+          "log_prob": -2.58
+        },
+        {
+          "rank": 3,
+          "token": "' do'",
+          "probability": 0.05902,
+          "log_prob": -2.83
+        },
+        {
+          "rank": 4,
+          "token": "' make'",
+          "probability": 0.05902,
+          "log_prob": -2.83
+        },
+        {
+          "rank": 5,
+          "token": "' hold'",
+          "probability": 0.04057,
+          "log_prob": -3.205
+        },
+        {
+          "rank": 6,
+          "token": "' touch'",
+          "probability": 0.04057,
+          "log_prob": -3.205
+        },
+        {
+          "rank": 7,
+          "token": "' point'",
+          "probability": 0.03159,
+          "log_prob": -3.455
+        },
+        {
+          "rank": 8,
+          "token": "' grasp'",
+          "probability": 0.0246,
+          "log_prob": -3.705
+        },
+        {
+          "rank": 9,
+          "token": "' greet'",
+          "probability": 0.02171,
+          "log_prob": -3.83
+        },
+        {
+          "rank": 10,
+          "token": "' show'",
+          "probability": 0.02171,
+          "log_prob": -3.83
+        },
+        {
+          "rank": 11,
+          "token": "' help'",
+          "probability": 0.02171,
+          "log_prob": -3.83
+        },
+        {
+          "rank": 12,
+          "token": "' convey'",
+          "probability": 0.02171,
+          "log_prob": -3.83
+        },
+        {
+          "rank": 13,
+          "token": "' perform'",
+          "probability": 0.01916,
+          "log_prob": -3.955
+        },
+        {
+          "rank": 14,
+          "token": "' write'",
+          "probability": 0.01916,
+          "log_prob": -3.955
+        },
+        {
+          "rank": 15,
+          "token": "' grab'",
+          "probability": 0.01691,
+          "log_prob": -4.08
+        },
+        {
+          "rank": 16,
+          "token": "' feel'",
+          "probability": 0.01317,
+          "log_prob": -4.33
+        },
+        {
+          "rank": 17,
+          "token": "' interact'",
+          "probability": 0.01317,
+          "log_prob": -4.33
+        },
+        {
+          "rank": 18,
+          "token": "' represent'",
+          "probability": 0.01162,
+          "log_prob": -4.455
+        },
+        {
+          "rank": 19,
+          "token": "' pick'",
+          "probability": 0.01162,
+          "log_prob": -4.455
+        },
+        {
+          "rank": 20,
+          "token": "' indicate'",
+          "probability": 0.01162,
+          "log_prob": -4.455
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy hand to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.05667,
+          "log_prob": -2.87
+        },
+        {
+          "rank": 2,
+          "token": "' bless'",
+          "probability": 0.05001,
+          "log_prob": -2.995
+        },
+        {
+          "rank": 3,
+          "token": "' protect'",
+          "probability": 0.03895,
+          "log_prob": -3.245
+        },
+        {
+          "rank": 4,
+          "token": "' pray'",
+          "probability": 0.03437,
+          "log_prob": -3.37
+        },
+        {
+          "rank": 5,
+          "token": "' do'",
+          "probability": 0.03437,
+          "log_prob": -3.37
+        },
+        {
+          "rank": 6,
+          "token": "' help'",
+          "probability": 0.02085,
+          "log_prob": -3.87
+        },
+        {
+          "rank": 7,
+          "token": "' touch'",
+          "probability": 0.02085,
+          "log_prob": -3.87
+        },
+        {
+          "rank": 8,
+          "token": "' represent'",
+          "probability": 0.0184,
+          "log_prob": -3.995
+        },
+        {
+          "rank": 9,
+          "token": "' create'",
+          "probability": 0.0184,
+          "log_prob": -3.995
+        },
+        {
+          "rank": 10,
+          "token": "' hold'",
+          "probability": 0.0184,
+          "log_prob": -3.995
+        },
+        {
+          "rank": 11,
+          "token": "' point'",
+          "probability": 0.01624,
+          "log_prob": -4.12
+        },
+        {
+          "rank": 12,
+          "token": "' get'",
+          "probability": 0.01624,
+          "log_prob": -4.12
+        },
+        {
+          "rank": 13,
+          "token": "' heal'",
+          "probability": 0.01624,
+          "log_prob": -4.12
+        },
+        {
+          "rank": 14,
+          "token": "' perform'",
+          "probability": 0.01624,
+          "log_prob": -4.12
+        },
+        {
+          "rank": 15,
+          "token": "' describe'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        },
+        {
+          "rank": 16,
+          "token": "' express'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        },
+        {
+          "rank": 17,
+          "token": "' control'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        },
+        {
+          "rank": 18,
+          "token": "' give'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        },
+        {
+          "rank": 19,
+          "token": "' draw'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        },
+        {
+          "rank": 20,
+          "token": "' cast'",
+          "probability": 0.01265,
+          "log_prob": -4.37
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the withered hand to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' represent'",
+          "probability": 0.07099,
+          "log_prob": -2.645
+        },
+        {
+          "rank": 2,
+          "token": "' show'",
+          "probability": 0.05529,
+          "log_prob": -2.895
+        },
+        {
+          "rank": 3,
+          "token": "' make'",
+          "probability": 0.05529,
+          "log_prob": -2.895
+        },
+        {
+          "rank": 4,
+          "token": "' indicate'",
+          "probability": 0.04306,
+          "log_prob": -3.145
+        },
+        {
+          "rank": 5,
+          "token": "' point'",
+          "probability": 0.04306,
+          "log_prob": -3.145
+        },
+        {
+          "rank": 6,
+          "token": "' symbolize'",
+          "probability": 0.038,
+          "log_prob": -3.27
+        },
+        {
+          "rank": 7,
+          "token": "' hold'",
+          "probability": 0.038,
+          "log_prob": -3.27
+        },
+        {
+          "rank": 8,
+          "token": "' express'",
+          "probability": 0.03353,
+          "log_prob": -3.395
+        },
+        {
+          "rank": 9,
+          "token": "' describe'",
+          "probability": 0.03353,
+          "log_prob": -3.395
+        },
+        {
+          "rank": 10,
+          "token": "' do'",
+          "probability": 0.01795,
+          "log_prob": -4.02
+        },
+        {
+          "rank": 11,
+          "token": "' refer'",
+          "probability": 0.01584,
+          "log_prob": -4.145
+        },
+        {
+          "rank": 12,
+          "token": "' demonstrate'",
+          "probability": 0.01584,
+          "log_prob": -4.145
+        },
+        {
+          "rank": 13,
+          "token": "' mean'",
+          "probability": 0.01584,
+          "log_prob": -4.145
+        },
+        {
+          "rank": 14,
+          "token": "' give'",
+          "probability": 0.01584,
+          "log_prob": -4.145
+        },
+        {
+          "rank": 15,
+          "token": "' tell'",
+          "probability": 0.01398,
+          "log_prob": -4.27
+        },
+        {
+          "rank": 16,
+          "token": "' say'",
+          "probability": 0.01234,
+          "log_prob": -4.395
+        },
+        {
+          "rank": 17,
+          "token": "' communicate'",
+          "probability": 0.01234,
+          "log_prob": -4.395
+        },
+        {
+          "rank": 18,
+          "token": "' cover'",
+          "probability": 0.01234,
+          "log_prob": -4.395
+        },
+        {
+          "rank": 19,
+          "token": "' draw'",
+          "probability": 0.01089,
+          "log_prob": -4.52
+        },
+        {
+          "rank": 20,
+          "token": "' help'",
+          "probability": 0.01089,
+          "log_prob": -4.52
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

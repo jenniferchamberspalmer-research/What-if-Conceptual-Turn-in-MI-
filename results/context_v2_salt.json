@@ -1,0 +1,386 @@
+{
+  "word": "salt",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the salt to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.10719,
+          "log_prob": -2.233
+        },
+        {
+          "rank": 2,
+          "token": "' season'",
+          "probability": 0.05738,
+          "log_prob": -2.858
+        },
+        {
+          "rank": 3,
+          "token": "' keep'",
+          "probability": 0.04469,
+          "log_prob": -3.108
+        },
+        {
+          "rank": 4,
+          "token": "' cure'",
+          "probability": 0.04469,
+          "log_prob": -3.108
+        },
+        {
+          "rank": 5,
+          "token": "' preserve'",
+          "probability": 0.03943,
+          "log_prob": -3.233
+        },
+        {
+          "rank": 6,
+          "token": "' flavor'",
+          "probability": 0.03943,
+          "log_prob": -3.233
+        },
+        {
+          "rank": 7,
+          "token": "' help'",
+          "probability": 0.03071,
+          "log_prob": -3.483
+        },
+        {
+          "rank": 8,
+          "token": "' add'",
+          "probability": 0.02392,
+          "log_prob": -3.733
+        },
+        {
+          "rank": 9,
+          "token": "' clean'",
+          "probability": 0.02392,
+          "log_prob": -3.733
+        },
+        {
+          "rank": 10,
+          "token": "' taste'",
+          "probability": 0.02111,
+          "log_prob": -3.858
+        },
+        {
+          "rank": 11,
+          "token": "' get'",
+          "probability": 0.02111,
+          "log_prob": -3.858
+        },
+        {
+          "rank": 12,
+          "token": "' remove'",
+          "probability": 0.02111,
+          "log_prob": -3.858
+        },
+        {
+          "rank": 13,
+          "token": "' protect'",
+          "probability": 0.02111,
+          "log_prob": -3.858
+        },
+        {
+          "rank": 14,
+          "token": "' prevent'",
+          "probability": 0.02111,
+          "log_prob": -3.858
+        },
+        {
+          "rank": 15,
+          "token": "' cook'",
+          "probability": 0.01863,
+          "log_prob": -3.983
+        },
+        {
+          "rank": 16,
+          "token": "' improve'",
+          "probability": 0.01863,
+          "log_prob": -3.983
+        },
+        {
+          "rank": 17,
+          "token": "' kill'",
+          "probability": 0.01863,
+          "log_prob": -3.983
+        },
+        {
+          "rank": 18,
+          "token": "' treat'",
+          "probability": 0.01644,
+          "log_prob": -4.108
+        },
+        {
+          "rank": 19,
+          "token": "' enhance'",
+          "probability": 0.01644,
+          "log_prob": -4.108
+        },
+        {
+          "rank": 20,
+          "token": "' flavour'",
+          "probability": 0.01644,
+          "log_prob": -4.108
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy salt to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' purify'",
+          "probability": 0.08581,
+          "log_prob": -2.456
+        },
+        {
+          "rank": 2,
+          "token": "' make'",
+          "probability": 0.06683,
+          "log_prob": -2.706
+        },
+        {
+          "rank": 3,
+          "token": "' protect'",
+          "probability": 0.06683,
+          "log_prob": -2.706
+        },
+        {
+          "rank": 4,
+          "token": "' cure'",
+          "probability": 0.06683,
+          "log_prob": -2.706
+        },
+        {
+          "rank": 5,
+          "token": "' cleanse'",
+          "probability": 0.05897,
+          "log_prob": -2.831
+        },
+        {
+          "rank": 6,
+          "token": "' ward'",
+          "probability": 0.05204,
+          "log_prob": -2.956
+        },
+        {
+          "rank": 7,
+          "token": "' clean'",
+          "probability": 0.03577,
+          "log_prob": -3.331
+        },
+        {
+          "rank": 8,
+          "token": "' keep'",
+          "probability": 0.02786,
+          "log_prob": -3.581
+        },
+        {
+          "rank": 9,
+          "token": "' wash'",
+          "probability": 0.02458,
+          "log_prob": -3.706
+        },
+        {
+          "rank": 10,
+          "token": "' get'",
+          "probability": 0.02458,
+          "log_prob": -3.706
+        },
+        {
+          "rank": 11,
+          "token": "' sprinkle'",
+          "probability": 0.0217,
+          "log_prob": -3.831
+        },
+        {
+          "rank": 12,
+          "token": "' heal'",
+          "probability": 0.0217,
+          "log_prob": -3.831
+        },
+        {
+          "rank": 13,
+          "token": "' bless'",
+          "probability": 0.0217,
+          "log_prob": -3.831
+        },
+        {
+          "rank": 14,
+          "token": "' remove'",
+          "probability": 0.0217,
+          "log_prob": -3.831
+        },
+        {
+          "rank": 15,
+          "token": "' cook'",
+          "probability": 0.01915,
+          "log_prob": -3.956
+        },
+        {
+          "rank": 16,
+          "token": "' treat'",
+          "probability": 0.01491,
+          "log_prob": -4.206
+        },
+        {
+          "rank": 17,
+          "token": "' perform'",
+          "probability": 0.01491,
+          "log_prob": -4.206
+        },
+        {
+          "rank": 18,
+          "token": "' prepare'",
+          "probability": 0.01316,
+          "log_prob": -4.331
+        },
+        {
+          "rank": 19,
+          "token": "' preserve'",
+          "probability": 0.01316,
+          "log_prob": -4.331
+        },
+        {
+          "rank": 20,
+          "token": "' bring'",
+          "probability": 0.01161,
+          "log_prob": -4.456
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the tainted salt to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.27668,
+          "log_prob": -1.285
+        },
+        {
+          "rank": 2,
+          "token": "' cook'",
+          "probability": 0.1307,
+          "log_prob": -2.035
+        },
+        {
+          "rank": 3,
+          "token": "' prepare'",
+          "probability": 0.07927,
+          "log_prob": -2.535
+        },
+        {
+          "rank": 4,
+          "token": "' cure'",
+          "probability": 0.04243,
+          "log_prob": -3.16
+        },
+        {
+          "rank": 5,
+          "token": "' treat'",
+          "probability": 0.03744,
+          "log_prob": -3.285
+        },
+        {
+          "rank": 6,
+          "token": "' season'",
+          "probability": 0.03744,
+          "log_prob": -3.285
+        },
+        {
+          "rank": 7,
+          "token": "' add'",
+          "probability": 0.03305,
+          "log_prob": -3.41
+        },
+        {
+          "rank": 8,
+          "token": "' flavor'",
+          "probability": 0.03305,
+          "log_prob": -3.41
+        },
+        {
+          "rank": 9,
+          "token": "' flavour'",
+          "probability": 0.01769,
+          "log_prob": -4.035
+        },
+        {
+          "rank": 10,
+          "token": "' preserve'",
+          "probability": 0.01378,
+          "log_prob": -4.285
+        },
+        {
+          "rank": 11,
+          "token": "' adulter'",
+          "probability": 0.01216,
+          "log_prob": -4.41
+        },
+        {
+          "rank": 12,
+          "token": "' feed'",
+          "probability": 0.01216,
+          "log_prob": -4.41
+        },
+        {
+          "rank": 13,
+          "token": "' kill'",
+          "probability": 0.01216,
+          "log_prob": -4.41
+        },
+        {
+          "rank": 14,
+          "token": "' give'",
+          "probability": 0.01073,
+          "log_prob": -4.535
+        },
+        {
+          "rank": 15,
+          "token": "' fry'",
+          "probability": 0.00947,
+          "log_prob": -4.66
+        },
+        {
+          "rank": 16,
+          "token": "' clean'",
+          "probability": 0.00651,
+          "log_prob": -5.035
+        },
+        {
+          "rank": 17,
+          "token": "' spice'",
+          "probability": 0.00651,
+          "log_prob": -5.035
+        },
+        {
+          "rank": 18,
+          "token": "' create'",
+          "probability": 0.00574,
+          "log_prob": -5.16
+        },
+        {
+          "rank": 19,
+          "token": "' produce'",
+          "probability": 0.00574,
+          "log_prob": -5.16
+        },
+        {
+          "rank": 20,
+          "token": "' bake'",
+          "probability": 0.00574,
+          "log_prob": -5.16
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

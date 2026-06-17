@@ -1,0 +1,386 @@
+{
+  "word": "milk",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the milk to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.40604,
+          "log_prob": -0.901
+        },
+        {
+          "rank": 2,
+          "token": "' drink'",
+          "probability": 0.05495,
+          "log_prob": -2.901
+        },
+        {
+          "rank": 3,
+          "token": "' cook'",
+          "probability": 0.0485,
+          "log_prob": -3.026
+        },
+        {
+          "rank": 4,
+          "token": "' prepare'",
+          "probability": 0.0428,
+          "log_prob": -3.151
+        },
+        {
+          "rank": 5,
+          "token": "' feed'",
+          "probability": 0.03777,
+          "log_prob": -3.276
+        },
+        {
+          "rank": 6,
+          "token": "' wash'",
+          "probability": 0.02941,
+          "log_prob": -3.526
+        },
+        {
+          "rank": 7,
+          "token": "' treat'",
+          "probability": 0.02596,
+          "log_prob": -3.651
+        },
+        {
+          "rank": 8,
+          "token": "' produce'",
+          "probability": 0.01784,
+          "log_prob": -4.026
+        },
+        {
+          "rank": 9,
+          "token": "' help'",
+          "probability": 0.01574,
+          "log_prob": -4.151
+        },
+        {
+          "rank": 10,
+          "token": "' create'",
+          "probability": 0.01574,
+          "log_prob": -4.151
+        },
+        {
+          "rank": 11,
+          "token": "' mix'",
+          "probability": 0.01389,
+          "log_prob": -4.276
+        },
+        {
+          "rank": 12,
+          "token": "' get'",
+          "probability": 0.01389,
+          "log_prob": -4.276
+        },
+        {
+          "rank": 13,
+          "token": "' add'",
+          "probability": 0.01226,
+          "log_prob": -4.401
+        },
+        {
+          "rank": 14,
+          "token": "' cure'",
+          "probability": 0.01226,
+          "log_prob": -4.401
+        },
+        {
+          "rank": 15,
+          "token": "' clean'",
+          "probability": 0.01226,
+          "log_prob": -4.401
+        },
+        {
+          "rank": 16,
+          "token": "' bake'",
+          "probability": 0.00955,
+          "log_prob": -4.651
+        },
+        {
+          "rank": 17,
+          "token": "' give'",
+          "probability": 0.00843,
+          "log_prob": -4.776
+        },
+        {
+          "rank": 18,
+          "token": "' brew'",
+          "probability": 0.00744,
+          "log_prob": -4.901
+        },
+        {
+          "rank": 19,
+          "token": "' eat'",
+          "probability": 0.00656,
+          "log_prob": -5.026
+        },
+        {
+          "rank": 20,
+          "token": "' keep'",
+          "probability": 0.00656,
+          "log_prob": -5.026
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy milk to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.15389,
+          "log_prob": -1.872
+        },
+        {
+          "rank": 2,
+          "token": "' treat'",
+          "probability": 0.10577,
+          "log_prob": -2.247
+        },
+        {
+          "rank": 3,
+          "token": "' cure'",
+          "probability": 0.09334,
+          "log_prob": -2.372
+        },
+        {
+          "rank": 4,
+          "token": "' heal'",
+          "probability": 0.04996,
+          "log_prob": -2.997
+        },
+        {
+          "rank": 5,
+          "token": "' wash'",
+          "probability": 0.0303,
+          "log_prob": -3.497
+        },
+        {
+          "rank": 6,
+          "token": "' get'",
+          "probability": 0.0303,
+          "log_prob": -3.497
+        },
+        {
+          "rank": 7,
+          "token": "' feed'",
+          "probability": 0.0236,
+          "log_prob": -3.747
+        },
+        {
+          "rank": 8,
+          "token": "' prepare'",
+          "probability": 0.02083,
+          "log_prob": -3.872
+        },
+        {
+          "rank": 9,
+          "token": "' drink'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 10,
+          "token": "' cleanse'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 11,
+          "token": "' relieve'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 12,
+          "token": "' cook'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 13,
+          "token": "' keep'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 14,
+          "token": "' help'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 15,
+          "token": "' improve'",
+          "probability": 0.01431,
+          "log_prob": -4.247
+        },
+        {
+          "rank": 16,
+          "token": "' create'",
+          "probability": 0.01263,
+          "log_prob": -4.372
+        },
+        {
+          "rank": 17,
+          "token": "' enhance'",
+          "probability": 0.01263,
+          "log_prob": -4.372
+        },
+        {
+          "rank": 18,
+          "token": "' clean'",
+          "probability": 0.01263,
+          "log_prob": -4.372
+        },
+        {
+          "rank": 19,
+          "token": "' give'",
+          "probability": 0.01263,
+          "log_prob": -4.372
+        },
+        {
+          "rank": 20,
+          "token": "' increase'",
+          "probability": 0.01115,
+          "log_prob": -4.497
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the spoiled milk to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.49731,
+          "log_prob": -0.699
+        },
+        {
+          "rank": 2,
+          "token": "' feed'",
+          "probability": 0.09793,
+          "log_prob": -2.324
+        },
+        {
+          "rank": 3,
+          "token": "' prepare'",
+          "probability": 0.03603,
+          "log_prob": -3.324
+        },
+        {
+          "rank": 4,
+          "token": "' cook'",
+          "probability": 0.03179,
+          "log_prob": -3.449
+        },
+        {
+          "rank": 5,
+          "token": "' wash'",
+          "probability": 0.02185,
+          "log_prob": -3.824
+        },
+        {
+          "rank": 6,
+          "token": "' clean'",
+          "probability": 0.01928,
+          "log_prob": -3.949
+        },
+        {
+          "rank": 7,
+          "token": "' create'",
+          "probability": 0.01702,
+          "log_prob": -4.074
+        },
+        {
+          "rank": 8,
+          "token": "' produce'",
+          "probability": 0.01325,
+          "log_prob": -4.324
+        },
+        {
+          "rank": 9,
+          "token": "' brew'",
+          "probability": 0.01032,
+          "log_prob": -4.574
+        },
+        {
+          "rank": 10,
+          "token": "' drink'",
+          "probability": 0.01032,
+          "log_prob": -4.574
+        },
+        {
+          "rank": 11,
+          "token": "' treat'",
+          "probability": 0.01032,
+          "log_prob": -4.574
+        },
+        {
+          "rank": 12,
+          "token": "' mix'",
+          "probability": 0.00911,
+          "log_prob": -4.699
+        },
+        {
+          "rank": 13,
+          "token": "' get'",
+          "probability": 0.00804,
+          "log_prob": -4.824
+        },
+        {
+          "rank": 14,
+          "token": "' bake'",
+          "probability": 0.00709,
+          "log_prob": -4.949
+        },
+        {
+          "rank": 15,
+          "token": "' add'",
+          "probability": 0.00626,
+          "log_prob": -5.074
+        },
+        {
+          "rank": 16,
+          "token": "' soak'",
+          "probability": 0.00626,
+          "log_prob": -5.074
+        },
+        {
+          "rank": 17,
+          "token": "' kill'",
+          "probability": 0.00626,
+          "log_prob": -5.074
+        },
+        {
+          "rank": 18,
+          "token": "' do'",
+          "probability": 0.00626,
+          "log_prob": -5.074
+        },
+        {
+          "rank": 19,
+          "token": "' fill'",
+          "probability": 0.00552,
+          "log_prob": -5.199
+        },
+        {
+          "rank": 20,
+          "token": "' water'",
+          "probability": 0.00552,
+          "log_prob": -5.199
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

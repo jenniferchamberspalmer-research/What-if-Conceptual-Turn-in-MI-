@@ -1,0 +1,386 @@
+{
+  "word": "stone",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the stone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.19487,
+          "log_prob": -1.635
+        },
+        {
+          "rank": 2,
+          "token": "' build'",
+          "probability": 0.09205,
+          "log_prob": -2.385
+        },
+        {
+          "rank": 3,
+          "token": "' create'",
+          "probability": 0.07169,
+          "log_prob": -2.635
+        },
+        {
+          "rank": 4,
+          "token": "' decorate'",
+          "probability": 0.04927,
+          "log_prob": -3.01
+        },
+        {
+          "rank": 5,
+          "token": "' grind'",
+          "probability": 0.02637,
+          "log_prob": -3.635
+        },
+        {
+          "rank": 6,
+          "token": "' cut'",
+          "probability": 0.02637,
+          "log_prob": -3.635
+        },
+        {
+          "rank": 7,
+          "token": "' protect'",
+          "probability": 0.02637,
+          "log_prob": -3.635
+        },
+        {
+          "rank": 8,
+          "token": "' carve'",
+          "probability": 0.016,
+          "log_prob": -4.135
+        },
+        {
+          "rank": 9,
+          "token": "' clean'",
+          "probability": 0.016,
+          "log_prob": -4.135
+        },
+        {
+          "rank": 10,
+          "token": "' represent'",
+          "probability": 0.01412,
+          "log_prob": -4.26
+        },
+        {
+          "rank": 11,
+          "token": "' keep'",
+          "probability": 0.01412,
+          "log_prob": -4.26
+        },
+        {
+          "rank": 12,
+          "token": "' construct'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 13,
+          "token": "' mark'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 14,
+          "token": "' help'",
+          "probability": 0.01246,
+          "log_prob": -4.385
+        },
+        {
+          "rank": 15,
+          "token": "' get'",
+          "probability": 0.01099,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 16,
+          "token": "' cover'",
+          "probability": 0.01099,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 17,
+          "token": "' polish'",
+          "probability": 0.01099,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 18,
+          "token": "' break'",
+          "probability": 0.01099,
+          "log_prob": -4.51
+        },
+        {
+          "rank": 19,
+          "token": "' heal'",
+          "probability": 0.00856,
+          "log_prob": -4.76
+        },
+        {
+          "rank": 20,
+          "token": "' remove'",
+          "probability": 0.00856,
+          "log_prob": -4.76
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy stone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.08038,
+          "log_prob": -2.521
+        },
+        {
+          "rank": 2,
+          "token": "' protect'",
+          "probability": 0.04875,
+          "log_prob": -3.021
+        },
+        {
+          "rank": 3,
+          "token": "' heal'",
+          "probability": 0.03797,
+          "log_prob": -3.271
+        },
+        {
+          "rank": 4,
+          "token": "' create'",
+          "probability": 0.03797,
+          "log_prob": -3.271
+        },
+        {
+          "rank": 5,
+          "token": "' get'",
+          "probability": 0.03351,
+          "log_prob": -3.396
+        },
+        {
+          "rank": 6,
+          "token": "' help'",
+          "probability": 0.0261,
+          "log_prob": -3.646
+        },
+        {
+          "rank": 7,
+          "token": "' do'",
+          "probability": 0.02303,
+          "log_prob": -3.771
+        },
+        {
+          "rank": 8,
+          "token": "' cast'",
+          "probability": 0.02303,
+          "log_prob": -3.771
+        },
+        {
+          "rank": 9,
+          "token": "' summon'",
+          "probability": 0.01793,
+          "log_prob": -4.021
+        },
+        {
+          "rank": 10,
+          "token": "' ward'",
+          "probability": 0.01793,
+          "log_prob": -4.021
+        },
+        {
+          "rank": 11,
+          "token": "' cleanse'",
+          "probability": 0.01583,
+          "log_prob": -4.146
+        },
+        {
+          "rank": 12,
+          "token": "' perform'",
+          "probability": 0.01583,
+          "log_prob": -4.146
+        },
+        {
+          "rank": 13,
+          "token": "' find'",
+          "probability": 0.01397,
+          "log_prob": -4.271
+        },
+        {
+          "rank": 14,
+          "token": "' pray'",
+          "probability": 0.01397,
+          "log_prob": -4.271
+        },
+        {
+          "rank": 15,
+          "token": "' keep'",
+          "probability": 0.01233,
+          "log_prob": -4.396
+        },
+        {
+          "rank": 16,
+          "token": "' bless'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        },
+        {
+          "rank": 17,
+          "token": "' build'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        },
+        {
+          "rank": 18,
+          "token": "' connect'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        },
+        {
+          "rank": 19,
+          "token": "' represent'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        },
+        {
+          "rank": 20,
+          "token": "' bring'",
+          "probability": 0.01088,
+          "log_prob": -4.521
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the cracked stone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.26464,
+          "log_prob": -1.329
+        },
+        {
+          "rank": 2,
+          "token": "' build'",
+          "probability": 0.12501,
+          "log_prob": -2.079
+        },
+        {
+          "rank": 3,
+          "token": "' create'",
+          "probability": 0.07582,
+          "log_prob": -2.579
+        },
+        {
+          "rank": 4,
+          "token": "' decorate'",
+          "probability": 0.03161,
+          "log_prob": -3.454
+        },
+        {
+          "rank": 5,
+          "token": "' grind'",
+          "probability": 0.02462,
+          "log_prob": -3.704
+        },
+        {
+          "rank": 6,
+          "token": "' form'",
+          "probability": 0.01917,
+          "log_prob": -3.954
+        },
+        {
+          "rank": 7,
+          "token": "' break'",
+          "probability": 0.01692,
+          "log_prob": -4.079
+        },
+        {
+          "rank": 8,
+          "token": "' carve'",
+          "probability": 0.01493,
+          "log_prob": -4.204
+        },
+        {
+          "rank": 9,
+          "token": "' cut'",
+          "probability": 0.01493,
+          "log_prob": -4.204
+        },
+        {
+          "rank": 10,
+          "token": "' pave'",
+          "probability": 0.01318,
+          "log_prob": -4.329
+        },
+        {
+          "rank": 11,
+          "token": "' cover'",
+          "probability": 0.01318,
+          "log_prob": -4.329
+        },
+        {
+          "rank": 12,
+          "token": "' construct'",
+          "probability": 0.01163,
+          "log_prob": -4.454
+        },
+        {
+          "rank": 13,
+          "token": "' clean'",
+          "probability": 0.01163,
+          "log_prob": -4.454
+        },
+        {
+          "rank": 14,
+          "token": "' get'",
+          "probability": 0.01163,
+          "log_prob": -4.454
+        },
+        {
+          "rank": 15,
+          "token": "' protect'",
+          "probability": 0.01026,
+          "log_prob": -4.579
+        },
+        {
+          "rank": 16,
+          "token": "' line'",
+          "probability": 0.00906,
+          "log_prob": -4.704
+        },
+        {
+          "rank": 17,
+          "token": "' polish'",
+          "probability": 0.00906,
+          "log_prob": -4.704
+        },
+        {
+          "rank": 18,
+          "token": "' keep'",
+          "probability": 0.00906,
+          "log_prob": -4.704
+        },
+        {
+          "rank": 19,
+          "token": "' walk'",
+          "probability": 0.00705,
+          "log_prob": -4.954
+        },
+        {
+          "rank": 20,
+          "token": "' mark'",
+          "probability": 0.00705,
+          "log_prob": -4.954
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

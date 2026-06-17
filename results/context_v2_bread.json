@@ -1,0 +1,386 @@
+{
+  "word": "bread",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the bread to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.42053,
+          "log_prob": -0.866
+        },
+        {
+          "rank": 2,
+          "token": "' eat'",
+          "probability": 0.05023,
+          "log_prob": -2.991
+        },
+        {
+          "rank": 3,
+          "token": "' feed'",
+          "probability": 0.04432,
+          "log_prob": -3.116
+        },
+        {
+          "rank": 4,
+          "token": "' wrap'",
+          "probability": 0.02688,
+          "log_prob": -3.616
+        },
+        {
+          "rank": 5,
+          "token": "' spread'",
+          "probability": 0.02688,
+          "log_prob": -3.616
+        },
+        {
+          "rank": 6,
+          "token": "' get'",
+          "probability": 0.01439,
+          "log_prob": -4.241
+        },
+        {
+          "rank": 7,
+          "token": "' help'",
+          "probability": 0.01439,
+          "log_prob": -4.241
+        },
+        {
+          "rank": 8,
+          "token": "' keep'",
+          "probability": 0.01439,
+          "log_prob": -4.241
+        },
+        {
+          "rank": 9,
+          "token": "' bake'",
+          "probability": 0.0127,
+          "log_prob": -4.366
+        },
+        {
+          "rank": 10,
+          "token": "' create'",
+          "probability": 0.0127,
+          "log_prob": -4.366
+        },
+        {
+          "rank": 11,
+          "token": "' prepare'",
+          "probability": 0.0127,
+          "log_prob": -4.366
+        },
+        {
+          "rank": 12,
+          "token": "' fill'",
+          "probability": 0.01121,
+          "log_prob": -4.491
+        },
+        {
+          "rank": 13,
+          "token": "' put'",
+          "probability": 0.00989,
+          "log_prob": -4.616
+        },
+        {
+          "rank": 14,
+          "token": "' serve'",
+          "probability": 0.00989,
+          "log_prob": -4.616
+        },
+        {
+          "rank": 15,
+          "token": "' cover'",
+          "probability": 0.00989,
+          "log_prob": -4.616
+        },
+        {
+          "rank": 16,
+          "token": "' soak'",
+          "probability": 0.00873,
+          "log_prob": -4.741
+        },
+        {
+          "rank": 17,
+          "token": "' toast'",
+          "probability": 0.00873,
+          "log_prob": -4.741
+        },
+        {
+          "rank": 18,
+          "token": "' build'",
+          "probability": 0.0077,
+          "log_prob": -4.866
+        },
+        {
+          "rank": 19,
+          "token": "' hold'",
+          "probability": 0.0077,
+          "log_prob": -4.866
+        },
+        {
+          "rank": 20,
+          "token": "' cook'",
+          "probability": 0.0077,
+          "log_prob": -4.866
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy bread to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.11718,
+          "log_prob": -2.144
+        },
+        {
+          "rank": 2,
+          "token": "' celebrate'",
+          "probability": 0.10341,
+          "log_prob": -2.269
+        },
+        {
+          "rank": 3,
+          "token": "' bless'",
+          "probability": 0.05535,
+          "log_prob": -2.894
+        },
+        {
+          "rank": 4,
+          "token": "' commemorate'",
+          "probability": 0.03804,
+          "log_prob": -3.269
+        },
+        {
+          "rank": 5,
+          "token": "' honor'",
+          "probability": 0.02963,
+          "log_prob": -3.519
+        },
+        {
+          "rank": 6,
+          "token": "' worship'",
+          "probability": 0.02963,
+          "log_prob": -3.519
+        },
+        {
+          "rank": 7,
+          "token": "' mark'",
+          "probability": 0.02615,
+          "log_prob": -3.644
+        },
+        {
+          "rank": 8,
+          "token": "' show'",
+          "probability": 0.02615,
+          "log_prob": -3.644
+        },
+        {
+          "rank": 9,
+          "token": "' feed'",
+          "probability": 0.02307,
+          "log_prob": -3.769
+        },
+        {
+          "rank": 10,
+          "token": "' represent'",
+          "probability": 0.02307,
+          "log_prob": -3.769
+        },
+        {
+          "rank": 11,
+          "token": "' pray'",
+          "probability": 0.02307,
+          "log_prob": -3.769
+        },
+        {
+          "rank": 12,
+          "token": "' symbolize'",
+          "probability": 0.02036,
+          "log_prob": -3.894
+        },
+        {
+          "rank": 13,
+          "token": "' remember'",
+          "probability": 0.02036,
+          "log_prob": -3.894
+        },
+        {
+          "rank": 14,
+          "token": "' pay'",
+          "probability": 0.01797,
+          "log_prob": -4.019
+        },
+        {
+          "rank": 15,
+          "token": "' give'",
+          "probability": 0.01586,
+          "log_prob": -4.144
+        },
+        {
+          "rank": 16,
+          "token": "' offer'",
+          "probability": 0.01586,
+          "log_prob": -4.144
+        },
+        {
+          "rank": 17,
+          "token": "' eat'",
+          "probability": 0.01586,
+          "log_prob": -4.144
+        },
+        {
+          "rank": 18,
+          "token": "' get'",
+          "probability": 0.01586,
+          "log_prob": -4.144
+        },
+        {
+          "rank": 19,
+          "token": "' consec'",
+          "probability": 0.01235,
+          "log_prob": -4.394
+        },
+        {
+          "rank": 20,
+          "token": "' thank'",
+          "probability": 0.01235,
+          "log_prob": -4.394
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the molded bread to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.47757,
+          "log_prob": -0.739
+        },
+        {
+          "rank": 2,
+          "token": "' create'",
+          "probability": 0.02694,
+          "log_prob": -3.614
+        },
+        {
+          "rank": 3,
+          "token": "' wrap'",
+          "probability": 0.02694,
+          "log_prob": -3.614
+        },
+        {
+          "rank": 4,
+          "token": "' hold'",
+          "probability": 0.02694,
+          "log_prob": -3.614
+        },
+        {
+          "rank": 5,
+          "token": "' eat'",
+          "probability": 0.02378,
+          "log_prob": -3.739
+        },
+        {
+          "rank": 6,
+          "token": "' form'",
+          "probability": 0.02098,
+          "log_prob": -3.864
+        },
+        {
+          "rank": 7,
+          "token": "' feed'",
+          "probability": 0.02098,
+          "log_prob": -3.864
+        },
+        {
+          "rank": 8,
+          "token": "' serve'",
+          "probability": 0.01634,
+          "log_prob": -4.114
+        },
+        {
+          "rank": 9,
+          "token": "' fill'",
+          "probability": 0.01442,
+          "log_prob": -4.239
+        },
+        {
+          "rank": 10,
+          "token": "' stuff'",
+          "probability": 0.01273,
+          "log_prob": -4.364
+        },
+        {
+          "rank": 11,
+          "token": "' build'",
+          "probability": 0.01273,
+          "log_prob": -4.364
+        },
+        {
+          "rank": 12,
+          "token": "' help'",
+          "probability": 0.01123,
+          "log_prob": -4.489
+        },
+        {
+          "rank": 13,
+          "token": "' cover'",
+          "probability": 0.01123,
+          "log_prob": -4.489
+        },
+        {
+          "rank": 14,
+          "token": "' bake'",
+          "probability": 0.01123,
+          "log_prob": -4.489
+        },
+        {
+          "rank": 15,
+          "token": "' scoop'",
+          "probability": 0.00875,
+          "log_prob": -4.739
+        },
+        {
+          "rank": 16,
+          "token": "' keep'",
+          "probability": 0.00875,
+          "log_prob": -4.739
+        },
+        {
+          "rank": 17,
+          "token": "' prepare'",
+          "probability": 0.00875,
+          "log_prob": -4.739
+        },
+        {
+          "rank": 18,
+          "token": "' put'",
+          "probability": 0.00772,
+          "log_prob": -4.864
+        },
+        {
+          "rank": 19,
+          "token": "' shape'",
+          "probability": 0.00772,
+          "log_prob": -4.864
+        },
+        {
+          "rank": 20,
+          "token": "' roll'",
+          "probability": 0.00772,
+          "log_prob": -4.864
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

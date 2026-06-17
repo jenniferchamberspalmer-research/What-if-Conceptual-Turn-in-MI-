@@ -1,0 +1,386 @@
+{
+  "word": "fire",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the fire to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' cook'",
+          "probability": 0.2471,
+          "log_prob": -1.398
+        },
+        {
+          "rank": 2,
+          "token": "' warm'",
+          "probability": 0.08022,
+          "log_prob": -2.523
+        },
+        {
+          "rank": 3,
+          "token": "' keep'",
+          "probability": 0.08022,
+          "log_prob": -2.523
+        },
+        {
+          "rank": 4,
+          "token": "' heat'",
+          "probability": 0.0708,
+          "log_prob": -2.648
+        },
+        {
+          "rank": 5,
+          "token": "' make'",
+          "probability": 0.04866,
+          "log_prob": -3.023
+        },
+        {
+          "rank": 6,
+          "token": "' roast'",
+          "probability": 0.02951,
+          "log_prob": -3.523
+        },
+        {
+          "rank": 7,
+          "token": "' light'",
+          "probability": 0.02951,
+          "log_prob": -3.523
+        },
+        {
+          "rank": 8,
+          "token": "' burn'",
+          "probability": 0.02951,
+          "log_prob": -3.523
+        },
+        {
+          "rank": 9,
+          "token": "' boil'",
+          "probability": 0.02604,
+          "log_prob": -3.648
+        },
+        {
+          "rank": 10,
+          "token": "' prepare'",
+          "probability": 0.02298,
+          "log_prob": -3.773
+        },
+        {
+          "rank": 11,
+          "token": "' stay'",
+          "probability": 0.0158,
+          "log_prob": -4.148
+        },
+        {
+          "rank": 12,
+          "token": "' kill'",
+          "probability": 0.0158,
+          "log_prob": -4.148
+        },
+        {
+          "rank": 13,
+          "token": "' get'",
+          "probability": 0.0158,
+          "log_prob": -4.148
+        },
+        {
+          "rank": 14,
+          "token": "' create'",
+          "probability": 0.01394,
+          "log_prob": -4.273
+        },
+        {
+          "rank": 15,
+          "token": "' protect'",
+          "probability": 0.01394,
+          "log_prob": -4.273
+        },
+        {
+          "rank": 16,
+          "token": "' do'",
+          "probability": 0.0123,
+          "log_prob": -4.398
+        },
+        {
+          "rank": 17,
+          "token": "' dry'",
+          "probability": 0.01086,
+          "log_prob": -4.523
+        },
+        {
+          "rank": 18,
+          "token": "' melt'",
+          "probability": 0.00958,
+          "log_prob": -4.648
+        },
+        {
+          "rank": 19,
+          "token": "' purify'",
+          "probability": 0.00846,
+          "log_prob": -4.773
+        },
+        {
+          "rank": 20,
+          "token": "' help'",
+          "probability": 0.00746,
+          "log_prob": -4.898
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy fire to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' light'",
+          "probability": 0.07626,
+          "log_prob": -2.574
+        },
+        {
+          "rank": 2,
+          "token": "' make'",
+          "probability": 0.07626,
+          "log_prob": -2.574
+        },
+        {
+          "rank": 3,
+          "token": "' burn'",
+          "probability": 0.07626,
+          "log_prob": -2.574
+        },
+        {
+          "rank": 4,
+          "token": "' purify'",
+          "probability": 0.05242,
+          "log_prob": -2.949
+        },
+        {
+          "rank": 5,
+          "token": "' cook'",
+          "probability": 0.03179,
+          "log_prob": -3.449
+        },
+        {
+          "rank": 6,
+          "token": "' create'",
+          "probability": 0.03179,
+          "log_prob": -3.449
+        },
+        {
+          "rank": 7,
+          "token": "' heal'",
+          "probability": 0.02806,
+          "log_prob": -3.574
+        },
+        {
+          "rank": 8,
+          "token": "' cleanse'",
+          "probability": 0.02806,
+          "log_prob": -3.574
+        },
+        {
+          "rank": 9,
+          "token": "' protect'",
+          "probability": 0.02476,
+          "log_prob": -3.699
+        },
+        {
+          "rank": 10,
+          "token": "' get'",
+          "probability": 0.02185,
+          "log_prob": -3.824
+        },
+        {
+          "rank": 11,
+          "token": "' keep'",
+          "probability": 0.01928,
+          "log_prob": -3.949
+        },
+        {
+          "rank": 12,
+          "token": "' clean'",
+          "probability": 0.01702,
+          "log_prob": -4.074
+        },
+        {
+          "rank": 13,
+          "token": "' do'",
+          "probability": 0.01702,
+          "log_prob": -4.074
+        },
+        {
+          "rank": 14,
+          "token": "' help'",
+          "probability": 0.01502,
+          "log_prob": -4.199
+        },
+        {
+          "rank": 15,
+          "token": "' worship'",
+          "probability": 0.01502,
+          "log_prob": -4.199
+        },
+        {
+          "rank": 16,
+          "token": "' cure'",
+          "probability": 0.01502,
+          "log_prob": -4.199
+        },
+        {
+          "rank": 17,
+          "token": "' pray'",
+          "probability": 0.01325,
+          "log_prob": -4.324
+        },
+        {
+          "rank": 18,
+          "token": "' perform'",
+          "probability": 0.01325,
+          "log_prob": -4.324
+        },
+        {
+          "rank": 19,
+          "token": "' kill'",
+          "probability": 0.0117,
+          "log_prob": -4.449
+        },
+        {
+          "rank": 20,
+          "token": "' treat'",
+          "probability": 0.0117,
+          "log_prob": -4.449
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the dying fire to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' cook'",
+          "probability": 0.13059,
+          "log_prob": -2.036
+        },
+        {
+          "rank": 2,
+          "token": "' warm'",
+          "probability": 0.10171,
+          "log_prob": -2.286
+        },
+        {
+          "rank": 3,
+          "token": "' keep'",
+          "probability": 0.07921,
+          "log_prob": -2.536
+        },
+        {
+          "rank": 4,
+          "token": "' heat'",
+          "probability": 0.06169,
+          "log_prob": -2.786
+        },
+        {
+          "rank": 5,
+          "token": "' make'",
+          "probability": 0.06169,
+          "log_prob": -2.786
+        },
+        {
+          "rank": 6,
+          "token": "' roast'",
+          "probability": 0.04804,
+          "log_prob": -3.036
+        },
+        {
+          "rank": 7,
+          "token": "' light'",
+          "probability": 0.04804,
+          "log_prob": -3.036
+        },
+        {
+          "rank": 8,
+          "token": "' burn'",
+          "probability": 0.03302,
+          "log_prob": -3.411
+        },
+        {
+          "rank": 9,
+          "token": "' boil'",
+          "probability": 0.02269,
+          "log_prob": -3.786
+        },
+        {
+          "rank": 10,
+          "token": "' dry'",
+          "probability": 0.02003,
+          "log_prob": -3.911
+        },
+        {
+          "rank": 11,
+          "token": "' toast'",
+          "probability": 0.01767,
+          "log_prob": -4.036
+        },
+        {
+          "rank": 12,
+          "token": "' get'",
+          "probability": 0.01767,
+          "log_prob": -4.036
+        },
+        {
+          "rank": 13,
+          "token": "' stay'",
+          "probability": 0.01215,
+          "log_prob": -4.411
+        },
+        {
+          "rank": 14,
+          "token": "' create'",
+          "probability": 0.01215,
+          "log_prob": -4.411
+        },
+        {
+          "rank": 15,
+          "token": "' see'",
+          "probability": 0.01072,
+          "log_prob": -4.536
+        },
+        {
+          "rank": 16,
+          "token": "' tell'",
+          "probability": 0.01072,
+          "log_prob": -4.536
+        },
+        {
+          "rank": 17,
+          "token": "' prepare'",
+          "probability": 0.01072,
+          "log_prob": -4.536
+        },
+        {
+          "rank": 18,
+          "token": "' clean'",
+          "probability": 0.00835,
+          "log_prob": -4.786
+        },
+        {
+          "rank": 19,
+          "token": "' kill'",
+          "probability": 0.00835,
+          "log_prob": -4.786
+        },
+        {
+          "rank": 20,
+          "token": "' scare'",
+          "probability": 0.00737,
+          "log_prob": -4.911
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

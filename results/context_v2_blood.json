@@ -1,0 +1,386 @@
+{
+  "word": "blood",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the blood to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.15398,
+          "log_prob": -1.871
+        },
+        {
+          "rank": 2,
+          "token": "' create'",
+          "probability": 0.04999,
+          "log_prob": -2.996
+        },
+        {
+          "rank": 3,
+          "token": "' treat'",
+          "probability": 0.03893,
+          "log_prob": -3.246
+        },
+        {
+          "rank": 4,
+          "token": "' determine'",
+          "probability": 0.03436,
+          "log_prob": -3.371
+        },
+        {
+          "rank": 5,
+          "token": "' get'",
+          "probability": 0.02676,
+          "log_prob": -3.621
+        },
+        {
+          "rank": 6,
+          "token": "' measure'",
+          "probability": 0.02361,
+          "log_prob": -3.746
+        },
+        {
+          "rank": 7,
+          "token": "' help'",
+          "probability": 0.02084,
+          "log_prob": -3.871
+        },
+        {
+          "rank": 8,
+          "token": "' heal'",
+          "probability": 0.01839,
+          "log_prob": -3.996
+        },
+        {
+          "rank": 9,
+          "token": "' test'",
+          "probability": 0.01839,
+          "log_prob": -3.996
+        },
+        {
+          "rank": 10,
+          "token": "' do'",
+          "probability": 0.01839,
+          "log_prob": -3.996
+        },
+        {
+          "rank": 11,
+          "token": "' give'",
+          "probability": 0.01623,
+          "log_prob": -4.121
+        },
+        {
+          "rank": 12,
+          "token": "' cure'",
+          "probability": 0.01432,
+          "log_prob": -4.246
+        },
+        {
+          "rank": 13,
+          "token": "' check'",
+          "probability": 0.01264,
+          "log_prob": -4.371
+        },
+        {
+          "rank": 14,
+          "token": "' draw'",
+          "probability": 0.01264,
+          "log_prob": -4.371
+        },
+        {
+          "rank": 15,
+          "token": "' keep'",
+          "probability": 0.01264,
+          "log_prob": -4.371
+        },
+        {
+          "rank": 16,
+          "token": "' show'",
+          "probability": 0.01115,
+          "log_prob": -4.496
+        },
+        {
+          "rank": 17,
+          "token": "' feed'",
+          "probability": 0.01115,
+          "log_prob": -4.496
+        },
+        {
+          "rank": 18,
+          "token": "' see'",
+          "probability": 0.00984,
+          "log_prob": -4.621
+        },
+        {
+          "rank": 19,
+          "token": "' pay'",
+          "probability": 0.00984,
+          "log_prob": -4.621
+        },
+        {
+          "rank": 20,
+          "token": "' paint'",
+          "probability": 0.00984,
+          "log_prob": -4.621
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy blood to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.12256,
+          "log_prob": -2.099
+        },
+        {
+          "rank": 2,
+          "token": "' heal'",
+          "probability": 0.09545,
+          "log_prob": -2.349
+        },
+        {
+          "rank": 3,
+          "token": "' cure'",
+          "probability": 0.05789,
+          "log_prob": -2.849
+        },
+        {
+          "rank": 4,
+          "token": "' treat'",
+          "probability": 0.05789,
+          "log_prob": -2.849
+        },
+        {
+          "rank": 5,
+          "token": "' create'",
+          "probability": 0.03099,
+          "log_prob": -3.474
+        },
+        {
+          "rank": 6,
+          "token": "' kill'",
+          "probability": 0.02413,
+          "log_prob": -3.724
+        },
+        {
+          "rank": 7,
+          "token": "' wash'",
+          "probability": 0.0213,
+          "log_prob": -3.849
+        },
+        {
+          "rank": 8,
+          "token": "' protect'",
+          "probability": 0.0213,
+          "log_prob": -3.849
+        },
+        {
+          "rank": 9,
+          "token": "' do'",
+          "probability": 0.0213,
+          "log_prob": -3.849
+        },
+        {
+          "rank": 10,
+          "token": "' get'",
+          "probability": 0.0213,
+          "log_prob": -3.849
+        },
+        {
+          "rank": 11,
+          "token": "' fight'",
+          "probability": 0.0188,
+          "log_prob": -3.974
+        },
+        {
+          "rank": 12,
+          "token": "' help'",
+          "probability": 0.01464,
+          "log_prob": -4.224
+        },
+        {
+          "rank": 13,
+          "token": "' save'",
+          "probability": 0.01464,
+          "log_prob": -4.224
+        },
+        {
+          "rank": 14,
+          "token": "' cleanse'",
+          "probability": 0.01464,
+          "log_prob": -4.224
+        },
+        {
+          "rank": 15,
+          "token": "' perform'",
+          "probability": 0.01292,
+          "log_prob": -4.349
+        },
+        {
+          "rank": 16,
+          "token": "' pray'",
+          "probability": 0.0114,
+          "log_prob": -4.474
+        },
+        {
+          "rank": 17,
+          "token": "' purify'",
+          "probability": 0.01006,
+          "log_prob": -4.599
+        },
+        {
+          "rank": 18,
+          "token": "' sacrifice'",
+          "probability": 0.01006,
+          "log_prob": -4.599
+        },
+        {
+          "rank": 19,
+          "token": "' keep'",
+          "probability": 0.01006,
+          "log_prob": -4.599
+        },
+        {
+          "rank": 20,
+          "token": "' clean'",
+          "probability": 0.01006,
+          "log_prob": -4.599
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the diseased blood to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.22783,
+          "log_prob": -1.479
+        },
+        {
+          "rank": 2,
+          "token": "' treat'",
+          "probability": 0.09497,
+          "log_prob": -2.354
+        },
+        {
+          "rank": 3,
+          "token": "' create'",
+          "probability": 0.06527,
+          "log_prob": -2.729
+        },
+        {
+          "rank": 4,
+          "token": "' feed'",
+          "probability": 0.03959,
+          "log_prob": -3.229
+        },
+        {
+          "rank": 5,
+          "token": "' cure'",
+          "probability": 0.03494,
+          "log_prob": -3.354
+        },
+        {
+          "rank": 6,
+          "token": "' produce'",
+          "probability": 0.03083,
+          "log_prob": -3.479
+        },
+        {
+          "rank": 7,
+          "token": "' heal'",
+          "probability": 0.0165,
+          "log_prob": -4.104
+        },
+        {
+          "rank": 8,
+          "token": "' grow'",
+          "probability": 0.0165,
+          "log_prob": -4.104
+        },
+        {
+          "rank": 9,
+          "token": "' get'",
+          "probability": 0.01456,
+          "log_prob": -4.229
+        },
+        {
+          "rank": 10,
+          "token": "' prepare'",
+          "probability": 0.01456,
+          "log_prob": -4.229
+        },
+        {
+          "rank": 11,
+          "token": "' give'",
+          "probability": 0.01285,
+          "log_prob": -4.354
+        },
+        {
+          "rank": 12,
+          "token": "' help'",
+          "probability": 0.01285,
+          "log_prob": -4.354
+        },
+        {
+          "rank": 13,
+          "token": "' kill'",
+          "probability": 0.01285,
+          "log_prob": -4.354
+        },
+        {
+          "rank": 14,
+          "token": "' manufacture'",
+          "probability": 0.01285,
+          "log_prob": -4.354
+        },
+        {
+          "rank": 15,
+          "token": "' fill'",
+          "probability": 0.01134,
+          "log_prob": -4.479
+        },
+        {
+          "rank": 16,
+          "token": "' pay'",
+          "probability": 0.01134,
+          "log_prob": -4.479
+        },
+        {
+          "rank": 17,
+          "token": "' raise'",
+          "probability": 0.0078,
+          "log_prob": -4.854
+        },
+        {
+          "rank": 18,
+          "token": "' cook'",
+          "probability": 0.0078,
+          "log_prob": -4.854
+        },
+        {
+          "rank": 19,
+          "token": "' test'",
+          "probability": 0.0078,
+          "log_prob": -4.854
+        },
+        {
+          "rank": 20,
+          "token": "' perform'",
+          "probability": 0.0078,
+          "log_prob": -4.854
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}

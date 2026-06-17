@@ -1,0 +1,43 @@
+{
+  "_note": "Content-forcing View 2 frames. Carrier 'People use the {cond} {word} to' ends in 'to', forcing the model to commit to a VERB of use rather than a determiner (a/the). Directly probes function/use (parole), with the neutral/sacred/profane prime modulating the verb. Identical carrier across all 10 words keeps continuations comparable. View 3 omitted (this is a View 2-only sharpening re-run).",
+  "water": {"view2": [
+    {"id": "neutral", "prompt": "People use the water to"},
+    {"id": "sacred",  "prompt": "People use the holy water to"},
+    {"id": "profane", "prompt": "People use the polluted water to"}]},
+  "salt": {"view2": [
+    {"id": "neutral", "prompt": "People use the salt to"},
+    {"id": "sacred",  "prompt": "People use the holy salt to"},
+    {"id": "profane", "prompt": "People use the tainted salt to"}]},
+  "bread": {"view2": [
+    {"id": "neutral", "prompt": "People use the bread to"},
+    {"id": "sacred",  "prompt": "People use the holy bread to"},
+    {"id": "profane", "prompt": "People use the molded bread to"}]},
+  "stone": {"view2": [
+    {"id": "neutral", "prompt": "People use the stone to"},
+    {"id": "sacred",  "prompt": "People use the holy stone to"},
+    {"id": "profane", "prompt": "People use the cracked stone to"}]},
+  "fire": {"view2": [
+    {"id": "neutral", "prompt": "People use the fire to"},
+    {"id": "sacred",  "prompt": "People use the holy fire to"},
+    {"id": "profane", "prompt": "People use the dying fire to"}]},
+  "blood": {"view2": [
+    {"id": "neutral", "prompt": "People use the blood to"},
+    {"id": "sacred",  "prompt": "People use the holy blood to"},
+    {"id": "profane", "prompt": "People use the diseased blood to"}]},
+  "hand": {"view2": [
+    {"id": "neutral", "prompt": "People use the hand to"},
+    {"id": "sacred",  "prompt": "People use the holy hand to"},
+    {"id": "profane", "prompt": "People use the withered hand to"}]},
+  "tree": {"view2": [
+    {"id": "neutral", "prompt": "People use the tree to"},
+    {"id": "sacred",  "prompt": "People use the holy tree to"},
+    {"id": "profane", "prompt": "People use the rotting tree to"}]},
+  "milk": {"view2": [
+    {"id": "neutral", "prompt": "People use the milk to"},
+    {"id": "sacred",  "prompt": "People use the holy milk to"},
+    {"id": "profane", "prompt": "People use the spoiled milk to"}]},
+  "bone": {"view2": [
+    {"id": "neutral", "prompt": "People use the bone to"},
+    {"id": "sacred",  "prompt": "People use the holy bone to"},
+    {"id": "profane", "prompt": "People use the brittle bone to"}]}
+}

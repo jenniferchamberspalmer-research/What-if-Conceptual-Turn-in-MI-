@@ -47,7 +47,8 @@ SAE_LAYERS = [6, 12, 19]
     secrets=[modal.Secret.from_name("huggingface")],
     volumes={"/cache": volume},
 )
-def run_context(frames_json: str, k_view2: int = 20, k_view3: int = 15):
+def run_context(frames_json: str, k_view2: int = 20, k_view3: int = 15,
+                do_view3: bool = True, out_prefix: str = "context"):
     os.environ["HF_HOME"] = "/cache/hf"
     os.environ["NEURONPEDIA_CACHE"] = "/cache/neuronpedia"
     os.makedirs(RESULTS_DIR, exist_ok=True)
@@ -63,12 +64,13 @@ def run_context(frames_json: str, k_view2: int = 20, k_view3: int = 15):
 
     # SAE self-check: confirm all three layers load before trusting View 3.
     sae_ok = {}
-    for layer in SAE_LAYERS:
-        try:
-            get_sae(layer)
-            sae_ok[layer] = True
-        except Exception as e:
-            sae_ok[layer] = f"FAILED: {type(e).__name__}: {e}"
+    if do_view3:
+        for layer in SAE_LAYERS:
+            try:
+                get_sae(layer)
+                sae_ok[layer] = True
+            except Exception as e:
+                sae_ok[layer] = f"FAILED: {type(e).__name__}: {e}"
 
     def features_at_last_token(text, layer):
         residual_seq, enc = features._capture_residual_at_layer(text, layer)
@@ -100,27 +102,28 @@ def run_context(frames_json: str, k_view2: int = 20, k_view3: int = 15):
                        "top_next": df.to_dict("records")})
 
         # --- View 3: SAE features on the full sentence ---
-        sentence = spec["view3"]
+        sentence = spec.get("view3")
         v3 = {}
-        for layer in SAE_LAYERS:
-            if sae_ok.get(layer) is not True:
-                v3[str(layer)] = {"error": sae_ok.get(layer)}
-                continue
-            try:
-                probe_df = features.top_features(sentence, word, layer, k=k_view3)
-                last_rows, last_tok = features_at_last_token(sentence, layer)
-                v3[str(layer)] = {
-                    "probe_word": {"target": word,
-                                   "features": probe_df.to_dict("records")},
-                    "last_token": {"target": last_tok,
-                                   "features": last_rows},
-                }
-            except Exception as e:
-                v3[str(layer)] = {"error": f"{type(e).__name__}: {e}"}
+        if do_view3 and sentence:
+            for layer in SAE_LAYERS:
+                if sae_ok.get(layer) is not True:
+                    v3[str(layer)] = {"error": sae_ok.get(layer)}
+                    continue
+                try:
+                    probe_df = features.top_features(sentence, word, layer, k=k_view3)
+                    last_rows, last_tok = features_at_last_token(sentence, layer)
+                    v3[str(layer)] = {
+                        "probe_word": {"target": word,
+                                       "features": probe_df.to_dict("records")},
+                        "last_token": {"target": last_tok,
+                                       "features": last_rows},
+                    }
+                except Exception as e:
+                    v3[str(layer)] = {"error": f"{type(e).__name__}: {e}"}
 
         rec = {"word": word, "stratum": "A", "sentence": sentence,
                "view2": v2, "view3": v3}
-        with open(os.path.join(RESULTS_DIR, f"context_{word}.json"), "w") as f:
+        with open(os.path.join(RESULTS_DIR, f"{out_prefix}_{word}.json"), "w") as f:
             json.dump(rec, f, ensure_ascii=False, indent=2)
         out[word] = rec
 
@@ -129,9 +132,12 @@ def run_context(frames_json: str, k_view2: int = 20, k_view3: int = 15):
 
 
 @app.local_entrypoint()
-def main(words: str = "water,salt,bread"):
+def main(words: str = "water,salt,bread",
+         frames: str = "frames_stratum_A.json",
+         out_prefix: str = "context",
+         view2_only: bool = False):
     here = os.path.dirname(os.path.abspath(__file__))
-    frames_path = os.path.join(here, "results", "frames_stratum_A.json")
+    frames_path = os.path.join(here, "results", frames)
     all_frames = json.load(open(frames_path, encoding="utf-8"))
     wanted = [w.strip() for w in words.split(",") if w.strip()]
     selected = {w: all_frames[w] for w in wanted if w in all_frames}
@@ -139,12 +145,13 @@ def main(words: str = "water,salt,bread"):
     if missing:
         print(f"WARNING: no frames for {missing}; skipping.")
 
-    res = run_context.remote(frames_json=json.dumps(selected))
+    res = run_context.remote(frames_json=json.dumps(selected),
+                             do_view3=not view2_only, out_prefix=out_prefix)
     print(f"\nSAE self-check (layers 6/12/19): {res['sae_self_check']}")
 
     out_dir = os.path.join(here, "results")
     for word, rec in res["records"].items():
-        with open(os.path.join(out_dir, f"context_{word}.json"), "w",
+        with open(os.path.join(out_dir, f"{out_prefix}_{word}.json"), "w",
                   encoding="utf-8") as f:
             json.dump(rec, f, ensure_ascii=False, indent=2)
 
@@ -156,6 +163,9 @@ def main(words: str = "water,salt,bread"):
                              for t in fr["top_next"][:8])
             print(f"  [{fr['id']:>7}] {fr['prompt']!r}")
             print(f"            -> {tops}")
+        if not rec.get("view3"):
+            print(f"\nsaved -> results/{out_prefix}_{word}.json")
+            continue
         print("\n--- VIEW 3: top SAE features per layer ---")
         for layer in ("6", "12", "19"):
             block = rec["view3"].get(layer, {})
@@ -169,7 +179,7 @@ def main(words: str = "water,salt,bread"):
                 for ft in feats:
                     desc = (ft["description"] or "")[:70]
                     print(f"      [{ft['activation']:>7.3f}] #{ft['feature_idx']}  {desc}")
-        print(f"\nsaved -> results/context_{word}.json")
+        print(f"\nsaved -> results/{out_prefix}_{word}.json")
 
 
 if __name__ == "__main__":

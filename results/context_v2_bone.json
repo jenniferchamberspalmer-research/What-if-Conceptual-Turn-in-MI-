@@ -1,0 +1,386 @@
+{
+  "word": "bone",
+  "stratum": "A",
+  "sentence": null,
+  "view2": [
+    {
+      "id": "neutral",
+      "prompt": "People use the bone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.21211,
+          "log_prob": -1.551
+        },
+        {
+          "rank": 2,
+          "token": "' create'",
+          "probability": 0.04177,
+          "log_prob": -3.176
+        },
+        {
+          "rank": 3,
+          "token": "' help'",
+          "probability": 0.04177,
+          "log_prob": -3.176
+        },
+        {
+          "rank": 4,
+          "token": "' build'",
+          "probability": 0.03686,
+          "log_prob": -3.301
+        },
+        {
+          "rank": 5,
+          "token": "' support'",
+          "probability": 0.02236,
+          "log_prob": -3.801
+        },
+        {
+          "rank": 6,
+          "token": "' hold'",
+          "probability": 0.01973,
+          "log_prob": -3.926
+        },
+        {
+          "rank": 7,
+          "token": "' keep'",
+          "probability": 0.01741,
+          "log_prob": -4.051
+        },
+        {
+          "rank": 8,
+          "token": "' protect'",
+          "probability": 0.01537,
+          "log_prob": -4.176
+        },
+        {
+          "rank": 9,
+          "token": "' get'",
+          "probability": 0.01537,
+          "log_prob": -4.176
+        },
+        {
+          "rank": 10,
+          "token": "' treat'",
+          "probability": 0.01537,
+          "log_prob": -4.176
+        },
+        {
+          "rank": 11,
+          "token": "' eat'",
+          "probability": 0.01356,
+          "log_prob": -4.301
+        },
+        {
+          "rank": 12,
+          "token": "' measure'",
+          "probability": 0.01356,
+          "log_prob": -4.301
+        },
+        {
+          "rank": 13,
+          "token": "' tell'",
+          "probability": 0.01197,
+          "log_prob": -4.426
+        },
+        {
+          "rank": 14,
+          "token": "' decorate'",
+          "probability": 0.01197,
+          "log_prob": -4.426
+        },
+        {
+          "rank": 15,
+          "token": "' do'",
+          "probability": 0.01197,
+          "log_prob": -4.426
+        },
+        {
+          "rank": 16,
+          "token": "' strengthen'",
+          "probability": 0.01056,
+          "log_prob": -4.551
+        },
+        {
+          "rank": 17,
+          "token": "' show'",
+          "probability": 0.01056,
+          "log_prob": -4.551
+        },
+        {
+          "rank": 18,
+          "token": "' store'",
+          "probability": 0.01056,
+          "log_prob": -4.551
+        },
+        {
+          "rank": 19,
+          "token": "' break'",
+          "probability": 0.01056,
+          "log_prob": -4.551
+        },
+        {
+          "rank": 20,
+          "token": "' cook'",
+          "probability": 0.01056,
+          "log_prob": -4.551
+        }
+      ]
+    },
+    {
+      "id": "sacred",
+      "prompt": "People use the holy bone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.14806,
+          "log_prob": -1.91
+        },
+        {
+          "rank": 2,
+          "token": "' heal'",
+          "probability": 0.04242,
+          "log_prob": -3.16
+        },
+        {
+          "rank": 3,
+          "token": "' treat'",
+          "probability": 0.04242,
+          "log_prob": -3.16
+        },
+        {
+          "rank": 4,
+          "token": "' pray'",
+          "probability": 0.03304,
+          "log_prob": -3.41
+        },
+        {
+          "rank": 5,
+          "token": "' cure'",
+          "probability": 0.03304,
+          "log_prob": -3.41
+        },
+        {
+          "rank": 6,
+          "token": "' create'",
+          "probability": 0.02915,
+          "log_prob": -3.535
+        },
+        {
+          "rank": 7,
+          "token": "' help'",
+          "probability": 0.02271,
+          "log_prob": -3.785
+        },
+        {
+          "rank": 8,
+          "token": "' protect'",
+          "probability": 0.02271,
+          "log_prob": -3.785
+        },
+        {
+          "rank": 9,
+          "token": "' do'",
+          "probability": 0.02004,
+          "log_prob": -3.91
+        },
+        {
+          "rank": 10,
+          "token": "' get'",
+          "probability": 0.02004,
+          "log_prob": -3.91
+        },
+        {
+          "rank": 11,
+          "token": "' ward'",
+          "probability": 0.01768,
+          "log_prob": -4.035
+        },
+        {
+          "rank": 12,
+          "token": "' build'",
+          "probability": 0.01768,
+          "log_prob": -4.035
+        },
+        {
+          "rank": 13,
+          "token": "' worship'",
+          "probability": 0.01768,
+          "log_prob": -4.035
+        },
+        {
+          "rank": 14,
+          "token": "' kill'",
+          "probability": 0.01377,
+          "log_prob": -4.285
+        },
+        {
+          "rank": 15,
+          "token": "' perform'",
+          "probability": 0.01377,
+          "log_prob": -4.285
+        },
+        {
+          "rank": 16,
+          "token": "' summon'",
+          "probability": 0.01073,
+          "log_prob": -4.535
+        },
+        {
+          "rank": 17,
+          "token": "' fight'",
+          "probability": 0.01073,
+          "log_prob": -4.535
+        },
+        {
+          "rank": 18,
+          "token": "' keep'",
+          "probability": 0.01073,
+          "log_prob": -4.535
+        },
+        {
+          "rank": 19,
+          "token": "' sacrifice'",
+          "probability": 0.01073,
+          "log_prob": -4.535
+        },
+        {
+          "rank": 20,
+          "token": "' give'",
+          "probability": 0.00946,
+          "log_prob": -4.66
+        }
+      ]
+    },
+    {
+      "id": "profane",
+      "prompt": "People use the brittle bone to",
+      "top_next": [
+        {
+          "rank": 1,
+          "token": "' make'",
+          "probability": 0.0933,
+          "log_prob": -2.372
+        },
+        {
+          "rank": 2,
+          "token": "' describe'",
+          "probability": 0.07267,
+          "log_prob": -2.622
+        },
+        {
+          "rank": 3,
+          "token": "' break'",
+          "probability": 0.03889,
+          "log_prob": -3.247
+        },
+        {
+          "rank": 4,
+          "token": "' get'",
+          "probability": 0.02673,
+          "log_prob": -3.622
+        },
+        {
+          "rank": 5,
+          "token": "' hold'",
+          "probability": 0.02359,
+          "log_prob": -3.747
+        },
+        {
+          "rank": 6,
+          "token": "' build'",
+          "probability": 0.02359,
+          "log_prob": -3.747
+        },
+        {
+          "rank": 7,
+          "token": "' refer'",
+          "probability": 0.02082,
+          "log_prob": -3.872
+        },
+        {
+          "rank": 8,
+          "token": "' create'",
+          "probability": 0.02082,
+          "log_prob": -3.872
+        },
+        {
+          "rank": 9,
+          "token": "' store'",
+          "probability": 0.01837,
+          "log_prob": -3.997
+        },
+        {
+          "rank": 10,
+          "token": "' protect'",
+          "probability": 0.01837,
+          "log_prob": -3.997
+        },
+        {
+          "rank": 11,
+          "token": "' help'",
+          "probability": 0.01837,
+          "log_prob": -3.997
+        },
+        {
+          "rank": 12,
+          "token": "' keep'",
+          "probability": 0.01621,
+          "log_prob": -4.122
+        },
+        {
+          "rank": 13,
+          "token": "' show'",
+          "probability": 0.01621,
+          "log_prob": -4.122
+        },
+        {
+          "rank": 14,
+          "token": "' do'",
+          "probability": 0.01621,
+          "log_prob": -4.122
+        },
+        {
+          "rank": 15,
+          "token": "' support'",
+          "probability": 0.01621,
+          "log_prob": -4.122
+        },
+        {
+          "rank": 16,
+          "token": "' carry'",
+          "probability": 0.01621,
+          "log_prob": -4.122
+        },
+        {
+          "rank": 17,
+          "token": "' express'",
+          "probability": 0.01114,
+          "log_prob": -4.497
+        },
+        {
+          "rank": 18,
+          "token": "' be'",
+          "probability": 0.01114,
+          "log_prob": -4.497
+        },
+        {
+          "rank": 19,
+          "token": "' explain'",
+          "probability": 0.01114,
+          "log_prob": -4.497
+        },
+        {
+          "rank": 20,
+          "token": "' tell'",
+          "probability": 0.00983,
+          "log_prob": -4.622
+        }
+      ]
+    }
+  ],
+  "view3": {}
+}
