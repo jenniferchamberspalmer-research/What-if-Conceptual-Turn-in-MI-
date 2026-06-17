@@ -1,0 +1,1446 @@
+{
+  "word": "salt",
+  "stratum": "A",
+  "subset": "three-word focused subset (water/salt/bread)",
+  "role": "comparison word (does context move it toward water's situated sense?)",
+  "sentence": "The patron tossed the salt over his shoulder.",
+  "sae_self_check": {
+    "6": true,
+    "12": true,
+    "19": true
+  },
+  "view2_tier1": {
+    "label": "Tier 1 (parallel baseline): 'The salt is' fragments",
+    "frames": [
+      {
+        "id": "neutral",
+        "prompt": "The salt is",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' a'",
+            "probability": 0.17019,
+            "log_prob": -1.771
+          },
+          {
+            "rank": 2,
+            "token": "' the'",
+            "probability": 0.08039,
+            "log_prob": -2.521
+          },
+          {
+            "rank": 3,
+            "token": "' made'",
+            "probability": 0.05525,
+            "log_prob": -2.896
+          },
+          {
+            "rank": 4,
+            "token": "' not'",
+            "probability": 0.04876,
+            "log_prob": -3.021
+          },
+          {
+            "rank": 5,
+            "token": "' used'",
+            "probability": 0.04303,
+            "log_prob": -3.146
+          },
+          {
+            "rank": 6,
+            "token": "' an'",
+            "probability": 0.02958,
+            "log_prob": -3.521
+          },
+          {
+            "rank": 7,
+            "token": "' very'",
+            "probability": 0.02958,
+            "log_prob": -3.521
+          },
+          {
+            "rank": 8,
+            "token": "' produced'",
+            "probability": 0.0261,
+            "log_prob": -3.646
+          },
+          {
+            "rank": 9,
+            "token": "' one'",
+            "probability": 0.0261,
+            "log_prob": -3.646
+          },
+          {
+            "rank": 10,
+            "token": "' in'",
+            "probability": 0.02033,
+            "log_prob": -3.896
+          },
+          {
+            "rank": 11,
+            "token": "' '",
+            "probability": 0.01794,
+            "log_prob": -4.021
+          },
+          {
+            "rank": 12,
+            "token": "' formed'",
+            "probability": 0.01583,
+            "log_prob": -4.146
+          },
+          {
+            "rank": 13,
+            "token": "' also'",
+            "probability": 0.01397,
+            "log_prob": -4.271
+          },
+          {
+            "rank": 14,
+            "token": "' so'",
+            "probability": 0.01233,
+            "log_prob": -4.396
+          },
+          {
+            "rank": 15,
+            "token": "' added'",
+            "probability": 0.01233,
+            "log_prob": -4.396
+          },
+          {
+            "rank": 16,
+            "token": "' called'",
+            "probability": 0.01233,
+            "log_prob": -4.396
+          },
+          {
+            "rank": 17,
+            "token": "' still'",
+            "probability": 0.01088,
+            "log_prob": -4.521
+          },
+          {
+            "rank": 18,
+            "token": "' now'",
+            "probability": 0.01088,
+            "log_prob": -4.521
+          },
+          {
+            "rank": 19,
+            "token": "' good'",
+            "probability": 0.01088,
+            "log_prob": -4.521
+          },
+          {
+            "rank": 20,
+            "token": "' from'",
+            "probability": 0.00847,
+            "log_prob": -4.771
+          }
+        ]
+      },
+      {
+        "id": "sacred",
+        "prompt": "The holy salt is",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' a'",
+            "probability": 0.21889,
+            "log_prob": -1.519
+          },
+          {
+            "rank": 2,
+            "token": "' the'",
+            "probability": 0.15044,
+            "log_prob": -1.894
+          },
+          {
+            "rank": 3,
+            "token": "' one'",
+            "probability": 0.04884,
+            "log_prob": -3.019
+          },
+          {
+            "rank": 4,
+            "token": "' an'",
+            "probability": 0.04884,
+            "log_prob": -3.019
+          },
+          {
+            "rank": 5,
+            "token": "' used'",
+            "probability": 0.0431,
+            "log_prob": -3.144
+          },
+          {
+            "rank": 6,
+            "token": "' made'",
+            "probability": 0.03804,
+            "log_prob": -3.269
+          },
+          {
+            "rank": 7,
+            "token": "' also'",
+            "probability": 0.03357,
+            "log_prob": -3.394
+          },
+          {
+            "rank": 8,
+            "token": "' not'",
+            "probability": 0.02962,
+            "log_prob": -3.519
+          },
+          {
+            "rank": 9,
+            "token": "' said'",
+            "probability": 0.02307,
+            "log_prob": -3.769
+          },
+          {
+            "rank": 10,
+            "token": "' known'",
+            "probability": 0.02036,
+            "log_prob": -3.894
+          },
+          {
+            "rank": 11,
+            "token": "' considered'",
+            "probability": 0.01797,
+            "log_prob": -4.019
+          },
+          {
+            "rank": 12,
+            "token": "' called'",
+            "probability": 0.01797,
+            "log_prob": -4.019
+          },
+          {
+            "rank": 13,
+            "token": "' very'",
+            "probability": 0.01235,
+            "log_prob": -4.394
+          },
+          {
+            "rank": 14,
+            "token": "' found'",
+            "probability": 0.01235,
+            "log_prob": -4.394
+          },
+          {
+            "rank": 15,
+            "token": "' produced'",
+            "probability": 0.00962,
+            "log_prob": -4.644
+          },
+          {
+            "rank": 16,
+            "token": "' believed'",
+            "probability": 0.00962,
+            "log_prob": -4.644
+          },
+          {
+            "rank": 17,
+            "token": "' obtained'",
+            "probability": 0.00962,
+            "log_prob": -4.644
+          },
+          {
+            "rank": 18,
+            "token": "' in'",
+            "probability": 0.00849,
+            "log_prob": -4.769
+          },
+          {
+            "rank": 19,
+            "token": "' salt'",
+            "probability": 0.00583,
+            "log_prob": -5.144
+          },
+          {
+            "rank": 20,
+            "token": "' being'",
+            "probability": 0.00583,
+            "log_prob": -5.144
+          }
+        ]
+      },
+      {
+        "id": "profane",
+        "prompt": "The tainted salt is",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' being'",
+            "probability": 0.1289,
+            "log_prob": -2.049
+          },
+          {
+            "rank": 2,
+            "token": "' a'",
+            "probability": 0.07818,
+            "log_prob": -2.549
+          },
+          {
+            "rank": 3,
+            "token": "' said'",
+            "probability": 0.06089,
+            "log_prob": -2.799
+          },
+          {
+            "rank": 4,
+            "token": "' believed'",
+            "probability": 0.05373,
+            "log_prob": -2.924
+          },
+          {
+            "rank": 5,
+            "token": "' the'",
+            "probability": 0.04185,
+            "log_prob": -3.174
+          },
+          {
+            "rank": 6,
+            "token": "' sold'",
+            "probability": 0.04185,
+            "log_prob": -3.174
+          },
+          {
+            "rank": 7,
+            "token": "' from'",
+            "probability": 0.03693,
+            "log_prob": -3.299
+          },
+          {
+            "rank": 8,
+            "token": "' not'",
+            "probability": 0.03693,
+            "log_prob": -3.299
+          },
+          {
+            "rank": 9,
+            "token": "' suspected'",
+            "probability": 0.02876,
+            "log_prob": -3.549
+          },
+          {
+            "rank": 10,
+            "token": "' made'",
+            "probability": 0.02538,
+            "log_prob": -3.674
+          },
+          {
+            "rank": 11,
+            "token": "' causing'",
+            "probability": 0.0224,
+            "log_prob": -3.799
+          },
+          {
+            "rank": 12,
+            "token": "' produced'",
+            "probability": 0.01977,
+            "log_prob": -3.924
+          },
+          {
+            "rank": 13,
+            "token": "' now'",
+            "probability": 0.01744,
+            "log_prob": -4.049
+          },
+          {
+            "rank": 14,
+            "token": "' manufactured'",
+            "probability": 0.01744,
+            "log_prob": -4.049
+          },
+          {
+            "rank": 15,
+            "token": "' likely'",
+            "probability": 0.01744,
+            "log_prob": -4.049
+          },
+          {
+            "rank": 16,
+            "token": "' also'",
+            "probability": 0.01539,
+            "log_prob": -4.174
+          },
+          {
+            "rank": 17,
+            "token": "' used'",
+            "probability": 0.01359,
+            "log_prob": -4.299
+          },
+          {
+            "rank": 18,
+            "token": "' found'",
+            "probability": 0.01199,
+            "log_prob": -4.424
+          },
+          {
+            "rank": 19,
+            "token": "' one'",
+            "probability": 0.01058,
+            "log_prob": -4.549
+          },
+          {
+            "rank": 20,
+            "token": "' in'",
+            "probability": 0.01058,
+            "log_prob": -4.549
+          }
+        ]
+      }
+    ]
+  },
+  "view2_tier2": {
+    "label": "Tier 2 (higher contextual pressure): 'People use the holy salt to ___' forced frames",
+    "frames": [
+      {
+        "id": "neutral",
+        "prompt": "People use the salt to",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' make'",
+            "probability": 0.10719,
+            "log_prob": -2.233
+          },
+          {
+            "rank": 2,
+            "token": "' season'",
+            "probability": 0.05738,
+            "log_prob": -2.858
+          },
+          {
+            "rank": 3,
+            "token": "' keep'",
+            "probability": 0.04469,
+            "log_prob": -3.108
+          },
+          {
+            "rank": 4,
+            "token": "' cure'",
+            "probability": 0.04469,
+            "log_prob": -3.108
+          },
+          {
+            "rank": 5,
+            "token": "' preserve'",
+            "probability": 0.03943,
+            "log_prob": -3.233
+          },
+          {
+            "rank": 6,
+            "token": "' flavor'",
+            "probability": 0.03943,
+            "log_prob": -3.233
+          },
+          {
+            "rank": 7,
+            "token": "' help'",
+            "probability": 0.03071,
+            "log_prob": -3.483
+          },
+          {
+            "rank": 8,
+            "token": "' add'",
+            "probability": 0.02392,
+            "log_prob": -3.733
+          },
+          {
+            "rank": 9,
+            "token": "' clean'",
+            "probability": 0.02392,
+            "log_prob": -3.733
+          },
+          {
+            "rank": 10,
+            "token": "' taste'",
+            "probability": 0.02111,
+            "log_prob": -3.858
+          },
+          {
+            "rank": 11,
+            "token": "' get'",
+            "probability": 0.02111,
+            "log_prob": -3.858
+          },
+          {
+            "rank": 12,
+            "token": "' remove'",
+            "probability": 0.02111,
+            "log_prob": -3.858
+          },
+          {
+            "rank": 13,
+            "token": "' protect'",
+            "probability": 0.02111,
+            "log_prob": -3.858
+          },
+          {
+            "rank": 14,
+            "token": "' prevent'",
+            "probability": 0.02111,
+            "log_prob": -3.858
+          },
+          {
+            "rank": 15,
+            "token": "' cook'",
+            "probability": 0.01863,
+            "log_prob": -3.983
+          },
+          {
+            "rank": 16,
+            "token": "' improve'",
+            "probability": 0.01863,
+            "log_prob": -3.983
+          },
+          {
+            "rank": 17,
+            "token": "' kill'",
+            "probability": 0.01863,
+            "log_prob": -3.983
+          },
+          {
+            "rank": 18,
+            "token": "' treat'",
+            "probability": 0.01644,
+            "log_prob": -4.108
+          },
+          {
+            "rank": 19,
+            "token": "' enhance'",
+            "probability": 0.01644,
+            "log_prob": -4.108
+          },
+          {
+            "rank": 20,
+            "token": "' flavour'",
+            "probability": 0.01644,
+            "log_prob": -4.108
+          }
+        ]
+      },
+      {
+        "id": "sacred",
+        "prompt": "People use the holy salt to",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' purify'",
+            "probability": 0.08581,
+            "log_prob": -2.456
+          },
+          {
+            "rank": 2,
+            "token": "' make'",
+            "probability": 0.06683,
+            "log_prob": -2.706
+          },
+          {
+            "rank": 3,
+            "token": "' protect'",
+            "probability": 0.06683,
+            "log_prob": -2.706
+          },
+          {
+            "rank": 4,
+            "token": "' cure'",
+            "probability": 0.06683,
+            "log_prob": -2.706
+          },
+          {
+            "rank": 5,
+            "token": "' cleanse'",
+            "probability": 0.05897,
+            "log_prob": -2.831
+          },
+          {
+            "rank": 6,
+            "token": "' ward'",
+            "probability": 0.05204,
+            "log_prob": -2.956
+          },
+          {
+            "rank": 7,
+            "token": "' clean'",
+            "probability": 0.03577,
+            "log_prob": -3.331
+          },
+          {
+            "rank": 8,
+            "token": "' keep'",
+            "probability": 0.02786,
+            "log_prob": -3.581
+          },
+          {
+            "rank": 9,
+            "token": "' wash'",
+            "probability": 0.02458,
+            "log_prob": -3.706
+          },
+          {
+            "rank": 10,
+            "token": "' get'",
+            "probability": 0.02458,
+            "log_prob": -3.706
+          },
+          {
+            "rank": 11,
+            "token": "' sprinkle'",
+            "probability": 0.0217,
+            "log_prob": -3.831
+          },
+          {
+            "rank": 12,
+            "token": "' heal'",
+            "probability": 0.0217,
+            "log_prob": -3.831
+          },
+          {
+            "rank": 13,
+            "token": "' bless'",
+            "probability": 0.0217,
+            "log_prob": -3.831
+          },
+          {
+            "rank": 14,
+            "token": "' remove'",
+            "probability": 0.0217,
+            "log_prob": -3.831
+          },
+          {
+            "rank": 15,
+            "token": "' cook'",
+            "probability": 0.01915,
+            "log_prob": -3.956
+          },
+          {
+            "rank": 16,
+            "token": "' treat'",
+            "probability": 0.01491,
+            "log_prob": -4.206
+          },
+          {
+            "rank": 17,
+            "token": "' perform'",
+            "probability": 0.01491,
+            "log_prob": -4.206
+          },
+          {
+            "rank": 18,
+            "token": "' prepare'",
+            "probability": 0.01316,
+            "log_prob": -4.331
+          },
+          {
+            "rank": 19,
+            "token": "' preserve'",
+            "probability": 0.01316,
+            "log_prob": -4.331
+          },
+          {
+            "rank": 20,
+            "token": "' bring'",
+            "probability": 0.01161,
+            "log_prob": -4.456
+          }
+        ]
+      },
+      {
+        "id": "profane",
+        "prompt": "People use the tainted salt to",
+        "top_next": [
+          {
+            "rank": 1,
+            "token": "' make'",
+            "probability": 0.27668,
+            "log_prob": -1.285
+          },
+          {
+            "rank": 2,
+            "token": "' cook'",
+            "probability": 0.1307,
+            "log_prob": -2.035
+          },
+          {
+            "rank": 3,
+            "token": "' prepare'",
+            "probability": 0.07927,
+            "log_prob": -2.535
+          },
+          {
+            "rank": 4,
+            "token": "' cure'",
+            "probability": 0.04243,
+            "log_prob": -3.16
+          },
+          {
+            "rank": 5,
+            "token": "' treat'",
+            "probability": 0.03744,
+            "log_prob": -3.285
+          },
+          {
+            "rank": 6,
+            "token": "' season'",
+            "probability": 0.03744,
+            "log_prob": -3.285
+          },
+          {
+            "rank": 7,
+            "token": "' add'",
+            "probability": 0.03305,
+            "log_prob": -3.41
+          },
+          {
+            "rank": 8,
+            "token": "' flavor'",
+            "probability": 0.03305,
+            "log_prob": -3.41
+          },
+          {
+            "rank": 9,
+            "token": "' flavour'",
+            "probability": 0.01769,
+            "log_prob": -4.035
+          },
+          {
+            "rank": 10,
+            "token": "' preserve'",
+            "probability": 0.01378,
+            "log_prob": -4.285
+          },
+          {
+            "rank": 11,
+            "token": "' adulter'",
+            "probability": 0.01216,
+            "log_prob": -4.41
+          },
+          {
+            "rank": 12,
+            "token": "' feed'",
+            "probability": 0.01216,
+            "log_prob": -4.41
+          },
+          {
+            "rank": 13,
+            "token": "' kill'",
+            "probability": 0.01216,
+            "log_prob": -4.41
+          },
+          {
+            "rank": 14,
+            "token": "' give'",
+            "probability": 0.01073,
+            "log_prob": -4.535
+          },
+          {
+            "rank": 15,
+            "token": "' fry'",
+            "probability": 0.00947,
+            "log_prob": -4.66
+          },
+          {
+            "rank": 16,
+            "token": "' clean'",
+            "probability": 0.00651,
+            "log_prob": -5.035
+          },
+          {
+            "rank": 17,
+            "token": "' spice'",
+            "probability": 0.00651,
+            "log_prob": -5.035
+          },
+          {
+            "rank": 18,
+            "token": "' create'",
+            "probability": 0.00574,
+            "log_prob": -5.16
+          },
+          {
+            "rank": 19,
+            "token": "' produce'",
+            "probability": 0.00574,
+            "log_prob": -5.16
+          },
+          {
+            "rank": 20,
+            "token": "' bake'",
+            "probability": 0.00574,
+            "log_prob": -5.16
+          }
+        ]
+      }
+    ]
+  },
+  "view3": {
+    "6": {
+      "probe_word": {
+        "target": "salt",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 8140,
+            "activation": 30.8073,
+            "description": "terms related to salt and its effects in various contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/8140"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 11423,
+            "activation": 24.8148,
+            "description": " words related to salt and salinity",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/11423"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 13243,
+            "activation": 15.8563,
+            "description": "various materials, particularly those related to cotton and copper",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13243"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 11411,
+            "activation": 15.0634,
+            "description": "terms related to powdered materials and their applications or forms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/11411"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 13460,
+            "activation": 14.3649,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 12616,
+            "activation": 12.5695,
+            "description": " terms and phrases related to constraints in programming and layout design",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12616"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 14775,
+            "activation": 11.5274,
+            "description": "instructions related to cooking techniques and ingredient preparation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14775"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 1393,
+            "activation": 11.3087,
+            "description": " keywords related to cooking and ingredient measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1393"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 14397,
+            "activation": 11.0652,
+            "description": " specialized technical terms and symbols related to scientific and mathematical concepts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14397"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 6342,
+            "activation": 10.662,
+            "description": "actions related to discarding or throwing away items",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/6342"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13323,
+            "activation": 9.5198,
+            "description": "specific terms related to scientific and technical measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13323"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 13795,
+            "activation": 8.6943,
+            "description": " keywords related to scientific studies and research documentation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13795"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 2435,
+            "activation": 7.9014,
+            "description": "references to institutions, entities, or organizations",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2435"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 14532,
+            "activation": 7.7503,
+            "description": "objects and actions associated with crime and conflict",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/14532"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 8334,
+            "activation": 7.6918,
+            "description": "terms related to cloud seeding and hygroscopic substances",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/8334"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 7002,
+            "activation": 31.0602,
+            "description": " punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7002"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 9743,
+            "activation": 17.107,
+            "description": "references to scientific or medical concepts and entities",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/9743"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 2278,
+            "activation": 15.6458,
+            "description": "direct speech and dialogue tags in narrative",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/2278"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 12939,
+            "activation": 11.8235,
+            "description": " punctuation marks that conclude sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/12939"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 16131,
+            "activation": 11.7945,
+            "description": " punctuation and sentence structure elements indicating dialogue and emotional reactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/16131"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 13460,
+            "activation": 9.3891,
+            "description": "references to safety and regulatory issues in automobile contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13460"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 6342,
+            "activation": 6.0644,
+            "description": "actions related to discarding or throwing away items",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/6342"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 3262,
+            "activation": 5.835,
+            "description": "phrases and actions involving embarrassment and flirtation",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/3262"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 1864,
+            "activation": 5.4726,
+            "description": " occurrences of specific numeric and contextual references or identifiers",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/1864"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 4550,
+            "activation": 5.3437,
+            "description": " instances of numerical data or statistics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/4550"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13853,
+            "activation": 5.1104,
+            "description": "potentially controversial actions or events related to public sentiment and debate",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13853"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 7015,
+            "activation": 4.9181,
+            "description": "sentences or phrases with punctuation indicating a pause or completion",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/7015"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 13073,
+            "activation": 4.6723,
+            "description": " commands and code structures in programming or scripting contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/13073"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 74,
+            "activation": 4.0612,
+            "description": "expressions of emotion or interpersonal interactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/74"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 5648,
+            "activation": 3.9304,
+            "description": " phrases related to making statements or clarifications",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/6-gemmascope-res-16k/5648"
+          }
+        ]
+      }
+    },
+    "12": {
+      "probe_word": {
+        "target": "salt",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 7507,
+            "activation": 39.032,
+            "description": "numerical data and references related to statistics and measurements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7507"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 2620,
+            "activation": 29.2687,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 10462,
+            "activation": 28.6204,
+            "description": "terms related to sodium and salt composition",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/10462"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 14906,
+            "activation": 19.5061,
+            "description": "objects and tools related to eating or handling food",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14906"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 4476,
+            "activation": 16.0535,
+            "description": "terms related to \"salinity\" and \"salty,\" particularly in reference to water and solutions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4476"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 5809,
+            "activation": 13.8592,
+            "description": "references to seasonal celebrations and rituals",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/5809"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 15581,
+            "activation": 13.5083,
+            "description": "concepts related to spiritual practices and diagnoses",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15581"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 7541,
+            "activation": 12.7756,
+            "description": "phrases related to technical descriptions and comparisons in software development contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7541"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 6444,
+            "activation": 11.9748,
+            "description": "information related to audience engagement and live performances",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/6444"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 7278,
+            "activation": 10.7791,
+            "description": "references to various objects and items involved in a narrative, particularly those that are unusual or associated with conflict",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/7278"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 13633,
+            "activation": 10.2191,
+            "description": "ingredients and their measurements in recipes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/13633"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 696,
+            "activation": 9.698,
+            "description": "specific food items and associated descriptors",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/696"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 15000,
+            "activation": 9.6841,
+            "description": "references to the sea and related marine elements",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15000"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 8350,
+            "activation": 9.5055,
+            "description": "instructions and components related to cleaning and maintenance processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8350"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 2539,
+            "activation": 9.1187,
+            "description": "terms associated with nitrogen and its role in organic compounds and fertilizers",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2539"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 1371,
+            "activation": 31.266,
+            "description": "distinct pieces of punctuation and sentence endings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1371"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 2620,
+            "activation": 27.2903,
+            "description": "words associated with authority, control, and criticism of governance",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2620"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 14266,
+            "activation": 18.9555,
+            "description": "emotional expressions and interactions between characters",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14266"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 304,
+            "activation": 18.5216,
+            "description": "punctuation marks and their usage in sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/304"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 4790,
+            "activation": 18.4828,
+            "description": "states of heightened emotion or tension in interpersonal relationships",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4790"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 11646,
+            "activation": 16.7336,
+            "description": " sentences that express opinions or summaries",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/11646"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 12344,
+            "activation": 12.9769,
+            "description": " emotional expressions and reactions in dialogue",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/12344"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 2291,
+            "activation": 11.6884,
+            "description": "technical or mathematical symbols and terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/2291"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 15581,
+            "activation": 11.1943,
+            "description": "concepts related to spiritual practices and diagnoses",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15581"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 8806,
+            "activation": 10.9241,
+            "description": " historical references or events",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8806"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 1041,
+            "activation": 10.7381,
+            "description": "technical terms and concepts related to programming or data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/1041"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 8322,
+            "activation": 9.7719,
+            "description": "instances of reported statements or quotes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/8322"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 15143,
+            "activation": 9.5398,
+            "description": "phrases related to teamwork and sports dynamics",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/15143"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 14906,
+            "activation": 8.6244,
+            "description": "objects and tools related to eating or handling food",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/14906"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 4246,
+            "activation": 8.3951,
+            "description": "references to healthcare and medical terminology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/12-gemmascope-res-16k/4246"
+          }
+        ]
+      }
+    },
+    "19": {
+      "probe_word": {
+        "target": "salt",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 4343,
+            "activation": 95.8297,
+            "description": "terms related to salinity and salivary functions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4343"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 3867,
+            "activation": 72.9341,
+            "description": "culinary ingredients and their preparation methods",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3867"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 12025,
+            "activation": 41.6868,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 3019,
+            "activation": 38.8815,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 3838,
+            "activation": 30.0305,
+            "description": "terms related to dust and various forms of particulate matter",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3838"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 15775,
+            "activation": 25.2835,
+            "description": "various types of beans and grains, particularly focusing on wheat and corn",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15775"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 14338,
+            "activation": 23.2801,
+            "description": "mentions of monetary amounts and financial transactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/14338"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 3786,
+            "activation": 23.259,
+            "description": "actions involving throwing or launching objects",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3786"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 12339,
+            "activation": 22.1877,
+            "description": "issues related to communication technology",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12339"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 15284,
+            "activation": 21.4381,
+            "description": "components and interactions related to calcium and other biological and chemical processes",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15284"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 2629,
+            "activation": 21.3993,
+            "description": "language related to discarding or rejecting ideas and objects",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2629"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 15653,
+            "activation": 21.1953,
+            "description": "references to sugar and related products or terms",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15653"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 11085,
+            "activation": 21.0356,
+            "description": "references to luck and fortune in cultural practices",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11085"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 5769,
+            "activation": 20.5586,
+            "description": "terms related to legal terminology and the justice system",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5769"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 10637,
+            "activation": 20.4663,
+            "description": "keywords related to programming constructs and data structures",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10637"
+          }
+        ]
+      },
+      "last_token": {
+        "target": ".",
+        "features": [
+          {
+            "rank": 1,
+            "feature_idx": 12025,
+            "activation": 57.4299,
+            "description": " the beginning of a new section or document",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12025"
+          },
+          {
+            "rank": 2,
+            "feature_idx": 15521,
+            "activation": 51.6075,
+            "description": " punctuation marks and their frequencies in text",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/15521"
+          },
+          {
+            "rank": 3,
+            "feature_idx": 5406,
+            "activation": 46.8326,
+            "description": "statements or sentiments expressed in complex or reflective contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5406"
+          },
+          {
+            "rank": 4,
+            "feature_idx": 3019,
+            "activation": 44.0803,
+            "description": "content related to regulatory compliance and procedural guidelines",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3019"
+          },
+          {
+            "rank": 5,
+            "feature_idx": 3798,
+            "activation": 28.0763,
+            "description": "specific narrative elements related to dialogues and character interactions",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/3798"
+          },
+          {
+            "rank": 6,
+            "feature_idx": 1186,
+            "activation": 26.3377,
+            "description": "descriptive narratives about loss and mourning",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/1186"
+          },
+          {
+            "rank": 7,
+            "feature_idx": 9815,
+            "activation": 24.379,
+            "description": " expressions of emotional or physical states",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/9815"
+          },
+          {
+            "rank": 8,
+            "feature_idx": 2784,
+            "activation": 24.0641,
+            "description": "punctuation and certain structural elements in sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/2784"
+          },
+          {
+            "rank": 9,
+            "feature_idx": 8833,
+            "activation": 19.4905,
+            "description": " punctuation marks and sentence-ending indicators",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/8833"
+          },
+          {
+            "rank": 10,
+            "feature_idx": 11085,
+            "activation": 19.4088,
+            "description": "references to luck and fortune in cultural practices",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/11085"
+          },
+          {
+            "rank": 11,
+            "feature_idx": 4064,
+            "activation": 19.3052,
+            "description": "references to military actions or conflicts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/4064"
+          },
+          {
+            "rank": 12,
+            "feature_idx": 12845,
+            "activation": 17.4409,
+            "description": "transitions or processes involving actions and occurrences, often in a sequence or series of steps",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/12845"
+          },
+          {
+            "rank": 13,
+            "feature_idx": 14553,
+            "activation": 15.8457,
+            "description": " punctuation marks and their functions within sentences",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/14553"
+          },
+          {
+            "rank": 14,
+            "feature_idx": 5771,
+            "activation": 15.0248,
+            "description": "instances of punctuation marks and their contexts",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/5771"
+          },
+          {
+            "rank": 15,
+            "feature_idx": 10456,
+            "activation": 14.735,
+            "description": "terms related to religious rituals and offerings",
+            "neuronpedia_url": "https://neuronpedia.org/gemma-2-2b/19-gemmascope-res-16k/10456"
+          }
+        ]
+      }
+    }
+  }
+}
