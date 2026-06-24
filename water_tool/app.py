@@ -54,11 +54,14 @@ def view1_run(text, mode, k):
 # --- View 2 -----------------------------------------------------------
 
 def view2_run(p1, p2, p3, k):
-    prompts = [p1, p2, p3]
+    # Strip surrounding whitespace: a trailing space (e.g. "The sky is ")
+    # leaves a dangling SentencePiece whitespace token and the base model
+    # then predicts formatting junk (HTML tags, digits) instead of content.
+    prompts = [(p or "").strip() for p in (p1, p2, p3)]
     dfs = []
     csv_paths = []
     for i, p in enumerate(prompts, start=1):
-        if p and p.strip():
+        if p:
             df = probability.top_next_tokens(p, k=int(k))
             csv_paths.append(to_csv(df, f"view2_prompt{i}"))
         else:
