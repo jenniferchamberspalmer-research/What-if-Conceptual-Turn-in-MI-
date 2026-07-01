@@ -164,6 +164,11 @@ def _build_gradio():
 @app.function(
     volumes={"/cache": volume},
     min_containers=1,        # pinned always-on; stable URL, low idle cost (CPU, no model)
+    max_containers=1,        # EXACTLY one container: Gradio keeps per-session state in
+                             # memory on one container, so autoscaling to several breaks
+                             # sessions ("Session not found"). One container is ample for
+                             # a display-only page.
+    buffer_containers=0,
     scaledown_window=300,
 )
 @modal.asgi_app()
