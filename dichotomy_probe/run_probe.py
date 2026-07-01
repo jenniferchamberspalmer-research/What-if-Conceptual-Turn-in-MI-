@@ -184,7 +184,10 @@ def web():
 
     demo = _build_gradio()
     fastapi_app = FastAPI()
-    return gr.mount_gradio_app(fastapi_app, demo, path="/")
+    # allowed_paths lets Gradio serve the results files, which live on the shared
+    # volume under /cache (outside Gradio's default-servable directories). Without
+    # this the Download button returns "No permissions" (HTTP 403).
+    return gr.mount_gradio_app(fastapi_app, demo, path="/", allowed_paths=["/cache"])
 
 
 @app.local_entrypoint()
