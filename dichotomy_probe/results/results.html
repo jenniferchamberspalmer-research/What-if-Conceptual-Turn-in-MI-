@@ -1,126 +1,194 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dichotomy Transformation Probe — Results</title>
+<title>Dichotomy Transformation Probe — Results (v2)</title>
 <style>
  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.5; }
- h1 { font-size: 1.6rem; } h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: .3rem; }
- h3 { font-size: 1.05rem; margin-top: 1.4rem; }
- .frame { background: #f5f5f7; border-left: 3px solid #888; padding: .6rem .8rem; margin: .6rem 0; }
- .constraint { background: #fbfbfd; border: 1px solid #e5e5ea; border-radius: 6px; padding: .5rem .8rem; margin: .4rem 0; font-size: .93rem; }
- table { border-collapse: collapse; width: 100%; margin: .6rem 0; font-size: .9rem; }
- th, td { border: 1px solid #ddd; padding: .35rem .5rem; text-align: right; }
- th:first-child, td:first-child { text-align: left; }
- caption { text-align: left; font-style: italic; color: #555; margin-bottom: .3rem; }
- .corr { color: #666; font-size: .85rem; }
- .stmt { background: #f5f5f7; padding: .5rem .8rem; border-radius: 6px; margin: .4rem 0; font-size: .92rem; }
- code { background: #eee; padding: 0 .2rem; border-radius: 3px; }
- footer { margin-top: 3rem; color: #777; font-size: .85rem; border-top: 1px solid #ddd; padding-top: 1rem; }
+        max-width: 960px; margin: 2rem auto; padding: 0 1rem; color:#1a1a1a; line-height:1.5; }
+ h1 { font-size:1.6rem; } h2 { font-size:1.25rem; margin-top:2rem; border-bottom:1px solid #ddd; padding-bottom:.3rem; }
+ h3 { font-size:1.03rem; margin-top:1.3rem; }
+ .frame { background:#f5f5f7; border-left:3px solid #888; padding:.5rem .8rem; margin:.5rem 0; font-size:.9rem; }
+ .constraint { background:#fbfbfd; border:1px solid #e5e5ea; border-radius:6px; padding:.5rem .8rem; margin:.35rem 0; font-size:.92rem; }
+ table { border-collapse:collapse; width:100%; margin:.6rem 0; font-size:.86rem; }
+ th,td { border:1px solid #ddd; padding:.32rem .45rem; text-align:right; }
+ th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align:left; }
+ caption { text-align:left; font-style:italic; color:#555; margin-bottom:.3rem; }
+ .corr { color:#666; font-size:.85rem; }
+ .stmt { background:#f5f5f7; padding:.5rem .8rem; border-radius:6px; margin:.4rem 0; font-size:.9rem; }
+ code { background:#eee; padding:0 .2rem; border-radius:3px; }
+ .cls-true_midpoint_candidate { background:#e6f4ea; }
+ .cls-prompt_induced_candidate { background:#fef7e0; }
+ .cls-frame_adjacent_candidate { background:#eef2fb; }
+ footer { margin-top:3rem; color:#777; font-size:.85rem; border-top:1px solid #ddd; padding-top:1rem; }
 </style></head><body>
-<h1>Dichotomy Transformation Probe — Results</h1>
+<h1>Dichotomy Transformation Probe — Results (v2)</h1>
 <p><strong>Model:</strong> google/gemma-2-2b &nbsp;·&nbsp;
    <strong>Residual states read:</strong> 27 (layers 0 to output) &nbsp;·&nbsp;
-   <strong>Batch run:</strong> 2026-07-01T17:44:46Z</p>
+   <strong>Batch run:</strong> 2026-07-01T19:50:13Z</p>
 
 <div class="constraint"><strong>Unit of analysis.</strong> Tokenization fixes the position; the unit of analysis is the residual representation carried at that position; it is read across layers 0 to output. The token is not the unit.</div>
 <div class="constraint"><strong>Reporting order (every result sentence).</strong> The corpus named the dichotomy; the model processed that naming; the measurement recorded the processing; a human interprets the record.
    No sentence reaches past the naming to the thing named.</div>
 <div class="constraint"><strong>The machine never determines true or false.</strong>
-   It transforms a cultural dichotomy already named in the corpus at entry; the verdict
-   lives in the human reader. true and false are never attributed to the machine.</div>
+   It transforms a cultural dichotomy already named in the corpus at entry; the verdict lives in
+   the human reader. true and false are never attributed to the machine.</div>
 <div class="constraint"><strong>No developmental or trajectory framing.</strong>
-   Across-depth structure is legibility-by-depth, not the model deliberating toward a
-   verdict. Movement across depth is in the human's reading, not the model's cognition.</div>
+   Across-depth structure is legibility-by-depth, not the model deliberating toward a verdict.</div>
 <div class="constraint"><strong>Corroboration vs. claim.</strong> Distributional proximity here (cosine, and any intermediate-seating result) is corroboration only. The claim is differential value-exhaustion, not proximity.
-   Cosine and any intermediate-seating result are labeled corroboration throughout.</div>
-<div class="constraint"><strong>Descriptive, not confirmatory.</strong> No outcome is a
-   hit designated in advance. Both measurements are computed and reported for every item
-   and control; any disconfirming control is reported flat.</div>
+   Cosine, midpoint seating, and remainder are labeled corroboration throughout. Each candidate's
+   descriptive class is a summary offered to the reader, never a verdict.</div>
+<div class="constraint"><strong>No middle is assumed.</strong> Every pair — including the true
+   dichotomies — receives candidate middles and the same measurements. "No middle" is a result to
+   be read, never built into the design.</div>
 
-<h2>Differential summary — value-exhaustion (measurement b), described</h2>
-<table><caption>Remainder ratio = mean off-axis energy of the excluded middle terms, averaged across all layers. Lower ⇒ the two-term axis exhausts the value field; higher ⇒ value is carried by excluded terms (graded field). Described, not predicted; corroboration for the differential.</caption><tr><th>unit</th><th>kind</th><th>named dichotomy</th><th>mean cosine(A,B) named</th><th>mean remainder ratio</th></tr>
-<tr><td>coin_heads_tails</td><td>true_dichotomy</td><td>heads / tails</td><td>0.6755</td><td>undefined</td></tr>
-<tr><td>person_good_bad</td><td>scalar_collapse</td><td>good / bad</td><td>0.7301</td><td>1.0589</td></tr>
-<tr><td>integer_even_odd</td><td>true_dichotomy</td><td>even / odd</td><td>0.6973</td><td>undefined</td></tr>
-<tr><td>water_hot_cold</td><td>scalar_collapse</td><td>hot / cold</td><td>0.6912</td><td>0.8473</td></tr>
-<tr><td>cloth_wet_dry</td><td>scalar_collapse</td><td>wet / dry</td><td>0.7239</td><td>0.8584</td></tr>
-<tr><td>null_table_reason</td><td>null_pair</td><td>(none -- null pair by construction)</td><td>—</td><td>undefined</td></tr>
+<h2>How to read the numbers</h2>
+<ul style="font-size:.92rem">
+ <li><code>cosine_AB</code> — how the two poles co-situate under each carrier (corroboration).</li>
+ <li><code>midpoint_t</code> — a candidate's projection on the A→B axis: 0 at A, 1 at B, ~0.5 centered.</li>
+ <li><code>remainder_ratio</code> — the candidate's distance off that axis, ÷ the pole gap (off-axis structure).</li>
+ <li><code>remainder_vs_control</code> — that remainder divided by the pair's unrelated-word (table/reason)
+     baseline. Below 1 means the candidate sits closer to the pole axis than an unrelated word does.
+     Absolute off-axis magnitudes are not interpretable in 2304-dim residual space, so seating is judged
+     on this control-relative ratio (the relative-to-control logic of the Water study and Token Biography).</li>
+ <li><code>carrier_stability</code> — agreement of <code>midpoint_t</code> across the two word-slot carriers (1 = identical).</li>
+ <li><code>mean_t_forced</code> — the candidate's mean projection under the four hidden-middle forcing prompts.</li>
+ <li><strong>descriptive class</strong> — one of: true_midpoint_candidate, one_pole_candidate, frame_adjacent_candidate, off_axis_candidate, prompt_induced_candidate, frame_term_reference, undetermined. Thresholds:
+     seats between if 0.3≤t≤0.7 and
+     remainder_vs_control≤0.65 and stability≥0.7;
+     poleward if t≤0.15 or t≥0.85. These are heuristics;
+     the raw per-layer numbers in <code>measurements.csv</code> are the record, and the reader interprets them.</li>
+</ul>
+<div class="constraint"><strong>Calibration note (transparency).</strong> The seating threshold is
+ control-relative (a candidate's off-axis remainder vs. the unrelated-word baseline) rather than an
+ absolute cutoff. This was chosen after the first v2 run showed that in 2304-dim residual space every
+ candidate's absolute off-axis remainder exceeds any small fixed value, so an absolute cutoff is
+ uninformative. The pre-registration (<code>PREREGISTRATION_v2.md</code>) states the class is a heuristic
+ reader-aid and that the raw numbers are the record; this calibration changes only the reader-aid, not
+ the measurements, and is disclosed here rather than by editing the frozen pre-registration.</div>
+
+<h2>heads / tails &nbsp;<span class='corr'>(coin_heads_tails · true_dichotomy)</span></h2>
+<div class="frame"><strong>matched syntax:</strong> The coin was {word}.<br><strong>natural usage:</strong> The coin came up {word}.<br><strong>explicit dichotomy:</strong> The dichotomy between heads and tails is familiar.<br><strong>neutral relation:</strong> The relation between heads and tails is familiar.<br><strong>frame term:</strong> coin</div>
+<h3>Pole relation cosine(A,B) across carriers (corroboration)</h3>
+<table><caption>At embedding (0), mid, and output depths. Full series in measurements.csv.</caption><tr><th>carrier</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
+<tr><td>matched_syntax</td><td>0.2835</td><td>0.8622</td><td>0.9289</td></tr>
+<tr><td>natural_usage</td><td>0.2835</td><td>0.8970</td><td>0.9310</td></tr>
+<tr><td>explicit_dichotomy</td><td>0.2835</td><td>0.5846</td><td>0.5682</td></tr>
+<tr><td>neutral_relation</td><td>0.2835</td><td>0.6067</td><td>0.7058</td></tr>
 </table>
-<p class="corr">"undefined" is reported flat: a true two-term opposition and the null pair have no excluded middle by construction.</p>
-<h2>heads / tails &nbsp;<span class='corr'>(coin_heads_tails · item · true_dichotomy)</span></h2>
-<div class="frame"><strong>Dichotomy frame (sense-fixing):</strong> A coin is either heads or tails.<br><strong>Carrier frame:</strong> The coin came up {word}.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy heads / tails; the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.8054, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>0.2835</td><td>0.7018</td><td>0.7923</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.2835</td><td>0.8970</td><td>0.9310</td></tr>
-<tr><td>remainder_ratio</td><td>undefined</td><td>undefined</td><td>undefined</td></tr>
+<h3>Candidate middles — measured, not assumed</h3>
+<table><caption>Each candidate projected on the pole axis. <code>rem/ctrl</code> is remainder relative to the unrelated-word baseline (below 1 = closer to the axis than an unrelated word). Descriptive class is offered to the reader; the raw numbers are the record.</caption><tr><th>candidate</th><th>input type</th><th>mean t (unforced)</th><th>rem/ctrl</th><th>carrier stability</th><th>mean t (forced)</th><th>strongest seating layer</th><th>cosine to frame term</th><th>descriptive class</th></tr>
+<tr class='cls-prompt_induced_candidate'><td>edge</td><td>candidate_middle</td><td>0.548</td><td>0.939</td><td>0.923</td><td>0.436</td><td>1</td><td>0.475</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>side</td><td>candidate_middle</td><td>0.501</td><td>0.929</td><td>0.926</td><td>0.419</td><td>1</td><td>0.447</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>rim</td><td>candidate_middle</td><td>0.606</td><td>0.987</td><td>0.900</td><td>0.424</td><td>0</td><td>0.476</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>face</td><td>candidate_middle</td><td>0.448</td><td>0.855</td><td>0.919</td><td>0.389</td><td>1</td><td>0.463</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>both</td><td>logical</td><td>0.524</td><td>0.990</td><td>0.900</td><td>0.505</td><td>1</td><td>0.423</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>neither</td><td>logical</td><td>0.531</td><td>1.009</td><td>0.902</td><td>0.516</td><td>1</td><td>0.419</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>table</td><td>control</td><td>0.526</td><td>0.974</td><td>0.879</td><td>0.479</td><td>1</td><td>0.460</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>reason</td><td>control</td><td>0.502</td><td>1.026</td><td>0.883</td><td>0.444</td><td>1</td><td>0.411</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_term_reference'><td>coin</td><td>frame_term</td><td>0.552</td><td>1.006</td><td>0.922</td><td>0.566</td><td>0</td><td>1.000</td><td>frame_term_reference</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">A true two-term opposition admits no lexical intermediate; the coin&#x27;s edge is degenerate, not a named third term. Measurement (a) is undefined here by construction, reported flat.</p>
-<h2>good / bad &nbsp;<span class='corr'>(person_good_bad · item · scalar_collapse)</span></h2>
-<div class="frame"><strong>Dichotomy frame (sense-fixing):</strong> A person is either good or bad.<br><strong>Carrier frame:</strong> The person was {word}.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy good / bad; the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.7684, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>0.3998</td><td>0.7719</td><td>0.8199</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.3998</td><td>0.8502</td><td>0.7118</td></tr>
-<tr><td>remainder_ratio</td><td>1.0253</td><td>1.1803</td><td>0.8109</td></tr>
+<p class="corr">Class glossary: <em>true_midpoint_candidate</em> — seats between the poles with lower off-axis remainder than an unrelated word, stable across carriers; <em>one_pole_candidate</em> — sits near one pole, not between them; <em>frame_adjacent_candidate</em> — closer to the frame term than to either pole; frame-adjacent, not a middle; <em>off_axis_candidate</em> — carries structure off the pole axis (mid or centered position but high remainder); <em>prompt_induced_candidate</em> — only becomes midpoint-like once a prompt forces a middle; not a stable middle; <em>frame_term_reference</em> — the frame term itself, a reference point (not classified against itself); <em>undetermined</em> — not determinable from the reads.</p>
+<p class="stmt">The corpus named the dichotomy heads / tails; the model processed that naming; the measurement recorded, across layers 0 to output and across four carriers plus four forcing prompts, where each candidate seats on the pole axis and how much structure it carries off that axis (all corroboration only); a human interprets the record.</p>
+<h2>even / odd &nbsp;<span class='corr'>(integer_even_odd · true_dichotomy)</span></h2>
+<div class="frame"><strong>matched syntax:</strong> The integer was {word}.<br><strong>natural usage:</strong> The integer is {word}.<br><strong>explicit dichotomy:</strong> The dichotomy between even and odd is familiar.<br><strong>neutral relation:</strong> The relation between even and odd is familiar.<br><strong>frame term:</strong> integer</div>
+<h3>Pole relation cosine(A,B) across carriers (corroboration)</h3>
+<table><caption>At embedding (0), mid, and output depths. Full series in measurements.csv.</caption><tr><th>carrier</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
+<tr><td>matched_syntax</td><td>0.1145</td><td>0.8228</td><td>0.8821</td></tr>
+<tr><td>natural_usage</td><td>0.1145</td><td>0.8914</td><td>0.9662</td></tr>
+<tr><td>explicit_dichotomy</td><td>0.1145</td><td>0.5426</td><td>0.5951</td></tr>
+<tr><td>neutral_relation</td><td>0.1145</td><td>0.6932</td><td>0.7708</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">ANTICIPATED NON-CLOSURE, stated in advance: the moral midpoint is phrasal / multi-token (&#x27;morally grey&#x27;, &#x27;neither good nor bad&#x27;), so it cannot close on a single Y-unit. Measurement (a) breaks EXACTLY where the midpoint fails to fit the unit -- that breakage is the finding (the moral field is used gradiently but under-lexicalized at its center), not a failed run. Measuring a multi-token midpoint against single-token poles would be a unit-mismatch, so no single-token midpoint is asserted; the excluded-term remainder carries measurement (b) instead.</p>
-<h2>even / odd &nbsp;<span class='corr'>(integer_even_odd · control · true_dichotomy)</span></h2>
-<div class="frame"><strong>Dichotomy frame (sense-fixing):</strong> An integer is either even or odd.<br><strong>Carrier frame:</strong> The number is {word}.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy even / odd; the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.7177, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>0.1145</td><td>0.7588</td><td>0.8015</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.1145</td><td>0.7852</td><td>0.8046</td></tr>
-<tr><td>remainder_ratio</td><td>undefined</td><td>undefined</td><td>undefined</td></tr>
+<h3>Candidate middles — measured, not assumed</h3>
+<table><caption>Each candidate projected on the pole axis. <code>rem/ctrl</code> is remainder relative to the unrelated-word baseline (below 1 = closer to the axis than an unrelated word). Descriptive class is offered to the reader; the raw numbers are the record.</caption><tr><th>candidate</th><th>input type</th><th>mean t (unforced)</th><th>rem/ctrl</th><th>carrier stability</th><th>mean t (forced)</th><th>strongest seating layer</th><th>cosine to frame term</th><th>descriptive class</th></tr>
+<tr class='cls-prompt_induced_candidate'><td>zero</td><td>candidate_middle</td><td>0.451</td><td>0.820</td><td>0.876</td><td>0.565</td><td>0</td><td>0.542</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>half</td><td>candidate_middle</td><td>0.327</td><td>0.934</td><td>0.891</td><td>0.443</td><td>0</td><td>0.477</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>fraction</td><td>candidate_middle</td><td>0.456</td><td>0.988</td><td>0.885</td><td>0.528</td><td>0</td><td>0.577</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>decimal</td><td>candidate_middle</td><td>0.533</td><td>0.969</td><td>0.893</td><td>0.563</td><td>1</td><td>0.587</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>both</td><td>logical</td><td>0.256</td><td>0.921</td><td>0.845</td><td>0.423</td><td>0</td><td>0.445</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>neither</td><td>logical</td><td>0.299</td><td>0.955</td><td>0.856</td><td>0.435</td><td>0</td><td>0.450</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>table</td><td>control</td><td>0.338</td><td>1.002</td><td>0.827</td><td>0.466</td><td>0</td><td>0.499</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>reason</td><td>control</td><td>0.355</td><td>0.998</td><td>0.812</td><td>0.445</td><td>0</td><td>0.463</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_term_reference'><td>integer</td><td>frame_term</td><td>0.450</td><td>0.998</td><td>0.856</td><td>0.598</td><td>0</td><td>1.000</td><td>frame_term_reference</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">Integers admit no middle term; measurement (a) undefined by construction, reported flat.</p>
-<h2>hot / cold &nbsp;<span class='corr'>(water_hot_cold · control · scalar_collapse)</span></h2>
-<div class="frame"><strong>Dichotomy frame (sense-fixing):</strong> The water is either hot or cold.<br><strong>Carrier frame:</strong> The water was {word}.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy hot / cold; the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.7870, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>0.3333</td><td>0.7156</td><td>0.7580</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.3333</td><td>0.8298</td><td>0.8637</td></tr>
-<tr><td>remainder_ratio</td><td>0.9376</td><td>0.8271</td><td>0.7674</td></tr>
+<p class="corr">Class glossary: <em>true_midpoint_candidate</em> — seats between the poles with lower off-axis remainder than an unrelated word, stable across carriers; <em>one_pole_candidate</em> — sits near one pole, not between them; <em>frame_adjacent_candidate</em> — closer to the frame term than to either pole; frame-adjacent, not a middle; <em>off_axis_candidate</em> — carries structure off the pole axis (mid or centered position but high remainder); <em>prompt_induced_candidate</em> — only becomes midpoint-like once a prompt forces a middle; not a stable middle; <em>frame_term_reference</em> — the frame term itself, a reference point (not classified against itself); <em>undetermined</em> — not determinable from the reads.</p>
+<p class="stmt">The corpus named the dichotomy even / odd; the model processed that naming; the measurement recorded, across layers 0 to output and across four carriers plus four forcing prompts, where each candidate seats on the pole axis and how much structure it carries off that axis (all corroboration only); a human interprets the record.</p>
+<h2>hot / cold &nbsp;<span class='corr'>(temp_hot_cold · scalar_collapse)</span></h2>
+<div class="frame"><strong>matched syntax:</strong> The temperature was {word}.<br><strong>natural usage:</strong> The temperature was {word}.<br><strong>explicit dichotomy:</strong> The dichotomy between hot and cold is familiar.<br><strong>neutral relation:</strong> The relation between hot and cold is familiar.<br><strong>frame term:</strong> temperature</div>
+<h3>Pole relation cosine(A,B) across carriers (corroboration)</h3>
+<table><caption>At embedding (0), mid, and output depths. Full series in measurements.csv.</caption><tr><th>carrier</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
+<tr><td>matched_syntax</td><td>0.3333</td><td>0.8931</td><td>0.8839</td></tr>
+<tr><td>natural_usage</td><td>0.3333</td><td>0.8931</td><td>0.8839</td></tr>
+<tr><td>explicit_dichotomy</td><td>0.0154</td><td>0.5417</td><td>0.4029</td></tr>
+<tr><td>neutral_relation</td><td>0.3333</td><td>0.6534</td><td>0.7672</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">The corpus named the dichotomy hot / cold; the model processed that naming; the measurement recorded whether the single-token candidate midpoint <code>warm</code> seats between the poles across layers (mean projection t = 0.486, mean off-axis residual = 0.719, corroboration only); a human interprets the record.</p>
-<h2>wet / dry &nbsp;<span class='corr'>(cloth_wet_dry · control · scalar_collapse)</span></h2>
-<div class="frame"><strong>Dichotomy frame (sense-fixing):</strong> The cloth is either wet or dry.<br><strong>Carrier frame:</strong> The cloth was {word}.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy wet / dry; the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.7737, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>0.4436</td><td>0.7241</td><td>0.7813</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.4436</td><td>0.8335</td><td>0.7959</td></tr>
-<tr><td>remainder_ratio</td><td>0.9188</td><td>0.8873</td><td>0.8518</td></tr>
+<h3>Candidate middles — measured, not assumed</h3>
+<table><caption>Each candidate projected on the pole axis. <code>rem/ctrl</code> is remainder relative to the unrelated-word baseline (below 1 = closer to the axis than an unrelated word). Descriptive class is offered to the reader; the raw numbers are the record.</caption><tr><th>candidate</th><th>input type</th><th>mean t (unforced)</th><th>rem/ctrl</th><th>carrier stability</th><th>mean t (forced)</th><th>strongest seating layer</th><th>cosine to frame term</th><th>descriptive class</th></tr>
+<tr class='cls-true_midpoint_candidate'><td>warm</td><td>candidate_middle</td><td>0.392</td><td>0.460</td><td>1.000</td><td>0.557</td><td>24</td><td>0.511</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>cool</td><td>candidate_middle</td><td>0.739</td><td>0.487</td><td>1.000</td><td>0.618</td><td>16</td><td>0.472</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>mild</td><td>candidate_middle</td><td>0.559</td><td>0.623</td><td>1.000</td><td>0.544</td><td>15</td><td>0.467</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>lukewarm</td><td>candidate_middle</td><td>0.523</td><td>0.637</td><td>1.000</td><td>0.619</td><td>1</td><td>0.487</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>both</td><td>logical</td><td>0.492</td><td>0.958</td><td>1.000</td><td>0.536</td><td>1</td><td>0.372</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>neither</td><td>logical</td><td>0.488</td><td>1.000</td><td>1.000</td><td>0.533</td><td>0</td><td>0.381</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>table</td><td>control</td><td>0.457</td><td>1.000</td><td>1.000</td><td>0.469</td><td>0</td><td>0.378</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>reason</td><td>control</td><td>0.481</td><td>1.000</td><td>1.000</td><td>0.491</td><td>0</td><td>0.345</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_term_reference'><td>temperature</td><td>frame_term</td><td>0.498</td><td>0.978</td><td>1.000</td><td>0.576</td><td>0</td><td>1.000</td><td>frame_term_reference</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">The corpus named the dichotomy wet / dry; the model processed that naming; the measurement recorded whether the single-token candidate midpoint <code>damp</code> seats between the poles across layers (mean projection t = 0.198, mean off-axis residual = 0.742, corroboration only); a human interprets the record.</p>
-<h2>(none -- null pair by construction) &nbsp;<span class='corr'>(null_table_reason · null · null_pair)</span></h2>
-<div class="frame"><strong>Null pair by construction</strong> — no dichotomy frame. Carrier frame: The {word} is there.</div>
-<h3>Measurement (b) — cross-layer pole relation</h3>
-<p class="stmt">The corpus named the dichotomy (none -- null pair by construction); the model processed that naming; the measurement recorded the pole relation across layers 0 to output (mean cosine of the poles, carrier axis = 0.3765, corroboration only); a human interprets the record.</p>
-<table><caption>At embedding (0), mid, and output depths. Full 27-state series is in measurements.csv.</caption><tr><th>metric</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
-<tr><td>cosine_AB_named <span class='corr'>(corroboration)</span></td><td>undefined</td><td>undefined</td><td>undefined</td></tr>
-<tr><td>cosine_AB_carrier <span class='corr'>(corroboration)</span></td><td>0.0514</td><td>0.3910</td><td>0.5004</td></tr>
-<tr><td>remainder_ratio</td><td>undefined</td><td>undefined</td><td>undefined</td></tr>
+<p class="corr">Class glossary: <em>true_midpoint_candidate</em> — seats between the poles with lower off-axis remainder than an unrelated word, stable across carriers; <em>one_pole_candidate</em> — sits near one pole, not between them; <em>frame_adjacent_candidate</em> — closer to the frame term than to either pole; frame-adjacent, not a middle; <em>off_axis_candidate</em> — carries structure off the pole axis (mid or centered position but high remainder); <em>prompt_induced_candidate</em> — only becomes midpoint-like once a prompt forces a middle; not a stable middle; <em>frame_term_reference</em> — the frame term itself, a reference point (not classified against itself); <em>undetermined</em> — not determinable from the reads.</p>
+<p class="stmt">The corpus named the dichotomy hot / cold; the model processed that naming; the measurement recorded, across layers 0 to output and across four carriers plus four forcing prompts, where each candidate seats on the pole axis and how much structure it carries off that axis (all corroboration only); a human interprets the record.</p>
+<h2>wet / dry &nbsp;<span class='corr'>(moisture_wet_dry · scalar_collapse)</span></h2>
+<div class="frame"><strong>matched syntax:</strong> The surface was {word}.<br><strong>natural usage:</strong> The surface was {word}.<br><strong>explicit dichotomy:</strong> The dichotomy between wet and dry is familiar.<br><strong>neutral relation:</strong> The relation between wet and dry is familiar.<br><strong>frame term:</strong> moisture</div>
+<h3>Pole relation cosine(A,B) across carriers (corroboration)</h3>
+<table><caption>At embedding (0), mid, and output depths. Full series in measurements.csv.</caption><tr><th>carrier</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
+<tr><td>matched_syntax</td><td>0.4436</td><td>0.8300</td><td>0.8440</td></tr>
+<tr><td>natural_usage</td><td>0.4436</td><td>0.8300</td><td>0.8440</td></tr>
+<tr><td>explicit_dichotomy</td><td>0.4436</td><td>0.7366</td><td>0.7642</td></tr>
+<tr><td>neutral_relation</td><td>0.4436</td><td>0.6986</td><td>0.7566</td></tr>
 </table>
-<h3>Measurement (a) — seated-midpoint (corroboration only)</h3>
-<p class="stmt">No dichotomy, hence no meaningful midpoint; measurement (a) undefined by construction.</p>
+<h3>Candidate middles — measured, not assumed</h3>
+<table><caption>Each candidate projected on the pole axis. <code>rem/ctrl</code> is remainder relative to the unrelated-word baseline (below 1 = closer to the axis than an unrelated word). Descriptive class is offered to the reader; the raw numbers are the record.</caption><tr><th>candidate</th><th>input type</th><th>mean t (unforced)</th><th>rem/ctrl</th><th>carrier stability</th><th>mean t (forced)</th><th>strongest seating layer</th><th>cosine to frame term</th><th>descriptive class</th></tr>
+<tr class='cls-true_midpoint_candidate'><td>damp</td><td>candidate_middle</td><td>0.317</td><td>0.569</td><td>1.000</td><td>0.458</td><td>26</td><td>0.726</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>moist</td><td>candidate_middle</td><td>0.380</td><td>0.534</td><td>1.000</td><td>0.499</td><td>25</td><td>0.787</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>humid</td><td>candidate_middle</td><td>0.398</td><td>0.642</td><td>1.000</td><td>0.524</td><td>25</td><td>0.724</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>soaked</td><td>candidate_middle</td><td>0.314</td><td>0.729</td><td>1.000</td><td>0.465</td><td>1</td><td>0.659</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_adjacent_candidate'><td>both</td><td>logical</td><td>0.492</td><td>1.005</td><td>1.000</td><td>0.563</td><td>1</td><td>0.481</td><td>frame_adjacent_candidate</td></tr>
+<tr class='cls-frame_adjacent_candidate'><td>neither</td><td>logical</td><td>0.499</td><td>1.025</td><td>1.000</td><td>0.552</td><td>0</td><td>0.486</td><td>frame_adjacent_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>table</td><td>control</td><td>0.529</td><td>0.964</td><td>1.000</td><td>0.488</td><td>1</td><td>0.516</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_adjacent_candidate'><td>reason</td><td>control</td><td>0.538</td><td>1.036</td><td>1.000</td><td>0.526</td><td>0</td><td>0.481</td><td>frame_adjacent_candidate</td></tr>
+<tr class='cls-frame_term_reference'><td>moisture</td><td>frame_term</td><td>0.397</td><td>0.751</td><td>1.000</td><td>0.527</td><td>6</td><td>1.000</td><td>frame_term_reference</td></tr>
+</table>
+<p class="corr">Class glossary: <em>true_midpoint_candidate</em> — seats between the poles with lower off-axis remainder than an unrelated word, stable across carriers; <em>one_pole_candidate</em> — sits near one pole, not between them; <em>frame_adjacent_candidate</em> — closer to the frame term than to either pole; frame-adjacent, not a middle; <em>off_axis_candidate</em> — carries structure off the pole axis (mid or centered position but high remainder); <em>prompt_induced_candidate</em> — only becomes midpoint-like once a prompt forces a middle; not a stable middle; <em>frame_term_reference</em> — the frame term itself, a reference point (not classified against itself); <em>undetermined</em> — not determinable from the reads.</p>
+<p class="stmt">The corpus named the dichotomy wet / dry; the model processed that naming; the measurement recorded, across layers 0 to output and across four carriers plus four forcing prompts, where each candidate seats on the pole axis and how much structure it carries off that axis (all corroboration only); a human interprets the record.</p>
+<h2>good / bad &nbsp;<span class='corr'>(morality_good_bad · scalar_collapse)</span></h2>
+<div class="frame"><strong>matched syntax:</strong> The action was {word}.<br><strong>natural usage:</strong> The action was {word}.<br><strong>explicit dichotomy:</strong> The dichotomy between good and bad is familiar.<br><strong>neutral relation:</strong> The relation between good and bad is familiar.<br><strong>frame term:</strong> morality</div>
+<h3>Pole relation cosine(A,B) across carriers (corroboration)</h3>
+<table><caption>At embedding (0), mid, and output depths. Full series in measurements.csv.</caption><tr><th>carrier</th><th>layer 0</th><th>layer 13</th><th>layer 26</th></tr>
+<tr><td>matched_syntax</td><td>0.3998</td><td>0.8246</td><td>0.6991</td></tr>
+<tr><td>natural_usage</td><td>0.3998</td><td>0.8246</td><td>0.6991</td></tr>
+<tr><td>explicit_dichotomy</td><td>0.3998</td><td>0.7546</td><td>0.8139</td></tr>
+<tr><td>neutral_relation</td><td>0.3998</td><td>0.6960</td><td>0.8069</td></tr>
+</table>
+<h3>Candidate middles — measured, not assumed</h3>
+<table><caption>Each candidate projected on the pole axis. <code>rem/ctrl</code> is remainder relative to the unrelated-word baseline (below 1 = closer to the axis than an unrelated word). Descriptive class is offered to the reader; the raw numbers are the record.</caption><tr><th>candidate</th><th>input type</th><th>mean t (unforced)</th><th>rem/ctrl</th><th>carrier stability</th><th>mean t (forced)</th><th>strongest seating layer</th><th>cosine to frame term</th><th>descriptive class</th></tr>
+<tr class='cls-prompt_induced_candidate'><td>neutral</td><td>candidate_middle</td><td>0.619</td><td>0.874</td><td>1.000</td><td>0.539</td><td>25</td><td>0.535</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>mixed</td><td>candidate_middle</td><td>0.551</td><td>0.894</td><td>1.000</td><td>0.498</td><td>26</td><td>0.461</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>ambiguous</td><td>candidate_middle</td><td>0.522</td><td>0.843</td><td>1.000</td><td>0.546</td><td>19</td><td>0.573</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>gray</td><td>candidate_middle</td><td>0.695</td><td>0.908</td><td>1.000</td><td>0.496</td><td>0</td><td>0.536</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>both</td><td>logical</td><td>0.540</td><td>1.009</td><td>1.000</td><td>0.449</td><td>1</td><td>0.437</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>neither</td><td>logical</td><td>0.613</td><td>1.035</td><td>1.000</td><td>0.453</td><td>0</td><td>0.448</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_adjacent_candidate'><td>morally ambiguous</td><td>phrase_middle</td><td>0.530</td><td>0.874</td><td>1.000</td><td>0.557</td><td>1</td><td>0.731</td><td>frame_adjacent_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>neither good nor bad</td><td>phrase_middle</td><td>0.552</td><td>0.630</td><td>1.000</td><td>0.501</td><td>0</td><td>0.554</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-true_midpoint_candidate'><td>both good and bad</td><td>phrase_middle</td><td>0.477</td><td>0.575</td><td>1.000</td><td>0.497</td><td>1</td><td>0.553</td><td>true_midpoint_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>table</td><td>control</td><td>0.696</td><td>1.028</td><td>1.000</td><td>0.364</td><td>0</td><td>0.486</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-prompt_induced_candidate'><td>reason</td><td>control</td><td>0.585</td><td>0.972</td><td>1.000</td><td>0.398</td><td>26</td><td>0.516</td><td>prompt_induced_candidate</td></tr>
+<tr class='cls-frame_term_reference'><td>morality</td><td>frame_term</td><td>0.634</td><td>1.014</td><td>1.000</td><td>0.521</td><td>26</td><td>1.000</td><td>frame_term_reference</td></tr>
+</table>
+<p class="corr">Class glossary: <em>true_midpoint_candidate</em> — seats between the poles with lower off-axis remainder than an unrelated word, stable across carriers; <em>one_pole_candidate</em> — sits near one pole, not between them; <em>frame_adjacent_candidate</em> — closer to the frame term than to either pole; frame-adjacent, not a middle; <em>off_axis_candidate</em> — carries structure off the pole axis (mid or centered position but high remainder); <em>prompt_induced_candidate</em> — only becomes midpoint-like once a prompt forces a middle; not a stable middle; <em>frame_term_reference</em> — the frame term itself, a reference point (not classified against itself); <em>undetermined</em> — not determinable from the reads.</p>
+<p class="stmt">The corpus named the dichotomy good / bad; the model processed that naming; the measurement recorded, across layers 0 to output and across four carriers plus four forcing prompts, where each candidate seats on the pole axis and how much structure it carries off that axis (all corroboration only); a human interprets the record.</p>
 <footer>
-<p>Both files download together from the results page: <code>measurements.csv</code>
-(tidy per-layer measurements for every item and control) and this page,
-<code>results.html</code>.</p>
-<p>Pre-registration precedes this data: see <code>dichotomy_probe/PREREGISTRATION.md</code>,
-committed alone before any data existed.</p>
-<p>Disruption — a shift in a reader's verdict on reading this trace — is predicated of the
-human reader, never of the transformer or the geometry. The residual stream is the
-material trace; nothing here materializes a verdict in the stream.</p>
+<p>Both files download together: <code>measurements.csv</code> (tidy per-layer measurements for every
+pair, carrier, and candidate) and this page, <code>results.html</code>.</p>
+<p>Pre-registration precedes this data: <code>dichotomy_probe/PREREGISTRATION.md</code> and the v2
+addendum <code>dichotomy_probe/PREREGISTRATION_v2.md</code>, committed before the data existed.</p>
+<p>Disruption — a shift in a reader's verdict on reading this trace — is predicated of the human
+reader, never of the transformer or the geometry. The residual stream is the material trace; nothing
+here materializes a verdict in the stream.</p>
 </footer></body></html>

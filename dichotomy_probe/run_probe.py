@@ -70,33 +70,41 @@ def run(run_stamp: str = ""):
     from water_tool.core.model import MODEL_ID
     from dichotomy_probe import config, measures, reporting
 
-    # Field-omission screen must pass before any data is emitted.
+    # Field-omission screen must pass before any data is emitted (this also enforces
+    # that every pair, including the true dichotomies, carries candidate middles).
     ok, problems = config.field_omission_check()
     if not ok:
         raise RuntimeError(f"Field-omission check failed: {problems}")
 
-    all_rows, dropped, n_layers = [], [], None
-    for unit in config.UNITS:
-        rows, dr, nl = measures.measure_unit(unit)
+    all_rows, all_class = [], []
+    for pair in config.PAIRS:
+        rows, classes = measures.measure_pair(pair)
         all_rows.extend(rows)
-        dropped.extend([{"unit": unit["id"], "role": r, "word": w} for (r, w) in dr])
-        n_layers = nl
+        all_class.extend(classes)
+
+    class_counts = {}
+    for c in all_class:
+        class_counts[c["descriptive_class"]] = class_counts.get(c["descriptive_class"], 0) + 1
 
     meta = {
         "model_id": MODEL_ID,
         "run_stamp": run_stamp,
-        "n_layers": n_layers,
-        "dropped_multitoken": dropped,
-        "n_units": len(config.UNITS),
+        "n_layers": config.N_RESIDUAL_STATES,
+        "n_pairs": len(config.PAIRS),
+        "n_candidates": len(all_class),
         "n_measurement_rows": len(all_rows),
+        "class_counts": class_counts,
+        "thresholds": measures.THRESHOLDS,
     }
 
     csv_path = os.path.join(RESULTS_DIR, CSV_NAME)
     html_path = os.path.join(RESULTS_DIR, HTML_NAME)
     zip_path = os.path.join(RESULTS_DIR, ZIP_NAME)
     reporting.write_csv(all_rows, csv_path)
-    reporting.write_html(all_rows, meta, html_path)
+    reporting.write_html(all_rows, meta, html_path, all_class)
     reporting.write_zip(csv_path, html_path, zip_path)
+    with open(os.path.join(RESULTS_DIR, "classifications.json"), "w", encoding="utf-8") as f:
+        json.dump(all_class, f, ensure_ascii=False, indent=2)
     with open(os.path.join(RESULTS_DIR, META_NAME), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
@@ -214,16 +222,13 @@ def main():
         json.dump(res["meta"], f, ensure_ascii=False, indent=2)
 
     m = res["meta"]
-    print(f"\n=== Dichotomy Transformation Probe — batch complete ({stamp}) ===")
+    print(f"\n=== Dichotomy Transformation Probe v2 — batch complete ({stamp}) ===")
     print(f"model={m['model_id']}  residual_states={m['n_layers']}  "
-          f"units={m['n_units']}  rows={m['n_measurement_rows']}")
-    if m["dropped_multitoken"]:
-        print("Dropped (multi-token, scope gate):")
-        for d in m["dropped_multitoken"]:
-            print(f"    {d['unit']} / {d['role']} / {d['word']!r}")
-    else:
-        print("No words dropped at run time (all single-token).")
+          f"pairs={m['n_pairs']}  candidates={m['n_candidates']}  rows={m['n_measurement_rows']}")
+    print("Descriptive class counts (offered to the reader, not verdicts):")
+    for k, v in sorted(m["class_counts"].items(), key=lambda kv: -kv[1]):
+        print(f"    {v:>3}  {k}")
     print(f"\nMirrored into {out_dir}:")
-    print(f"    {CSV_NAME}, {HTML_NAME}, {ZIP_NAME}, {META_NAME}")
+    print(f"    {CSV_NAME}, {HTML_NAME}, {ZIP_NAME}, {META_NAME}, classifications.json")
     print("\nOpen the always-on page:")
     print("    https://jenniferchamberspalmer-research--dichotomy-probe-web.modal.run")

@@ -92,21 +92,42 @@ in advance:
   measurements are reported for every item and control, and any disconfirming
   control is reported flat.
 
+## Version 2 — carrier controls and hidden-middle probes
+
+v2 adds four carrier conditions per pair (matched-syntax, natural-usage,
+explicit-dichotomy, neutral-relation), candidate middles for **every** pair, and
+hidden-middle forcing prompts. The load-bearing correction: **the true dichotomies
+(coin, even/odd) also receive candidate middles**, so "no middle" is a result to be
+measured, never built into the design. Seating is judged *relative to each pair's own
+unrelated-word baseline* (table/reason), because absolute off-axis magnitudes are not
+interpretable in the model's 2304-dimensional residual space (the same
+relative-to-control logic used elsewhere in this repo).
+
+What the most recent batch shows, descriptively (the reader interprets; the machine
+decides nothing): scalar middles seat between the poles (hot/cold → warm, mild,
+lukewarm; wet/dry → damp, moist, humid, leaning toward *wet*); the good/bad middle
+seats only as a **phrase** ("neither good nor bad", "both good and bad"), not as any
+single token — an under-lexicalized center; and the true dichotomies coin and
+even/odd have **no** candidate that seats — "no middle," measured rather than assumed.
+
 ## Pre-registration and the two-commit integrity trail
 
 This is a portfolio piece, and its reliability rests partly on **pre-registration
 preceding data**. The design and every pre-launch screen were frozen and committed
-*before any data existed*:
+*before any data existed* — for both the original probe and the v2 extension, each as
+its own two-commit sequence, deliberately **not** squashed:
 
-1. **Commit 1 — [`PREREGISTRATION.md`](PREREGISTRATION.md), committed alone and
-   pushed before the probe was ever run.** It fixes the items, controls, both
-   measurements, and the tokenizer/homograph/field-omission screen results. It also
-   states in advance that on good/bad measurement (a) will not close on a
-   single-token midpoint (the moral midpoint is phrasal), and that this non-closure
-   is itself the finding, not a failed run.
-2. **Commit 2 — the probe code and the results, committed and pushed separately and
-   later.** The two commits are deliberately **not** squashed. The sequence in the
-   git history is the proof that pre-registration came first.
+- **[`PREREGISTRATION.md`](PREREGISTRATION.md)** — original design, committed alone
+  before the first batch; then code + results committed separately after.
+- **[`PREREGISTRATION_v2.md`](PREREGISTRATION_v2.md)** — the carrier-controls /
+  hidden-middle extension (and the "no middle is not assumed" correction), committed
+  alone before the v2 batch; then the v2 code + results committed separately after.
+
+The sequence in the git history is the proof that pre-registration came first. One
+calibration was disclosed after the first v2 run (seating judged control-relative
+rather than by an uninformative absolute cutoff); it changes only the reader-facing
+class label, not the measurements, and is documented on the results page rather than
+by editing the frozen pre-registration.
 
 ## How it fits the rest of the repo
 

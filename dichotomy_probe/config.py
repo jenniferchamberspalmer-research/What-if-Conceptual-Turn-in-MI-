@@ -1,230 +1,219 @@
-"""Design configuration for the Dichotomy Transformation Probe.
+"""Design configuration for the Dichotomy Transformation Probe (v2).
 
-This module is the SINGLE source of the experimental design: items, controls,
-frames, poles, candidate midpoints, and excluded-term sets. Every field is
-required (see `field_omission_check`) per the pre-registration protocol -- no
-synonym-or-equivalent field may be left blank.
+v2 adds carrier-frame controls and hidden-middle probes. The load-bearing
+methodological correction: **true dichotomies also receive candidate middles.**
+"No middle" is never built into the design; it is a result to be measured, never
+an assumption. Every pair gets the same candidate machinery and the same
+measurements; the human reader interprets where each candidate lands.
 
 READING SUBSTRATE (stated once, applied everywhere)
 ---------------------------------------------------
-Tokenization fixes the position; the unit is the residual state at that
-position; it is read across layers 0 to output (Gemma 2 2B: 27 residual
-states, index 0 = embedding/input state, indices 1..26 = block outputs).
-
-  - The two POLES are read in the culturally-named dichotomy frame (the full
-    "... is either A or B ..." sentence the corpus supplies). This is the
-    naming, read as the corpus names it.
-  - The candidate MIDPOINT, the EXCLUDED terms, and the NULL words do not
-    appear in the dichotomy frame, so each is read at its token position in a
-    matched CARRIER frame ("<stem> ___.") that fixes the same sense.
-  - To keep measurement (a) seating and measurement (b) remainder on a single
-    consistent axis, the poles are ALSO read in the carrier frame; those
-    carrier-read pole vectors define the A-B axis for projection and remainder.
-    The dichotomy-frame pole reading is reported separately as the poles "as
-    the corpus names them."
+Tokenization fixes the position; the unit is the residual state carried at that
+position; it is read across layers 0 to output (27 residual states: index 0 =
+embedding/input state, 1..26 = block outputs). A multi-token candidate or phrase
+is read as the mean of the residual states over its subtoken span at each layer
+(the standard phrase-vector pooling already used by the Water tool); its subtoken
+count is recorded. The two poles are single-token (screened).
 
 Nothing here materializes a verdict in the stream. The machine transforms a
 naming already present in the corpus; the verdict lives in the human reader.
+Every descriptive class emitted is offered to the reader, never asserted as truth.
 """
 
-# Gemma 2 2B: 26 decoder blocks -> 27 residual states read across depth.
-N_RESIDUAL_STATES = 27          # index 0 (embedding) .. 26 (output)
+N_RESIDUAL_STATES = 27
 LAYER_INDICES = list(range(N_RESIDUAL_STATES))
 
-# The unit-of-analysis statement, reproduced verbatim wherever a result is emitted.
 UNIT_STATEMENT = (
     "Tokenization fixes the position; the unit of analysis is the residual "
     "representation carried at that position; it is read across layers 0 to output. "
     "The token is not the unit."
 )
-
-# The fixed reporting order, reproduced verbatim wherever a result is emitted.
 REPORTING_ORDER = (
     "The corpus named the dichotomy; the model processed that naming; the "
     "measurement recorded the processing; a human interprets the record."
 )
-
-# Positive distributional proximity is corroboration only, never the claim.
 CORROBORATION_NOTE = (
     "Distributional proximity here (cosine, and any intermediate-seating result) "
     "is corroboration only. The claim is differential value-exhaustion, not proximity."
 )
 
 
-# Each unit is one item or control. Fields:
-#   id                 short identifier
-#   role               "item" | "control" | "null"
-#   kind               "true_dichotomy" | "scalar_collapse" | "null_pair"
-#   named_dichotomy    the cultural dichotomy named in the corpus at entry
-#   dichotomy_frame    the full sense-fixing sentence (poles read here); None only for the null pair, with reason
-#   dichotomy_frame_note  why dichotomy_frame is what it is (or why None)
-#   carrier_frame      "<stem> {word}." used for midpoint/excluded/null and the carrier pole axis
-#   pole_A, pole_B     the two pole words (read at their token positions)
-#   midpoint           single-token candidate intermediate, or None
-#   midpoint_note      why the midpoint is what it is (or why None) -- the interlock is stated here
-#   excluded_terms     graded terms whose value may sit OFF the A-B axis (measurement b remainder)
-#   excluded_note      why these terms (or why deliberately empty)
-#   homograph_note     any strange-sense homograph risk flagged for the screen
+# --- Carrier conditions ------------------------------------------------------
+# word_slot carriers read one word at a time (A, B, each candidate, frame term,
+# controls) at the {word} position. relational carriers place BOTH poles in one
+# sentence and are used for the pole relation (cosine A,B) under a dichotomy-named
+# vs a neutral relation frame.
+CARRIERS = [
+    {"id": "matched_syntax", "kind": "word_slot",
+     "note": "Same structure for every pair ('The {frame_noun} was {word}.'). "
+             "The syntax control; may sound unnatural (e.g. coin) — that is the point."},
+    {"id": "natural_usage", "kind": "word_slot",
+     "note": "The most natural English carrier per pair; preserves ordinary corpus usage."},
+    {"id": "explicit_dichotomy", "kind": "relational",
+     "template": "The dichotomy between {A} and {B} is familiar.",
+     "note": "Tests the named-dichotomy frame directly."},
+    {"id": "neutral_relation", "kind": "relational",
+     "template": "The relation between {A} and {B} is familiar.",
+     "note": "Neutral relational frame: is the effect specific to the word 'dichotomy' "
+             "or visible under any A/B relation?"},
+]
 
-UNITS = [
+MATCHED_SYNTAX_TEMPLATE = "The {frame_noun} was {word}."
+
+# --- Hidden-middle forcing prompts (Part C) ----------------------------------
+# {M} is always at the sentence end after 'is '; the reader reads M via the LAST
+# occurrence so logical terms (both/neither) that also appear structurally are not
+# confused with the M slot.
+FORCING_PROMPTS = [
+    {"id": "forced_middle", "template": "Between {A} and {B}, the middle case is {M}.",
+     "note": "Can a candidate be made geometrically midpoint-like when the prompt forces it?"},
+    {"id": "ambiguity", "template": "An ambiguous case between {A} and {B} is {M}.",
+     "note": "Ambiguity framing."},
+    {"id": "neither", "template": "Something neither {A} nor {B} is {M}.",
+     "note": "Logical exclusion framing."},
+    {"id": "both", "template": "Something both {A} and {B} is {M}.",
+     "note": "Logical conjunction framing."},
+]
+
+
+# --- Pairs -------------------------------------------------------------------
+# frame_noun : the noun used in the matched-syntax carrier ("The {frame_noun} was ...").
+# frame_term : the concept word candidates may be frame-adjacent to (distance(M, frame_term)).
+# natural_carrier : the natural word_slot carrier, with a {word} slot.
+# candidate_middles/logical/phrase_middles/controls : words read as candidates and
+#   classified by the decision logic (no candidate is assumed to be a middle).
+PAIRS = [
     {
-        "id": "coin_heads_tails",
-        "role": "item",
-        "kind": "true_dichotomy",
-        "named_dichotomy": "heads / tails",
-        "dichotomy_frame": "A coin is either heads or tails.",
-        "dichotomy_frame_note": "Item 1 from the handoff, verbatim; the corpus names an exhaustive two-term opposition over a coin's face.",
-        "carrier_frame": "The coin came up {word}.",
-        "pole_A": "heads",
-        "pole_B": "tails",
-        "midpoint": None,
-        "midpoint_note": "A true two-term opposition admits no lexical intermediate; the coin's edge is degenerate, not a named third term. Measurement (a) is undefined here by construction, reported flat.",
-        "excluded_terms": [],
-        "excluded_note": "Deliberately empty: an exhaustive true dichotomy has no excluded middle terms carrying value. A near-zero / undefined remainder is the contrast, reported flat.",
-        "homograph_note": "'heads' and 'tails' both have strong non-coin senses (body part, animal tail); screened. The frame fixes the coin sense.",
+        "id": "coin_heads_tails", "kind": "true_dichotomy", "named": "heads / tails",
+        "A": "heads", "B": "tails",
+        "frame_noun": "coin", "frame_term": "coin",
+        "natural_carrier": "The coin came up {word}.",
+        "candidate_middles": ["edge", "side", "rim", "face"],
+        "logical": ["both", "neither"],
+        "phrase_middles": [],
+        "controls": ["table", "reason"],
+        "note": "True dichotomy. Candidate middles are physical, frame-adjacent (edge/rim/side/face) "
+                "plus logical pressure terms (both/neither). Whether any stably seats is measured, "
+                "not assumed. 'coin' is the frame term, expected close to both poles but not a midpoint.",
     },
     {
-        "id": "person_good_bad",
-        "role": "item",
-        "kind": "scalar_collapse",
-        "named_dichotomy": "good / bad",
-        "dichotomy_frame": "A person is either good or bad.",
-        "dichotomy_frame_note": "Item 2 from the handoff, verbatim; the corpus names a moral opposition that is used gradiently in practice.",
-        "carrier_frame": "The person was {word}.",
-        "pole_A": "good",
-        "pole_B": "bad",
-        "midpoint": None,
-        "midpoint_note": (
-            "ANTICIPATED NON-CLOSURE, stated in advance: the moral midpoint is phrasal / "
-            "multi-token ('morally grey', 'neither good nor bad'), so it cannot close on a "
-            "single Y-unit. Measurement (a) breaks EXACTLY where the midpoint fails to fit "
-            "the unit -- that breakage is the finding (the moral field is used gradiently but "
-            "under-lexicalized at its center), not a failed run. Measuring a multi-token "
-            "midpoint against single-token poles would be a unit-mismatch, so no single-token "
-            "midpoint is asserted; the excluded-term remainder carries measurement (b) instead."
-        ),
-        "excluded_terms": ["mediocre", "average", "okay", "fine", "decent", "poor"],
-        "excluded_note": "Single-token graded moral/quality terms whose value may sit off the good-bad axis (measurement b remainder). Multi-token candidates are dropped by the screen.",
-        "homograph_note": "'bad' screened for slang 'good' sense; the frame fixes the evaluative sense.",
+        "id": "integer_even_odd", "kind": "true_dichotomy", "named": "even / odd",
+        "A": "even", "B": "odd",
+        "frame_noun": "integer", "frame_term": "integer",
+        "natural_carrier": "The integer is {word}.",
+        "candidate_middles": ["zero", "half", "fraction", "decimal"],
+        "logical": ["both", "neither"],
+        "phrase_middles": [],
+        "controls": ["table", "reason"],
+        "note": "True dichotomy over integers. NOTE: 'zero' is not a middle between even and odd — "
+                "zero is even. This tests whether the model represents the parity relation or merely "
+                "treats zero as special. half/fraction/decimal lie outside the integers entirely.",
     },
     {
-        "id": "integer_even_odd",
-        "role": "control",
-        "kind": "true_dichotomy",
-        "named_dichotomy": "even / odd",
-        "dichotomy_frame": "An integer is either even or odd.",
-        "dichotomy_frame_note": "Clean true dichotomy control: exhaustive and exclusive over the integers.",
-        "carrier_frame": "The number is {word}.",
-        "pole_A": "even",
-        "pole_B": "odd",
-        "midpoint": None,
-        "midpoint_note": "Integers admit no middle term; measurement (a) undefined by construction, reported flat.",
-        "excluded_terms": [],
-        "excluded_note": "Deliberately empty (no excluded middle over the integers). Near-zero / undefined remainder is the contrast, reported flat.",
-        "homograph_note": "'odd' screened for its strange-sense homograph (odd = peculiar); the frame fixes the parity sense.",
+        "id": "temp_hot_cold", "kind": "scalar_collapse", "named": "hot / cold",
+        "A": "hot", "B": "cold",
+        "frame_noun": "temperature", "frame_term": "temperature",
+        "natural_carrier": "The temperature was {word}.",
+        "candidate_middles": ["warm", "cool", "mild", "lukewarm"],
+        "logical": ["both", "neither"],
+        "phrase_middles": [],
+        "controls": ["table", "reason"],
+        "note": "Scalar-collapse: real scalar middles expected (warm/cool/mild/lukewarm). This is "
+                "where a seated single-token midpoint, if any, is defined.",
     },
     {
-        "id": "water_hot_cold",
-        "role": "control",
-        "kind": "scalar_collapse",
-        "named_dichotomy": "hot / cold",
-        "dichotomy_frame": "The water is either hot or cold.",
-        "dichotomy_frame_note": "Clean scalar-collapse control WITH a single-token lexical midpoint -- this is where measurement (a) is defined.",
-        "carrier_frame": "The water was {word}.",
-        "pole_A": "hot",
-        "pole_B": "cold",
-        "midpoint": "warm",
-        "midpoint_note": "'warm' is a single-token lexical midpoint on the temperature scale; measurement (a) IS defined here and its seating (if any) is reported as corroboration only.",
-        # 'tepid' dropped by the pre-launch scope gate: it splits into
-        # [' tep', 'id'] (multiple Y-units). Recorded in PREREGISTRATION.md.
-        "excluded_terms": ["cool", "mild", "lukewarm"],
-        "excluded_note": "Single-token graded temperature terms whose value may sit off the hot-cold axis (measurement b remainder). Multi-token candidates are dropped by the screen.",
-        "homograph_note": "None strong; 'cool' (as slang) screened.",
+        "id": "moisture_wet_dry", "kind": "scalar_collapse", "named": "wet / dry",
+        "A": "wet", "B": "dry",
+        "frame_noun": "surface", "frame_term": "moisture",
+        "natural_carrier": "The surface was {word}.",
+        "candidate_middles": ["damp", "moist", "humid", "soaked"],
+        "logical": ["both", "neither"],
+        "phrase_middles": [],
+        "controls": ["table", "reason"],
+        "note": "Scalar-collapse with likely ONE-SIDED intermediates (damp/moist toward wet, not a "
+                "clean midpoint). Frame noun is 'surface'; frame term is 'moisture'.",
     },
     {
-        "id": "cloth_wet_dry",
-        "role": "control",
-        "kind": "scalar_collapse",
-        "named_dichotomy": "wet / dry",
-        "dichotomy_frame": "The cloth is either wet or dry.",
-        "dichotomy_frame_note": "Optional second scalar-collapse control with a single-token midpoint candidate.",
-        "carrier_frame": "The cloth was {word}.",
-        "pole_A": "wet",
-        "pole_B": "dry",
-        "midpoint": "damp",
-        "midpoint_note": "'damp' is a single-token lexical midpoint on the moisture scale; measurement (a) IS defined here and its seating (if any) is reported as corroboration only.",
-        "excluded_terms": ["moist", "humid", "soggy"],
-        "excluded_note": "Single-token graded moisture terms whose value may sit off the wet-dry axis (measurement b remainder). Multi-token candidates are dropped by the screen.",
-        "homograph_note": "None strong.",
-    },
-    {
-        "id": "null_table_reason",
-        "role": "null",
-        "kind": "null_pair",
-        "named_dichotomy": "(none -- null pair by construction)",
-        "dichotomy_frame": None,
-        "dichotomy_frame_note": "Null pair: the corpus names NO dichotomy over these two words. There is deliberately no dichotomy frame; the pair exists to show interior structure is specific to opposition, not an artifact of pairing any two words.",
-        "carrier_frame": "The {word} is there.",
-        "pole_A": "table",
-        "pole_B": "reason",
-        "midpoint": None,
-        "midpoint_note": "No dichotomy, hence no meaningful midpoint; measurement (a) undefined by construction.",
-        "excluded_terms": [],
-        "excluded_note": "No opposition, hence no excluded-middle set. Remainder undefined; the null pair anchors the floor for measurement (b).",
-        "homograph_note": "None relevant; the pair is intentionally unrelated.",
+        "id": "morality_good_bad", "kind": "scalar_collapse", "named": "good / bad",
+        "A": "good", "B": "bad",
+        "frame_noun": "action", "frame_term": "morality",
+        "natural_carrier": "The action was {word}.",
+        "candidate_middles": ["neutral", "mixed", "ambiguous", "gray"],
+        "logical": ["both", "neither"],
+        "phrase_middles": ["morally ambiguous", "neither good nor bad", "both good and bad"],
+        "controls": ["table", "reason"],
+        "note": "Scalar-collapse whose true middle may be PHRASAL, not a single-token lexical item — "
+                "hence phrase middles are tested alongside single-token candidates. Whether closure "
+                "happens on a single token or only on a phrase is itself the finding.",
     },
 ]
 
 
-# Fields that must be present and non-empty (string fields) on every unit.
+def candidates_for(pair: dict):
+    """Every non-pole word read as a candidate, tagged with its input type.
+
+    Returns a list of dicts: {word, input_type, is_phrase}. input_type is one of
+    candidate_middle | logical | phrase_middle | control | frame_term. No candidate
+    is assumed to be a midpoint; the decision logic assigns the output class.
+    """
+    out = []
+    for w in pair["candidate_middles"]:
+        out.append({"word": w, "input_type": "candidate_middle", "is_phrase": False})
+    for w in pair["logical"]:
+        out.append({"word": w, "input_type": "logical", "is_phrase": False})
+    for w in pair["phrase_middles"]:
+        out.append({"word": w, "input_type": "phrase_middle", "is_phrase": True})
+    for w in pair["controls"]:
+        out.append({"word": w, "input_type": "control", "is_phrase": False})
+    out.append({"word": pair["frame_term"], "input_type": "frame_term",
+                "is_phrase": len(pair["frame_term"].split()) > 1})
+    return out
+
+
+def matched_syntax_carrier(pair: dict) -> str:
+    return MATCHED_SYNTAX_TEMPLATE.replace("{frame_noun}", pair["frame_noun"])
+
+
+# --- Screens -----------------------------------------------------------------
+
 _REQUIRED_STRING_FIELDS = [
-    "id", "role", "kind", "named_dichotomy", "carrier_frame",
-    "pole_A", "pole_B", "midpoint_note", "excluded_note", "homograph_note",
-    "dichotomy_frame_note",
+    "id", "kind", "named", "A", "B", "frame_noun", "frame_term",
+    "natural_carrier", "note",
 ]
-# Fields that must be PRESENT (may be None, but the None must be explained by a *_note field).
-_REQUIRED_PRESENT_FIELDS = ["dichotomy_frame", "midpoint", "excluded_terms"]
+_REQUIRED_LIST_FIELDS = ["candidate_middles", "logical", "phrase_middles", "controls"]
 
 
 def field_omission_check():
-    """Field-omission screen: no required field left blank; None values explained.
-
-    Returns (ok: bool, problems: list[str]).
-    """
+    """No required field left blank; carriers well-formed. Returns (ok, problems)."""
     problems = []
-    seen_ids = set()
-    for u in UNITS:
-        uid = u.get("id", "<no-id>")
-        if uid in seen_ids:
-            problems.append(f"{uid}: duplicate id")
-        seen_ids.add(uid)
+    seen = set()
+    for p in PAIRS:
+        pid = p.get("id", "<no-id>")
+        if pid in seen:
+            problems.append(f"{pid}: duplicate id")
+        seen.add(pid)
         for f in _REQUIRED_STRING_FIELDS:
-            v = u.get(f, None)
-            if v is None or (isinstance(v, str) and not v.strip()):
-                problems.append(f"{uid}: required string field '{f}' is blank")
-        for f in _REQUIRED_PRESENT_FIELDS:
-            if f not in u:
-                problems.append(f"{uid}: required field '{f}' is missing")
-        # A None dichotomy_frame is allowed only for the null pair and must be explained.
-        if u.get("dichotomy_frame") is None and u.get("role") != "null":
-            problems.append(f"{uid}: dichotomy_frame is None but role is not 'null'")
-        if "{word}" not in u.get("carrier_frame", ""):
-            problems.append(f"{uid}: carrier_frame has no {{word}} slot")
+            v = p.get(f)
+            if not (isinstance(v, str) and v.strip()):
+                problems.append(f"{pid}: required field '{f}' is blank")
+        for f in _REQUIRED_LIST_FIELDS:
+            if f not in p or not isinstance(p[f], list):
+                problems.append(f"{pid}: required list field '{f}' missing")
+        if "{word}" not in p.get("natural_carrier", ""):
+            problems.append(f"{pid}: natural_carrier has no {{word}} slot")
+        # candidate_middles must be non-empty for EVERY pair, including true dichotomies.
+        if not p.get("candidate_middles"):
+            problems.append(f"{pid}: candidate_middles is empty — 'no middle' must never be "
+                            f"built into the design.")
     return (len(problems) == 0, problems)
 
 
 def all_screened_words():
-    """Every word that must pass the tokenizer single-token screen, in-frame.
-
-    Returns a list of (unit_id, role_label, word) tuples. role_label is one of
-    pole_A / pole_B / midpoint / excluded.
-    """
+    """(pair_id, role, word) for the tokenizer screen: poles, candidates, frame terms, controls."""
     out = []
-    for u in UNITS:
-        out.append((u["id"], "pole_A", u["pole_A"]))
-        out.append((u["id"], "pole_B", u["pole_B"]))
-        if u["midpoint"]:
-            out.append((u["id"], "midpoint", u["midpoint"]))
-        for e in u["excluded_terms"]:
-            out.append((u["id"], "excluded", e))
+    for p in PAIRS:
+        out.append((p["id"], "pole_A", p["A"]))
+        out.append((p["id"], "pole_B", p["B"]))
+        for c in candidates_for(p):
+            out.append((p["id"], c["input_type"], c["word"]))
     return out

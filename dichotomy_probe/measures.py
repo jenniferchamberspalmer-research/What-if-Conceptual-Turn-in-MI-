@@ -1,140 +1,270 @@
-"""The two measurements of the Dichotomy Transformation Probe.
+"""Measurements for the Dichotomy Transformation Probe (v2).
 
-Both are computed for every item and control across all 27 residual states
-(layers 0 to output). Neither is designated a success in advance. Positive
-proximity (cosine, seating) is corroboration only; the claim is differential
-value-exhaustion.
+Computed for every pair, carrier condition, candidate, and layer (0 to output),
+via the SINGLE-SOURCE extractor water_tool.core.extract so this probe and the
+Water Pattern Tool cannot drift.
 
-Reading substrate (see config.UNITS docstring): each word is read at its token
-position via the SINGLE-SOURCE extractor water_tool.core.extract, so this probe
-and the Water Pattern Tool cannot drift.
+Per candidate M against poles A, B (all read on one axis per carrier):
+  cosine_AB, cosine_MA, cosine_MB, midpoint_t (projection on A->B),
+  remainder_ratio (M off the A->B axis), cosine_M_frameterm.
+Summaries per candidate: carrier_stability (agreement of midpoint_t across the two
+word-slot carriers), layer_of_strongest_seating, and a descriptive class.
 
-  (a) Seated-midpoint  -- projection t, perpendicular residual, cosMA/cosMB of a
-      single-token candidate midpoint on the carrier A-B axis. Defined only where
-      a single-token midpoint exists.
-  (b) Cross-layer pole relation -- cosine(A,B) named + carrier, and the remainder
-      ratio (excluded-term energy off the A-B axis). Reported as description.
-
-Output is a flat/tidy list of measurement rows (one numeric value per row),
-carrying the identifying fields; reporting.py attaches the fixed-order language.
+Nothing here is a verdict. Proximity and seating are corroboration only. The
+descriptive class is a summary offered to the human reader, never asserted as true.
 """
 
 import torch
 
 from water_tool.core.model import load
 from water_tool.core.extract import residual_sweep, find_target_position
+from . import config
+
+# Heuristic thresholds for the descriptive class. Exposed so the human reader can see
+# (and discount) them; the raw per-layer numbers are always emitted alongside. The
+# remainder is judged RELATIVE to each pair's unrelated-word (table/reason) baseline,
+# because absolute off-axis magnitudes are not interpretable in 2304-dim residual
+# space -- this mirrors the relative-to-control logic of the Water study and Token
+# Biography. remainder_vs_control = candidate off-axis remainder / control baseline.
+THRESHOLDS = {
+    "t_between_lo": 0.30,     # t within [lo, hi] -> seats between the poles
+    "t_between_hi": 0.70,
+    "t_poleward": 0.85,       # t below 0.15 or above 0.85 -> sits at one pole
+    "rel_remainder_seat": 0.65,  # remainder_vs_control at/below this -> seats better than an unrelated word
+    "stability_min": 0.70,    # carrier_stability at/above this -> robust across carriers
+}
 
 
-def _cos(a: torch.Tensor, b: torch.Tensor) -> float:
+def _cos(a, b):
     return float(torch.nn.functional.cosine_similarity(a, b, dim=0).item())
 
 
-def _project(m: torch.Tensor, a: torch.Tensor, b: torch.Tensor):
-    """Seat m on the a->b axis. Returns (t, perp_norm) with perp normalized by |b-a|."""
+def _project(m, a, b):
+    """Seat m on the a->b axis. Returns (t, remainder) with remainder normalized by |b-a|."""
     axis = b - a
     denom = float(axis.dot(axis).clamp(min=1e-12).item())
     t = float((m - a).dot(axis).item()) / denom
     perp = (m - a) - t * axis
     axis_len = float(axis.norm().clamp(min=1e-12).item())
-    perp_norm = float(perp.norm().item()) / axis_len
-    return t, perp_norm
+    return t, float(perp.norm().item()) / axis_len
 
 
-def read_word_across_layers(sentence: str, word: str) -> torch.Tensor:
-    """Residual at `word`'s token position across all 27 layers. Returns [27, hidden] float32."""
+def _pool(hs, tok, sentence, span, from_end):
+    """Mean residual over `span`'s subtoken positions, from one already-computed sweep."""
+    cpos = sentence.rfind(span) if from_end else sentence.find(span)
+    if cpos < 0:
+        pos = find_target_position(sentence, span, tok)
+        return hs[:, pos, :].to(torch.float32).cpu()
+    cend = cpos + len(span)
+    enc = tok(sentence, return_offsets_mapping=True, add_special_tokens=True)
+    idxs = [i for i, (s, e) in enumerate(enc["offset_mapping"])
+            if e > s and s < cend and e > cpos]
+    if not idxs:
+        idxs = [find_target_position(sentence, span, tok)]
+    return hs[:, idxs, :].to(torch.float32).mean(dim=1).cpu()  # [27, hidden]
+
+
+def read_span(sentence: str, span: str, from_end: bool = False) -> torch.Tensor:
+    """Residual across all 27 layers at `span`'s occurrence, mean-pooled over its
+    subtoken span. from_end=True uses the LAST occurrence (for the forced {M} slot,
+    which always sits at the sentence end, so structural both/neither are not hit)."""
     _, tok = load()
-    hs, _ = residual_sweep(sentence)                 # [27, seq, hidden]
-    pos = find_target_position(sentence, word, tok)
-    return hs[:, pos, :].to(torch.float32).cpu()     # [27, hidden]
+    hs, _ = residual_sweep(sentence)
+    return _pool(hs, tok, sentence, span, from_end)
 
 
-def _single_token(word: str, tok) -> bool:
-    return len(tok.encode(" " + word, add_special_tokens=False)) == 1
-
-
-def measure_unit(unit: dict) -> list[dict]:
-    """Compute both measurements for one unit across all layers. Returns tidy rows."""
+def read_many(sentence: str, specs):
+    """One forward pass; return {name: [27, hidden]} for each (name, span, from_end) spec."""
     _, tok = load()
+    hs, _ = residual_sweep(sentence)
+    return {name: _pool(hs, tok, sentence, span, fe) for (name, span, fe) in specs}
+
+
+def _n_subtokens(word, tok):
+    return len(tok.encode(" " + word, add_special_tokens=False))
+
+
+def _mean(xs):
+    return (sum(xs) / len(xs)) if xs else None
+
+
+def _r(x):
+    return (round(x, 6) if isinstance(x, (int, float)) else x)
+
+
+def measure_pair(pair: dict):
+    """Returns (rows, classifications). rows are tidy per-(carrier,candidate,layer)
+    dicts; classifications are per-candidate summary dicts."""
+    _, tok = load()
+    A, B = pair["A"], pair["B"]
+    cands = config.candidates_for(pair)
+    matched_carrier = config.matched_syntax_carrier(pair)
+
     rows = []
-    dropped = []
 
-    def row(metric, target, value, layer, defined=True, note=""):
+    def row(carrier, target, input_type, metric, value, layer, note=""):
         rows.append({
-            "unit": unit["id"], "role": unit["role"], "kind": unit["kind"],
-            "named_dichotomy": unit["named_dichotomy"], "layer": layer,
-            "metric": metric, "target": target,
-            "value": (round(value, 6) if value is not None else None),
-            "defined": defined, "note": note,
+            "pair": pair["id"], "kind": pair["kind"], "named": pair["named"],
+            "carrier": carrier, "target": target, "input_type": input_type,
+            "metric": metric, "layer": (layer if layer is not None else -1),
+            "value": (round(value, 6) if isinstance(value, (int, float)) else value),
+            "note": note,
         })
 
+    # ---- word-slot carriers: matched_syntax, natural_usage --------------------
+    word_slot = {"matched_syntax": matched_carrier, "natural_usage": pair["natural_carrier"]}
+    t_series = {c["word"]: {} for c in cands}       # word -> carrier -> {layer: t}
+    rem_series = {c["word"]: {} for c in cands}
+    agg = {c["word"]: {"t": [], "rem": [], "cos_ft": [], "cos_ma": [], "cos_mb": []}
+           for c in cands}
     n_layers = None
 
-    # Carrier reads for poles (define the A-B axis used by (a) and (b)).
-    A_car = read_word_across_layers(unit["carrier_frame"].format(word=unit["pole_A"]), unit["pole_A"])
-    B_car = read_word_across_layers(unit["carrier_frame"].format(word=unit["pole_B"]), unit["pole_B"])
-    n_layers = A_car.shape[0]
+    for cname, tmpl in word_slot.items():
+        vA = read_span(tmpl.format(word=A), A)
+        vB = read_span(tmpl.format(word=B), B)
+        n_layers = vA.shape[0]
+        vFT = read_span(tmpl.format(word=pair["frame_term"]), pair["frame_term"])
+        cvecs = {c["word"]: read_span(tmpl.format(word=c["word"]), c["word"]) for c in cands}
 
-    # Dichotomy-frame pole reads ("as the corpus names them"), when a frame exists.
-    A_nam = B_nam = None
-    if unit["dichotomy_frame"]:
-        A_nam = read_word_across_layers(unit["dichotomy_frame"], unit["pole_A"])
-        B_nam = read_word_across_layers(unit["dichotomy_frame"], unit["pole_B"])
+        t_series_c = {c["word"]: {} for c in cands}
+        rem_series_c = {c["word"]: {} for c in cands}
+        for L in range(n_layers):
+            aL, bL, ftL = vA[L], vB[L], vFT[L]
+            row(cname, f"{A}|{B}", "pole_pair", "cosine_AB", _cos(aL, bL), L)
+            row(cname, pair["frame_term"], "frame_term", "cosine_A_frameterm", _cos(aL, ftL), L)
+            row(cname, pair["frame_term"], "frame_term", "cosine_B_frameterm", _cos(bL, ftL), L)
+            for c in cands:
+                w = c["word"]
+                mL = cvecs[w][L]
+                t, rem = _project(mL, aL, bL)
+                cma, cmb, cmft = _cos(mL, aL), _cos(mL, bL), _cos(mL, ftL)
+                row(cname, w, c["input_type"], "midpoint_t", t, L)
+                row(cname, w, c["input_type"], "remainder_ratio", rem, L)
+                row(cname, w, c["input_type"], "cosine_MA", cma, L)
+                row(cname, w, c["input_type"], "cosine_MB", cmb, L)
+                row(cname, w, c["input_type"], "cosine_M_frameterm", cmft, L)
+                t_series_c[w][L] = t
+                rem_series_c[w][L] = rem
+                agg[w]["t"].append(t); agg[w]["rem"].append(rem)
+                agg[w]["cos_ft"].append(cmft); agg[w]["cos_ma"].append(cma); agg[w]["cos_mb"].append(cmb)
+        for w in t_series:
+            t_series[w][cname] = t_series_c[w]
+            rem_series[w][cname] = rem_series_c[w]
 
-    # Midpoint read (measurement a), only if a single-token midpoint exists.
-    M_car = None
-    if unit["midpoint"]:
-        if _single_token(unit["midpoint"], tok):
-            M_car = read_word_across_layers(
-                unit["carrier_frame"].format(word=unit["midpoint"]), unit["midpoint"])
-        else:
-            dropped.append(("midpoint", unit["midpoint"]))
+    # ---- relational carriers: cosine_AB only ---------------------------------
+    for car in config.CARRIERS:
+        if car["kind"] != "relational":
+            continue
+        sent = car["template"].format(A=A, B=B)
+        v = read_many(sent, [("A", A, False), ("B", B, True)])
+        vA, vB = v["A"], v["B"]
+        for L in range(n_layers):
+            row(car["id"], f"{A}|{B}", "pole_pair", "cosine_AB", _cos(vA[L], vB[L]), L)
 
-    # Excluded-term reads (measurement b remainder), single-token only.
-    excluded_vecs = {}
-    for e in unit["excluded_terms"]:
-        if _single_token(e, tok):
-            excluded_vecs[e] = read_word_across_layers(unit["carrier_frame"].format(word=e), e)
-        else:
-            dropped.append(("excluded", e))
+    # ---- forcing prompts: per-candidate seating under forced framings --------
+    forced_t = {c["word"]: [] for c in cands}
+    for fp in config.FORCING_PROMPTS:
+        for c in cands:
+            w = c["word"]
+            sent = fp["template"].format(A=A, B=B, M=w)
+            v = read_many(sent, [("A", A, False), ("B", B, False), ("M", w, True)])
+            vA, vB, vM = v["A"], v["B"], v["M"]
+            for L in range(n_layers):
+                t, rem = _project(vM[L], vA[L], vB[L])
+                row(fp["id"], w, c["input_type"], "midpoint_t", t, L, note="forced-prompt seating")
+                row(fp["id"], w, c["input_type"], "remainder_ratio", rem, L, note="forced-prompt seating")
+                forced_t[w].append(t)
 
-    for L in range(n_layers):
-        a_c, b_c = A_car[L], B_car[L]
+    # Control-relative baseline: the mean off-axis remainder of the unrelated control
+    # words (table, reason). Absolute off-axis magnitudes are not interpretable in
+    # 2304-dim residual space, so a candidate "seats" only relative to how far an
+    # UNRELATED word sits off the same axis (the project's relative-to-control logic).
+    control_rems = [r for c in cands if c["input_type"] == "control" for r in agg[c["word"]]["rem"]]
+    baseline_rem = _mean(control_rems)
 
-        # (b) cross-layer pole relation
-        if A_nam is not None:
-            row("cosine_AB_named", f"{unit['pole_A']}|{unit['pole_B']}", _cos(A_nam[L], B_nam[L]), L)
-        else:
-            row("cosine_AB_named", f"{unit['pole_A']}|{unit['pole_B']}", None, L,
-                defined=False, note="No dichotomy frame (null pair by construction).")
-        row("cosine_AB_carrier", f"{unit['pole_A']}|{unit['pole_B']}", _cos(a_c, b_c), L)
+    # ---- per-candidate summaries: stability, strongest seating, class --------
+    classifications = []
+    for c in cands:
+        w = c["word"]
+        stab = None
+        if "matched_syntax" in t_series[w] and "natural_usage" in t_series[w]:
+            diffs = [abs(t_series[w]["matched_syntax"][L] - t_series[w]["natural_usage"][L])
+                     for L in range(n_layers)]
+            stab = max(0.0, 1.0 - _mean(diffs))
+        best_layer, best_score = None, None
+        nat = rem_series[w].get("natural_usage", {})
+        natt = t_series[w].get("natural_usage", {})
+        for L in range(n_layers):
+            if L in nat and L in natt:
+                score = abs(natt[L] - 0.5) + nat[L]
+                if best_score is None or score < best_score:
+                    best_score, best_layer = score, L
 
-        # (a) seated-midpoint
-        if M_car is not None:
-            t, perp = _project(M_car[L], a_c, b_c)
-            row("midpoint_t", unit["midpoint"], t, L)
-            row("midpoint_perp_norm", unit["midpoint"], perp, L)
-            row("cosine_midpoint_A", unit["midpoint"], _cos(M_car[L], a_c), L)
-            row("cosine_midpoint_B", unit["midpoint"], _cos(M_car[L], b_c), L)
-        else:
-            reason = ("Moral midpoint is phrasal/multi-token; measurement (a) does not close "
-                      "on a single Y-unit (anticipated finding)." if unit["kind"] == "scalar_collapse"
-                      else "No single-token midpoint exists for this unit by construction.")
-            row("midpoint_t", unit["midpoint"] or "(none)", None, L, defined=False, note=reason)
+        mean_rem = _mean(agg[w]["rem"])
+        rel_rem = (mean_rem / baseline_rem) if (mean_rem is not None and baseline_rem) else None
+        stats = dict(mean_t=_mean(agg[w]["t"]), mean_rem=mean_rem, rel_rem=rel_rem,
+                     mean_cos_ft=_mean(agg[w]["cos_ft"]),
+                     mean_cos_ma=_mean(agg[w]["cos_ma"]), mean_cos_mb=_mean(agg[w]["cos_mb"]),
+                     mean_t_forced=_mean(forced_t[w]), stability=stab)
+        klass = _classify(c, stats)
 
-        # (b) remainder ratio: excluded-term energy off the A-B axis
-        if excluded_vecs:
-            perps = []
-            for e, vec in excluded_vecs.items():
-                t_e, perp_e = _project(vec[L], a_c, b_c)
-                row("excluded_perp_norm", e, perp_e, L)
-                row("excluded_t", e, t_e, L)
-                perps.append(perp_e)
-            row("remainder_ratio", "excluded_set", sum(perps) / len(perps), L)
-        else:
-            row("remainder_ratio", "excluded_set", None, L, defined=False,
-                note=("A true two-term opposition has no excluded middle; remainder is "
-                      "near-zero/undefined by construction — the contrast, reported flat."
-                      if unit["kind"] == "true_dichotomy"
-                      else "No excluded-term set (null pair anchors the floor)."))
+        classifications.append({
+            "pair": pair["id"], "named": pair["named"], "kind": pair["kind"],
+            "candidate": w, "input_type": c["input_type"],
+            "n_subtokens": (_n_subtokens(w, tok) if not c["is_phrase"] else None),
+            "is_phrase": c["is_phrase"],
+            "mean_midpoint_t_unforced": _r(stats["mean_t"]),
+            "mean_remainder_unforced": _r(mean_rem),
+            "remainder_vs_control": _r(rel_rem),
+            "mean_cosine_frameterm": _r(stats["mean_cos_ft"]),
+            "carrier_stability": _r(stab),
+            "mean_midpoint_t_forced": _r(stats["mean_t_forced"]),
+            "layer_of_strongest_seating": best_layer,
+            "descriptive_class": klass,
+        })
+        row("summary", w, c["input_type"], "carrier_stability", stab, None)
+        row("summary", w, c["input_type"], "remainder_vs_control", rel_rem, None,
+            note="Off-axis remainder relative to the unrelated-word (table/reason) baseline.")
+        row("summary", w, c["input_type"], "layer_of_strongest_seating",
+            (float(best_layer) if best_layer is not None else None), None)
+        row("summary", w, c["input_type"], "descriptive_class", klass, None,
+            note="Offered to the reader as a summary; not a verdict.")
 
-    return rows, dropped, n_layers
+    return rows, classifications
+
+
+def _classify(c, s):
+    """Assign a descriptive class (offered to the reader, never a verdict). Precedence
+    chosen so 'true middle' is the hardest label to earn. Remainder is judged relative
+    to the pair's unrelated-word baseline. Frame terms are reference points."""
+    T = THRESHOLDS
+    if c["input_type"] == "frame_term":
+        return "frame_term_reference"
+    mean_t = s["mean_t"]
+    if mean_t is None:
+        return "undetermined"
+    between = T["t_between_lo"] <= mean_t <= T["t_between_hi"]
+    poleward = mean_t <= (1 - T["t_poleward"]) or mean_t >= T["t_poleward"]
+    seats = (s["rel_rem"] is not None and s["rel_rem"] <= T["rel_remainder_seat"])
+    stable = (s["stability"] is not None and s["stability"] >= T["stability_min"])
+    forced_between = (s["mean_t_forced"] is not None
+                      and T["t_between_lo"] <= s["mean_t_forced"] <= T["t_between_hi"])
+    pole_cos = max(v for v in (s["mean_cos_ma"], s["mean_cos_mb"]) if v is not None) \
+        if (s["mean_cos_ma"] is not None or s["mean_cos_mb"] is not None) else None
+    frame_closer = (s["mean_cos_ft"] is not None and pole_cos is not None
+                    and s["mean_cos_ft"] > pole_cos)
+
+    # 1. true midpoint: seats between the poles (control-relative), stable across carriers.
+    if between and seats and stable:
+        return "true_midpoint_candidate"
+    # 2. sits near one pole.
+    if poleward:
+        return "one_pole_candidate"
+    # 3. frame-adjacent: closer to the frame term than to either pole, and not seated.
+    if frame_closer and not (between and seats):
+        return "frame_adjacent_candidate"
+    # 4. prompt-induced: does not seat between unforced, but is pulled between once forced.
+    if (not (between and seats)) and forced_between:
+        return "prompt_induced_candidate"
+    # 5. everything else: mid or off position but off-axis relative to the control baseline.
+    return "off_axis_candidate"

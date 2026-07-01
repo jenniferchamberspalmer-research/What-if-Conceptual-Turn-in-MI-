@@ -1,0 +1,881 @@
+{
+  "model_id": "google/gemma-2-2b",
+  "tokenizer_screen": [
+    {
+      "pair": "coin_heads_tails",
+      "role": "pole_A",
+      "word": "heads",
+      "standalone_subtokens": [
+        " heads"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " heads"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "pole_B",
+      "word": "tails",
+      "standalone_subtokens": [
+        " tails"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " tails"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "candidate_middle",
+      "word": "edge",
+      "standalone_subtokens": [
+        " edge"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " edge"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "candidate_middle",
+      "word": "side",
+      "standalone_subtokens": [
+        " side"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " side"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "candidate_middle",
+      "word": "rim",
+      "standalone_subtokens": [
+        " rim"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " rim"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "candidate_middle",
+      "word": "face",
+      "standalone_subtokens": [
+        " face"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " face"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "logical",
+      "word": "both",
+      "standalone_subtokens": [
+        " both"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " both"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "logical",
+      "word": "neither",
+      "standalone_subtokens": [
+        " neither"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neither"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "control",
+      "word": "table",
+      "standalone_subtokens": [
+        " table"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " table"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "control",
+      "word": "reason",
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " reason"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "coin_heads_tails",
+      "role": "frame_term",
+      "word": "coin",
+      "standalone_subtokens": [
+        " coin"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " coin"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "pole_A",
+      "word": "even",
+      "standalone_subtokens": [
+        " even"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " even"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "pole_B",
+      "word": "odd",
+      "standalone_subtokens": [
+        " odd"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " odd"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "candidate_middle",
+      "word": "zero",
+      "standalone_subtokens": [
+        " zero"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " zero"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "candidate_middle",
+      "word": "half",
+      "standalone_subtokens": [
+        " half"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " half"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "candidate_middle",
+      "word": "fraction",
+      "standalone_subtokens": [
+        " fraction"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " fraction"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "candidate_middle",
+      "word": "decimal",
+      "standalone_subtokens": [
+        " decimal"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " decimal"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "logical",
+      "word": "both",
+      "standalone_subtokens": [
+        " both"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " both"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "logical",
+      "word": "neither",
+      "standalone_subtokens": [
+        " neither"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neither"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "control",
+      "word": "table",
+      "standalone_subtokens": [
+        " table"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " table"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "control",
+      "word": "reason",
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " reason"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "integer_even_odd",
+      "role": "frame_term",
+      "word": "integer",
+      "standalone_subtokens": [
+        " integer"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " integer"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "pole_A",
+      "word": "hot",
+      "standalone_subtokens": [
+        " hot"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " hot"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "pole_B",
+      "word": "cold",
+      "standalone_subtokens": [
+        " cold"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " cold"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "candidate_middle",
+      "word": "warm",
+      "standalone_subtokens": [
+        " warm"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " warm"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "candidate_middle",
+      "word": "cool",
+      "standalone_subtokens": [
+        " cool"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " cool"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "candidate_middle",
+      "word": "mild",
+      "standalone_subtokens": [
+        " mild"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " mild"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "candidate_middle",
+      "word": "lukewarm",
+      "standalone_subtokens": [
+        " lukewarm"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " lukewarm"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "logical",
+      "word": "both",
+      "standalone_subtokens": [
+        " both"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " both"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "logical",
+      "word": "neither",
+      "standalone_subtokens": [
+        " neither"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neither"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "control",
+      "word": "table",
+      "standalone_subtokens": [
+        " table"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " table"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "control",
+      "word": "reason",
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " reason"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "temp_hot_cold",
+      "role": "frame_term",
+      "word": "temperature",
+      "standalone_subtokens": [
+        " temperature"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " temperature"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "pole_A",
+      "word": "wet",
+      "standalone_subtokens": [
+        " wet"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " wet"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "pole_B",
+      "word": "dry",
+      "standalone_subtokens": [
+        " dry"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " dry"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "candidate_middle",
+      "word": "damp",
+      "standalone_subtokens": [
+        " damp"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " damp"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "candidate_middle",
+      "word": "moist",
+      "standalone_subtokens": [
+        " moist"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " moist"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "candidate_middle",
+      "word": "humid",
+      "standalone_subtokens": [
+        " humid"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " humid"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "candidate_middle",
+      "word": "soaked",
+      "standalone_subtokens": [
+        " soaked"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " soaked"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "logical",
+      "word": "both",
+      "standalone_subtokens": [
+        " both"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " both"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "logical",
+      "word": "neither",
+      "standalone_subtokens": [
+        " neither"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neither"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "control",
+      "word": "table",
+      "standalone_subtokens": [
+        " table"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " table"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "control",
+      "word": "reason",
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " reason"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "role": "frame_term",
+      "word": "moisture",
+      "standalone_subtokens": [
+        " moisture"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " moisture"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "pole_A",
+      "word": "good",
+      "standalone_subtokens": [
+        " good"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " good"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "pole_B",
+      "word": "bad",
+      "standalone_subtokens": [
+        " bad"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " bad"
+      ],
+      "single_token": true,
+      "pole": true
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "candidate_middle",
+      "word": "neutral",
+      "standalone_subtokens": [
+        " neutral"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neutral"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "candidate_middle",
+      "word": "mixed",
+      "standalone_subtokens": [
+        " mixed"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " mixed"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "candidate_middle",
+      "word": "ambiguous",
+      "standalone_subtokens": [
+        " ambiguous"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " ambiguous"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "candidate_middle",
+      "word": "gray",
+      "standalone_subtokens": [
+        " gray"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " gray"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "logical",
+      "word": "both",
+      "standalone_subtokens": [
+        " both"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " both"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "logical",
+      "word": "neither",
+      "standalone_subtokens": [
+        " neither"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " neither"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "phrase_middle",
+      "word": "morally ambiguous",
+      "standalone_subtokens": [
+        " morally",
+        " ambiguous"
+      ],
+      "n_subtokens": 2,
+      "inframe": [
+        " morally",
+        " ambiguous"
+      ],
+      "single_token": false,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "phrase_middle",
+      "word": "neither good nor bad",
+      "standalone_subtokens": [
+        " neither",
+        " good",
+        " nor",
+        " bad"
+      ],
+      "n_subtokens": 4,
+      "inframe": [
+        " neither",
+        " good",
+        " nor",
+        " bad"
+      ],
+      "single_token": false,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "phrase_middle",
+      "word": "both good and bad",
+      "standalone_subtokens": [
+        " both",
+        " good",
+        " and",
+        " bad"
+      ],
+      "n_subtokens": 4,
+      "inframe": [
+        " both",
+        " good",
+        " and",
+        " bad"
+      ],
+      "single_token": false,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "control",
+      "word": "table",
+      "standalone_subtokens": [
+        " table"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " table"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "control",
+      "word": "reason",
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " reason"
+      ],
+      "single_token": true,
+      "pole": false
+    },
+    {
+      "pair": "morality_good_bad",
+      "role": "frame_term",
+      "word": "morality",
+      "standalone_subtokens": [
+        " morality"
+      ],
+      "n_subtokens": 1,
+      "inframe": [
+        " morality"
+      ],
+      "single_token": true,
+      "pole": false
+    }
+  ],
+  "homograph_screen": [
+    {
+      "pair": "coin_heads_tails",
+      "named": "heads / tails",
+      "matched_carrier": "The coin was {word}.",
+      "natural_carrier": "The coin came up {word}.",
+      "flagged": {
+        "heads": "body part / leadership sense vs. coin face — coin frame fixes it.",
+        "tails": "animal tail / formal coat sense vs. coin face — coin frame fixes it.",
+        "face": "coin face vs. human face — coin frame biases toward the coin face."
+      }
+    },
+    {
+      "pair": "integer_even_odd",
+      "named": "even / odd",
+      "matched_carrier": "The integer was {word}.",
+      "natural_carrier": "The integer is {word}.",
+      "flagged": {
+        "even": "level/flat sense vs. parity — integer frame fixes it.",
+        "odd": "peculiar sense vs. parity — integer frame fixes it."
+      }
+    },
+    {
+      "pair": "temp_hot_cold",
+      "named": "hot / cold",
+      "matched_carrier": "The temperature was {word}.",
+      "natural_carrier": "The temperature was {word}.",
+      "flagged": {}
+    },
+    {
+      "pair": "moisture_wet_dry",
+      "named": "wet / dry",
+      "matched_carrier": "The surface was {word}.",
+      "natural_carrier": "The surface was {word}.",
+      "flagged": {}
+    },
+    {
+      "pair": "morality_good_bad",
+      "named": "good / bad",
+      "matched_carrier": "The action was {word}.",
+      "natural_carrier": "The action was {word}.",
+      "flagged": {
+        "bad": "slang 'good' sense vs. evaluative — action/morality frame fixes it.",
+        "gray": "colour sense vs. moral-neutral sense — morality frame biases toward the latter."
+      }
+    }
+  ],
+  "field_omission_ok": true,
+  "field_omission_problems": [],
+  "pole_splits": []
+}
