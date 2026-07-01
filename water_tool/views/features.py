@@ -25,47 +25,11 @@ from ..core.model import load
 from ..core.sae import get_sae, neuronpedia_sae_id
 from ..core.neuronpedia import get_description, feature_url
 
-
-def _find_target_position(text: str, target: str, tok) -> int:
-    """Return the token index whose character range covers the end of `target`.
-
-    Uses the fast tokenizer's offset_mapping. add_special_tokens=True
-    keeps the BOS token in the offsets list, so the returned index is
-    already correctly aligned with the model's forward pass.
-    """
-    char_pos = text.find(target)
-    if char_pos < 0:
-        raise ValueError(f"Target word '{target}' not found in sentence.")
-    char_end = char_pos + len(target)
-
-    enc = tok(text, return_offsets_mapping=True, add_special_tokens=True)
-    offsets = enc["offset_mapping"]
-    for i, (start, end) in enumerate(offsets):
-        if start < char_end and end >= char_end:
-            return i
-    return len(enc["input_ids"]) - 1
-
-
-def _capture_residual_at_layer(text: str, layer: int) -> tuple[torch.Tensor, int]:
-    """Forward pass with a hook on block `layer`. Returns (residual, target_pos)."""
-    model, tok = load()
-    captured = {}
-
-    def hook(_module, _input, output):
-        # Gemma blocks return either a Tensor or a tuple whose first
-        # element is the residual stream. Handle both forms.
-        x = output[0] if isinstance(output, tuple) else output
-        captured["x"] = x
-
-    handle = model.model.layers[layer].register_forward_hook(hook)
-    try:
-        enc = tok(text, return_tensors="pt").to(model.device)
-        with torch.no_grad():
-            model(**enc)
-    finally:
-        handle.remove()
-
-    return captured["x"][0], enc  # [seq, hidden], encoded inputs
+# Residual extraction is single-sourced in water_tool.core.extract so it cannot
+# drift between the Water Pattern Tool and the Dichotomy Transformation Probe.
+# These names are re-exported here to preserve this module's historical API.
+from ..core.extract import find_target_position as _find_target_position
+from ..core.extract import residual_at_layer as _capture_residual_at_layer
 
 
 @torch.no_grad()

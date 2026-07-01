@@ -1,0 +1,506 @@
+{
+  "model_id": "google/gemma-2-2b",
+  "tokenizer_screen": [
+    {
+      "unit": "coin_heads_tails",
+      "role": "pole_A",
+      "word": "heads",
+      "leading_space_form": " heads",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " heads"
+      ],
+      "frame": "A coin is either heads or tails.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " heads"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "coin_heads_tails",
+      "role": "pole_B",
+      "word": "tails",
+      "leading_space_form": " tails",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " tails"
+      ],
+      "frame": "A coin is either heads or tails.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " tails"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "pole_A",
+      "word": "good",
+      "leading_space_form": " good",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " good"
+      ],
+      "frame": "A person is either good or bad.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " good"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "pole_B",
+      "word": "bad",
+      "leading_space_form": " bad",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " bad"
+      ],
+      "frame": "A person is either good or bad.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " bad"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "mediocre",
+      "leading_space_form": " mediocre",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " mediocre"
+      ],
+      "frame": "The person was mediocre.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " mediocre"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "average",
+      "leading_space_form": " average",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " average"
+      ],
+      "frame": "The person was average.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " average"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "okay",
+      "leading_space_form": " okay",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " okay"
+      ],
+      "frame": "The person was okay.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " okay"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "fine",
+      "leading_space_form": " fine",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " fine"
+      ],
+      "frame": "The person was fine.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " fine"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "decent",
+      "leading_space_form": " decent",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " decent"
+      ],
+      "frame": "The person was decent.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " decent"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "person_good_bad",
+      "role": "excluded",
+      "word": "poor",
+      "leading_space_form": " poor",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " poor"
+      ],
+      "frame": "The person was poor.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " poor"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "integer_even_odd",
+      "role": "pole_A",
+      "word": "even",
+      "leading_space_form": " even",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " even"
+      ],
+      "frame": "An integer is either even or odd.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " even"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "integer_even_odd",
+      "role": "pole_B",
+      "word": "odd",
+      "leading_space_form": " odd",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " odd"
+      ],
+      "frame": "An integer is either even or odd.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " odd"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "pole_A",
+      "word": "hot",
+      "leading_space_form": " hot",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " hot"
+      ],
+      "frame": "The water is either hot or cold.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " hot"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "pole_B",
+      "word": "cold",
+      "leading_space_form": " cold",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " cold"
+      ],
+      "frame": "The water is either hot or cold.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " cold"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "midpoint",
+      "word": "warm",
+      "leading_space_form": " warm",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " warm"
+      ],
+      "frame": "The water was warm.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " warm"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "excluded",
+      "word": "cool",
+      "leading_space_form": " cool",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " cool"
+      ],
+      "frame": "The water was cool.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " cool"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "excluded",
+      "word": "mild",
+      "leading_space_form": " mild",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " mild"
+      ],
+      "frame": "The water was mild.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " mild"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "excluded",
+      "word": "tepid",
+      "leading_space_form": " tepid",
+      "standalone_n_subtokens": 2,
+      "standalone_subtokens": [
+        " tep",
+        "id"
+      ],
+      "frame": "The water was tepid.",
+      "inframe_n_subtokens": 2,
+      "inframe_subtokens": [
+        " tep",
+        "id"
+      ],
+      "single_token": false,
+      "passes_scope_gate": false
+    },
+    {
+      "unit": "water_hot_cold",
+      "role": "excluded",
+      "word": "lukewarm",
+      "leading_space_form": " lukewarm",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " lukewarm"
+      ],
+      "frame": "The water was lukewarm.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " lukewarm"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "pole_A",
+      "word": "wet",
+      "leading_space_form": " wet",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " wet"
+      ],
+      "frame": "The cloth is either wet or dry.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " wet"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "pole_B",
+      "word": "dry",
+      "leading_space_form": " dry",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " dry"
+      ],
+      "frame": "The cloth is either wet or dry.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " dry"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "midpoint",
+      "word": "damp",
+      "leading_space_form": " damp",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " damp"
+      ],
+      "frame": "The cloth was damp.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " damp"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "excluded",
+      "word": "moist",
+      "leading_space_form": " moist",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " moist"
+      ],
+      "frame": "The cloth was moist.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " moist"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "excluded",
+      "word": "humid",
+      "leading_space_form": " humid",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " humid"
+      ],
+      "frame": "The cloth was humid.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " humid"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "role": "excluded",
+      "word": "soggy",
+      "leading_space_form": " soggy",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " soggy"
+      ],
+      "frame": "The cloth was soggy.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " soggy"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "null_table_reason",
+      "role": "pole_A",
+      "word": "table",
+      "leading_space_form": " table",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " table"
+      ],
+      "frame": "The table is there.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " table"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    },
+    {
+      "unit": "null_table_reason",
+      "role": "pole_B",
+      "word": "reason",
+      "leading_space_form": " reason",
+      "standalone_n_subtokens": 1,
+      "standalone_subtokens": [
+        " reason"
+      ],
+      "frame": "The reason is there.",
+      "inframe_n_subtokens": 1,
+      "inframe_subtokens": [
+        " reason"
+      ],
+      "single_token": true,
+      "passes_scope_gate": true
+    }
+  ],
+  "homograph_screen": [
+    {
+      "unit": "coin_heads_tails",
+      "named_dichotomy": "heads / tails",
+      "frame_fixes_sense": "A coin is either heads or tails.",
+      "homograph_note": "'heads' and 'tails' both have strong non-coin senses (body part, animal tail); screened. The frame fixes the coin sense."
+    },
+    {
+      "unit": "person_good_bad",
+      "named_dichotomy": "good / bad",
+      "frame_fixes_sense": "A person is either good or bad.",
+      "homograph_note": "'bad' screened for slang 'good' sense; the frame fixes the evaluative sense."
+    },
+    {
+      "unit": "integer_even_odd",
+      "named_dichotomy": "even / odd",
+      "frame_fixes_sense": "An integer is either even or odd.",
+      "homograph_note": "'odd' screened for its strange-sense homograph (odd = peculiar); the frame fixes the parity sense."
+    },
+    {
+      "unit": "water_hot_cold",
+      "named_dichotomy": "hot / cold",
+      "frame_fixes_sense": "The water is either hot or cold.",
+      "homograph_note": "None strong; 'cool' (as slang) screened."
+    },
+    {
+      "unit": "cloth_wet_dry",
+      "named_dichotomy": "wet / dry",
+      "frame_fixes_sense": "The cloth is either wet or dry.",
+      "homograph_note": "None strong."
+    },
+    {
+      "unit": "null_table_reason",
+      "named_dichotomy": "(none -- null pair by construction)",
+      "frame_fixes_sense": "The {word} is there.",
+      "homograph_note": "None relevant; the pair is intentionally unrelated."
+    }
+  ],
+  "field_omission_ok": true,
+  "field_omission_problems": []
+}
