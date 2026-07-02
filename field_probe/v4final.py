@@ -3,6 +3,16 @@ V4-FINAL (LOCKED) — Does the Residual Stream Carry a FIELD for False Binaries?
 =============================================================================
 GPT-2 small · TransformerLens · confirmatory instrument.
 
+CHANGELOG
+  v1  first run (pre-push); frozen pre-registration below still in force.
+  v2  READ-POSITION FIX. v1 carriers ended in "." and read position [-1] = the
+      PERIOD token, so every rep was the '.' after the word, not the word. That
+      invalidated field_score and washed out readout-drop. Fix: no trailing
+      punctuation; mean-pool resid_post over the WORD'S OWN subword span.
+      => any v1 "Branch A" result is WITHDRAWN pending this re-read. The frozen
+         header is untouched, so the lock keeps its force; only the probe moved
+         from the period to the word.
+
 THE QUESTION
 ------------
 A TRUE binary (heads/tails) has no middle: the world enforces two poles and
@@ -70,9 +80,11 @@ OUTDIR     = "."
 EPS        = 1e-9
 rng = np.random.default_rng(SEED)
 
-# carriers: reps = mean over these; word is the LAST token in each (readout-aligned)
-CARRIERS = ["It was {}.", "They called it {}.", "Everyone agreed it was {}.",
-            "The verdict was {}.", "I would describe it as {}."]
+# READ-POSITION FIX: no trailing punctuation, and NO space before {} (words carry
+# their own leading space). The word is the final token(s); we pool over its span.
+# v1 bug: "It was {}." + " good" gave "It was  good." and [-1] read the PERIOD.
+CARRIERS = ["It was{}", "They called it{}", "Everyone agreed it was{}",
+            "The verdict was{}", "I would describe it as{}"]
 
 # poles + candidate middles per pair. class drives interpretation, not the code path.
 TYPOLOGY = {
@@ -102,16 +114,31 @@ def _cache(prompt):
     return c
 
 def word_reps(word):
-    """(n,d) reps averaged over carriers; also (C,n,d) for CI; + n_tokens of the word."""
+    """(n,d) reps: resid_post MEAN-POOLED over the word's OWN subword span, averaged
+    over carriers; also (C,n,d) for CI; + k = n_tokens of the word.
+    Single-token poles (k=1) are unpooled; only multi-token candidates get pooled —
+    the faithful rep of a multi-token word, NOT the phrase-pooling artifact from v2.
+    Never reads position -1 on punctuation."""
+    wtok = model.to_tokens(word, prepend_bos=False)[0]   # the word's own tokens
+    k = int(wtok.shape[0])
     per = []
     for c in CARRIERS:
-        cc = _cache(c.format(word))
-        per.append(np.stack([cc["resid_post", l][0, -1].float().cpu().numpy() for l in range(n)]))
+        prompt = c.format(word)
+        toks = model.to_tokens(prompt)[0]
+        if not torch.equal(toks[-k:].cpu(), wtok.cpu()):  # integrity check
+            print(f"  [warn] span mismatch: '{word}' in «{c}» — verify tokenization")
+        cc = _cache(prompt)
+        per.append(np.stack([cc["resid_post", l][0, -k:].float().mean(0).cpu().numpy()
+                             for l in range(n)]))          # pool the WORD's span, per layer
     per = np.stack(per)                                  # (C, n, d)
-    ntok = len(model.to_str_tokens(word, prepend_bos=False))
-    return per.mean(0), per, ntok
+    return per.mean(0), per, k
 
 def cos(a, b): return np.sum(a*b, -1) / (np.linalg.norm(a,axis=-1)*np.linalg.norm(b,axis=-1)+EPS)
+
+# read-position confirmation (must print WORDS, not punctuation)
+print("READ-POSITION CHECK — pooling these tokens:")
+for w in [" good", " bad", " comatose"]:
+    print(f"   '{w}' -> {model.to_str_tokens(w, prepend_bos=False)}")
 
 # precompute reps for every word we touch
 ALL_WORDS = sorted({CONTROL_WORD} |
