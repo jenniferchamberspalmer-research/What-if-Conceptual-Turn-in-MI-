@@ -19,14 +19,17 @@ never projected onto a readout axis. This core adds exactly what was missing:
   * onto-axis cancellation      cancel_u, and co-direction sign of the two writes
     (this is v4's cancel_idx / force_cos, projected onto u — the defensible signal)
   * logit-lens KL drift         KL(final || layer)  at every half-step
+  * AXIS CERTIFICATION (§4)     differential emission of an axis: is a candidate u0
+    internal-only (near-orthogonal to EVERY unembedding difference, not just its own)
 
 v1 DECISIONS (locked): lens = final LayerNorm (LN_f); rho metric = Euclidean cosine.
 Both are swap points (see project() and output_relevance()).
 
-FIREWALL: __main__ runs CORRECTNESS FIXTURES ONLY. A random axis and d_ab are used to
-check four KNOWN-EXACT identities. These validate the machine; they make NO scientific
-claim and measure NO pre-registered axis. The first scientific run happens elsewhere,
-after the axis is locked.
+FIREWALL: __main__ runs CORRECTNESS FIXTURES + an AXIS EMISSION SCALE calibration.
+Both use only a random axis and d_ab; they check KNOWN-EXACT identities and report the
+emission scale of a known contrast vs a random direction. They make NO scientific claim
+and measure NO pre-registered axis. The first scientific run happens elsewhere, after
+the axis is locked.
 
     pip install transformer_lens torch pandas numpy
     python field_probe/hc_core.py     # expect: ALL FIXTURES PASS
@@ -128,13 +131,96 @@ def attribute(writes, u):
 
 
 # --------------------------------------------------------------------------- #
-# OUTPUT-RELEVANCE   rho = cos(u, d_ab)
+# OUTPUT-RELEVANCE   rho = cos(u, d_ab)   (the axis's OWN declared poles)
 # --------------------------------------------------------------------------- #
 def output_relevance(model, u, a, b):
     u = unit(u.float()).to(model.cfg.device)
     d_ab = (model.W_U[:, a] - model.W_U[:, b]).detach().float()   # (d,)
     rho = torch.dot(u, unit(d_ab)).item()      # Euclidean cosine (v1); causal IP is §9
     return dict(rho=rho, d_ab=d_ab)
+
+
+# --------------------------------------------------------------------------- #
+# AXIS CERTIFICATION (§4)  —  is a candidate u0 internal-only?
+#
+# "Orthogonal to EVERY unembedding difference" cannot mean orthogonal to their
+# SPAN: W_U has full column rank (768), so the span of all differences is all of
+# R^768 and no direction is orthogonal to it. The right notion is EMISSION
+# MAGNITUDE.
+#
+# Direct-path emission: if u reaches the final residual, steering r -> r + u moves
+# token logits (to first order, pre-LN) by  push = W_U^T u.  The part that moves
+# logit DIFFERENCES is the mean-centered push  push_c = (W_U - mean_col)^T u.
+# ||push_c|| ~ 0  <=>  u shifts all logits equally  <=>  u emits no token contrast
+# <=> internal-only. Since W_U is full-rank, ||push_c|| is never exactly 0, so the
+# gate is COMPARATIVE (ratio vs the high-rho member u_ref) and ABSOLUTE (worst
+# single-pair alignment), against PRE-STATED thresholds.
+#
+# CAVEAT (honest, and it ties to the plan's structure): this is linear/direct-path
+# emission. It brackets the LN_f Jacobian and the indirect composition path (an
+# axis could reach output via later-layer composition even with small direct
+# push). A PASS here is a PRE-DATA selection filter, to be CONFIRMED by steering
+# through the real LN_f + W_U in §6.3 — same proposes-then-confirms discipline as
+# the §6.4 attribution graphs. Never report a certified u0 without that downstream
+# confirmation.
+# --------------------------------------------------------------------------- #
+def axis_emission(model, u, poles=None, top_k=15):
+    u = unit(u.float()).to(model.cfg.device)
+    W_U = model.W_U                                   # (d, V)
+    push = W_U.T @ u                                  # (V,) direct per-token logit push
+    push_c = push - push.mean()                       # centered == (W_U - mean_col)^T u
+    emission_norm = push_c.norm().item()              # differential emission (logit units)
+
+    i_star = torch.argmax(push).item()                # token u pushes up hardest
+    j_star = torch.argmin(push).item()                # token u pushes down hardest
+    d_worst = W_U[:, i_star] - W_U[:, j_star]         # the strongest contrast u aligns with
+    rho_worst = torch.dot(u, unit(d_worst)).item()    # worst-case single-pair cosine
+
+    order = torch.argsort(push_c.abs(), descending=True)[:top_k]
+    top_emitted = [(model.tokenizer.decode([t.item()]), push_c[t].item()) for t in order]
+
+    out = dict(
+        emission_norm=emission_norm,
+        rho_worst=rho_worst,
+        worst_pair=(i_star, j_star,
+                    model.tokenizer.decode([i_star]),
+                    model.tokenizer.decode([j_star])),
+        top_emitted=top_emitted,
+    )
+    if poles is not None:
+        a, b = poles
+        out["rho_own"] = torch.dot(u, unit((W_U[:, a] - W_U[:, b]).float())).item()
+    return out
+
+
+def certify_internal_only(model, u0, u_ref, poles0=None,
+                          max_emission_ratio=0.10, max_rho_worst=0.15):
+    """PRE-DATA selection gate for the rho~0 member u0 of a matched pair.
+
+    u_ref is the high-rho member u+ (the emission reference). u0 passes iff its
+    differential emission is a small FRACTION of u_ref's AND it aligns with no
+    single token contrast above max_rho_worst.
+
+    Thresholds are PRE-STATED here as pre-registration parameters. Change them
+    only BEFORE selecting a pair, never after seeing which candidate passes.
+    A PASS is a filter, not proof — confirm by steering (§6.3) before reporting.
+    """
+    e0 = axis_emission(model, u0, poles=poles0)
+    eR = axis_emission(model, u_ref)
+    ratio = e0["emission_norm"] / (eR["emission_norm"] + EPS)
+    passed = (ratio <= max_emission_ratio) and (abs(e0["rho_worst"]) <= max_rho_worst)
+    return dict(
+        passed=passed,
+        emission_ratio=ratio,
+        emission_norm_u0=e0["emission_norm"],
+        emission_norm_ref=eR["emission_norm"],
+        rho_worst_u0=e0["rho_worst"],
+        worst_pair_u0=e0["worst_pair"],
+        rho_own_u0=e0.get("rho_own"),
+        top_emitted_u0=e0["top_emitted"],
+        thresholds=dict(max_emission_ratio=max_emission_ratio,
+                        max_rho_worst=max_rho_worst),
+    )
 
 
 # --------------------------------------------------------------------------- #
@@ -147,8 +233,8 @@ def fine_projection(proj):
     q = [proj["q_pre"][0].item()]
     labels, kinds = [], []
     for l in range(n):
-        q.append(proj["q_mid"][l].item());  labels.append(f"L{l}·attn"); kinds.append("attn")
-        q.append(proj["q_post"][l].item()); labels.append(f"L{l}·mlp");  kinds.append("mlp")
+        q.append(proj["q_mid"][l].item());  labels.append(f"L{l}\u00b7attn"); kinds.append("attn")
+        q.append(proj["q_post"][l].item()); labels.append(f"L{l}\u00b7mlp");  kinds.append("mlp")
     return np.array(q), labels, kinds
 
 
@@ -247,4 +333,20 @@ if __name__ == "__main__":
         passed = v < 1e-2
         ok = ok and passed
         print(f"  [{'PASS' if passed else 'FAIL'}] {k:34s} max|err| = {v:.2e}")
-    print("ALL FIXTURES PASS" if ok else "SOME FIXTURES FAILED — do not proceed")
+    print("ALL FIXTURES PASS" if ok else "SOME FIXTURES FAILED \u2014 do not proceed")
+
+    # --- AXIS EMISSION SCALE (calibration only, no scientific claim) --------- #
+    # Reference scale for setting the pre-registered u0 thresholds: how strongly a
+    # known contrast (d_ab) emits vs a random direction. Measures NO chosen axis.
+    torch.manual_seed(0)
+    u_rand = unit(torch.randn(model.cfg.d_model, device=model.cfg.device))
+    d_ab = unit((model.W_U[:, a] - model.W_U[:, b]).float())
+    e_dab = axis_emission(model, d_ab)
+    e_rand = axis_emission(model, u_rand)
+    print("\n=== AXIS EMISSION SCALE (calibration only, no scientific claim) ===")
+    print(f"  d_ab   emission_norm = {e_dab['emission_norm']:8.3f}   "
+          f"rho_worst = {e_dab['rho_worst']:+.3f}   "
+          f"worst pair = {e_dab['worst_pair'][2]!r} vs {e_dab['worst_pair'][3]!r}")
+    print(f"  random emission_norm = {e_rand['emission_norm']:8.3f}   "
+          f"rho_worst = {e_rand['rho_worst']:+.3f}")
+    print("  (an internal-only u0 should sit well BELOW these; threshold is pre-stated at selection)")
