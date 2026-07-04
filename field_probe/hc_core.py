@@ -46,10 +46,16 @@ EPS = 1e-9
 # --------------------------------------------------------------------------- #
 # SETUP
 # --------------------------------------------------------------------------- #
-def load_model(name="gpt2"):
-    """GPT-2 small with per-head write decomposition enabled."""
-    model = HookedTransformer.from_pretrained(name)
-    model.cfg.use_attn_result = True   # exposes cache["result", l]: per-head OV writes
+def load_model(name="gpt2", no_processing=False):
+    """GPT-2 small with per-head write decomposition enabled.
+    no_processing=True loads the raw (unfolded-LN, uncentered) model that Bloom's
+    SAEs were trained on — required for sae.encode to fire. The fixtures are
+    basis-independent identities and must pass under either setting."""
+    if no_processing:
+        model = HookedTransformer.from_pretrained_no_processing(name)
+    else:
+        model = HookedTransformer.from_pretrained(name)
+    model.cfg.use_attn_result = True
     model.eval()
     return model
 
