@@ -146,15 +146,18 @@ def output_relevance(model, u, a, b):
 # "Orthogonal to EVERY unembedding difference" cannot mean orthogonal to their
 # SPAN: W_U has full column rank (768), so the span of all differences is all of
 # R^768 and no direction is orthogonal to it. The right notion is EMISSION
-# MAGNITUDE.
+# MAGNITUDE, and specifically its CONCENTRATION.
 #
 # Direct-path emission: if u reaches the final residual, steering r -> r + u moves
 # token logits (to first order, pre-LN) by  push = W_U^T u.  The part that moves
 # logit DIFFERENCES is the mean-centered push  push_c = (W_U - mean_col)^T u.
-# ||push_c|| ~ 0  <=>  u shifts all logits equally  <=>  u emits no token contrast
-# <=> internal-only. Since W_U is full-rank, ||push_c|| is never exactly 0, so the
-# gate is COMPARATIVE (ratio vs the high-rho member u_ref) and ABSOLUTE (worst
-# single-pair alignment), against PRE-STATED thresholds.
+#
+# The total NORM ||push_c|| does NOT discriminate: over ~50k tokens it concentrates
+# (a random axis emits ~0.9x of a real contrast). The discriminating quantity is
+# CONCENTRATION — how few tokens carry the push. Internal-only <=> emission spread
+# thinly across the vocabulary with no coherent contrast anywhere <=> low top-k
+# energy fraction. This also catches DISTRIBUTED emission (several moderate
+# contrasts) that a single worst-pair check would miss.
 #
 # CAVEAT (honest, and it ties to the plan's structure): this is linear/direct-path
 # emission. It brackets the LN_f Jacobian and the indirect composition path (an
@@ -171,6 +174,19 @@ def axis_emission(model, u, poles=None, top_k=15):
     push_c = push - push.mean()                       # centered == (W_U - mean_col)^T u
     emission_norm = push_c.norm().item()              # differential emission (logit units)
 
+    # CONCENTRATION: fraction of centered-push ENERGY in the top-k tokens.
+    # The norm aggregates over ~50k tokens and concentrates (a random axis emits
+    # ~0.9x a real contrast), so it cannot discriminate. Concentration can: it is
+    # small ONLY when emission spreads thinly with no coherent contrast anywhere
+    # == internal-only. Also catches DISTRIBUTED emission (several moderate
+    # contrasts) that a single worst-pair check would miss.
+    energy = push_c.pow(2)
+    total_energy = energy.sum()
+    def _topk_frac(k):
+        k = min(k, energy.numel())
+        return (torch.topk(energy, k).values.sum() / (total_energy + EPS)).item()
+    concentration = {10: _topk_frac(10), 50: _topk_frac(50)}
+
     i_star = torch.argmax(push).item()                # token u pushes up hardest
     j_star = torch.argmin(push).item()                # token u pushes down hardest
     d_worst = W_U[:, i_star] - W_U[:, j_star]         # the strongest contrast u aligns with
@@ -181,6 +197,7 @@ def axis_emission(model, u, poles=None, top_k=15):
 
     out = dict(
         emission_norm=emission_norm,
+        emission_concentration=concentration,
         rho_worst=rho_worst,
         worst_pair=(i_star, j_star,
                     model.tokenizer.decode([i_star]),
@@ -194,32 +211,41 @@ def axis_emission(model, u, poles=None, top_k=15):
 
 
 def certify_internal_only(model, u0, u_ref, poles0=None,
-                          max_emission_ratio=0.10, max_rho_worst=0.15):
+                          max_conc10=0.05, max_rho_worst=0.15):
     """PRE-DATA selection gate for the rho~0 member u0 of a matched pair.
 
-    u_ref is the high-rho member u+ (the emission reference). u0 passes iff its
-    differential emission is a small FRACTION of u_ref's AND it aligns with no
-    single token contrast above max_rho_worst.
+    PRIMARY metric — TOP-10 EMISSION CONCENTRATION: the fraction of centered-push
+    energy carried by the 10 most-pushed tokens. Small <=> u0 spreads its
+    (unavoidable) emission thinly with no coherent contrast anywhere <=>
+    internal-only. This REPLACES the total emission norm as the gate: in 768-d the
+    norm concentrates (a random axis emits ~0.9x of a real contrast), so the norm
+    cannot discriminate; concentration can, and it also catches DISTRIBUTED
+    emission that a single worst-pair check would miss.
 
-    Thresholds are PRE-STATED here as pre-registration parameters. Change them
-    only BEFORE selecting a pair, never after seeing which candidate passes.
-    A PASS is a filter, not proof — confirm by steering (§6.3) before reporting.
+    SECONDARY — rho_worst: catches a single dominant contrast directly.
+    REPORTED-ONLY — emission_ratio vs u_ref: kept for the record, no longer gating.
+
+    Thresholds are PRE-STATED pre-registration parameters. SET max_conc10 from the
+    calibration scale (top-10 fraction of a random axis vs d_ab) BEFORE selecting,
+    never after. A PASS is a filter, not proof — confirm by steering (§6.3).
     """
     e0 = axis_emission(model, u0, poles=poles0)
     eR = axis_emission(model, u_ref)
-    ratio = e0["emission_norm"] / (eR["emission_norm"] + EPS)
-    passed = (ratio <= max_emission_ratio) and (abs(e0["rho_worst"]) <= max_rho_worst)
+    conc10 = e0["emission_concentration"][10]
+    ratio = e0["emission_norm"] / (eR["emission_norm"] + EPS)   # reported only
+    passed = (conc10 <= max_conc10) and (abs(e0["rho_worst"]) <= max_rho_worst)
     return dict(
         passed=passed,
-        emission_ratio=ratio,
+        conc10_u0=conc10,
+        conc10_ref=eR["emission_concentration"][10],
+        rho_worst_u0=e0["rho_worst"],
+        emission_ratio=ratio,                       # reported, not gating
         emission_norm_u0=e0["emission_norm"],
         emission_norm_ref=eR["emission_norm"],
-        rho_worst_u0=e0["rho_worst"],
         worst_pair_u0=e0["worst_pair"],
         rho_own_u0=e0.get("rho_own"),
         top_emitted_u0=e0["top_emitted"],
-        thresholds=dict(max_emission_ratio=max_emission_ratio,
-                        max_rho_worst=max_rho_worst),
+        thresholds=dict(max_conc10=max_conc10, max_rho_worst=max_rho_worst),
     )
 
 
@@ -233,8 +259,8 @@ def fine_projection(proj):
     q = [proj["q_pre"][0].item()]
     labels, kinds = [], []
     for l in range(n):
-        q.append(proj["q_mid"][l].item());  labels.append(f"L{l}\u00b7attn"); kinds.append("attn")
-        q.append(proj["q_post"][l].item()); labels.append(f"L{l}\u00b7mlp");  kinds.append("mlp")
+        q.append(proj["q_mid"][l].item());  labels.append(f"L{l}·attn"); kinds.append("attn")
+        q.append(proj["q_post"][l].item()); labels.append(f"L{l}·mlp");  kinds.append("mlp")
     return np.array(q), labels, kinds
 
 
@@ -333,7 +359,7 @@ if __name__ == "__main__":
         passed = v < 1e-2
         ok = ok and passed
         print(f"  [{'PASS' if passed else 'FAIL'}] {k:34s} max|err| = {v:.2e}")
-    print("ALL FIXTURES PASS" if ok else "SOME FIXTURES FAILED \u2014 do not proceed")
+    print("ALL FIXTURES PASS" if ok else "SOME FIXTURES FAILED — do not proceed")
 
     # --- AXIS EMISSION SCALE (calibration only, no scientific claim) --------- #
     # Reference scale for setting the pre-registered u0 thresholds: how strongly a
@@ -349,4 +375,9 @@ if __name__ == "__main__":
           f"worst pair = {e_dab['worst_pair'][2]!r} vs {e_dab['worst_pair'][3]!r}")
     print(f"  random emission_norm = {e_rand['emission_norm']:8.3f}   "
           f"rho_worst = {e_rand['rho_worst']:+.3f}")
-    print("  (an internal-only u0 should sit well BELOW these; threshold is pre-stated at selection)")
+    print(f"  d_ab   top10 conc = {e_dab['emission_concentration'][10]:.4f}   "
+          f"top50 conc = {e_dab['emission_concentration'][50]:.4f}")
+    print(f"  random top10 conc = {e_rand['emission_concentration'][10]:.4f}   "
+          f"top50 conc = {e_rand['emission_concentration'][50]:.4f}")
+    print("  -> norm barely separates (concentration of measure); CONCENTRATION is the")
+    print("     discriminating gate. Set max_conc10 between these two, nearer the random value.")
