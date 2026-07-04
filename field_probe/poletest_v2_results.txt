@@ -1,0 +1,14 @@
+poletest_v2.py — first run, 2026-07-02, GPT-2 small local CPU
+(verbatim console output; the script writes no files itself)
+
+=== POLE-ADJACENCY TEST v2 — hot/cold axis ===
+           warm (MIDDLE                ) onplane = 1.000
+         freeze (pole-adjacent         ) onplane = 0.917
+    thermometer (in-domain, non-middle ) onplane = 1.000
+          chair (out-of-domain         ) onplane = 0.000
+   random words (null baseline         ) onplane = 0.267
+
+DIAGNOSIS:
+  thermometer (in-domain, NOT a middle) also seats -> onplane is a DOMAIN detector.
+  => it measures semantic-plane membership, NOT populated middle ground.
+  => v3 Branch A (carried entirely by onplane) does NOT survive.
